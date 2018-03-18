@@ -67,7 +67,7 @@ DEBUG                  ?= NONE
 # DEBUG ?=HW
 #
 # Define which UART to use for HW debug
-DEBUG_PORT ?= UART1
+# DEBUG_PORT ?= UART1
 # DEBUG_MODE ?= SWD
 
 STACK_SIZE              = 6000
@@ -238,7 +238,7 @@ BDB_SUPPORT_NWK_STEERING                    ?= 1
 BDB_SUPPORT_NWK_FORMATION                   ?= 1
 ifneq ($(NODE), COORDINATOR)
 APP_CLUSTER_COMMISSIONING_SRC               ?= 1
-# BDB features 锟�Enable as required
+# BDB features � Enable as required
 BDB_SUPPORT_TOUCHLINK_INITIATOR_ROUTER      ?= 1
 endif
 

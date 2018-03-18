@@ -1946,14 +1946,17 @@ PUBLIC void APP_vProcessIncomingSerialCommands ( uint8    u8RxByte )
             case (E_SL_MSG_MAN_SPEC_COMMAND):
 			{
             	tsMS_ManuSpecCommand psManuSpecPayload;
-            	psManuSpecPayload.u8ManuSpecCommandId = au8LinkRxBuffer [ 5 ];
-            	memcpy(psManuSpecPayload.u8Payload, &au8LinkRxBuffer[6], 16);
-
-            	u8Status = eCLD_DoorLockCommandTransmissionRequestSend ( au8LinkRxBuffer [ 3 ],
+            	psManuSpecPayload.u8SubCommand = au8LinkRxBuffer [ 5 ];
+            	memcpy(&psManuSpecPayload.u8Payload[0], &au8LinkRxBuffer[6], 16);
+//            	psManuSpecPayload.u8Payload[0] = 0x11;
+//            	psManuSpecPayload.u8Payload[1] = 0x22;
+//            	psManuSpecPayload.u8Payload[2] = 0x33;
+//            	psManuSpecPayload.u8Payload[3] = 0x44;
+            	u8Status = eCLD_DoorLockCommandManuSpecRequestSend ( au8LinkRxBuffer [ 3 ],
 																			au8LinkRxBuffer [ 4 ],
 																			&sAddress,
 																			&u8SeqNum,
-																			au8LinkRxBuffer [ 5 ],
+																			E_CLD_MANU_SPEC_CMD_MANU_SPEC,
 																			&psManuSpecPayload);
 
 			}

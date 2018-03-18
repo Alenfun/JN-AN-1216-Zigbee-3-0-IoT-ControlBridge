@@ -157,7 +157,7 @@
 //#define CLD_TEMP_PASSWORD_ATTR_MAN_SPEC
 //#define E_CLD_TEMP_PASSWORD_ATTR_ID_MAN_SPEC 0x0B00
 /* Manufacturer-specific Commands */
-#define E_CLD_TRANSMISSION_CMD_MANU_SPEC 0x50
+#define E_CLD_MANU_SPEC_CMD_MANU_SPEC 0x50
 
 #define NUM_ENDPOINT_RECORDS                                  10
 #define NUM_GROUP_RECORDS                                     4
