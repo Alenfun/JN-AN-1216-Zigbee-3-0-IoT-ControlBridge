@@ -128,6 +128,7 @@
 							<tool id="com.beyondsemi.tool.gnu.ba.elf.compiler.c.base.1250672540" name="BA ELF GNU C compiler" superClass="com.beyondsemi.tool.gnu.ba.elf.compiler.c.base">
 								<option defaultValue="gnu.c.optimization.level.size" id="com.beyondsemi.tool.gnu.ba.elf.compiler.c.optimization.1020529214" name="Optimization Level" superClass="com.beyondsemi.tool.gnu.ba.elf.compiler.c.optimization" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.debugging.level.900059839" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" value="gnu.c.debugging.level.none" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.preprocessor.def.symbols.1182133926" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols"/>
 								<inputType id="com.beyondsemi.base.ba.elf.c.compiler.input.2052428433" superClass="com.beyondsemi.base.ba.elf.c.compiler.input"/>
 								<inputType id="com.beyondsemi.assembler.macro.input.1110362278" superClass="com.beyondsemi.assembler.macro.input"/>
 							</tool>
@@ -425,8 +426,8 @@
 			<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
 			<storageModule moduleId="org.eclipse.cdt.core.language.mapping"/>
 		</cconfiguration>
-		<cconfiguration id="cdt.managedbuild.config.gnu.cygwin.exe.release.134755034.2111203493.456005051.329562131.2081576302">
-			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.gnu.cygwin.exe.release.134755034.2111203493.456005051.329562131.2081576302" moduleId="org.eclipse.cdt.core.settings" name="ZigbeeNodeControlBridge_Coordinator_230400(JN5169)">
+		<cconfiguration id="cdt.managedbuild.config.gnu.cygwin.exe.release.134755034.2111203493.456005051.329562131.1350813581.1589119202">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.config.gnu.cygwin.exe.release.134755034.2111203493.456005051.329562131.1350813581.1589119202" moduleId="org.eclipse.cdt.core.settings" name="ZigbeeNodeControlBridge_Coordinator_UART1_921600(JN5169)">
 				<externalSettings/>
 				<extensions>
 					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
@@ -438,35 +439,36 @@
 				</extensions>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-				<configuration artifactExtension="exe" artifactName="HAControlDongle" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" cleanCommand="rm -rf" description="ZigbeeNodeControlBridge as _Coordinator and data persisted in the internal PDM on JN5169 Baud Rate of 230400" id="cdt.managedbuild.config.gnu.cygwin.exe.release.134755034.2111203493.456005051.329562131.2081576302" name="ZigbeeNodeControlBridge_Coordinator_230400(JN5169)" parent="cdt.managedbuild.config.gnu.cygwin.exe.release">
-					<folderInfo id="cdt.managedbuild.config.gnu.cygwin.exe.release.134755034.2111203493.456005051.329562131.2081576302." name="/" resourcePath="">
-						<toolChain id="com.beyondsemi.toolchain.gnu.ba.elf.base.34673146" name="BA ELF GNU toolchain" superClass="com.beyondsemi.toolchain.gnu.ba.elf.base">
-							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF" id="com.beyondsemi.target.gnu.platform.ba.elf.1953707259" superClass="com.beyondsemi.target.gnu.platform.ba.elf"/>
-							<builder arguments="TRACE=1 NODE=COORDINATOR BAUD=230400 JENNIC_CHIP=JN5169 JENNIC_CHIP_FAMILY=JN516x" autoBuildTarget="all" buildPath="${ProjDirPath}/../Build/ZigbeeNodeControlBridge" cleanBuildTarget="clean" command="make" enableAutoBuild="false" enableCleanBuild="true" enabledIncrementalBuild="true" id="com.beyondsemi.builder.cdt.gnu.71143533" incrementalBuildTarget="all" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" parallelBuildOn="false" superClass="com.beyondsemi.builder.cdt.gnu"/>
-							<tool id="com.beyondsemi.tool.gnu.ba.elf.compiler.c.base.12396423" name="BA ELF GNU C compiler" superClass="com.beyondsemi.tool.gnu.ba.elf.compiler.c.base">
-								<option defaultValue="gnu.c.optimization.level.size" id="com.beyondsemi.tool.gnu.ba.elf.compiler.c.optimization.352485737" name="Optimization Level" superClass="com.beyondsemi.tool.gnu.ba.elf.compiler.c.optimization" valueType="enumerated"/>
-								<option id="gnu.c.compiler.option.debugging.level.140475960" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" value="gnu.c.debugging.level.none" valueType="enumerated"/>
-								<inputType id="com.beyondsemi.base.ba.elf.c.compiler.input.597475309" superClass="com.beyondsemi.base.ba.elf.c.compiler.input"/>
-								<inputType id="com.beyondsemi.assembler.macro.input.2024890079" superClass="com.beyondsemi.assembler.macro.input"/>
+				<configuration artifactExtension="exe" artifactName="HAControlDongle" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.gnu.cygwin.exe.release.134755034.2111203493.456005051.329562131.1350813581.1589119202" name="ZigbeeNodeControlBridge_Coordinator_UART1_921600(JN5169)" parent="cdt.managedbuild.config.gnu.cygwin.exe.release">
+					<folderInfo id="cdt.managedbuild.config.gnu.cygwin.exe.release.134755034.2111203493.456005051.329562131.1350813581.1589119202." name="/" resourcePath="">
+						<toolChain id="com.beyondsemi.toolchain.gnu.ba.elf.base.1207213426" name="BA ELF GNU toolchain" superClass="com.beyondsemi.toolchain.gnu.ba.elf.base">
+							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF" id="com.beyondsemi.target.gnu.platform.ba.elf.1580794612" superClass="com.beyondsemi.target.gnu.platform.ba.elf"/>
+							<builder arguments="TRACE=1 NODE=COORDINATOR BAUD=1000000 JENNIC_CHIP=JN5169 JENNIC_CHIP_FAMILY=JN516x" autoBuildTarget="all" buildPath="${ProjDirPath}/../Build/ZigbeeNodeControlBridge" cleanBuildTarget="clean" command="make" enableAutoBuild="false" enableCleanBuild="true" enabledIncrementalBuild="true" id="com.beyondsemi.builder.cdt.gnu.1628226961" incrementalBuildTarget="all" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="Gnu Make Builder" parallelBuildOn="false" superClass="com.beyondsemi.builder.cdt.gnu"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.compiler.c.base.892919332" name="BA ELF GNU C compiler" superClass="com.beyondsemi.tool.gnu.ba.elf.compiler.c.base">
+								<option defaultValue="gnu.c.optimization.level.size" id="com.beyondsemi.tool.gnu.ba.elf.compiler.c.optimization.97567394" name="Optimization Level" superClass="com.beyondsemi.tool.gnu.ba.elf.compiler.c.optimization" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.debugging.level.559593814" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" value="gnu.c.debugging.level.none" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.preprocessor.def.symbols.198097361" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols"/>
+								<inputType id="com.beyondsemi.base.ba.elf.c.compiler.input.391746267" superClass="com.beyondsemi.base.ba.elf.c.compiler.input"/>
+								<inputType id="com.beyondsemi.assembler.macro.input.1122864908" superClass="com.beyondsemi.assembler.macro.input"/>
 							</tool>
-							<tool id="com.beyondsemi.tool.gnu.ba.elf.compiler.cpp.base.884387072" name="BA ELF GNU C++ compiler" superClass="com.beyondsemi.tool.gnu.ba.elf.compiler.cpp.base">
-								<option defaultValue="gnu.cpp.compiler.optimization.level.size" id="com.beyondsemi.tool.gnu.ba.elf.compiler.cpp.optimization.426296667" name="Optimization Level" superClass="com.beyondsemi.tool.gnu.ba.elf.compiler.cpp.optimization" valueType="enumerated"/>
-								<option id="gnu.cpp.compiler.option.debugging.level.1370760946" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" value="gnu.cpp.compiler.debugging.level.none" valueType="enumerated"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.compiler.cpp.base.94360447" name="BA ELF GNU C++ compiler" superClass="com.beyondsemi.tool.gnu.ba.elf.compiler.cpp.base">
+								<option defaultValue="gnu.cpp.compiler.optimization.level.size" id="com.beyondsemi.tool.gnu.ba.elf.compiler.cpp.optimization.846779756" name="Optimization Level" superClass="com.beyondsemi.tool.gnu.ba.elf.compiler.cpp.optimization" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.debugging.level.1331308531" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" value="gnu.cpp.compiler.debugging.level.none" valueType="enumerated"/>
 							</tool>
-							<tool id="com.beyondsemi.tool.gnu.ba.elf.linker.c.base.1547203036" name="BA ELF GNU C linker" superClass="com.beyondsemi.tool.gnu.ba.elf.linker.c.base">
-								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.466609830" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.linker.c.base.981740189" name="BA ELF GNU C linker" superClass="com.beyondsemi.tool.gnu.ba.elf.linker.c.base">
+								<inputType id="cdt.managedbuild.tool.gnu.c.linker.input.1760556242" superClass="cdt.managedbuild.tool.gnu.c.linker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
 								</inputType>
 							</tool>
-							<tool id="com.beyondsemi.tool.gnu.ba.elf.linker.cpp.base.630158481" name="BA ELF GNU C++ linker" superClass="com.beyondsemi.tool.gnu.ba.elf.linker.cpp.base"/>
-							<tool id="com.beyondsemi.tool.gnu.ba.elf.assembler.base.1114645267" name="BA ELF GNU assembler" superClass="com.beyondsemi.tool.gnu.ba.elf.assembler.base">
-								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1339904130" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
-								<inputType id="com.beyondsemi.assembler.input.1133389035" superClass="com.beyondsemi.assembler.input"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.linker.cpp.base.1711233047" name="BA ELF GNU C++ linker" superClass="com.beyondsemi.tool.gnu.ba.elf.linker.cpp.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.assembler.base.1675563204" name="BA ELF GNU assembler" superClass="com.beyondsemi.tool.gnu.ba.elf.assembler.base">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.84611378" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+								<inputType id="com.beyondsemi.assembler.input.558557777" superClass="com.beyondsemi.assembler.input"/>
 							</tool>
-							<tool id="com.beyondsemi.tool.gnu.ba.elf.archiver.base.1565556482" name="BA ELF GNU archiver" superClass="com.beyondsemi.tool.gnu.ba.elf.archiver.base"/>
-							<tool id="com.beyondsemi.tool.gnu.ba.elf.size.base.1046529214" name="BA ELF GNU size" superClass="com.beyondsemi.tool.gnu.ba.elf.size.base"/>
-							<tool id="com.beyondsemi.tool.gnu.ba.elf.objcopy.base.270504086" name="BA ELF GNU objcopy" superClass="com.beyondsemi.tool.gnu.ba.elf.objcopy.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.archiver.base.691095001" name="BA ELF GNU archiver" superClass="com.beyondsemi.tool.gnu.ba.elf.archiver.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.size.base.1719041431" name="BA ELF GNU size" superClass="com.beyondsemi.tool.gnu.ba.elf.size.base"/>
+							<tool id="com.beyondsemi.tool.gnu.ba.elf.objcopy.base.692180810" name="BA ELF GNU objcopy" superClass="com.beyondsemi.tool.gnu.ba.elf.objcopy.base"/>
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
@@ -494,6 +496,7 @@
 			<resource resourceType="PROJECT" workspacePath="/JN-AN-1216-Zigbee-3-0-IoT-ControlBridge"/>
 		</configuration>
 		<configuration configurationName="ZigbeeNodeControlBridge_Coordinator_1000000"/>
+		<configuration configurationName="ZigbeeNodeControlBridge_Coordinator_230400(JN5169)"/>
 		<configuration configurationName="ZigbeeNodeControlBridge_Coordinator_115200"/>
 		<configuration configurationName="ZigbeeNodeControlBridge_Coordinator_1000000 (JN5169)"/>
 		<configuration configurationName="Release">
@@ -502,18 +505,20 @@
 		<configuration configurationName="ZigbeeNodeControlBridge_Full_Functionality_115200 (JN5168)"/>
 		<configuration configurationName="Full Function Device"/>
 		<configuration configurationName="ZigbeeNodeControlBridge_Full_Functionality"/>
-		<configuration configurationName="ZigbeeNodeControlBridge_Full_Functionality_115200"/>
 		<configuration configurationName="ZigbeeNodeControlBridge_Coordinator_1000000_Uart_1(JN5169)"/>
+		<configuration configurationName="ZigbeeNodeControlBridge_Full_Functionality_115200"/>
 		<configuration configurationName="ZigbeeNodeControlBridge_Full_Functionality_115200 (JN5169)"/>
 		<configuration configurationName="ZigbeeNodeControlBridge_Coordinator_115200 (JN5168)"/>
 		<configuration configurationName="ZigbeeNodeControlBridge_Coordinator_1000000 (JN5168)"/>
+		<configuration configurationName="ZigbeeNodeControlBridge_Coordinator_UART1_921600(JN5169)"/>
 		<configuration configurationName="ZigbeeNodeControlBridge_EEPROM_JN5169"/>
+		<configuration configurationName="Coordinator only"/>
 		<configuration configurationName="ZigbeeNodeControlBridge_EEPROM_JN5168">
 			<resource resourceType="PROJECT" workspacePath="/JN-AN-1216-Zigbee-3-0-IoT-ControlBridge"/>
 		</configuration>
-		<configuration configurationName="Coordinator only"/>
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
 	<storageModule moduleId="scannerConfiguration">
 		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile"/>
 		<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile">
@@ -596,8 +601,8 @@
 				<parser enabled="true"/>
 			</scannerInfoProvider>
 		</profile>
-		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cygwin.exe.release.134755034.331320288.1453253873;cdt.managedbuild.config.gnu.cygwin.exe.release.134755034.331320288.1453253873.;cdt.managedbuild.tool.gnu.c.compiler.cygwin.exe.release.1204391887;cdt.managedbuild.tool.gnu.c.compiler.input.cygwin.2043072456">
-			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC"/>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cygwin.exe.release.134755034.2111203493.456005051.329562131.2081576302;cdt.managedbuild.config.gnu.cygwin.exe.release.134755034.2111203493.456005051.329562131.2081576302.;com.beyondsemi.tool.gnu.ba.elf.compiler.c.base.12396423;com.beyondsemi.base.ba.elf.c.compiler.input.597475309">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.beyondsemi.base.elf.c.scanner.configdiscovery"/>
 			<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile">
 				<buildOutputProvider>
 					<openAction enabled="true" filePath=""/>
@@ -845,6 +850,171 @@
 				</scannerInfoProvider>
 			</profile>
 		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cygwin.exe.release.134755034.331320288.1453253873;cdt.managedbuild.config.gnu.cygwin.exe.release.134755034.331320288.1453253873.;cdt.managedbuild.tool.gnu.c.compiler.cygwin.exe.release.1204391887;cdt.managedbuild.tool.gnu.c.compiler.input.cygwin.2043072456">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC"/>
+			<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="true"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="specsFile">
+					<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+			<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerFileProfile">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="true"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="makefileGenerator">
+					<runAction arguments="-f ${project_name}_scd.mk" command="make" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+			<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfile">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="true"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="specsFile">
+					<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+			<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileCPP">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="true"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="specsFile">
+					<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+			<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="true"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="specsFile">
+					<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+			<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfile">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="true"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="specsFile">
+					<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+			<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileCPP">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="true"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="specsFile">
+					<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+			<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="true"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="specsFile">
+					<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.cygwin.exe.release.134755034.2111203493.456005051.329562131.1350813581;cdt.managedbuild.config.gnu.cygwin.exe.release.134755034.2111203493.456005051.329562131.1350813581.;com.beyondsemi.tool.gnu.ba.elf.compiler.c.base.1250672540;com.beyondsemi.base.ba.elf.c.compiler.input.2052428433">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.beyondsemi.base.elf.c.scanner.configdiscovery"/>
+			<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerProjectProfile">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="true"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="specsFile">
+					<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+			<profile id="org.eclipse.cdt.make.core.GCCStandardMakePerFileProfile">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="true"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="makefileGenerator">
+					<runAction arguments="-f ${project_name}_scd.mk" command="make" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+			<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfile">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="true"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="specsFile">
+					<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+			<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileCPP">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="true"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="specsFile">
+					<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+			<profile id="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="true"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="specsFile">
+					<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+			<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfile">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="true"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="specsFile">
+					<runAction arguments="-E -P -v -dD ${plugin_state_location}/${specs_file}" command="gcc" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+			<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileCPP">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="true"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="specsFile">
+					<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.cpp" command="g++" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+			<profile id="org.eclipse.cdt.managedbuilder.core.GCCWinManagedMakePerProjectProfileC">
+				<buildOutputProvider>
+					<openAction enabled="true" filePath=""/>
+					<parser enabled="true"/>
+				</buildOutputProvider>
+				<scannerInfoProvider id="specsFile">
+					<runAction arguments="-E -P -v -dD ${plugin_state_location}/specs.c" command="gcc" useDefault="true"/>
+					<parser enabled="true"/>
+				</scannerInfoProvider>
+			</profile>
+		</scannerConfigBuildInfo>
 	</storageModule>
-	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
 </cproject>

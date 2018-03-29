@@ -289,6 +289,9 @@ PUBLIC void vAppMain(void)
 #endif
     /* Initialise debugging */
 #if  (UART_DEBUGGING == TRUE)
+	#if (DEBUG_UART == DBG_E_UART_1)
+		vAHI_UartSetLocation(DEBUG_UART, TRUE);
+	#endif
     /* Send debug output to DBG_UART */
     DBG_vUartInit ( DEBUG_UART, DBG_E_UART_BAUD_RATE_115200 );
 #else
@@ -538,7 +541,6 @@ PUBLIC void APP_vMainLoop(void)
     bSetPermitJoinForever = TRUE;
     while (TRUE)
     {
-        
         zps_taskZPS ( );
         bdb_taskBDB ( );
         APP_vHandleAppEvents ( );

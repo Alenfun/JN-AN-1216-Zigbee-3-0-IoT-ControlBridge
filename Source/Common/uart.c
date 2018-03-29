@@ -66,6 +66,13 @@
 #define UART E_AHI_UART_0
 #endif
 
+#if (UART == E_AHI_UART_0)
+#pragma message( "UART == E_AHI_UART_0" )
+#endif
+#if (UART == E_AHI_UART_1)
+#pragma message( "UART == E_AHI_UART_1" )
+#endif
+
 #if (UART != E_AHI_UART_0 && UART != E_AHI_UART_1)
 #error UART must be either 0 or 1
 #endif
@@ -132,8 +139,11 @@ uint8 rxbuf[127];
  ****************************************************************************/
 PUBLIC void UART_vInit(void)
 {
+	#if (UART == E_AHI_UART_1)
+	vAHI_UartSetLocation(UART, TRUE);
+	#endif
     /* Enable UART 0 */
-    //vAHI_UartEnable(UART);
+//    vAHI_UartEnable(UART);
     bAHI_UartEnable(UART, //uint8 u8Uart,
                 txbuf, //uint8 *pu8TxBufAd,
                 (uint8)16, //uint16 u16TxBufLen,
@@ -147,7 +157,9 @@ PUBLIC void UART_vInit(void)
        directly as the normal routines (in ROM) do not support all baud rates */
     UART_vSetBaudRate(UART_BAUD_RATE);
 
+	#if (UART == E_AHI_UART_0)
     vAHI_UartSetRTSCTS(UART, TRUE);
+	#endif
     vAHI_UartSetControl(UART, FALSE, FALSE, E_AHI_UART_WORD_LEN_8, TRUE, FALSE); /* [I SP001222_P1 279] */
     vAHI_UartSetInterrupt(UART, FALSE, FALSE, FALSE, TRUE, E_AHI_UART_FIFO_LEVEL_1);
 
@@ -264,7 +276,9 @@ void APP_isrUart ( void )
 
 PUBLIC void UART_vRtsStopFlow ( void )
 {
+#if (UART == E_AHI_UART_0)
     vAHI_UartSetControl ( UART, FALSE, FALSE, E_AHI_UART_WORD_LEN_8, TRUE, E_AHI_UART_RTS_HIGH );
+#endif
 }
 
 /****************************************************************************
@@ -278,7 +292,9 @@ PUBLIC void UART_vRtsStopFlow ( void )
 
 PUBLIC void UART_vRtsStartFlow(void)
 {
+#if (UART == E_AHI_UART_0)
     vAHI_UartSetControl ( UART, FALSE, FALSE, E_AHI_UART_WORD_LEN_8, TRUE, E_AHI_UART_RTS_LOW );
+#endif
 }
 /* [I SP001222_P1 283] end */
 
