@@ -289,11 +289,14 @@ PUBLIC void vAppMain(void)
 #endif
     /* Initialise debugging */
 #if  (UART_DEBUGGING == TRUE)
-	#if (DEBUG_UART == DBG_E_UART_1)
-		vAHI_UartSetLocation(DEBUG_UART, TRUE);
+//	#if (DEBUG_UART == DBG_E_UART_1)
+//		vAHI_UartSetLocation(DEBUG_UART, TRUE);
+//	#endif
+	#if (DEBUG_UART == DBG_E_UART_0)
+		vAHI_UartSetRTSCTS(E_AHI_UART_0, FALSE);
 	#endif
     /* Send debug output to DBG_UART */
-    DBG_vUartInit ( DEBUG_UART, DBG_E_UART_BAUD_RATE_115200 );
+    DBG_vUartInit ( DBG_E_UART_0, DBG_E_UART_BAUD_RATE_115200 );
 #else
     /* Send debug output through SerialLink to host */
     vSL_LogInit ( );

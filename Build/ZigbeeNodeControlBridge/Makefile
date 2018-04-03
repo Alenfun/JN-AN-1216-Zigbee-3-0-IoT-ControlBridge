@@ -67,7 +67,7 @@ DEBUG                  ?= NONE
 # DEBUG ?=HW
 #
 # Define which UART to use for HW debug
-DEBUG_PORT ?= UART1
+#DEBUG_PORT ?= UART0
 # DEBUG_MODE ?= SWD
 
 STACK_SIZE              = 6000
@@ -100,11 +100,11 @@ CFLAGS	+= -D$(CRC_NEW)
 
 ifeq ($(UART), E_AHI_UART_0)
 $(info UART=E_AHI_UART_0)
-CFLAGS  += -DUART=E_AHI_UART_0
+CFLAGS += -DUART=0
 endif
 ifeq ($(UART), E_AHI_UART_1)
 $(info UART=E_AHI_UART_1)
-CFLAGS  += -DUART=E_AHI_UART_1
+CFLAGS += -DUART=1
 endif
 
 ifeq ($(DEBUG), UART1)
