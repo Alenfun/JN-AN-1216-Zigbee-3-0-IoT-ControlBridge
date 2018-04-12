@@ -634,13 +634,29 @@ PRIVATE void APP_ZCL_cbEndpointCallback ( tsZCL_CallBackEvent*    psEvent )
                 case GENERAL_CLUSTER_ID_BASIC:
                 {
                     tsCLD_BasicCallBackMessage *psCallBackMessage = (tsCLD_BasicCallBackMessage*)psEvent->uMessage.sClusterCustomMessage.pvCustomData;
-                    if (psCallBackMessage->u8CommandId == E_CLD_BASIC_CMD_RESET_TO_FACTORY_DEFAULTS )
+                    switch (psCallBackMessage->u8CommandId )
                     {
-                        /*Clearing of cluster data*/
-                        memset(&sControlBridge,0,sizeof(tsZLO_ControlBridgeDevice));
-                        eApp_ZLO_RegisterEndpoint(&APP_ZCL_cbEndpointCallback);
-                        vAPP_ZCL_DeviceSpecific_Init();
-                     }
+						case E_CLD_BASIC_CMD_RESET_TO_FACTORY_DEFAULTS:
+						{
+							/*Clearing of cluster data*/
+							memset(&sControlBridge,0,sizeof(tsZLO_ControlBridgeDevice));
+							eApp_ZLO_RegisterEndpoint(&APP_ZCL_cbEndpointCallback);
+							vAPP_ZCL_DeviceSpecific_Init();
+							break;
+						 }
+						case E_CLD_BASIC_CMD_SECRET_KEY:
+						{
+							tsMS_InfraredSecretKeyCommand *psInfraredSecretKeyCommand = psCallBackMessage->uMessage.psMS_InfraredSecretKeyCommand;
+							int i;
+							for(i=0; i < 32; i++){
+								ZNC_BUF_U8_UPD   ( &au8LinkTxBuffer [u16Length],  psInfraredSecretKeyCommand->au8Payload[i],          u16Length );
+							}
+                            vSL_WriteMessage ( E_SL_INFRARED_GET_SECRET_KEY_RESP,
+                            		u16Length,
+                                    au8LinkTxBuffer );
+							break;
+						}
+                    }
                  }
                  break;
 

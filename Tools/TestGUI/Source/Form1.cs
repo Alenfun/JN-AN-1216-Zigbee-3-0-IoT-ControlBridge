@@ -18,7 +18,7 @@ namespace ZGWUI
 {
     public partial class Form1 : Form
     {
-		NetworkRecovery nwkRecovery = new NetworkRecovery();
+        NetworkRecovery nwkRecovery = new NetworkRecovery();
         ListManager listManager;
 
         UInt64[] au64ExtAddr = new UInt64[16];
@@ -123,7 +123,7 @@ namespace ZGWUI
 
             addrModeComboBoxInit(ref comboBoxUnBindAddrMode);
             destShortIeeeAddrTextBoxInit(ref textBoxUnBindDestAddr);
-            dstEndPointTextBoxInit(ref textBoxUnBindDestEP);            
+            dstEndPointTextBoxInit(ref textBoxUnBindDestEP);
 
             // Management tab text box initialization
             targetExtendedAddrTextBoxInit(ref textBoxBindTargetExtAddr);
@@ -135,8 +135,8 @@ namespace ZGWUI
             clusterIdTextBoxInit(ref textBoxUnBindClusterID);
 
             shortAddrTextBoxInit(ref textBoxPermitJoinAddr);
-            shortAddrTextBoxInit(ref textBoxNodeDescReq);            
-            shortAddrTextBoxInit(ref textBoxSimpleReqAddr);            
+            shortAddrTextBoxInit(ref textBoxNodeDescReq);
+            shortAddrTextBoxInit(ref textBoxSimpleReqAddr);
             shortAddrTextBoxInit(ref textBoxPowerReqAddr);
             shortAddrTextBoxInit(ref textBoxActiveEpAddr);
             shortAddrTextBoxInit(ref textBoxMatchReqAddr);
@@ -144,8 +144,8 @@ namespace ZGWUI
             shortAddrTextBoxInit(ref textBoxUserReqAddr);
             shortAddrTextBoxInit(ref textBoxUserSetReqAddr);
             shortAddrTextBoxInit(ref textBoxLqiReqTargetAddr);
-            profileIdTextBoxInit(ref textBoxMatchReqProfileID);            
-            dstEndPointTextBoxInit(ref textBoxSimpleReqEndPoint);   
+            profileIdTextBoxInit(ref textBoxMatchReqProfileID);
+            dstEndPointTextBoxInit(ref textBoxSimpleReqEndPoint);
             targetShortAddrTextBoxInit(ref textBoxIeeeReqTargetAddr);
             shortAddrTextBoxInit(ref textBoxIeeeReqAddr);
             startIndexTextBoxInit(ref textBoxIeeeReqStartIndex);
@@ -198,15 +198,15 @@ namespace ZGWUI
 
             textBoxMgmtNwkUpdateNwkManagerAddr.ForeColor = System.Drawing.Color.Gray;
             textBoxMgmtNwkUpdateNwkManagerAddr.Text = "NwkMan Addr (16-bit Hex)";
-           
+
             targetShortAddrTextBoxInit(ref textBoxReadAttribTargetAddr);
             srcEndPointTextBoxInit(ref textBoxReadAttribSrcEP);
             dstEndPointTextBoxInit(ref textBoxReadAttribDstEP);
-            clusterIdTextBoxInit(ref textBoxReadAttribClusterID);            
+            clusterIdTextBoxInit(ref textBoxReadAttribClusterID);
             comboBoxReadAttribDirection.Items.Add("TO SERVER");
             comboBoxReadAttribDirection.Items.Add("TO CLIENT");
             comboBoxReadAttribDirection.SelectedIndex = 0;
-            attributeIdTextBoxInit(ref textBoxReadAttribID1);            
+            attributeIdTextBoxInit(ref textBoxReadAttribID1);
             attributeCountTextBoxInit(ref textBoxReadAttribCount);
             manufacturerSpecificComboBoxInit(ref comboBoxReadAttribManuSpecific);
             manufacturerIdTextBoxInit(ref textBoxReadAttribManuID);
@@ -223,7 +223,7 @@ namespace ZGWUI
             attribDataTypeTextBoxInit(ref textBoxWriteAttribDataType);
             manufacturerSpecificComboBoxInit(ref comboBoxWriteAttribManuSpecific);
             manufacturerIdTextBoxInit(ref textBoxWriteAttribManuID);
-            
+
             targetShortAddrTextBoxInit(ref textBoxConfigReportTargetAddr);
             addrModeComboBoxZCLInit(ref comboBoxConfigReportAddrMode);
             srcEndPointTextBoxInit(ref textBoxConfigReportSrcEP);
@@ -231,10 +231,10 @@ namespace ZGWUI
             clusterIdTextBoxInit(ref textBoxConfigReportClusterID);
             comboBoxConfigReportDirection.Items.Add("TO SERVER");
             comboBoxConfigReportDirection.Items.Add("TO CLIENT");
-            comboBoxConfigReportDirection.SelectedIndex = 0;            
+            comboBoxConfigReportDirection.SelectedIndex = 0;
             comboBoxConfigReportAttribDirection.Items.Add("TX SERVER");
             comboBoxConfigReportAttribDirection.Items.Add("Rx CLIENT");
-            comboBoxConfigReportAttribDirection.SelectedIndex = 0;                      
+            comboBoxConfigReportAttribDirection.SelectedIndex = 0;
             attributeTypeTextBoxInit(ref textBoxConfigReportAttribType);
             attributeIdTextBoxInit(ref textBoxConfigReportAttribID);
             minIntervalTextBoxInit(ref textBoxConfigReportMinInterval);
@@ -255,7 +255,7 @@ namespace ZGWUI
             dstEndPointTextBoxInit(ref textBoxDiscoverAttributesDstEp);
             clusterIdTextBoxInit(ref textBoxDiscoverAttributesClusterID);
             attributeIdTextBoxInit(ref textBoxDiscoverAttributesStartAttrId);
-            
+
 
             comboBoxDiscoverAttributesDirection.Items.Add("TO SERVER");
             comboBoxDiscoverAttributesDirection.Items.Add("TO CLIENT");
@@ -290,11 +290,11 @@ namespace ZGWUI
 
             comboBoxDiscoverCommandsDirection.Items.Add("TO SERVER");
             comboBoxDiscoverCommandsDirection.Items.Add("TO CLIENT");
-            comboBoxDiscoverCommandsDirection.SelectedIndex = 0;                                                
+            comboBoxDiscoverCommandsDirection.SelectedIndex = 0;
             commandIDTextBoxInit(ref textBoxDiscoverCommandsCommandID);
             manufacturerSpecificComboBoxInit(ref comboBoxDiscoverCommandsManuSpecific);
             manufacturerIdTextBoxInit(ref textBoxDiscoverCommandsManuID);
-            maxCommandsTextBoxInit(ref textBoxDiscoverCommandsMaxCommands);            
+            maxCommandsTextBoxInit(ref textBoxDiscoverCommandsMaxCommands);
             comboBoxDiscoverCommandsRxGen.Items.Add("RECEIVED");
             comboBoxDiscoverCommandsRxGen.Items.Add("GENERATED");
             comboBoxDiscoverCommandsRxGen.SelectedIndex = 0;
@@ -306,7 +306,7 @@ namespace ZGWUI
             clusterIdTextBoxInit(ref textBoxReadReportConfigClusterID);
             comboBoxReadReportConfigDirection.Items.Add("TO SERVER");
             comboBoxReadReportConfigDirection.Items.Add("TO CLIENT");
-            comboBoxReadReportConfigDirection.SelectedIndex = 0;           
+            comboBoxReadReportConfigDirection.SelectedIndex = 0;
             attributeIdTextBoxInit(ref textBoxReadReportConfigAttribID);
             comboBoxReadReportConfigDirIsRx.Items.Add("DIR TX");
             comboBoxReadReportConfigDirIsRx.Items.Add("DIR RX");
@@ -435,8 +435,8 @@ namespace ZGWUI
             srcEndPointTextBoxInit(ref textBoxIdQuerySrcEp);
             dstEndPointTextBoxInit(ref textBoxIdSendDstEp);
             dstEndPointTextBoxInit(ref textBoxIdQueryDstEp);
-            time16bitTextBoxInit(ref textBoxIdSendTime);       
-            
+            time16bitTextBoxInit(ref textBoxIdSendTime);
+
             // Color cluster initialization
             shortAddrTextBoxInit(ref textBoxMoveToHueAddr);
             srcEndPointTextBoxInit(ref textBoxMoveToHueSrcEp);
@@ -487,7 +487,7 @@ namespace ZGWUI
             // ZLL On/Off cluster tab initialization
             shortAddrTextBoxInit(ref textBoxZllOnOffEffectsAddr);
             srcEndPointTextBoxInit(ref textBoxZllOnOffEffectsSrcEp);
-            dstEndPointTextBoxInit(ref textBoxZllOnOffEffectsDstEp);             
+            dstEndPointTextBoxInit(ref textBoxZllOnOffEffectsDstEp);
             gradientTextBoxInit(ref textBoxZllOnOffEffectsGradient);
             comboBoxZllOnOffEffectID.Items.Add("OFF");
             comboBoxZllOnOffEffectID.Items.Add("ON");
@@ -606,7 +606,7 @@ namespace ZGWUI
             textBox.Text = "Data (Format: Byte:Byte:Byte)";
             textBox.TextChanged += new EventHandler(textBoxAddSceneData_TextChanged);
         }
-        
+
         private void colorTempTextBoxInit(ref TextBox textBox)
         {
             textBox.ForeColor = System.Drawing.Color.Gray;
@@ -621,7 +621,7 @@ namespace ZGWUI
         }
 
         private void attribDataTypComboBoxInit(ref ComboBox comboBox)
-        {            
+        {
             comboBox.Items.Add("Bound Addr");
             comboBox.Items.Add("Group Addr");
             comboBox.Items.Add("Short Addr");
@@ -797,7 +797,7 @@ namespace ZGWUI
             textBox.Text = "Block Delay (16-bit Hex)";
         }
 
-        
+
         private void time8bitTextBoxInit(ref TextBox textBox)
         {
             textBox.ForeColor = System.Drawing.Color.Gray;
@@ -980,7 +980,7 @@ namespace ZGWUI
         }
 
         #endregion
-        
+
         #region ToolTip
 
         private void showToolTipWindow(string s)
@@ -1016,9 +1016,9 @@ namespace ZGWUI
                     serialPort1.PortName = settings.selectedPort;
                     serialPort1.BaudRate = settings.selectedBaudRate;
                     serialPort1.DataBits = 8;
-                    serialPort1.Parity   = Parity.None;
+                    serialPort1.Parity = Parity.None;
                     serialPort1.StopBits = StopBits.One;
-                    serialPort1.DataReceived += new SerialDataReceivedEventHandler(serialPort1_DataReceivedHandler);                    
+                    serialPort1.DataReceived += new SerialDataReceivedEventHandler(serialPort1_DataReceivedHandler);
 
                     displayPortSettings();
 
@@ -1118,12 +1118,12 @@ namespace ZGWUI
                 {
                     sendMgmtLeaveRequest(u16ShortAddr, u64ExtAddr, (byte)comboBoxMgmtLeaveReJoin.SelectedIndex, (byte)comboBoxMgmtLeaveChildren.SelectedIndex);
                 }
-            }            
+            }
 
         }
 
         private void buttonUnBind_Click(object sender, EventArgs e)
-        {            
+        {
             UInt64 u64TargetExtAddr;
             UInt16 u16ClusterID;
             UInt64 u64DstAddr;
@@ -1145,7 +1145,7 @@ namespace ZGWUI
                         }
                     }
                 }
-            }                     
+            }
         }
 
         private void buttonBind_Click(object sender, EventArgs e)
@@ -1167,8 +1167,8 @@ namespace ZGWUI
                             if (bStringToUint8(textBoxBindDestEP.Text, out u8DstEndPoint) == true)
                             {
                                 sendBindRequest(u64TargetExtAddr, u8TargetEndPoint, u16ClusterID, (byte)comboBoxBindAddrMode.SelectedIndex, u64DstAddr, u8DstEndPoint);
-                            }                            
-                        }                         
+                            }
+                        }
                     }
                 }
             }
@@ -1191,7 +1191,7 @@ namespace ZGWUI
                         u32ChannelMaskTemp <<= 1;
                     }
                     u32ChannelMask = u32ChannelMaskTemp;
-               
+
                     // Set channel mask
                     setChannelMask(u32ChannelMask);
                 }
@@ -1224,7 +1224,7 @@ namespace ZGWUI
         private void buttonNwkAddrReq_Click(object sender, EventArgs e)
         {
             UInt16 u16TargetAddr;
-            UInt64 u64ExtAddr;            
+            UInt64 u64ExtAddr;
             byte u8StartIndex;
 
             if (bStringToUint16(textBoxNwkAddrReqTargetAddr.Text, out u16TargetAddr) == true)
@@ -1242,7 +1242,7 @@ namespace ZGWUI
         private void buttonIeeeAddrReq_Click(object sender, EventArgs e)
         {
             UInt16 u16TargetAddr;
-            UInt16 u16ShortAddr;            
+            UInt16 u16ShortAddr;
             byte u8StartIndex;
 
             if (bStringToUint16(textBoxIeeeReqTargetAddr.Text, out u16TargetAddr) == true)
@@ -1264,7 +1264,7 @@ namespace ZGWUI
             if (bStringToUint16(textBoxComplexReqAddr.Text, out u16ShortAddr) == true)
             {
                 complexDescriptorRequest(u16ShortAddr);
-            }            
+            }
         }
 
         private void buttonUserReq_Click(object sender, EventArgs e)
@@ -1274,7 +1274,7 @@ namespace ZGWUI
             if (bStringToUint16(textBoxUserReqAddr.Text, out u16ShortAddr) == true)
             {
                 userDescriptorRequest(u16ShortAddr);
-            }  
+            }
         }
 
         private void buttonUserSetReq_Click(object sender, EventArgs e)
@@ -1287,18 +1287,18 @@ namespace ZGWUI
                 {
                     userDescriptorSetRequest(u16ShortAddr, textBoxUserSetReqDescription.Text);
                 }
-            }  
+            }
         }
 
         private void buttonMatchReq_Click(object sender, EventArgs e)
-        {            
+        {
             UInt16 u16ShortAddr;
             UInt16 u16ProfileID;
             byte u8NbrInputClusters;
-            byte u8NbrOutputClusters;            
+            byte u8NbrOutputClusters;
             UInt16[] au16InputClusters = new UInt16[8];
-            UInt16[] au16OutputClusters = new UInt16[8];           
-            
+            UInt16[] au16OutputClusters = new UInt16[8];
+
             if (bStringToUint16(textBoxMatchReqAddr.Text, out u16ShortAddr) == true)
             {
                 if (bStringToUint16(textBoxMatchReqProfileID.Text, out u16ProfileID) == true)
@@ -1318,9 +1318,9 @@ namespace ZGWUI
                                     matchDescriptorRequest(u16ShortAddr, u16ProfileID, u8NbrInputClusters, au16InputClusters, u8NbrOutputClusters, au16OutputClusters);
                                 }
                             }
-                        }                        
+                        }
                     }
-                }                
+                }
             }
         }
 
@@ -1331,12 +1331,12 @@ namespace ZGWUI
             if (bStringToUint16(textBoxActiveEpAddr.Text, out u16ShortAddr) == true)
             {
                 activeEndpointDescriptorRequest(u16ShortAddr);
-            }            
+            }
         }
 
         private void buttonSimpleDescReq_Click(object sender, EventArgs e)
         {
-            UInt16 u16ShortAddr; 
+            UInt16 u16ShortAddr;
             byte u8EndPoint;
 
             if (bStringToUint16(textBoxSimpleReqAddr.Text, out u16ShortAddr) == true)
@@ -1371,7 +1371,7 @@ namespace ZGWUI
                 }
             }
         }
-                                        
+
         private void buttonSetDeviceType_Click(object sender, EventArgs e)
         {
             // Set device type
@@ -1434,7 +1434,7 @@ namespace ZGWUI
                     // Set key state information
                     setSecurityKeyState((byte)comboBoxSetKeyState.SelectedIndex, u8SeqNbr, (byte)comboBoxSetKeyType.SelectedIndex, au8keyData);
                 }
-            }            
+            }
         }
 
         private void buttonNodeDescReq_Click(object sender, EventArgs e)
@@ -1447,13 +1447,13 @@ namespace ZGWUI
             }
         }
 
-        #endregion        	
+        #endregion
 
         #region general command button handlers
 
         /* Unsupported*/
-		private void buttonRecoverNwk_Click(object sender, EventArgs e)
-        {            
+        private void buttonRecoverNwk_Click(object sender, EventArgs e)
+        {
             transmitCommand(0x0600, 0, null);
         }
 
@@ -1483,17 +1483,17 @@ namespace ZGWUI
             byte u8MaxCommands;
 
             if (bStringToUint16(textBoxDiscoverCommandsTargetAddr.Text, out u16TargetAddr) == true)
-            {                            
+            {
                 if (bStringToUint8(textBoxDiscoverCommandsSrcEP.Text, out u8SrcEndPoint) == true)
                 {
                     if (bStringToUint8(textBoxDiscoverCommandsDstEP.Text, out u8DstEndPoint) == true)
-                    {                        
+                    {
                         if (bStringToUint16(textBoxDiscoverCommandsClusterID.Text, out u16ClusterID) == true)
                         {
                             if (bStringToUint8(textBoxDiscoverCommandsCommandID.Text, out u8CommandId) == true)
                             {
                                 if (bStringToUint16(textBoxDiscoverCommandsManuID.Text, out u16ManuID) == true)
-                                {                                
+                                {
                                     if (bStringToUint8(textBoxDiscoverCommandsMaxCommands.Text, out u8MaxCommands) == true)
                                     {
                                         sendDiscoverCommandsRequest((byte)comboBoxDiscoverCommandsAddrMode.SelectedIndex, u16TargetAddr, u8SrcEndPoint, u8DstEndPoint, u16ClusterID, (byte)comboBoxDiscoverCommandsDirection.SelectedIndex, u8CommandId, (byte)comboBoxDiscoverCommandsManuSpecific.SelectedIndex, u16ManuID, u8MaxCommands, (byte)comboBoxDiscoverCommandsRxGen.SelectedIndex);
@@ -1589,7 +1589,7 @@ namespace ZGWUI
                                         }
                                         else
                                         {
-                                            for (int i = 0; i < textBoxWriteAttribData.TextLength; i+=2)
+                                            for (int i = 0; i < textBoxWriteAttribData.TextLength; i += 2)
                                             {
                                                 byte u8Data = 0;
                                                 if (bStringToUint8(textBoxWriteAttribData.Text, out u8Data) == true)
@@ -1651,7 +1651,7 @@ namespace ZGWUI
         {
             UInt16 u16TargetAddr;
             byte u8SrcEndPoint;
-            byte u8DstEndPoint; 
+            byte u8DstEndPoint;
             UInt16 u16ClusterID;
             UInt16 u16AttribID;
 
@@ -1680,9 +1680,9 @@ namespace ZGWUI
             UInt16 u16AttribId;
             UInt16 u16MinInterval;
             UInt16 u16MaxInterval;
-            UInt16 u16TimeOut;            
+            UInt16 u16TimeOut;
             byte u8SrcEndPoint;
-            byte u8DstEndPoint;            
+            byte u8DstEndPoint;
             byte u8Change;
             byte u8AttribType;
 
@@ -1775,9 +1775,9 @@ namespace ZGWUI
         {
             string stringkeydata;
             UInt64 u64AddrData;
-                        
-            if (bStringToUint64(textBoxOOBDataAddr.Text, out u64AddrData) == true)                        
-            {                            
+
+            if (bStringToUint64(textBoxOOBDataAddr.Text, out u64AddrData) == true)
+            {
                 if (1 == (textBoxOOBDataKey.TextLength % 2))
                 {
                     stringkeydata = textBoxOOBDataKey.Text;
@@ -1814,7 +1814,7 @@ namespace ZGWUI
         }
 
         #endregion
-        
+
         #region OTA cluster button handlers
 
 
@@ -1867,7 +1867,7 @@ namespace ZGWUI
                                     }
                                 }
                             }
-                        }                    
+                        }
                     }
                 }
             }
@@ -1881,7 +1881,7 @@ namespace ZGWUI
 
                 try
                 {
-                    otaFileStream = File.OpenRead(openOtaFileDialog.FileName);                    
+                    otaFileStream = File.OpenRead(openOtaFileDialog.FileName);
                     otaFileStream.Read(au8OTAFile, 0, Convert.ToInt32(otaFileStream.Length));
 
                     byte[] au8OtaFileHeaderString = null;
@@ -1918,7 +1918,7 @@ namespace ZGWUI
                     textBoxOtaFileSize.Text = u32OtaFileTotalImage.ToString();
                     textBoxOtaFileHeaderStr.Text = System.Text.Encoding.Default.GetString(au8OtaFileHeaderString);
 
-                    sendOtaLoadNewImage(0x02, 0x0000, u32OtaFileIdentifier, u16OtaFileHeaderVersion, u16OtaFileHeaderLength, u16OtaFileHeaderControlField, u16OtaFileManufacturerCode, u16OtaFileImageType, u32OtaFileVersion, u16OtaFileStackVersion, au8OtaFileHeaderString, u32OtaFileTotalImage, u8OtaFileSecurityCredVersion, u64OtaFileUpgradeFileDest, u16OtaFileMinimumHwVersion, u16OtaFileMaxHwVersion);                                
+                    sendOtaLoadNewImage(0x02, 0x0000, u32OtaFileIdentifier, u16OtaFileHeaderVersion, u16OtaFileHeaderLength, u16OtaFileHeaderControlField, u16OtaFileManufacturerCode, u16OtaFileImageType, u32OtaFileVersion, u16OtaFileStackVersion, au8OtaFileHeaderString, u32OtaFileTotalImage, u8OtaFileSecurityCredVersion, u64OtaFileUpgradeFileDest, u16OtaFileMinimumHwVersion, u16OtaFileMaxHwVersion);
                 }
                 finally
                 {
@@ -1928,7 +1928,7 @@ namespace ZGWUI
                         otaFileStream.Dispose();
                     }
                 }
-            }            
+            }
         }
 
         #endregion
@@ -2088,20 +2088,20 @@ namespace ZGWUI
 
         private void buttonOnOff_Click(object sender, EventArgs e)
         {
-            UInt16 u16ShortAddr;            
+            UInt16 u16ShortAddr;
             byte u8SrcEndPoint;
             byte u8DstEndPoint;
 
             if (bStringToUint16(textBoxOnOffAddr.Text, out u16ShortAddr) == true)
             {
                 if (bStringToUint8(textBoxOnOffSrcEndPoint.Text, out u8SrcEndPoint) == true)
-                {                
+                {
                     if (bStringToUint8(textBoxOnOffDstEndPoint.Text, out u8DstEndPoint) == true)
                     {
                         sendClusterOnOff((byte)comboBoxOnOffAddrMode.SelectedIndex, u16ShortAddr, u8SrcEndPoint, u8DstEndPoint, (byte)comboBoxOnOffCommand.SelectedIndex);
                     }
-                }                
-            }            
+                }
+            }
         }
 
         private void buttonOnOffTimed_Click(object sender, EventArgs e)
@@ -2144,7 +2144,7 @@ namespace ZGWUI
 
         private void buttonIdSend_Click(object sender, EventArgs e)
         {
-            UInt16 u16ShortAddr;            
+            UInt16 u16ShortAddr;
             byte u8SrcEndPoint;
             byte u8DstEndPoint;
             UInt16 u16Time;
@@ -2157,7 +2157,7 @@ namespace ZGWUI
                     {
                         if (bStringToUint16(textBoxIdSendTime.Text, out u16Time) == true)
                         {
-                            sendIdentify(u16ShortAddr, u8SrcEndPoint, u8DstEndPoint, u16Time);                         
+                            sendIdentify(u16ShortAddr, u8SrcEndPoint, u8DstEndPoint, u16Time);
                         }
                     }
                 }
@@ -2287,8 +2287,8 @@ namespace ZGWUI
                                         {
                                             if (bStringToUint16(textBoxAddSceneExtLen.Text, out u16SceneLength) == true)
                                             {
-                                                    stringSceneData = textBoxAddSceneData.Text;
-                                                    sendAddScene((byte)comboBoxAddSceneAddrMode.SelectedIndex, u16ShortAddr, u8SrcEndPoint, u8DstEndPoint, u16GroupId, u8SceneId, u16TransTime, textBoxAddSceneName.Text, u8NameLen, u8NameMaxLen, u16SceneLength, stringSceneData);
+                                                stringSceneData = textBoxAddSceneData.Text;
+                                                sendAddScene((byte)comboBoxAddSceneAddrMode.SelectedIndex, u16ShortAddr, u8SrcEndPoint, u8DstEndPoint, u16GroupId, u8SceneId, u16TransTime, textBoxAddSceneName.Text, u8NameLen, u8NameMaxLen, u16SceneLength, stringSceneData);
                                             }
                                         }
                                     }
@@ -2452,7 +2452,7 @@ namespace ZGWUI
                         }
                     }
                 }
-            }            
+            }
         }
 
         private void buttonMoveToHue_Click(object sender, EventArgs e)
@@ -2527,7 +2527,7 @@ namespace ZGWUI
                 {
                     if (bStringToUint8(textBoxLockUnlockDstEp.Text, out u8DstEndPoint) == true)
                     {
-                        sendLockUnlock(u16ShortAddr, u8SrcEndPoint, u8DstEndPoint, (byte)comboBoxLockUnlock.SelectedIndex);                        
+                        sendLockUnlock(u16ShortAddr, u8SrcEndPoint, u8DstEndPoint, (byte)comboBoxLockUnlock.SelectedIndex);
                     }
                 }
             }
@@ -2536,7 +2536,7 @@ namespace ZGWUI
         #endregion
 
         #region IAS cluster button handlers
-  
+
         private void buttonEnrollResponse_Click(object sender, EventArgs e)
         {
             UInt16 u16ShortAddr;
@@ -2556,7 +2556,7 @@ namespace ZGWUI
                         }
                     }
                 }
-            }            
+            }
         }
         #endregion
 
@@ -2595,7 +2595,7 @@ namespace ZGWUI
                         }
                     }
                 }
-            }            
+            }
         }
 
         #endregion
@@ -2665,7 +2665,7 @@ namespace ZGWUI
         private bool bStringToUint16(string inputString, out UInt16 u16Data)
         {
             bool bResult = true;
-            
+
             if (UInt16.TryParse(inputString, NumberStyles.HexNumber, CultureInfo.CurrentCulture, out u16Data) == false)
             {
                 // Show error message
@@ -2716,9 +2716,9 @@ namespace ZGWUI
 
         private bool bStringToUint128(string inputString, out byte[] au8Data)
         {
-            bool bResult = true;            
+            bool bResult = true;
             au8Data = new byte[16];
-            
+
             if (inputString.Length == 32)
             {
                 for (int i = 0; i < inputString.Length; i += 2)
@@ -2778,7 +2778,7 @@ namespace ZGWUI
             commandData = new byte[32];
             byte u8Len = 0;
 
-            commandData[u8Len++] = u8DstAddrMode; 
+            commandData[u8Len++] = u8DstAddrMode;
             commandData[u8Len++] = (byte)(u16ShortAddr >> 8);
             commandData[u8Len++] = (byte)u16ShortAddr;
             commandData[u8Len++] = u8SrcEndPoint;
@@ -2804,7 +2804,7 @@ namespace ZGWUI
             commandData[u8Len++] = u8ScanCount;
             commandData[u8Len++] = (byte)(u16NwkManangerAddr >> 8);
             commandData[u8Len++] = (byte)u16NwkManangerAddr;
-         
+
             // Transmit command
             transmitCommand(0x004A, u8Len, commandData);
         }
@@ -2846,12 +2846,12 @@ namespace ZGWUI
             commandData[u8Len++] = u8DirIsRx;
             commandData[u8Len++] = (byte)(u16AttribId >> 8);
             commandData[u8Len++] = (byte)u16AttribId;
-            
+
             // Transmit command
             transmitCommand(0x0122, u8Len, commandData);
         }
-        
-        
+
+
         private void sendOtaEndResponse(byte u8DstAddrMode, UInt16 u16ShortAddr, byte u8SrcEndPoint, byte u8DstEndPoint, byte u8SeqNbr, UInt32 u32UpgradeTime, UInt32 u32CurrentTime, UInt32 u32FileVersion, UInt16 u16ImageType, UInt16 u16ManuCode)
         {
             byte[] commandData = null;
@@ -2885,7 +2885,7 @@ namespace ZGWUI
             // Transmit command
             transmitCommand(0x0504, u8Len, commandData);
         }
-        
+
 
         private void sendOtaBlock(byte u8DstAddrMode, UInt16 u16ShortAddr, byte u8SrcEndPoint, byte u8DstEndPoint, byte u8SeqNbr, byte u8Status, UInt32 u32FileOffset, UInt32 u32FileVersion, UInt16 u16ImageType, UInt16 u16ManuCode, byte u8DataSize, byte[] au8Data)
         {
@@ -2976,7 +2976,7 @@ namespace ZGWUI
             commandData[u8Len++] = (byte)(u16ManuCode >> 8);
             commandData[u8Len++] = (byte)u16ManuCode;
             commandData[u8Len++] = u8Jitter;
-  
+
             // Transmit command
             transmitCommand(0x0505, u8Len, commandData);
         }
@@ -3038,7 +3038,7 @@ namespace ZGWUI
             commandData[u8Len++] = (byte)u16MinimumHwVersion;
             commandData[u8Len++] = (byte)(u16MaxHwVersion >> 8);
             commandData[u8Len++] = (byte)u16MaxHwVersion;
-            
+
             // Transmit command
             transmitCommand(0x0500, u8Len, commandData);
         }
@@ -3050,7 +3050,7 @@ namespace ZGWUI
             byte u8Len = 7;
 
             // Build command payload   
-            commandData[0] = u8DstAddrMode; 
+            commandData[0] = u8DstAddrMode;
             commandData[1] = (byte)(u16ShortAddr >> 8);
             commandData[2] = (byte)u16ShortAddr;
             commandData[3] = u8SrcEndPoint;
@@ -3115,7 +3115,7 @@ namespace ZGWUI
 
             /* Need to re-size the array because if we send more data, 
              * the control bridge will convert it to another write attribute */
-            Array.Resize(ref commandData, u8Len); 
+            Array.Resize(ref commandData, u8Len);
 
             // Transmit command
             transmitCommand(0x0110, u8Len, commandData);
@@ -3230,9 +3230,9 @@ namespace ZGWUI
             byte[] commandData = null;
             commandData = new byte[8];
             byte u8Len = 8;
-        
+
             // Build command payload   
-            commandData[0] = u8DstAddrMode; 
+            commandData[0] = u8DstAddrMode;
             commandData[1] = (byte)(u16ShortAddr >> 8);
             commandData[2] = (byte)u16ShortAddr;
             commandData[3] = u8SrcEndPoint;
@@ -3365,12 +3365,12 @@ namespace ZGWUI
                 commandData[u8Len++] = (byte)(u64DstAddr >> 8);
                 commandData[u8Len++] = (byte)u64DstAddr;
             }
-            
+
             // Transmit command
             transmitCommand(0x0030, u8Len, commandData);
         }
-        
-        private void sendConfigReportRequest(byte u8DstAddrMode, UInt16 u16ShortAddr, byte u8SrcEndPoint, byte u8DstEndPoint, UInt16 u16ClusterID, byte u8ReportDirection, byte u8AttribDirection, byte u8AttribType, UInt16 u16AttribId, UInt16 u16MinInterval, UInt16 u16MaxInterval, UInt16 u16TimeOut, byte u8Change)        
+
+        private void sendConfigReportRequest(byte u8DstAddrMode, UInt16 u16ShortAddr, byte u8SrcEndPoint, byte u8DstEndPoint, UInt16 u16ClusterID, byte u8ReportDirection, byte u8AttribDirection, byte u8AttribType, UInt16 u16AttribId, UInt16 u16MinInterval, UInt16 u16MaxInterval, UInt16 u16TimeOut, byte u8Change)
         {
             byte[] commandData = null;
             commandData = new byte[23];
@@ -3391,15 +3391,15 @@ namespace ZGWUI
             commandData[11] = 1; // Number of attributes
 
             commandData[12] = u8AttribDirection;
-            commandData[13] = u8AttribType; 
-            commandData[14] = (byte)(u16AttribId >> 8); 
+            commandData[13] = u8AttribType;
+            commandData[14] = (byte)(u16AttribId >> 8);
             commandData[15] = (byte)u16AttribId; ;
             commandData[16] = (byte)(u16MinInterval >> 8);
             commandData[17] = (byte)u16MinInterval;
             commandData[18] = (byte)(u16MaxInterval >> 8);
             commandData[19] = (byte)u16MaxInterval;
             commandData[20] = (byte)(u16TimeOut >> 8); ;
-            commandData[21] = (byte)u16TimeOut;    
+            commandData[21] = (byte)u16TimeOut;
             commandData[22] = u8Change;
 
             // Transmit command
@@ -3462,17 +3462,17 @@ namespace ZGWUI
             stringData = stringRawData.Replace(" ", "");
             stringData = stringRawData.Replace(":", "");
 
-            commandData[u8Len++] = (byte)(stringData.Length/2);
+            commandData[u8Len++] = (byte)(stringData.Length / 2);
 
             for (int i = 0; i < stringData.Length; i += 2)
             {
                 Array.Resize(ref commandData, u8Len + 1);
                 commandData[u8Len++] = (byte)Convert.ToInt32(stringData.ToCharArray()[i].ToString() + stringData.ToCharArray()[i + 1].ToString(), 16);
             }
-            
+
             // Transmit command
             transmitCommand(0x0530, u8Len, commandData);
-            
+
         }
 
         private void sendDiscoverAttributesRequest(UInt16 u16ShortAddr, byte u8SrcEndPoint, byte u8DstEndPoint, UInt16 u16ClusterID, UInt16 u16StartAttrib, byte u8Direction, byte u8ManuSpecific, UInt16 u16ManuID, byte u8AttribsMax, byte u8Extended)
@@ -3482,16 +3482,16 @@ namespace ZGWUI
             byte u8Len = 14;
 
             // Build command payload   
-            commandData[0]  = 0x02; // Short address mode
-            commandData[1]  = (byte)(u16ShortAddr >> 8);
-            commandData[2]  = (byte)u16ShortAddr;
-            commandData[3]  = u8SrcEndPoint;
-            commandData[4]  = u8DstEndPoint;
-            commandData[5]  = (byte)(u16ClusterID >> 8);
-            commandData[6]  = (byte)u16ClusterID;
-            commandData[7]  = (byte)(u16StartAttrib >> 8);
-            commandData[8]  = (byte)u16StartAttrib;
-            commandData[9]  = u8Direction;
+            commandData[0] = 0x02; // Short address mode
+            commandData[1] = (byte)(u16ShortAddr >> 8);
+            commandData[2] = (byte)u16ShortAddr;
+            commandData[3] = u8SrcEndPoint;
+            commandData[4] = u8DstEndPoint;
+            commandData[5] = (byte)(u16ClusterID >> 8);
+            commandData[6] = (byte)u16ClusterID;
+            commandData[7] = (byte)(u16StartAttrib >> 8);
+            commandData[8] = (byte)u16StartAttrib;
+            commandData[9] = u8Direction;
             commandData[10] = u8ManuSpecific;
             commandData[11] = (byte)(u16ManuID >> 8);
             commandData[12] = (byte)u16ManuID;
@@ -3551,14 +3551,14 @@ namespace ZGWUI
             stringData = stringkeydata.Replace(" ", "");
             stringData = stringkeydata.Replace(":", "");
 
-            for (int i = 0; i < stringData.Length; i+=2)
+            for (int i = 0; i < stringData.Length; i += 2)
             {
                 commandData[u8Len++] = (byte)Convert.ToInt32(stringData.ToCharArray()[i].ToString() + stringData.ToCharArray()[i + 1].ToString(), 16);  //8-23
             }
 
             // Transmit command
             transmitCommand(0x0029, u8Len, commandData);
-            
+
         }
 
         private void sendReadAttribRequest(UInt16 u16ShortAddr, byte u8SrcEndPoint, byte u8DstEndPoint, UInt16 u16ClusterID, byte u8Direction, byte u8ManuSpecific, UInt16 u16ManuID, byte u8AttribCount, UInt16 u16AttribID1)
@@ -3568,16 +3568,16 @@ namespace ZGWUI
             byte u8Len = 14;
 
             // Build command payload   
-            commandData[0]  = 0x02; // Short address mode
-            commandData[1]  = (byte)(u16ShortAddr >> 8);
-            commandData[2]  = (byte)u16ShortAddr;
-            commandData[3]  = u8SrcEndPoint;
-            commandData[4]  = u8DstEndPoint;
-            commandData[5]  = (byte)(u16ClusterID >> 8);
-            commandData[6]  = (byte)u16ClusterID;
-            commandData[7]  = u8Direction;
-            commandData[8]  = u8ManuSpecific;
-            commandData[9]  = (byte)(u16ManuID >> 8);
+            commandData[0] = 0x02; // Short address mode
+            commandData[1] = (byte)(u16ShortAddr >> 8);
+            commandData[2] = (byte)u16ShortAddr;
+            commandData[3] = u8SrcEndPoint;
+            commandData[4] = u8DstEndPoint;
+            commandData[5] = (byte)(u16ClusterID >> 8);
+            commandData[6] = (byte)u16ClusterID;
+            commandData[7] = u8Direction;
+            commandData[8] = u8ManuSpecific;
+            commandData[9] = (byte)(u16ManuID >> 8);
             commandData[10] = (byte)u16ManuID;
             commandData[11] = u8AttribCount;
             commandData[12] = (byte)(u16AttribID1 >> 8);
@@ -3588,7 +3588,7 @@ namespace ZGWUI
         }
 
         private void sendLockUnlock(UInt16 u16ShortAddr, byte u8SrcEndPoint, byte u8DstEndPoint, byte u8LockUnlock)
-        {            
+        {
             byte[] commandData = null;
             commandData = new byte[6];
 
@@ -3604,6 +3604,243 @@ namespace ZGWUI
             transmitCommand(0x00F0, 6, commandData);
         }
 
+        private void sendDoorLockManspecCommand(UInt16 u16ShortAddr, byte u8SrcEndPoint, byte u8DstEndPoint, byte u8CommandId, UInt32 u32TempPassword)
+        {
+            byte[] commandData = null;
+            commandData = new byte[10];
+
+            // Build command payload   
+            commandData[0] = 0x02; // Short address mode
+            commandData[1] = (byte)(u16ShortAddr >> 8);
+            commandData[2] = (byte)u16ShortAddr;
+            commandData[3] = u8SrcEndPoint;
+            commandData[4] = u8DstEndPoint;
+            commandData[5] = u8CommandId;
+            commandData[6] = (byte)(u32TempPassword >> 24);
+            commandData[7] = (byte)(u32TempPassword >> 16);
+            commandData[8] = (byte)(u32TempPassword >> 8);
+            commandData[9] = (byte)u32TempPassword;
+
+            // Transmit command
+            transmitCommand(0x00F1, 10, commandData);
+        }
+        private void sendDoorLockInvalidTempPasswordCommand(UInt16 u16ShortAddr, byte u8SrcEndPoint, byte u8DstEndPoint, byte u8CommandId)
+        {
+            byte[] commandData = null;
+            commandData = new byte[16];
+
+            // Build command payload   
+            commandData[0] = 0x02; // Short address mode
+            commandData[1] = (byte)(u16ShortAddr >> 8);
+            commandData[2] = (byte)u16ShortAddr;
+            commandData[3] = u8SrcEndPoint;
+            commandData[4] = u8DstEndPoint;
+            commandData[5] = u8CommandId;
+
+            // Transmit command
+            transmitCommand(0x00F1, 6, commandData);
+        }
+        private void sendDoorLockNewUserCommand(UInt16 u16ShortAddr, byte u8SrcEndPoint, byte u8DstEndPoint, byte u8CommandId, byte u8UserType)
+        {
+            byte[] commandData = null;
+            commandData = new byte[16];
+
+            // Build command payload   
+            commandData[0] = 0x02; // Short address mode
+            commandData[1] = (byte)(u16ShortAddr >> 8);
+            commandData[2] = (byte)u16ShortAddr;
+            commandData[3] = u8SrcEndPoint;
+            commandData[4] = u8DstEndPoint;
+            commandData[5] = u8CommandId;
+
+            // Transmit command
+            transmitCommand(0x00F1, 6, commandData);
+        }
+
+        private void sendDoorLockDeleteUserCommand(UInt16 u16ShortAddr, byte u8SrcEndPoint, byte u8DstEndPoint, byte u8CommandId, UInt16 UserId) {
+            byte[] commandData = null;
+            commandData = new byte[16];
+
+            // Build command payload   
+            commandData[0] = 0x02; // Short address mode
+            commandData[1] = (byte)(u16ShortAddr >> 8);
+            commandData[2] = (byte)u16ShortAddr;
+            commandData[3] = u8SrcEndPoint;
+            commandData[4] = u8DstEndPoint;
+            commandData[5] = u8CommandId;
+            commandData[6] = (byte)(UserId >> 8);
+            commandData[7] = (byte)UserId;
+
+            // Transmit command
+            transmitCommand(0x00F1, 8, commandData);
+        }
+        private void sendDoorLockEditUserCommand(UInt16 u16ShortAddr, byte u8SrcEndPoint, byte u8DstEndPoint, byte u8CommandId, UInt16 UserId, byte u8UserEnable) {
+            byte[] commandData = null;
+            commandData = new byte[16];
+
+            // Build command payload   
+            commandData[0] = 0x02; // Short address mode
+            commandData[1] = (byte)(u16ShortAddr >> 8);
+            commandData[2] = (byte)u16ShortAddr;
+            commandData[3] = u8SrcEndPoint;
+            commandData[4] = u8DstEndPoint;
+            commandData[5] = u8CommandId;
+            commandData[6] = (byte)(UserId >> 8);
+            commandData[7] = (byte)UserId;
+            commandData[8] = (byte)u8UserEnable;
+
+            // Transmit command
+            transmitCommand(0x00F1, 9, commandData);
+        }
+        private void sendDoorLockAddDigitPasswordCommand(UInt16 u16ShortAddr, byte u8SrcEndPoint, byte u8DstEndPoint, byte u8CommandId, UInt16 UserId, UInt16 u16PasswordId, byte PasswordType, byte u8PasswordEnable, UInt32 u32Password)
+        {
+            byte[] commandData = null;
+            commandData = new byte[16];
+
+            // Build command payload   
+            commandData[0] = 0x02; // Short address mode
+            commandData[1] = (byte)(u16ShortAddr >> 8);
+            commandData[2] = (byte)u16ShortAddr;
+            commandData[3] = u8SrcEndPoint;
+            commandData[4] = u8DstEndPoint;
+            commandData[5] = u8CommandId;
+            commandData[6] = (byte)(UserId >> 8);
+            commandData[7] = (byte)UserId;
+            commandData[6] = (byte)(u16PasswordId >> 8);
+            commandData[7] = (byte)u16PasswordId;
+            commandData[8] = (byte)PasswordType;
+            commandData[9] = (byte)u8PasswordEnable;
+            commandData[10] = (byte)(u32Password >> 24);
+            commandData[11] = (byte)(u32Password >> 16);
+            commandData[12] = (byte)(u32Password >> 8);
+            commandData[13] = (byte)u32Password;
+            // Transmit command
+            transmitCommand(0x00F1, 14, commandData);
+        }
+        private void sendDoorLockDeleteDigitPasswordCommand(UInt16 u16ShortAddr, byte u8SrcEndPoint, byte u8DstEndPoint, byte u8CommandId, UInt16 UserId, UInt16 u16PasswordId, byte PasswordType)
+        {
+            byte[] commandData = null;
+            commandData = new byte[16];
+
+            // Build command payload   
+            commandData[0] = 0x02; // Short address mode
+            commandData[1] = (byte)(u16ShortAddr >> 8);
+            commandData[2] = (byte)u16ShortAddr;
+            commandData[3] = u8SrcEndPoint;
+            commandData[4] = u8DstEndPoint;
+            commandData[5] = u8CommandId;
+            commandData[6] = (byte)(UserId >> 8);
+            commandData[7] = (byte)UserId;
+            commandData[8] = (byte)(u16PasswordId >> 8);
+            commandData[9] = (byte)u16PasswordId;
+            commandData[10] = (byte)PasswordType;
+            // Transmit command
+            transmitCommand(0x00F1, 11, commandData);
+        }
+        private void sendDoorLockEnterLearnCommand(UInt16 u16ShortAddr, byte u8SrcEndPoint, byte u8DstEndPoint, byte u8CommandId) {
+            byte[] commandData = null;
+            commandData = new byte[16];
+
+            // Build command payload   
+            commandData[0] = 0x02; // Short address mode
+            commandData[1] = (byte)(u16ShortAddr >> 8);
+            commandData[2] = (byte)u16ShortAddr;
+            commandData[3] = u8SrcEndPoint;
+            commandData[4] = u8DstEndPoint;
+            commandData[5] = u8CommandId;
+            // Transmit command
+            transmitCommand(0x00F1, 6, commandData);
+        }
+        private void sendDoorLockOutLearnCommand(UInt16 u16ShortAddr, byte u8SrcEndPoint, byte u8DstEndPoint, byte u8CommandId) {
+            sendDoorLockEnterLearnCommand(u16ShortAddr, u8SrcEndPoint, u8DstEndPoint, u8CommandId);
+        }
+        private void sendDoorLockEditPasswordAttrCommand(UInt16 u16ShortAddr, byte u8SrcEndPoint, byte u8DstEndPoint, byte u8CommandId, UInt16 UserId, UInt16 u16PasswordId, byte PasswordType, byte u8PasswordEnable, UInt32 u32Password)
+        {
+            sendDoorLockAddDigitPasswordCommand(u16ShortAddr, u8SrcEndPoint, u8DstEndPoint, u8CommandId, UserId, u16PasswordId, PasswordType, u8PasswordEnable, u32Password);
+        }
+        private void sendDoorLockSetUserEffectiveTimeCommand(UInt16 u16ShortAddr, byte u8SrcEndPoint, byte u8DstEndPoint, byte u8CommandId, UInt16 UserId, byte u8StartWeek,
+            byte u8StartYear, byte u8StartMonth, byte u8StartDay, byte u8StartHour, byte u8StartMinute,
+            byte u8EndWeek, byte u8EndYear, byte u8EndMonth, byte u8EndDay, byte u8EndHour, byte u8EndMinute)
+        {
+        }
+        private void sendDoorLockSettingCommand(UInt16 u16ShortAddr, byte u8SrcEndPoint, byte u8DstEndPoint, byte u8CommandId, byte u8Upload, byte u8DigitPasswordErrorNum, byte u8FingerPasswordErrorNum, byte u8ICPasswordErrorNum, UInt32 u32HoldPassword)
+        {
+            byte[] commandData = null;
+            commandData = new byte[16];
+
+            // Build command payload   
+            commandData[0] = 0x02; // Short address mode
+            commandData[1] = (byte)(u16ShortAddr >> 8);
+            commandData[2] = (byte)u16ShortAddr;
+            commandData[3] = u8SrcEndPoint;
+            commandData[4] = u8DstEndPoint;
+            commandData[5] = u8CommandId;
+            commandData[6] = u8Upload;
+            commandData[7] = u8DigitPasswordErrorNum;
+            commandData[8] = u8FingerPasswordErrorNum;
+            commandData[9] = u8ICPasswordErrorNum;
+            commandData[10] = (byte)(u32HoldPassword >> 24);
+            commandData[11] = (byte)(u32HoldPassword >> 16);
+            commandData[12] = (byte)(u32HoldPassword >> 8);
+            commandData[13] = (byte)u32HoldPassword;
+            // Transmit command
+            transmitCommand(0x00F1, 14, commandData);
+        }
+
+        private void sendInfraredActivationCodeCommand(UInt16 u16ShortAddr, byte u8SrcEndPoint, byte u8DstEndPoint, byte[] au8ActivationCode)
+        {
+            byte[] commandData = null;
+            commandData = new byte[128];
+            byte u8Offset = 0;
+
+            // Build command payload   
+            commandData[u8Offset++] = 0x02; // Short address mode
+            commandData[u8Offset++] = (byte)(u16ShortAddr >> 8);
+            commandData[u8Offset++] = (byte)u16ShortAddr;
+            commandData[u8Offset++] = u8SrcEndPoint;
+            commandData[u8Offset++] = u8DstEndPoint;
+            au8ActivationCode.CopyTo(commandData, u8Offset);
+            u8Offset += (byte)au8ActivationCode.Length;
+            // Transmit command
+            transmitCommand(0x0A04, u8Offset, commandData);
+        }
+        private void sendInfraredDataBlock1(UInt16 u16ShortAddr, byte u8SrcEndPoint, byte u8DstEndPoint, byte u8Block, byte[] au8BlockData)
+        {
+            byte[] commandData = null;
+            commandData = new byte[256];
+            byte u8Offset = 0;
+
+            // Build command payload   
+            commandData[u8Offset++] = 0x02; // Short address mode
+            commandData[u8Offset++] = (byte)(u16ShortAddr >> 8);
+            commandData[u8Offset++] = (byte)u16ShortAddr;
+            commandData[u8Offset++] = u8SrcEndPoint;
+            commandData[u8Offset++] = u8DstEndPoint;
+            commandData[u8Offset++] = (byte)u8Block;
+            au8BlockData.CopyTo(commandData, u8Offset);
+            u8Offset += (byte)au8BlockData.Length;
+            // Transmit command
+            transmitCommand(0x0A02, u8Offset, commandData);
+        }
+
+        private void sendInfraredDataCommand(UInt16 u16ShortAddr, byte u8SrcEndPoint, byte u8DstEndPoint, byte u8CommandId)
+        {
+            byte[] commandData = null;
+            commandData = new byte[16];
+            byte u8Offset = 0;
+
+            // Build command payload   
+            commandData[u8Offset++] = 0x02; // Short address mode
+            commandData[u8Offset++] = (byte)(u16ShortAddr >> 8);
+            commandData[u8Offset++] = (byte)u16ShortAddr;
+            commandData[u8Offset++] = u8SrcEndPoint;
+            commandData[u8Offset++] = u8DstEndPoint;
+            commandData[u8Offset++] = u8CommandId;
+            // Transmit command
+            transmitCommand(0x0A01, u8Offset, commandData);
+        }
+
+                      
         private void sendNwkAddrRequest(UInt16 u16TargetAddr, UInt64 u64ExtAddr, byte u8Type, byte u8StartIndex)
         {
             byte[] commandData = null;
@@ -15686,5 +15923,239 @@ namespace ZGWUI
             textBoxExtAddr.Text = au64ExtAddr[comboBoxAddressList.SelectedIndex].ToString("X8");
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            UInt16 u16ShortAddr;
+            byte u8SrcEndPoint;
+            byte u8DstEndPoint;
+            UInt32 u32TempPassword;
+
+            if (bStringToUint16(textBoxTempPasswordAddr.Text, out u16ShortAddr) == true)
+            {
+                if (bStringToUint8(textBoxTempPasswordSrcEp.Text, out u8SrcEndPoint) == true)
+                {
+                    if (bStringToUint8(textBoxTempPasswordDstEp.Text, out u8DstEndPoint) == true)
+                    {
+                        if (bStringToUint32(textBoxTempPassword.Text, out u32TempPassword) == true)
+                        {
+                            sendDoorLockManspecCommand(u16ShortAddr, u8SrcEndPoint, u8DstEndPoint, (byte)0x02, u32TempPassword);
+                        }
+                    }
+                }
+            }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            UInt16 u16ShortAddr;
+            byte u8SrcEndPoint;
+            byte u8DstEndPoint;
+            UInt16 u16UserId;
+
+            if (bStringToUint16(textBoxTempPasswordAddr.Text, out u16ShortAddr) == true)
+            {
+                if (bStringToUint8(textBoxTempPasswordSrcEp.Text, out u8SrcEndPoint) == true)
+                {
+                    if (bStringToUint8(textBoxTempPasswordDstEp.Text, out u8DstEndPoint) == true)
+                    {
+                        if (bStringToUint16(textBoxUserId.Text, out u16UserId) == true)
+                        {
+                            sendDoorLockDeleteUserCommand(u16ShortAddr, u8SrcEndPoint, u8DstEndPoint, (byte)0x06, u16UserId);
+                        }
+                    }
+                }
+            }
+        }
+
+        private void buttonInvalidPassword_Click(object sender, EventArgs e)
+        {
+            UInt16 u16ShortAddr;
+            byte u8SrcEndPoint;
+            byte u8DstEndPoint;
+
+            if (bStringToUint16(textBoxTempPasswordAddr.Text, out u16ShortAddr) == true)
+            {
+                if (bStringToUint8(textBoxTempPasswordSrcEp.Text, out u8SrcEndPoint) == true)
+                {
+                    if (bStringToUint8(textBoxTempPasswordDstEp.Text, out u8DstEndPoint) == true)
+                    {
+                        sendDoorLockInvalidTempPasswordCommand(u16ShortAddr, u8SrcEndPoint, u8DstEndPoint, (byte)0x03);
+                    }
+                }
+            }
+        }
+
+        private void buttonNewUser_Click(object sender, EventArgs e)
+        {
+            UInt16 u16ShortAddr;
+            byte u8SrcEndPoint;
+            byte u8DstEndPoint;
+            byte u8UserType;
+
+            if (bStringToUint16(textBoxTempPasswordAddr.Text, out u16ShortAddr) == true)
+            {
+                if (bStringToUint8(textBoxTempPasswordSrcEp.Text, out u8SrcEndPoint) == true)
+                {
+                    if (bStringToUint8(textBoxTempPasswordDstEp.Text, out u8DstEndPoint) == true)
+                    {
+                        if (bStringToUint8(textBoxUserType.Text, out u8UserType) == true)
+                        {
+                            sendDoorLockNewUserCommand(u16ShortAddr, u8SrcEndPoint, u8DstEndPoint, (byte)0x04, u8UserType);
+                        }
+                    }
+                }
+            }
+        }
+
+        private void buttonAddDigitPassword_Click(object sender, EventArgs e)
+        {
+            UInt16 u16ShortAddr;
+            byte u8SrcEndPoint;
+            byte u8DstEndPoint;
+            UInt16 u16UserId;
+            UInt16 u16PasswordId;
+            byte u8PsswordType;
+            byte u8PasswordEnable;
+            UInt32 u32Password;
+
+            if (bStringToUint16(textBoxTempPasswordAddr.Text, out u16ShortAddr) == true)
+            {
+                if (bStringToUint8(textBoxTempPasswordSrcEp.Text, out u8SrcEndPoint) == true)
+                {
+                    if (bStringToUint8(textBoxTempPasswordDstEp.Text, out u8DstEndPoint) == true)
+                    {
+                        if (bStringToUint16(textBoxDPUserId.Text, out u16UserId) == true)
+                        {
+                            if (bStringToUint16(textBoxDPPasswordId.Text, out u16PasswordId) == true)
+                            {
+                                if (bStringToUint8(textBoxDPPasswordType.Text, out u8PsswordType) == true)
+                                {
+                                    if (bStringToUint8(textBoxDPPasswordEnable.Text, out u8PasswordEnable) == true)
+                                    {
+                                        if (bStringToUint32(textBoxDPPassword.Text, out u32Password) == true)
+                                        {
+                                            sendDoorLockAddDigitPasswordCommand(u16ShortAddr, u8SrcEndPoint, u8DstEndPoint, (byte)0x09, u16UserId, u16PasswordId, u8PsswordType, u8PasswordEnable, u32Password);
+
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        private void textBoxDPPassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonDeleteDigitPassword_Click(object sender, EventArgs e)
+        {
+            UInt16 u16ShortAddr;
+            byte u8SrcEndPoint;
+            byte u8DstEndPoint;
+            UInt16 u16UserId;
+            UInt16 u16PasswordId;
+            byte u8PsswordType;
+
+            if (bStringToUint16(textBoxTempPasswordAddr.Text, out u16ShortAddr) == true)
+            {
+                if (bStringToUint8(textBoxTempPasswordSrcEp.Text, out u8SrcEndPoint) == true)
+                {
+                    if (bStringToUint8(textBoxTempPasswordDstEp.Text, out u8DstEndPoint) == true)
+                    {
+                        if (bStringToUint16(textBoxDPUserId.Text, out u16UserId) == true)
+                        {
+                            if (bStringToUint16(textBoxDPPasswordId.Text, out u16PasswordId) == true)
+                            {
+                                if (bStringToUint8(textBoxDPPasswordType.Text, out u8PsswordType) == true)
+                                {
+                                    sendDoorLockDeleteDigitPasswordCommand(u16ShortAddr, u8SrcEndPoint, u8DstEndPoint, (byte)0x09, u16UserId, u16PasswordId, u8PsswordType);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        private void buttonSendActivationCode_Click(object sender, EventArgs e)
+        {
+            UInt16 u16ShortAddr;
+            byte u8SrcEndPoint;
+            byte u8DstEndPoint;
+
+            if (bStringToUint16(textBoxInfraredAddr.Text, out u16ShortAddr) == true)
+            {
+                if (bStringToUint8(textBoxInfraredSrcEp.Text, out u8SrcEndPoint) == true)
+                {
+                    if (bStringToUint8(textBoxInfraredDstEp.Text, out u8DstEndPoint) == true)
+                    {
+                        byte[] au8ActivationCode = System.Text.Encoding.Default.GetBytes(textBoxInfraredActivationCode.Text);
+                        if (au8ActivationCode.Length > 0)
+                        {
+                            sendInfraredActivationCodeCommand(u16ShortAddr, u8SrcEndPoint, u8DstEndPoint, au8ActivationCode);
+                        }
+                    }
+                }
+            }
+        }
+
+        private void buttonGetScret_Click(object sender, EventArgs e)
+        {
+            UInt16 u16ShortAddr;
+            byte u8SrcEndPoint;
+            byte u8DstEndPoint;
+
+            if (bStringToUint16(textBoxInfraredAddr.Text, out u16ShortAddr) == true)
+            {
+                if (bStringToUint8(textBoxInfraredSrcEp.Text, out u8SrcEndPoint) == true)
+                {
+                    if (bStringToUint8(textBoxInfraredDstEp.Text, out u8DstEndPoint) == true)
+                    {
+                        sendInfraredDataCommand(u16ShortAddr, u8SrcEndPoint, u8DstEndPoint, (byte)0x01);
+                    }
+                }
+            }
+        }
+
+        private void buttonSendInfrared_Click(object sender, EventArgs e)
+        {
+            UInt16 u16ShortAddr;
+            byte u8SrcEndPoint;
+            byte u8DstEndPoint;
+
+            if (bStringToUint16(textBoxInfraredAddr.Text, out u16ShortAddr) == true)
+            {
+                if (bStringToUint8(textBoxInfraredSrcEp.Text, out u8SrcEndPoint) == true)
+                {
+                    if (bStringToUint8(textBoxInfraredDstEp.Text, out u8DstEndPoint) == true)
+                    {
+                        byte[] au8InfraredData = new byte[256];
+                        au8InfraredData = System.Text.Encoding.Default.GetBytes(textBoxInfraredData.Text);
+                        byte[] au8InfraredBlockData1 = new byte[64];
+                        byte[] au8InfraredBlockData2 = new byte[64];
+                        //byte[] au8InfraredBlockData3 = new byte[64];
+                        //byte[] au8InfraredBlockData4 = new byte[64];
+                        for (int i=0; i < 64; i++) {
+                            au8InfraredBlockData1[i] = 0xAA;
+                            au8InfraredBlockData2[i] = 0xBB;
+
+                        }
+//                        Buffer.BlockCopy(au8InfraredData, 0, au8InfraredBlockData1, 0, 128);
+//                        Buffer.BlockCopy(au8InfraredData, 128, au8InfraredBlockData1, 0, 128);
+//                        Buffer.BlockCopy(au8InfraredData, 256, au8InfraredBlockData1, 0, 128);
+//                        Buffer.BlockCopy(au8InfraredData, 386, au8InfraredBlockData1, 0, 128);
+                        sendInfraredDataBlock1(u16ShortAddr, u8SrcEndPoint, u8DstEndPoint, 0, au8InfraredBlockData1);
+                        //sendInfraredDataBlock2(u16ShortAddr, u8SrcEndPoint, u8DstEndPoint, au8InfraredBlockData2);
+                        //sendInfraredDataBlock3(u16ShortAddr, u8SrcEndPoint, u8DstEndPoint, au8InfraredBlockData3);
+                        //sendInfraredDataBlock4(u16ShortAddr, u8SrcEndPoint, u8DstEndPoint, au8InfraredBlockData4);
+                        sendInfraredDataCommand(u16ShortAddr, u8SrcEndPoint, u8DstEndPoint, (byte)0x02);
+                    }
+                }
+            }
+        }
     }
 }

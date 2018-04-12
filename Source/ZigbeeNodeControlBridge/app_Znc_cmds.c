@@ -1946,17 +1946,12 @@ PUBLIC void APP_vProcessIncomingSerialCommands ( uint8    u8RxByte )
             case (E_SL_MSG_MAN_SPEC_COMMAND):
 			{
             	tsMS_ManuSpecCommand psManuSpecPayload;
-            	psManuSpecPayload.u8SubCommand = au8LinkRxBuffer [ 5 ];
             	memcpy(&psManuSpecPayload.u8Payload[0], &au8LinkRxBuffer[6], 16);
-//            	psManuSpecPayload.u8Payload[0] = 0x11;
-//            	psManuSpecPayload.u8Payload[1] = 0x22;
-//            	psManuSpecPayload.u8Payload[2] = 0x33;
-//            	psManuSpecPayload.u8Payload[3] = 0x44;
             	u8Status = eCLD_DoorLockCommandManuSpecRequestSend ( au8LinkRxBuffer [ 3 ],
 																			au8LinkRxBuffer [ 4 ],
 																			&sAddress,
 																			&u8SeqNum,
-																			E_CLD_MANU_SPEC_CMD_MANU_SPEC,
+																			au8LinkRxBuffer [ 5 ],
 																			&psManuSpecPayload);
 
 			}
@@ -2008,6 +2003,43 @@ PUBLIC void APP_vProcessIncomingSerialCommands ( uint8    u8RxByte )
                                                                     au8LinkRxBuffer[4],      //  u8DestinationEndPointId
                                                                     &sAddress,               // *psDestinationAddress,
                                                                     &u8SeqNum );             // *pu8TransactionSequenceNumber
+            }
+            break;
+            case E_SL_INFRARED_COMMAND:
+            {
+
+            	u8Status    =  eCLD_BasicCommandInfraredSend(au8LinkRxBuffer[3],      //  u8SourceEndPointId
+														au8LinkRxBuffer[4],      //  u8DestinationEndPointId
+														&sAddress,               // *psDestinationAddress,
+														&u8SeqNum,
+														au8LinkRxBuffer[5]);
+            }
+            break;
+
+            case E_SL_INFRARED_ACTIVATION_CODE:
+            {
+            	tsMS_InfraredActivationCodeCommand sInfraredActivationCodeCommand;
+            	memcpy(sInfraredActivationCodeCommand.au8Payload, &au8LinkRxBuffer[5], sizeof(sInfraredActivationCodeCommand.au8Payload));
+
+            	u8Status    =  eCLD_BasicCommandInfraredActivationSend(au8LinkRxBuffer[3],      //  u8SourceEndPointId
+														au8LinkRxBuffer[4],      //  u8DestinationEndPointId
+														&sAddress,               // *psDestinationAddress,
+														&u8SeqNum,
+														&sInfraredActivationCodeCommand);
+            }
+            break;
+            case E_SL_INFRARED_BLOCK_DATA:
+            {
+            	tsMS_InfraredDataCommand sInfraredDataCommand;
+
+            	sInfraredDataCommand.u8Block = au8LinkRxBuffer[5];
+            	memcpy(sInfraredDataCommand.au8Payload, &au8LinkRxBuffer[6], sizeof(sInfraredDataCommand.au8Payload));
+
+            	u8Status    =  eCLD_BasicCommandInfraredDataBlockSend(au8LinkRxBuffer[3],      //  u8SourceEndPointId
+														au8LinkRxBuffer[4],      //  u8DestinationEndPointId
+														&sAddress,               // *psDestinationAddress,
+														&u8SeqNum,
+														&sInfraredDataCommand);
             }
             break;
 

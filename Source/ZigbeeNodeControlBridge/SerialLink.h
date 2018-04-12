@@ -166,6 +166,14 @@ typedef enum
     E_SL_MSG_BASIC_RESET_TO_FACTORY_DEFAULTS                   =   0x0050,
     E_SL_MSG_BASIC_RESET_TO_FACTORY_DEFAULTS_RESPONSE          =   0x8050,
 
+    /* Infarared */
+    E_SL_INFRARED_COMMAND = 0x0A01,
+	E_SL_INFRARED_BLOCK_DATA = 0x0A02,
+	E_SL_INFRARED_GET_SECRET_KEY_RESP = 0x8A03,
+	E_SL_INFRARED_ACTIVATION_CODE = 0x0A04,
+	E_SL_INFRARED_LEARN_DATA_RESP = 0x8A05,
+	E_SL_INFRARED_TRIG_RF_DATA = 0x0A06,
+
     /* Group Cluster */
     E_SL_MSG_ADD_GROUP                                         =   0x0060,
     E_SL_MSG_ADD_GROUP_RESPONSE                                =   0x8060,

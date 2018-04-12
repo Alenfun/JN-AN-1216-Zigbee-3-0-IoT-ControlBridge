@@ -37,7 +37,7 @@
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusPort = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripPortSettings = new System.Windows.Forms.ToolStripStatusLabel();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabControlInfrared = new System.Windows.Forms.TabControl();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.buttonDiscoveryOnly = new System.Windows.Forms.Button();
             this.textBoxBindTargetExtAddr = new System.Windows.Forms.TextBox();
@@ -393,6 +393,46 @@
             this.buttonMoveToHue = new System.Windows.Forms.Button();
             this.textBoxMoveToHueAddr = new System.Windows.Forms.TextBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.buttonEditUser = new System.Windows.Forms.Button();
+            this.textBoxUserEnable = new System.Windows.Forms.TextBox();
+            this.textBoxHoldPassword = new System.Windows.Forms.TextBox();
+            this.textBoxIcCardErrorNum = new System.Windows.Forms.TextBox();
+            this.textBoxFingerErrorNum = new System.Windows.Forms.TextBox();
+            this.textBoxDigitErrorNum = new System.Windows.Forms.TextBox();
+            this.textBoxUpload = new System.Windows.Forms.TextBox();
+            this.buttonSetSetting = new System.Windows.Forms.Button();
+            this.textBoxETEndMinute = new System.Windows.Forms.TextBox();
+            this.textBoxETEndHour = new System.Windows.Forms.TextBox();
+            this.textBoxETEndDay = new System.Windows.Forms.TextBox();
+            this.textBoxETEndMonth = new System.Windows.Forms.TextBox();
+            this.textBoxETEndYear = new System.Windows.Forms.TextBox();
+            this.textBoxETMinute = new System.Windows.Forms.TextBox();
+            this.textBoxETHour = new System.Windows.Forms.TextBox();
+            this.textBoxETDay = new System.Windows.Forms.TextBox();
+            this.textBoxETMonth = new System.Windows.Forms.TextBox();
+            this.textBoxETYear = new System.Windows.Forms.TextBox();
+            this.textBoxETUserId = new System.Windows.Forms.TextBox();
+            this.textBoxDPPassword = new System.Windows.Forms.TextBox();
+            this.buttonSetUserEffectiveTime = new System.Windows.Forms.Button();
+            this.buttonEditDigitPassword = new System.Windows.Forms.Button();
+            this.buttonOutLearn = new System.Windows.Forms.Button();
+            this.buttonEnterLearn = new System.Windows.Forms.Button();
+            this.textBoxDPPasswordEnable = new System.Windows.Forms.TextBox();
+            this.textBoxDPPasswordType = new System.Windows.Forms.TextBox();
+            this.textBoxDPPasswordId = new System.Windows.Forms.TextBox();
+            this.buttonDeleteDigitPassword = new System.Windows.Forms.Button();
+            this.buttonAddDigitPassword = new System.Windows.Forms.Button();
+            this.textBoxDPUserId = new System.Windows.Forms.TextBox();
+            this.textBoxUserType = new System.Windows.Forms.TextBox();
+            this.buttonDeleteUser = new System.Windows.Forms.Button();
+            this.textBoxUserId = new System.Windows.Forms.TextBox();
+            this.buttonNewUser = new System.Windows.Forms.Button();
+            this.textBoxTempPassword = new System.Windows.Forms.TextBox();
+            this.buttonInvalidPassword = new System.Windows.Forms.Button();
+            this.textBoxTempPasswordDstEp = new System.Windows.Forms.TextBox();
+            this.textBoxTempPasswordSrcEp = new System.Windows.Forms.TextBox();
+            this.textBoxTempPasswordAddr = new System.Windows.Forms.TextBox();
+            this.buttonSetTempPassword = new System.Windows.Forms.Button();
             this.comboBoxLockUnlock = new System.Windows.Forms.ComboBox();
             this.textBoxLockUnlockDstEp = new System.Windows.Forms.TextBox();
             this.textBoxLockUnlockSrcEp = new System.Windows.Forms.TextBox();
@@ -476,6 +516,16 @@
             this.comboBoxFastPollEnable = new System.Windows.Forms.ComboBox();
             this.textBoxFastPollExpiryTime = new System.Windows.Forms.TextBox();
             this.buttonSetCheckinRspData = new System.Windows.Forms.Button();
+            this.tabPage15 = new System.Windows.Forms.TabPage();
+            this.textBoxInfraredDstEp = new System.Windows.Forms.TextBox();
+            this.textBoxInfraredSrcEp = new System.Windows.Forms.TextBox();
+            this.textBoxInfraredAddr = new System.Windows.Forms.TextBox();
+            this.textBoxInfraredActivationCode = new System.Windows.Forms.TextBox();
+            this.buttonSendActivationCode = new System.Windows.Forms.Button();
+            this.buttonGetScret = new System.Windows.Forms.Button();
+            this.buttonGetInfraredData = new System.Windows.Forms.Button();
+            this.textBoxInfraredData = new System.Windows.Forms.TextBox();
+            this.buttonSendInfrared = new System.Windows.Forms.Button();
             this.buttonMessageViewClear = new System.Windows.Forms.Button();
             this.buttonClearRaw = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
@@ -486,7 +536,7 @@
             this.toolTipGeneralTooltip = new System.Windows.Forms.ToolTip(this.components);
             this.menuStrip1.SuspendLayout();
             this.statusStrip.SuspendLayout();
-            this.tabControl1.SuspendLayout();
+            this.tabControlInfrared.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPageDevice.SuspendLayout();
             this.tabPage12.SuspendLayout();
@@ -505,6 +555,7 @@
             this.tabPage11.SuspendLayout();
             this.tabPage14.SuspendLayout();
             this.tabPagePollControl.SuspendLayout();
+            this.tabPage15.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -515,29 +566,28 @@
             this.aboutToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1731, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1385, 25);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // settingsToolStripMenuItem
             // 
             this.settingsToolStripMenuItem.Name = "settingsToolStripMenuItem";
-            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(74, 24);
+            this.settingsToolStripMenuItem.Size = new System.Drawing.Size(66, 21);
             this.settingsToolStripMenuItem.Text = "Settings";
             this.settingsToolStripMenuItem.Click += new System.EventHandler(this.settingsToolStripMenuItem_Click);
             // 
             // openPortToolStripMenuItem
             // 
             this.openPortToolStripMenuItem.Name = "openPortToolStripMenuItem";
-            this.openPortToolStripMenuItem.Size = new System.Drawing.Size(88, 24);
+            this.openPortToolStripMenuItem.Size = new System.Drawing.Size(80, 21);
             this.openPortToolStripMenuItem.Text = "Open Port";
             this.openPortToolStripMenuItem.Click += new System.EventHandler(this.openPortToolStripMenuItem_Click);
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(62, 24);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(55, 21);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -546,10 +596,10 @@
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusPort,
             this.toolStripPortSettings});
-            this.statusStrip.Location = new System.Drawing.Point(0, 934);
+            this.statusStrip.Location = new System.Drawing.Point(0, 743);
             this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Padding = new System.Windows.Forms.Padding(1, 0, 19, 0);
-            this.statusStrip.Size = new System.Drawing.Size(1731, 22);
+            this.statusStrip.Padding = new System.Windows.Forms.Padding(1, 0, 15, 0);
+            this.statusStrip.Size = new System.Drawing.Size(1385, 22);
             this.statusStrip.TabIndex = 1;
             this.statusStrip.Text = "statusStrip1";
             // 
@@ -563,32 +613,32 @@
             this.toolStripPortSettings.Name = "toolStripPortSettings";
             this.toolStripPortSettings.Size = new System.Drawing.Size(0, 17);
             // 
-            // tabControl1
+            // tabControlInfrared
             // 
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPageDevice);
-            this.tabControl1.Controls.Add(this.tabPage12);
-            this.tabControl1.Controls.Add(this.AHIControl);
-            this.tabControl1.Controls.Add(this.BasicClusterTab);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Controls.Add(this.tabPage5);
-            this.tabControl1.Controls.Add(this.tabPage6);
-            this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Controls.Add(this.tabPage7);
-            this.tabControl1.Controls.Add(this.tabPage8);
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage13);
-            this.tabControl1.Controls.Add(this.tabPage9);
-            this.tabControl1.Controls.Add(this.tabPage10);
-            this.tabControl1.Controls.Add(this.tabPage11);
-            this.tabControl1.Controls.Add(this.tabPage14);
-            this.tabControl1.Controls.Add(this.tabPagePollControl);
-            this.tabControl1.Location = new System.Drawing.Point(16, 33);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1699, 553);
-            this.tabControl1.TabIndex = 2;
+            this.tabControlInfrared.Controls.Add(this.tabPage2);
+            this.tabControlInfrared.Controls.Add(this.tabPageDevice);
+            this.tabControlInfrared.Controls.Add(this.tabPage12);
+            this.tabControlInfrared.Controls.Add(this.AHIControl);
+            this.tabControlInfrared.Controls.Add(this.BasicClusterTab);
+            this.tabControlInfrared.Controls.Add(this.tabPage3);
+            this.tabControlInfrared.Controls.Add(this.tabPage5);
+            this.tabControlInfrared.Controls.Add(this.tabPage6);
+            this.tabControlInfrared.Controls.Add(this.tabPage4);
+            this.tabControlInfrared.Controls.Add(this.tabPage7);
+            this.tabControlInfrared.Controls.Add(this.tabPage8);
+            this.tabControlInfrared.Controls.Add(this.tabPage1);
+            this.tabControlInfrared.Controls.Add(this.tabPage13);
+            this.tabControlInfrared.Controls.Add(this.tabPage9);
+            this.tabControlInfrared.Controls.Add(this.tabPage10);
+            this.tabControlInfrared.Controls.Add(this.tabPage11);
+            this.tabControlInfrared.Controls.Add(this.tabPage14);
+            this.tabControlInfrared.Controls.Add(this.tabPagePollControl);
+            this.tabControlInfrared.Controls.Add(this.tabPage15);
+            this.tabControlInfrared.Location = new System.Drawing.Point(13, 26);
+            this.tabControlInfrared.Name = "tabControlInfrared";
+            this.tabControlInfrared.SelectedIndex = 0;
+            this.tabControlInfrared.Size = new System.Drawing.Size(1359, 442);
+            this.tabControlInfrared.TabIndex = 2;
             // 
             // tabPage2
             // 
@@ -680,21 +730,19 @@
             this.tabPage2.Controls.Add(this.buttonSetCMSK);
             this.tabPage2.Controls.Add(this.buttonSetEPID);
             this.tabPage2.Controls.Add(this.buttonGetVersion);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage2.Size = new System.Drawing.Size(1691, 524);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1351, 416);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Management";
             this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
             // 
             // buttonDiscoveryOnly
             // 
-            this.buttonDiscoveryOnly.Location = new System.Drawing.Point(548, 7);
-            this.buttonDiscoveryOnly.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonDiscoveryOnly.Location = new System.Drawing.Point(438, 6);
             this.buttonDiscoveryOnly.Name = "buttonDiscoveryOnly";
-            this.buttonDiscoveryOnly.Size = new System.Drawing.Size(148, 28);
+            this.buttonDiscoveryOnly.Size = new System.Drawing.Size(118, 22);
             this.buttonDiscoveryOnly.TabIndex = 6;
             this.buttonDiscoveryOnly.Text = "Scan Discovery Only";
             this.buttonDiscoveryOnly.UseVisualStyleBackColor = true;
@@ -703,10 +751,9 @@
             // 
             // textBoxBindTargetExtAddr
             // 
-            this.textBoxBindTargetExtAddr.Location = new System.Drawing.Point(116, 407);
-            this.textBoxBindTargetExtAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxBindTargetExtAddr.Location = new System.Drawing.Point(93, 326);
             this.textBoxBindTargetExtAddr.Name = "textBoxBindTargetExtAddr";
-            this.textBoxBindTargetExtAddr.Size = new System.Drawing.Size(160, 22);
+            this.textBoxBindTargetExtAddr.Size = new System.Drawing.Size(129, 21);
             this.textBoxBindTargetExtAddr.TabIndex = 43;
             this.textBoxBindTargetExtAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxBindTargetExtAddr_MouseClick);
             this.textBoxBindTargetExtAddr.Leave += new System.EventHandler(this.textBoxBindTargetExtAddr_Leave);
@@ -715,10 +762,9 @@
             // 
             // textBoxUserSetReqDescription
             // 
-            this.textBoxUserSetReqDescription.Location = new System.Drawing.Point(1189, 299);
-            this.textBoxUserSetReqDescription.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxUserSetReqDescription.Location = new System.Drawing.Point(951, 239);
             this.textBoxUserSetReqDescription.Name = "textBoxUserSetReqDescription";
-            this.textBoxUserSetReqDescription.Size = new System.Drawing.Size(199, 22);
+            this.textBoxUserSetReqDescription.Size = new System.Drawing.Size(160, 21);
             this.textBoxUserSetReqDescription.TabIndex = 81;
             this.textBoxUserSetReqDescription.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxUserSetReqDescription_MouseClick);
             this.textBoxUserSetReqDescription.Leave += new System.EventHandler(this.textBoxUserSetReqDescription_Leave);
@@ -727,10 +773,9 @@
             // 
             // textBoxUserSetReqAddr
             // 
-            this.textBoxUserSetReqAddr.Location = new System.Drawing.Point(1048, 299);
-            this.textBoxUserSetReqAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxUserSetReqAddr.Location = new System.Drawing.Point(838, 239);
             this.textBoxUserSetReqAddr.Name = "textBoxUserSetReqAddr";
-            this.textBoxUserSetReqAddr.Size = new System.Drawing.Size(132, 22);
+            this.textBoxUserSetReqAddr.Size = new System.Drawing.Size(106, 21);
             this.textBoxUserSetReqAddr.TabIndex = 80;
             this.textBoxUserSetReqAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxUserSetReqAddr_MouseClick);
             this.textBoxUserSetReqAddr.Leave += new System.EventHandler(this.textBoxUserSetReqAddr_Leave);
@@ -739,10 +784,9 @@
             // 
             // buttonUserSetReq
             // 
-            this.buttonUserSetReq.Location = new System.Drawing.Point(940, 297);
-            this.buttonUserSetReq.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonUserSetReq.Location = new System.Drawing.Point(752, 238);
             this.buttonUserSetReq.Name = "buttonUserSetReq";
-            this.buttonUserSetReq.Size = new System.Drawing.Size(100, 28);
+            this.buttonUserSetReq.Size = new System.Drawing.Size(80, 22);
             this.buttonUserSetReq.TabIndex = 79;
             this.buttonUserSetReq.Text = "UserSetReq";
             this.buttonUserSetReq.UseVisualStyleBackColor = true;
@@ -750,10 +794,9 @@
             // 
             // textBoxUserReqAddr
             // 
-            this.textBoxUserReqAddr.Location = new System.Drawing.Point(1048, 263);
-            this.textBoxUserReqAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxUserReqAddr.Location = new System.Drawing.Point(838, 210);
             this.textBoxUserReqAddr.Name = "textBoxUserReqAddr";
-            this.textBoxUserReqAddr.Size = new System.Drawing.Size(132, 22);
+            this.textBoxUserReqAddr.Size = new System.Drawing.Size(106, 21);
             this.textBoxUserReqAddr.TabIndex = 78;
             this.textBoxUserReqAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxUserReqAddr_MouseClick);
             this.textBoxUserReqAddr.Leave += new System.EventHandler(this.textBoxUserReqAddr_Leave);
@@ -762,10 +805,9 @@
             // 
             // buttonUserReq
             // 
-            this.buttonUserReq.Location = new System.Drawing.Point(940, 261);
-            this.buttonUserReq.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonUserReq.Location = new System.Drawing.Point(752, 209);
             this.buttonUserReq.Name = "buttonUserReq";
-            this.buttonUserReq.Size = new System.Drawing.Size(100, 28);
+            this.buttonUserReq.Size = new System.Drawing.Size(80, 22);
             this.buttonUserReq.TabIndex = 77;
             this.buttonUserReq.Text = "UserReq";
             this.buttonUserReq.UseVisualStyleBackColor = true;
@@ -773,10 +815,9 @@
             // 
             // textBoxRestoreNwkFrameCounter
             // 
-            this.textBoxRestoreNwkFrameCounter.Location = new System.Drawing.Point(1048, 409);
-            this.textBoxRestoreNwkFrameCounter.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxRestoreNwkFrameCounter.Location = new System.Drawing.Point(838, 327);
             this.textBoxRestoreNwkFrameCounter.Name = "textBoxRestoreNwkFrameCounter";
-            this.textBoxRestoreNwkFrameCounter.Size = new System.Drawing.Size(203, 22);
+            this.textBoxRestoreNwkFrameCounter.Size = new System.Drawing.Size(163, 21);
             this.textBoxRestoreNwkFrameCounter.TabIndex = 87;
             this.textBoxRestoreNwkFrameCounter.Visible = false;
             this.textBoxRestoreNwkFrameCounter.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxRestoreNwkFrameCounter_MouseClick);
@@ -787,28 +828,25 @@
             // 
             this.comboBoxLeaveChildren.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxLeaveChildren.FormattingEnabled = true;
-            this.comboBoxLeaveChildren.Location = new System.Drawing.Point(543, 228);
-            this.comboBoxLeaveChildren.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxLeaveChildren.Location = new System.Drawing.Point(434, 182);
             this.comboBoxLeaveChildren.Name = "comboBoxLeaveChildren";
-            this.comboBoxLeaveChildren.Size = new System.Drawing.Size(244, 24);
+            this.comboBoxLeaveChildren.Size = new System.Drawing.Size(196, 20);
             this.comboBoxLeaveChildren.TabIndex = 26;
             // 
             // comboBoxLeaveReJoin
             // 
             this.comboBoxLeaveReJoin.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxLeaveReJoin.FormattingEnabled = true;
-            this.comboBoxLeaveReJoin.Location = new System.Drawing.Point(385, 228);
-            this.comboBoxLeaveReJoin.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxLeaveReJoin.Location = new System.Drawing.Point(308, 182);
             this.comboBoxLeaveReJoin.Name = "comboBoxLeaveReJoin";
-            this.comboBoxLeaveReJoin.Size = new System.Drawing.Size(148, 24);
+            this.comboBoxLeaveReJoin.Size = new System.Drawing.Size(119, 20);
             this.comboBoxLeaveReJoin.TabIndex = 25;
             // 
             // textBoxLeaveAddr
             // 
-            this.textBoxLeaveAddr.Location = new System.Drawing.Point(116, 228);
-            this.textBoxLeaveAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxLeaveAddr.Location = new System.Drawing.Point(93, 182);
             this.textBoxLeaveAddr.Name = "textBoxLeaveAddr";
-            this.textBoxLeaveAddr.Size = new System.Drawing.Size(260, 22);
+            this.textBoxLeaveAddr.Size = new System.Drawing.Size(209, 21);
             this.textBoxLeaveAddr.TabIndex = 24;
             this.textBoxLeaveAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxLeaveAddr_MouseClick);
             this.textBoxLeaveAddr.Leave += new System.EventHandler(this.textBoxLeaveAddr_Leave);
@@ -817,10 +855,9 @@
             // 
             // buttonLeave
             // 
-            this.buttonLeave.Location = new System.Drawing.Point(8, 225);
-            this.buttonLeave.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonLeave.Location = new System.Drawing.Point(6, 180);
             this.buttonLeave.Name = "buttonLeave";
-            this.buttonLeave.Size = new System.Drawing.Size(100, 28);
+            this.buttonLeave.Size = new System.Drawing.Size(80, 22);
             this.buttonLeave.TabIndex = 23;
             this.buttonLeave.Text = "Leave";
             this.buttonLeave.UseVisualStyleBackColor = true;
@@ -828,10 +865,9 @@
             // 
             // textBoxRemoveChildAddr
             // 
-            this.textBoxRemoveChildAddr.Location = new System.Drawing.Point(401, 265);
-            this.textBoxRemoveChildAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxRemoveChildAddr.Location = new System.Drawing.Point(321, 212);
             this.textBoxRemoveChildAddr.Name = "textBoxRemoveChildAddr";
-            this.textBoxRemoveChildAddr.Size = new System.Drawing.Size(273, 22);
+            this.textBoxRemoveChildAddr.Size = new System.Drawing.Size(219, 21);
             this.textBoxRemoveChildAddr.TabIndex = 29;
             this.textBoxRemoveChildAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxRemoveChildAddr_MouseClick);
             this.textBoxRemoveChildAddr.Leave += new System.EventHandler(this.textBoxRemoveChildAddr_Leave);
@@ -840,10 +876,9 @@
             // 
             // textBoxRemoveParentAddr
             // 
-            this.textBoxRemoveParentAddr.Location = new System.Drawing.Point(116, 265);
-            this.textBoxRemoveParentAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxRemoveParentAddr.Location = new System.Drawing.Point(93, 212);
             this.textBoxRemoveParentAddr.Name = "textBoxRemoveParentAddr";
-            this.textBoxRemoveParentAddr.Size = new System.Drawing.Size(273, 22);
+            this.textBoxRemoveParentAddr.Size = new System.Drawing.Size(219, 21);
             this.textBoxRemoveParentAddr.TabIndex = 28;
             this.textBoxRemoveParentAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxRemoveParentAddr_MouseClick);
             this.textBoxRemoveParentAddr.Leave += new System.EventHandler(this.textBoxRemoveParentAddr_Leave);
@@ -852,10 +887,9 @@
             // 
             // buttonRemoveDevice
             // 
-            this.buttonRemoveDevice.Location = new System.Drawing.Point(8, 262);
-            this.buttonRemoveDevice.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonRemoveDevice.Location = new System.Drawing.Point(6, 210);
             this.buttonRemoveDevice.Name = "buttonRemoveDevice";
-            this.buttonRemoveDevice.Size = new System.Drawing.Size(100, 28);
+            this.buttonRemoveDevice.Size = new System.Drawing.Size(80, 22);
             this.buttonRemoveDevice.TabIndex = 27;
             this.buttonRemoveDevice.Text = "Remove";
             this.buttonRemoveDevice.UseVisualStyleBackColor = true;
@@ -863,10 +897,9 @@
             // 
             // buttonPermitJoinState
             // 
-            this.buttonPermitJoinState.Location = new System.Drawing.Point(8, 334);
-            this.buttonPermitJoinState.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonPermitJoinState.Location = new System.Drawing.Point(6, 267);
             this.buttonPermitJoinState.Name = "buttonPermitJoinState";
-            this.buttonPermitJoinState.Size = new System.Drawing.Size(131, 28);
+            this.buttonPermitJoinState.Size = new System.Drawing.Size(105, 22);
             this.buttonPermitJoinState.TabIndex = 34;
             this.buttonPermitJoinState.Text = "Permit Join State";
             this.buttonPermitJoinState.UseVisualStyleBackColor = true;
@@ -874,10 +907,9 @@
             // 
             // buttonRestoreNwk
             // 
-            this.buttonRestoreNwk.Location = new System.Drawing.Point(940, 405);
-            this.buttonRestoreNwk.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonRestoreNwk.Location = new System.Drawing.Point(752, 324);
             this.buttonRestoreNwk.Name = "buttonRestoreNwk";
-            this.buttonRestoreNwk.Size = new System.Drawing.Size(100, 28);
+            this.buttonRestoreNwk.Size = new System.Drawing.Size(80, 22);
             this.buttonRestoreNwk.TabIndex = 86;
             this.buttonRestoreNwk.Text = "RES NWK";
             this.buttonRestoreNwk.UseVisualStyleBackColor = true;
@@ -886,10 +918,9 @@
             // 
             // buttonRecoverNwk
             // 
-            this.buttonRecoverNwk.Location = new System.Drawing.Point(940, 369);
-            this.buttonRecoverNwk.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonRecoverNwk.Location = new System.Drawing.Point(752, 295);
             this.buttonRecoverNwk.Name = "buttonRecoverNwk";
-            this.buttonRecoverNwk.Size = new System.Drawing.Size(100, 28);
+            this.buttonRecoverNwk.Size = new System.Drawing.Size(80, 22);
             this.buttonRecoverNwk.TabIndex = 85;
             this.buttonRecoverNwk.Text = "REC NWK";
             this.buttonRecoverNwk.UseVisualStyleBackColor = true;
@@ -900,28 +931,25 @@
             // 
             this.comboBoxMgmtLeaveChildren.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxMgmtLeaveChildren.FormattingEnabled = true;
-            this.comboBoxMgmtLeaveChildren.Location = new System.Drawing.Point(684, 192);
-            this.comboBoxMgmtLeaveChildren.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxMgmtLeaveChildren.Location = new System.Drawing.Point(547, 154);
             this.comboBoxMgmtLeaveChildren.Name = "comboBoxMgmtLeaveChildren";
-            this.comboBoxMgmtLeaveChildren.Size = new System.Drawing.Size(244, 24);
+            this.comboBoxMgmtLeaveChildren.Size = new System.Drawing.Size(196, 20);
             this.comboBoxMgmtLeaveChildren.TabIndex = 22;
             // 
             // comboBoxMgmtLeaveReJoin
             // 
             this.comboBoxMgmtLeaveReJoin.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxMgmtLeaveReJoin.FormattingEnabled = true;
-            this.comboBoxMgmtLeaveReJoin.Location = new System.Drawing.Point(527, 192);
-            this.comboBoxMgmtLeaveReJoin.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxMgmtLeaveReJoin.Location = new System.Drawing.Point(422, 154);
             this.comboBoxMgmtLeaveReJoin.Name = "comboBoxMgmtLeaveReJoin";
-            this.comboBoxMgmtLeaveReJoin.Size = new System.Drawing.Size(148, 24);
+            this.comboBoxMgmtLeaveReJoin.Size = new System.Drawing.Size(119, 20);
             this.comboBoxMgmtLeaveReJoin.TabIndex = 21;
             // 
             // textBoxMgmtLeaveExtAddr
             // 
-            this.textBoxMgmtLeaveExtAddr.Location = new System.Drawing.Point(257, 192);
-            this.textBoxMgmtLeaveExtAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxMgmtLeaveExtAddr.Location = new System.Drawing.Point(206, 154);
             this.textBoxMgmtLeaveExtAddr.Name = "textBoxMgmtLeaveExtAddr";
-            this.textBoxMgmtLeaveExtAddr.Size = new System.Drawing.Size(260, 22);
+            this.textBoxMgmtLeaveExtAddr.Size = new System.Drawing.Size(209, 21);
             this.textBoxMgmtLeaveExtAddr.TabIndex = 20;
             this.textBoxMgmtLeaveExtAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxMgmtLeaveExtAddr_MouseClick);
             this.textBoxMgmtLeaveExtAddr.Leave += new System.EventHandler(this.textBoxMgmtLeaveExtAddr_Leave);
@@ -930,10 +958,9 @@
             // 
             // textBoxMgmtLeaveAddr
             // 
-            this.textBoxMgmtLeaveAddr.Location = new System.Drawing.Point(116, 192);
-            this.textBoxMgmtLeaveAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxMgmtLeaveAddr.Location = new System.Drawing.Point(93, 154);
             this.textBoxMgmtLeaveAddr.Name = "textBoxMgmtLeaveAddr";
-            this.textBoxMgmtLeaveAddr.Size = new System.Drawing.Size(132, 22);
+            this.textBoxMgmtLeaveAddr.Size = new System.Drawing.Size(106, 21);
             this.textBoxMgmtLeaveAddr.TabIndex = 19;
             this.textBoxMgmtLeaveAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxMgmtLeaveAddr_MouseClick);
             this.textBoxMgmtLeaveAddr.Leave += new System.EventHandler(this.textBoxMgmtLeaveAddr_Leave);
@@ -942,10 +969,9 @@
             // 
             // buttonMgmtLeave
             // 
-            this.buttonMgmtLeave.Location = new System.Drawing.Point(8, 190);
-            this.buttonMgmtLeave.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonMgmtLeave.Location = new System.Drawing.Point(6, 152);
             this.buttonMgmtLeave.Name = "buttonMgmtLeave";
-            this.buttonMgmtLeave.Size = new System.Drawing.Size(100, 28);
+            this.buttonMgmtLeave.Size = new System.Drawing.Size(80, 22);
             this.buttonMgmtLeave.TabIndex = 18;
             this.buttonMgmtLeave.Text = "Mgmt Leave";
             this.buttonMgmtLeave.UseVisualStyleBackColor = true;
@@ -953,10 +979,9 @@
             // 
             // textBoxUnBindDestEP
             // 
-            this.textBoxUnBindDestEP.Location = new System.Drawing.Point(815, 439);
-            this.textBoxUnBindDestEP.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxUnBindDestEP.Location = new System.Drawing.Point(652, 351);
             this.textBoxUnBindDestEP.Name = "textBoxUnBindDestEP";
-            this.textBoxUnBindDestEP.Size = new System.Drawing.Size(109, 22);
+            this.textBoxUnBindDestEP.Size = new System.Drawing.Size(88, 21);
             this.textBoxUnBindDestEP.TabIndex = 55;
             this.textBoxUnBindDestEP.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxUnBindDestEP_MouseClick);
             this.textBoxUnBindDestEP.Leave += new System.EventHandler(this.textBoxUnBindDestEP_Leave);
@@ -965,10 +990,9 @@
             // 
             // textBoxUnBindDestAddr
             // 
-            this.textBoxUnBindDestAddr.Location = new System.Drawing.Point(514, 439);
-            this.textBoxUnBindDestAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxUnBindDestAddr.Location = new System.Drawing.Point(411, 351);
             this.textBoxUnBindDestAddr.Name = "textBoxUnBindDestAddr";
-            this.textBoxUnBindDestAddr.Size = new System.Drawing.Size(165, 22);
+            this.textBoxUnBindDestAddr.Size = new System.Drawing.Size(133, 21);
             this.textBoxUnBindDestAddr.TabIndex = 53;
             this.textBoxUnBindDestAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxUnBindDestAddr_MouseClick);
             this.textBoxUnBindDestAddr.Leave += new System.EventHandler(this.textBoxUnBindDestAddr_Leave);
@@ -979,20 +1003,18 @@
             // 
             this.comboBoxUnBindAddrMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxUnBindAddrMode.FormattingEnabled = true;
-            this.comboBoxUnBindAddrMode.Location = new System.Drawing.Point(402, 439);
-            this.comboBoxUnBindAddrMode.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxUnBindAddrMode.Location = new System.Drawing.Point(322, 351);
             this.comboBoxUnBindAddrMode.Name = "comboBoxUnBindAddrMode";
-            this.comboBoxUnBindAddrMode.Size = new System.Drawing.Size(104, 24);
+            this.comboBoxUnBindAddrMode.Size = new System.Drawing.Size(84, 20);
             this.comboBoxUnBindAddrMode.TabIndex = 52;
             this.comboBoxUnBindAddrMode.MouseLeave += new System.EventHandler(this.comboBoxUnBindAddrMode_MouseLeave);
             this.comboBoxUnBindAddrMode.MouseHover += new System.EventHandler(this.comboBoxUnBindAddrMode_MouseHover);
             // 
             // textBoxUnBindClusterID
             // 
-            this.textBoxUnBindClusterID.Location = new System.Drawing.Point(687, 439);
-            this.textBoxUnBindClusterID.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxUnBindClusterID.Location = new System.Drawing.Point(550, 351);
             this.textBoxUnBindClusterID.Name = "textBoxUnBindClusterID";
-            this.textBoxUnBindClusterID.Size = new System.Drawing.Size(119, 22);
+            this.textBoxUnBindClusterID.Size = new System.Drawing.Size(96, 21);
             this.textBoxUnBindClusterID.TabIndex = 54;
             this.textBoxUnBindClusterID.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxUnBindClusterID_MouseClick);
             this.textBoxUnBindClusterID.Leave += new System.EventHandler(this.textBoxUnBindClusterID_Leave);
@@ -1001,10 +1023,9 @@
             // 
             // textBoxUnBindTargetEP
             // 
-            this.textBoxUnBindTargetEP.Location = new System.Drawing.Point(285, 439);
-            this.textBoxUnBindTargetEP.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxUnBindTargetEP.Location = new System.Drawing.Point(228, 351);
             this.textBoxUnBindTargetEP.Name = "textBoxUnBindTargetEP";
-            this.textBoxUnBindTargetEP.Size = new System.Drawing.Size(104, 22);
+            this.textBoxUnBindTargetEP.Size = new System.Drawing.Size(84, 21);
             this.textBoxUnBindTargetEP.TabIndex = 51;
             this.textBoxUnBindTargetEP.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxUnBindTargetEP_MouseClick);
             this.textBoxUnBindTargetEP.Leave += new System.EventHandler(this.textBoxUnBindTargetEP_Leave);
@@ -1013,10 +1034,9 @@
             // 
             // textBoxUnBindTargetExtAddr
             // 
-            this.textBoxUnBindTargetExtAddr.Location = new System.Drawing.Point(116, 441);
-            this.textBoxUnBindTargetExtAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxUnBindTargetExtAddr.Location = new System.Drawing.Point(93, 353);
             this.textBoxUnBindTargetExtAddr.Name = "textBoxUnBindTargetExtAddr";
-            this.textBoxUnBindTargetExtAddr.Size = new System.Drawing.Size(160, 22);
+            this.textBoxUnBindTargetExtAddr.Size = new System.Drawing.Size(129, 21);
             this.textBoxUnBindTargetExtAddr.TabIndex = 50;
             this.textBoxUnBindTargetExtAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxUnBindTargetExtAddr_MouseClick);
             this.textBoxUnBindTargetExtAddr.Leave += new System.EventHandler(this.textBoxUnBindTargetExtAddr_Leave);
@@ -1025,10 +1045,9 @@
             // 
             // buttonUnBind
             // 
-            this.buttonUnBind.Location = new System.Drawing.Point(8, 439);
-            this.buttonUnBind.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonUnBind.Location = new System.Drawing.Point(6, 351);
             this.buttonUnBind.Name = "buttonUnBind";
-            this.buttonUnBind.Size = new System.Drawing.Size(100, 31);
+            this.buttonUnBind.Size = new System.Drawing.Size(80, 25);
             this.buttonUnBind.TabIndex = 49;
             this.buttonUnBind.Text = "UnBind";
             this.buttonUnBind.UseVisualStyleBackColor = true;
@@ -1036,10 +1055,9 @@
             // 
             // textBoxBindDestEP
             // 
-            this.textBoxBindDestEP.Location = new System.Drawing.Point(815, 409);
-            this.textBoxBindDestEP.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxBindDestEP.Location = new System.Drawing.Point(652, 327);
             this.textBoxBindDestEP.Name = "textBoxBindDestEP";
-            this.textBoxBindDestEP.Size = new System.Drawing.Size(109, 22);
+            this.textBoxBindDestEP.Size = new System.Drawing.Size(88, 21);
             this.textBoxBindDestEP.TabIndex = 48;
             this.textBoxBindDestEP.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxBindDestEP_MouseClick);
             this.textBoxBindDestEP.Leave += new System.EventHandler(this.textBoxBindDestEP_Leave);
@@ -1048,10 +1066,9 @@
             // 
             // textBoxBindDestAddr
             // 
-            this.textBoxBindDestAddr.Location = new System.Drawing.Point(514, 408);
-            this.textBoxBindDestAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxBindDestAddr.Location = new System.Drawing.Point(411, 326);
             this.textBoxBindDestAddr.Name = "textBoxBindDestAddr";
-            this.textBoxBindDestAddr.Size = new System.Drawing.Size(165, 22);
+            this.textBoxBindDestAddr.Size = new System.Drawing.Size(133, 21);
             this.textBoxBindDestAddr.TabIndex = 46;
             this.textBoxBindDestAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxBindDestAddr_MouseClick);
             this.textBoxBindDestAddr.Leave += new System.EventHandler(this.textBoxBindDestAddr_Leave);
@@ -1062,20 +1079,18 @@
             // 
             this.comboBoxBindAddrMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxBindAddrMode.FormattingEnabled = true;
-            this.comboBoxBindAddrMode.Location = new System.Drawing.Point(402, 407);
-            this.comboBoxBindAddrMode.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxBindAddrMode.Location = new System.Drawing.Point(322, 326);
             this.comboBoxBindAddrMode.Name = "comboBoxBindAddrMode";
-            this.comboBoxBindAddrMode.Size = new System.Drawing.Size(104, 24);
+            this.comboBoxBindAddrMode.Size = new System.Drawing.Size(84, 20);
             this.comboBoxBindAddrMode.TabIndex = 45;
             this.comboBoxBindAddrMode.MouseLeave += new System.EventHandler(this.comboBoxBindAddrMode_MouseLeave);
             this.comboBoxBindAddrMode.MouseHover += new System.EventHandler(this.comboBoxBindAddrMode_MouseHover);
             // 
             // textBoxBindClusterID
             // 
-            this.textBoxBindClusterID.Location = new System.Drawing.Point(687, 409);
-            this.textBoxBindClusterID.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxBindClusterID.Location = new System.Drawing.Point(550, 327);
             this.textBoxBindClusterID.Name = "textBoxBindClusterID";
-            this.textBoxBindClusterID.Size = new System.Drawing.Size(119, 22);
+            this.textBoxBindClusterID.Size = new System.Drawing.Size(96, 21);
             this.textBoxBindClusterID.TabIndex = 47;
             this.textBoxBindClusterID.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxBindClusterID_MouseClick);
             this.textBoxBindClusterID.Leave += new System.EventHandler(this.textBoxBindClusterID_Leave);
@@ -1084,10 +1099,9 @@
             // 
             // textBoxBindTargetEP
             // 
-            this.textBoxBindTargetEP.Location = new System.Drawing.Point(285, 407);
-            this.textBoxBindTargetEP.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxBindTargetEP.Location = new System.Drawing.Point(228, 326);
             this.textBoxBindTargetEP.Name = "textBoxBindTargetEP";
-            this.textBoxBindTargetEP.Size = new System.Drawing.Size(104, 22);
+            this.textBoxBindTargetEP.Size = new System.Drawing.Size(84, 21);
             this.textBoxBindTargetEP.TabIndex = 44;
             this.textBoxBindTargetEP.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxBindTargetEP_MouseClick);
             this.textBoxBindTargetEP.Leave += new System.EventHandler(this.textBoxBindTargetEP_Leave);
@@ -1096,10 +1110,9 @@
             // 
             // textBoxLqiReqStartIndex
             // 
-            this.textBoxLqiReqStartIndex.Location = new System.Drawing.Point(1189, 335);
-            this.textBoxLqiReqStartIndex.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxLqiReqStartIndex.Location = new System.Drawing.Point(951, 268);
             this.textBoxLqiReqStartIndex.Name = "textBoxLqiReqStartIndex";
-            this.textBoxLqiReqStartIndex.Size = new System.Drawing.Size(132, 22);
+            this.textBoxLqiReqStartIndex.Size = new System.Drawing.Size(106, 21);
             this.textBoxLqiReqStartIndex.TabIndex = 84;
             this.textBoxLqiReqStartIndex.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxLqiReqStartIndex_MouseClick);
             this.textBoxLqiReqStartIndex.Leave += new System.EventHandler(this.textBoxLqiReqStartIndex_Leave);
@@ -1108,10 +1121,9 @@
             // 
             // textBoxLqiReqTargetAddr
             // 
-            this.textBoxLqiReqTargetAddr.Location = new System.Drawing.Point(1048, 336);
-            this.textBoxLqiReqTargetAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxLqiReqTargetAddr.Location = new System.Drawing.Point(838, 269);
             this.textBoxLqiReqTargetAddr.Name = "textBoxLqiReqTargetAddr";
-            this.textBoxLqiReqTargetAddr.Size = new System.Drawing.Size(132, 22);
+            this.textBoxLqiReqTargetAddr.Size = new System.Drawing.Size(106, 21);
             this.textBoxLqiReqTargetAddr.TabIndex = 83;
             this.textBoxLqiReqTargetAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxLqiReqTargetAddr_MouseClick);
             this.textBoxLqiReqTargetAddr.Leave += new System.EventHandler(this.textBoxLqiReqTargetAddr_Leave);
@@ -1120,10 +1132,9 @@
             // 
             // buttonMgmtLqiReq
             // 
-            this.buttonMgmtLqiReq.Location = new System.Drawing.Point(940, 334);
-            this.buttonMgmtLqiReq.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonMgmtLqiReq.Location = new System.Drawing.Point(752, 267);
             this.buttonMgmtLqiReq.Name = "buttonMgmtLqiReq";
-            this.buttonMgmtLqiReq.Size = new System.Drawing.Size(100, 28);
+            this.buttonMgmtLqiReq.Size = new System.Drawing.Size(80, 22);
             this.buttonMgmtLqiReq.TabIndex = 82;
             this.buttonMgmtLqiReq.Text = "Lqi Req";
             this.buttonMgmtLqiReq.UseVisualStyleBackColor = true;
@@ -1131,10 +1142,9 @@
             // 
             // buttonStartScan
             // 
-            this.buttonStartScan.Location = new System.Drawing.Point(440, 7);
-            this.buttonStartScan.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonStartScan.Location = new System.Drawing.Point(352, 6);
             this.buttonStartScan.Name = "buttonStartScan";
-            this.buttonStartScan.Size = new System.Drawing.Size(100, 28);
+            this.buttonStartScan.Size = new System.Drawing.Size(80, 22);
             this.buttonStartScan.TabIndex = 5;
             this.buttonStartScan.Text = "Start Scan";
             this.buttonStartScan.UseVisualStyleBackColor = true;
@@ -1142,10 +1152,9 @@
             // 
             // textBoxNwkAddrReqStartIndex
             // 
-            this.textBoxNwkAddrReqStartIndex.Location = new System.Drawing.Point(1500, 80);
-            this.textBoxNwkAddrReqStartIndex.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxNwkAddrReqStartIndex.Location = new System.Drawing.Point(1200, 64);
             this.textBoxNwkAddrReqStartIndex.Name = "textBoxNwkAddrReqStartIndex";
-            this.textBoxNwkAddrReqStartIndex.Size = new System.Drawing.Size(132, 22);
+            this.textBoxNwkAddrReqStartIndex.Size = new System.Drawing.Size(106, 21);
             this.textBoxNwkAddrReqStartIndex.TabIndex = 67;
             this.textBoxNwkAddrReqStartIndex.Leave += new System.EventHandler(this.textBoxNwkAddrReqStartIndex_Leave);
             this.textBoxNwkAddrReqStartIndex.MouseLeave += new System.EventHandler(this.textBoxNwkAddrReqStartIndex_MouseLeave);
@@ -1155,20 +1164,18 @@
             // 
             this.comboBoxNwkAddrReqType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxNwkAddrReqType.FormattingEnabled = true;
-            this.comboBoxNwkAddrReqType.Location = new System.Drawing.Point(1331, 80);
-            this.comboBoxNwkAddrReqType.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxNwkAddrReqType.Location = new System.Drawing.Point(1065, 64);
             this.comboBoxNwkAddrReqType.Name = "comboBoxNwkAddrReqType";
-            this.comboBoxNwkAddrReqType.Size = new System.Drawing.Size(160, 24);
+            this.comboBoxNwkAddrReqType.Size = new System.Drawing.Size(129, 20);
             this.comboBoxNwkAddrReqType.TabIndex = 66;
             this.comboBoxNwkAddrReqType.MouseLeave += new System.EventHandler(this.comboBoxNwkAddrReqType_MouseLeave);
             this.comboBoxNwkAddrReqType.MouseHover += new System.EventHandler(this.comboBoxNwkAddrReqType_MouseHover);
             // 
             // textBoxNwkAddrReqExtAddr
             // 
-            this.textBoxNwkAddrReqExtAddr.Location = new System.Drawing.Point(1189, 81);
-            this.textBoxNwkAddrReqExtAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxNwkAddrReqExtAddr.Location = new System.Drawing.Point(951, 65);
             this.textBoxNwkAddrReqExtAddr.Name = "textBoxNwkAddrReqExtAddr";
-            this.textBoxNwkAddrReqExtAddr.Size = new System.Drawing.Size(132, 22);
+            this.textBoxNwkAddrReqExtAddr.Size = new System.Drawing.Size(106, 21);
             this.textBoxNwkAddrReqExtAddr.TabIndex = 65;
             this.textBoxNwkAddrReqExtAddr.Leave += new System.EventHandler(this.textBoxNwkAddrReqExtAddr_Leave);
             this.textBoxNwkAddrReqExtAddr.MouseLeave += new System.EventHandler(this.textBoxNwkAddrReqExtAddr_MouseLeave);
@@ -1176,10 +1183,9 @@
             // 
             // textBoxNwkAddrReqTargetAddr
             // 
-            this.textBoxNwkAddrReqTargetAddr.Location = new System.Drawing.Point(1048, 81);
-            this.textBoxNwkAddrReqTargetAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxNwkAddrReqTargetAddr.Location = new System.Drawing.Point(838, 65);
             this.textBoxNwkAddrReqTargetAddr.Name = "textBoxNwkAddrReqTargetAddr";
-            this.textBoxNwkAddrReqTargetAddr.Size = new System.Drawing.Size(132, 22);
+            this.textBoxNwkAddrReqTargetAddr.Size = new System.Drawing.Size(106, 21);
             this.textBoxNwkAddrReqTargetAddr.TabIndex = 64;
             this.textBoxNwkAddrReqTargetAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxNwkAddrReqTargetAddr_MouseClick);
             this.textBoxNwkAddrReqTargetAddr.Leave += new System.EventHandler(this.textBoxNwkAddrReqTargetAddr_Leave);
@@ -1188,10 +1194,9 @@
             // 
             // textBoxIeeeReqStartIndex
             // 
-            this.textBoxIeeeReqStartIndex.Location = new System.Drawing.Point(1500, 44);
-            this.textBoxIeeeReqStartIndex.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxIeeeReqStartIndex.Location = new System.Drawing.Point(1200, 35);
             this.textBoxIeeeReqStartIndex.Name = "textBoxIeeeReqStartIndex";
-            this.textBoxIeeeReqStartIndex.Size = new System.Drawing.Size(132, 22);
+            this.textBoxIeeeReqStartIndex.Size = new System.Drawing.Size(106, 21);
             this.textBoxIeeeReqStartIndex.TabIndex = 62;
             this.textBoxIeeeReqStartIndex.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxIeeeReqStartIndex_MouseClick);
             this.textBoxIeeeReqStartIndex.Leave += new System.EventHandler(this.textBoxIeeeReqStartIndex_Leave);
@@ -1202,20 +1207,18 @@
             // 
             this.comboBoxIeeeReqType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxIeeeReqType.FormattingEnabled = true;
-            this.comboBoxIeeeReqType.Location = new System.Drawing.Point(1331, 44);
-            this.comboBoxIeeeReqType.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxIeeeReqType.Location = new System.Drawing.Point(1065, 35);
             this.comboBoxIeeeReqType.Name = "comboBoxIeeeReqType";
-            this.comboBoxIeeeReqType.Size = new System.Drawing.Size(160, 24);
+            this.comboBoxIeeeReqType.Size = new System.Drawing.Size(129, 20);
             this.comboBoxIeeeReqType.TabIndex = 61;
             this.comboBoxIeeeReqType.MouseLeave += new System.EventHandler(this.comboBoxIeeeReqType_MouseLeave);
             this.comboBoxIeeeReqType.MouseHover += new System.EventHandler(this.comboBoxIeeeReqType_MouseHover);
             // 
             // textBoxIeeeReqAddr
             // 
-            this.textBoxIeeeReqAddr.Location = new System.Drawing.Point(1189, 46);
-            this.textBoxIeeeReqAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxIeeeReqAddr.Location = new System.Drawing.Point(951, 37);
             this.textBoxIeeeReqAddr.Name = "textBoxIeeeReqAddr";
-            this.textBoxIeeeReqAddr.Size = new System.Drawing.Size(132, 22);
+            this.textBoxIeeeReqAddr.Size = new System.Drawing.Size(106, 21);
             this.textBoxIeeeReqAddr.TabIndex = 60;
             this.textBoxIeeeReqAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxIeeeReqAddr_MouseClick);
             this.textBoxIeeeReqAddr.Leave += new System.EventHandler(this.textBoxIeeeReqAddr_Leave);
@@ -1224,10 +1227,9 @@
             // 
             // textBoxIeeeReqTargetAddr
             // 
-            this.textBoxIeeeReqTargetAddr.Location = new System.Drawing.Point(1048, 46);
-            this.textBoxIeeeReqTargetAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxIeeeReqTargetAddr.Location = new System.Drawing.Point(838, 37);
             this.textBoxIeeeReqTargetAddr.Name = "textBoxIeeeReqTargetAddr";
-            this.textBoxIeeeReqTargetAddr.Size = new System.Drawing.Size(132, 22);
+            this.textBoxIeeeReqTargetAddr.Size = new System.Drawing.Size(106, 21);
             this.textBoxIeeeReqTargetAddr.TabIndex = 59;
             this.textBoxIeeeReqTargetAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxIeeeReqTargetAddr_MouseClick);
             this.textBoxIeeeReqTargetAddr.Leave += new System.EventHandler(this.textBoxIeeeReqTargetAddr_Leave);
@@ -1236,10 +1238,9 @@
             // 
             // textBoxComplexReqAddr
             // 
-            this.textBoxComplexReqAddr.Location = new System.Drawing.Point(1048, 228);
-            this.textBoxComplexReqAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxComplexReqAddr.Location = new System.Drawing.Point(838, 182);
             this.textBoxComplexReqAddr.Name = "textBoxComplexReqAddr";
-            this.textBoxComplexReqAddr.Size = new System.Drawing.Size(132, 22);
+            this.textBoxComplexReqAddr.Size = new System.Drawing.Size(106, 21);
             this.textBoxComplexReqAddr.TabIndex = 76;
             this.textBoxComplexReqAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxComplexReqAddr_MouseClick);
             this.textBoxComplexReqAddr.Leave += new System.EventHandler(this.textBoxComplexReqAddr_Leave);
@@ -1248,10 +1249,9 @@
             // 
             // buttonComplexReq
             // 
-            this.buttonComplexReq.Location = new System.Drawing.Point(940, 225);
-            this.buttonComplexReq.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonComplexReq.Location = new System.Drawing.Point(752, 180);
             this.buttonComplexReq.Name = "buttonComplexReq";
-            this.buttonComplexReq.Size = new System.Drawing.Size(100, 28);
+            this.buttonComplexReq.Size = new System.Drawing.Size(80, 22);
             this.buttonComplexReq.TabIndex = 75;
             this.buttonComplexReq.Text = "ComplexReq";
             this.buttonComplexReq.UseVisualStyleBackColor = true;
@@ -1259,10 +1259,9 @@
             // 
             // textBoxMatchReqOutputClusters
             // 
-            this.textBoxMatchReqOutputClusters.Location = new System.Drawing.Point(796, 373);
-            this.textBoxMatchReqOutputClusters.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxMatchReqOutputClusters.Location = new System.Drawing.Point(637, 298);
             this.textBoxMatchReqOutputClusters.Name = "textBoxMatchReqOutputClusters";
-            this.textBoxMatchReqOutputClusters.Size = new System.Drawing.Size(128, 22);
+            this.textBoxMatchReqOutputClusters.Size = new System.Drawing.Size(103, 21);
             this.textBoxMatchReqOutputClusters.TabIndex = 41;
             this.textBoxMatchReqOutputClusters.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxMatchReqOutputClusters_MouseClick);
             this.textBoxMatchReqOutputClusters.Leave += new System.EventHandler(this.textBoxMatchReqOutputClusters_Leave);
@@ -1271,10 +1270,9 @@
             // 
             // textBoxMatchReqInputClusters
             // 
-            this.textBoxMatchReqInputClusters.Location = new System.Drawing.Point(527, 373);
-            this.textBoxMatchReqInputClusters.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxMatchReqInputClusters.Location = new System.Drawing.Point(422, 298);
             this.textBoxMatchReqInputClusters.Name = "textBoxMatchReqInputClusters";
-            this.textBoxMatchReqInputClusters.Size = new System.Drawing.Size(132, 22);
+            this.textBoxMatchReqInputClusters.Size = new System.Drawing.Size(106, 21);
             this.textBoxMatchReqInputClusters.TabIndex = 39;
             this.textBoxMatchReqInputClusters.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxMatchReqInputClusters_MouseClick);
             this.textBoxMatchReqInputClusters.Leave += new System.EventHandler(this.textBoxMatchReqInputClusters_Leave);
@@ -1283,10 +1281,9 @@
             // 
             // textBoxMatchReqProfileID
             // 
-            this.textBoxMatchReqProfileID.Location = new System.Drawing.Point(257, 372);
-            this.textBoxMatchReqProfileID.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxMatchReqProfileID.Location = new System.Drawing.Point(206, 298);
             this.textBoxMatchReqProfileID.Name = "textBoxMatchReqProfileID";
-            this.textBoxMatchReqProfileID.Size = new System.Drawing.Size(132, 22);
+            this.textBoxMatchReqProfileID.Size = new System.Drawing.Size(106, 21);
             this.textBoxMatchReqProfileID.TabIndex = 37;
             this.textBoxMatchReqProfileID.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxMatchReqProfileID_MouseClick);
             this.textBoxMatchReqProfileID.Leave += new System.EventHandler(this.textBoxMatchReqProfileID_Leave);
@@ -1295,10 +1292,9 @@
             // 
             // textBoxMatchReqNbrOutputClusters
             // 
-            this.textBoxMatchReqNbrOutputClusters.Location = new System.Drawing.Point(668, 373);
-            this.textBoxMatchReqNbrOutputClusters.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxMatchReqNbrOutputClusters.Location = new System.Drawing.Point(534, 298);
             this.textBoxMatchReqNbrOutputClusters.Name = "textBoxMatchReqNbrOutputClusters";
-            this.textBoxMatchReqNbrOutputClusters.Size = new System.Drawing.Size(119, 22);
+            this.textBoxMatchReqNbrOutputClusters.Size = new System.Drawing.Size(96, 21);
             this.textBoxMatchReqNbrOutputClusters.TabIndex = 40;
             this.textBoxMatchReqNbrOutputClusters.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxMatchReqNbrOutputClusters_MouseClick);
             this.textBoxMatchReqNbrOutputClusters.Leave += new System.EventHandler(this.textBoxMatchReqNbrOutputClusters_Leave);
@@ -1307,10 +1303,9 @@
             // 
             // textBoxMatchReqNbrInputClusters
             // 
-            this.textBoxMatchReqNbrInputClusters.Location = new System.Drawing.Point(399, 373);
-            this.textBoxMatchReqNbrInputClusters.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxMatchReqNbrInputClusters.Location = new System.Drawing.Point(319, 298);
             this.textBoxMatchReqNbrInputClusters.Name = "textBoxMatchReqNbrInputClusters";
-            this.textBoxMatchReqNbrInputClusters.Size = new System.Drawing.Size(119, 22);
+            this.textBoxMatchReqNbrInputClusters.Size = new System.Drawing.Size(96, 21);
             this.textBoxMatchReqNbrInputClusters.TabIndex = 38;
             this.textBoxMatchReqNbrInputClusters.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxMatchReqNbrInputClusters_MouseClick);
             this.textBoxMatchReqNbrInputClusters.Leave += new System.EventHandler(this.textBoxMatchReqNbrInputClusters_Leave);
@@ -1319,10 +1314,9 @@
             // 
             // textBoxMatchReqAddr
             // 
-            this.textBoxMatchReqAddr.Location = new System.Drawing.Point(116, 372);
-            this.textBoxMatchReqAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxMatchReqAddr.Location = new System.Drawing.Point(93, 298);
             this.textBoxMatchReqAddr.Name = "textBoxMatchReqAddr";
-            this.textBoxMatchReqAddr.Size = new System.Drawing.Size(132, 22);
+            this.textBoxMatchReqAddr.Size = new System.Drawing.Size(106, 21);
             this.textBoxMatchReqAddr.TabIndex = 36;
             this.textBoxMatchReqAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxMatchReqAddr_MouseClick);
             this.textBoxMatchReqAddr.Leave += new System.EventHandler(this.textBoxMatchReqAddr_Leave);
@@ -1331,10 +1325,9 @@
             // 
             // textBoxActiveEpAddr
             // 
-            this.textBoxActiveEpAddr.Location = new System.Drawing.Point(1048, 10);
-            this.textBoxActiveEpAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxActiveEpAddr.Location = new System.Drawing.Point(838, 8);
             this.textBoxActiveEpAddr.Name = "textBoxActiveEpAddr";
-            this.textBoxActiveEpAddr.Size = new System.Drawing.Size(132, 22);
+            this.textBoxActiveEpAddr.Size = new System.Drawing.Size(106, 21);
             this.textBoxActiveEpAddr.TabIndex = 57;
             this.textBoxActiveEpAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxActiveEpAddr_MouseClick);
             this.textBoxActiveEpAddr.Leave += new System.EventHandler(this.textBoxActiveEpAddr_Leave);
@@ -1343,10 +1336,9 @@
             // 
             // textBoxPowerReqAddr
             // 
-            this.textBoxPowerReqAddr.Location = new System.Drawing.Point(1048, 155);
-            this.textBoxPowerReqAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxPowerReqAddr.Location = new System.Drawing.Point(838, 124);
             this.textBoxPowerReqAddr.Name = "textBoxPowerReqAddr";
-            this.textBoxPowerReqAddr.Size = new System.Drawing.Size(132, 22);
+            this.textBoxPowerReqAddr.Size = new System.Drawing.Size(106, 21);
             this.textBoxPowerReqAddr.TabIndex = 71;
             this.textBoxPowerReqAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxPowerReqAddr_MouseClick);
             this.textBoxPowerReqAddr.Leave += new System.EventHandler(this.textBoxPowerReqAddr_Leave);
@@ -1355,10 +1347,9 @@
             // 
             // textBoxSimpleReqEndPoint
             // 
-            this.textBoxSimpleReqEndPoint.Location = new System.Drawing.Point(1189, 191);
-            this.textBoxSimpleReqEndPoint.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxSimpleReqEndPoint.Location = new System.Drawing.Point(951, 153);
             this.textBoxSimpleReqEndPoint.Name = "textBoxSimpleReqEndPoint";
-            this.textBoxSimpleReqEndPoint.Size = new System.Drawing.Size(132, 22);
+            this.textBoxSimpleReqEndPoint.Size = new System.Drawing.Size(106, 21);
             this.textBoxSimpleReqEndPoint.TabIndex = 74;
             this.textBoxSimpleReqEndPoint.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxSimpleReqEndPoint_MouseClick);
             this.textBoxSimpleReqEndPoint.Leave += new System.EventHandler(this.textBoxSimpleReqEndPoint_Leave);
@@ -1367,10 +1358,9 @@
             // 
             // textBoxSimpleReqAddr
             // 
-            this.textBoxSimpleReqAddr.Location = new System.Drawing.Point(1048, 191);
-            this.textBoxSimpleReqAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxSimpleReqAddr.Location = new System.Drawing.Point(838, 153);
             this.textBoxSimpleReqAddr.Name = "textBoxSimpleReqAddr";
-            this.textBoxSimpleReqAddr.Size = new System.Drawing.Size(132, 22);
+            this.textBoxSimpleReqAddr.Size = new System.Drawing.Size(106, 21);
             this.textBoxSimpleReqAddr.TabIndex = 73;
             this.textBoxSimpleReqAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxSimpleReqAddr_MouseClick);
             this.textBoxSimpleReqAddr.Leave += new System.EventHandler(this.textBoxSimpleReqAddr_Leave);
@@ -1379,10 +1369,9 @@
             // 
             // buttonMatchReq
             // 
-            this.buttonMatchReq.Location = new System.Drawing.Point(8, 369);
-            this.buttonMatchReq.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonMatchReq.Location = new System.Drawing.Point(6, 295);
             this.buttonMatchReq.Name = "buttonMatchReq";
-            this.buttonMatchReq.Size = new System.Drawing.Size(100, 28);
+            this.buttonMatchReq.Size = new System.Drawing.Size(80, 22);
             this.buttonMatchReq.TabIndex = 35;
             this.buttonMatchReq.Text = "Match Req";
             this.buttonMatchReq.UseVisualStyleBackColor = true;
@@ -1390,10 +1379,9 @@
             // 
             // buttonActiveEpReq
             // 
-            this.buttonActiveEpReq.Location = new System.Drawing.Point(940, 7);
-            this.buttonActiveEpReq.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonActiveEpReq.Location = new System.Drawing.Point(752, 6);
             this.buttonActiveEpReq.Name = "buttonActiveEpReq";
-            this.buttonActiveEpReq.Size = new System.Drawing.Size(100, 28);
+            this.buttonActiveEpReq.Size = new System.Drawing.Size(80, 22);
             this.buttonActiveEpReq.TabIndex = 56;
             this.buttonActiveEpReq.Text = "Active Req";
             this.buttonActiveEpReq.UseVisualStyleBackColor = true;
@@ -1401,10 +1389,9 @@
             // 
             // buttonPowerDescReq
             // 
-            this.buttonPowerDescReq.Location = new System.Drawing.Point(940, 153);
-            this.buttonPowerDescReq.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonPowerDescReq.Location = new System.Drawing.Point(752, 122);
             this.buttonPowerDescReq.Name = "buttonPowerDescReq";
-            this.buttonPowerDescReq.Size = new System.Drawing.Size(100, 28);
+            this.buttonPowerDescReq.Size = new System.Drawing.Size(80, 22);
             this.buttonPowerDescReq.TabIndex = 70;
             this.buttonPowerDescReq.Text = "Power Req";
             this.buttonPowerDescReq.UseVisualStyleBackColor = true;
@@ -1412,10 +1399,9 @@
             // 
             // buttonSimpleDescReq
             // 
-            this.buttonSimpleDescReq.Location = new System.Drawing.Point(940, 188);
-            this.buttonSimpleDescReq.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonSimpleDescReq.Location = new System.Drawing.Point(752, 150);
             this.buttonSimpleDescReq.Name = "buttonSimpleDescReq";
-            this.buttonSimpleDescReq.Size = new System.Drawing.Size(100, 28);
+            this.buttonSimpleDescReq.Size = new System.Drawing.Size(80, 22);
             this.buttonSimpleDescReq.TabIndex = 72;
             this.buttonSimpleDescReq.Text = "Simple Req";
             this.buttonSimpleDescReq.UseVisualStyleBackColor = true;
@@ -1423,10 +1409,9 @@
             // 
             // textBoxNodeDescReq
             // 
-            this.textBoxNodeDescReq.Location = new System.Drawing.Point(1048, 118);
-            this.textBoxNodeDescReq.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxNodeDescReq.Location = new System.Drawing.Point(838, 94);
             this.textBoxNodeDescReq.Name = "textBoxNodeDescReq";
-            this.textBoxNodeDescReq.Size = new System.Drawing.Size(132, 22);
+            this.textBoxNodeDescReq.Size = new System.Drawing.Size(106, 21);
             this.textBoxNodeDescReq.TabIndex = 69;
             this.textBoxNodeDescReq.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxNodeDescReq_MouseClick);
             this.textBoxNodeDescReq.Leave += new System.EventHandler(this.textBoxNodeDescReq_Leave);
@@ -1435,10 +1420,9 @@
             // 
             // buttonNodeDescReq
             // 
-            this.buttonNodeDescReq.Location = new System.Drawing.Point(940, 116);
-            this.buttonNodeDescReq.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonNodeDescReq.Location = new System.Drawing.Point(752, 93);
             this.buttonNodeDescReq.Name = "buttonNodeDescReq";
-            this.buttonNodeDescReq.Size = new System.Drawing.Size(100, 28);
+            this.buttonNodeDescReq.Size = new System.Drawing.Size(80, 22);
             this.buttonNodeDescReq.TabIndex = 68;
             this.buttonNodeDescReq.Text = "Node Req";
             this.buttonNodeDescReq.UseVisualStyleBackColor = true;
@@ -1446,10 +1430,9 @@
             // 
             // buttonIeeeAddrReq
             // 
-            this.buttonIeeeAddrReq.Location = new System.Drawing.Point(940, 43);
-            this.buttonIeeeAddrReq.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonIeeeAddrReq.Location = new System.Drawing.Point(752, 34);
             this.buttonIeeeAddrReq.Name = "buttonIeeeAddrReq";
-            this.buttonIeeeAddrReq.Size = new System.Drawing.Size(100, 28);
+            this.buttonIeeeAddrReq.Size = new System.Drawing.Size(80, 22);
             this.buttonIeeeAddrReq.TabIndex = 58;
             this.buttonIeeeAddrReq.Text = "IEEE Req";
             this.buttonIeeeAddrReq.UseVisualStyleBackColor = true;
@@ -1457,10 +1440,9 @@
             // 
             // buttonNwkAddrReq
             // 
-            this.buttonNwkAddrReq.Location = new System.Drawing.Point(940, 79);
-            this.buttonNwkAddrReq.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonNwkAddrReq.Location = new System.Drawing.Point(752, 63);
             this.buttonNwkAddrReq.Name = "buttonNwkAddrReq";
-            this.buttonNwkAddrReq.Size = new System.Drawing.Size(100, 28);
+            this.buttonNwkAddrReq.Size = new System.Drawing.Size(80, 22);
             this.buttonNwkAddrReq.TabIndex = 63;
             this.buttonNwkAddrReq.Text = "Addr Req";
             this.buttonNwkAddrReq.UseVisualStyleBackColor = true;
@@ -1469,28 +1451,25 @@
             // comboBoxSecurityKey
             // 
             this.comboBoxSecurityKey.FormattingEnabled = true;
-            this.comboBoxSecurityKey.Location = new System.Drawing.Point(640, 117);
-            this.comboBoxSecurityKey.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxSecurityKey.Location = new System.Drawing.Point(512, 94);
             this.comboBoxSecurityKey.Name = "comboBoxSecurityKey";
-            this.comboBoxSecurityKey.Size = new System.Drawing.Size(295, 24);
+            this.comboBoxSecurityKey.Size = new System.Drawing.Size(237, 20);
             this.comboBoxSecurityKey.TabIndex = 15;
             // 
             // comboBoxPermitJoinTCsignificance
             // 
             this.comboBoxPermitJoinTCsignificance.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxPermitJoinTCsignificance.FormattingEnabled = true;
-            this.comboBoxPermitJoinTCsignificance.Location = new System.Drawing.Point(399, 297);
-            this.comboBoxPermitJoinTCsignificance.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxPermitJoinTCsignificance.Location = new System.Drawing.Point(319, 238);
             this.comboBoxPermitJoinTCsignificance.Name = "comboBoxPermitJoinTCsignificance";
-            this.comboBoxPermitJoinTCsignificance.Size = new System.Drawing.Size(160, 24);
+            this.comboBoxPermitJoinTCsignificance.Size = new System.Drawing.Size(129, 20);
             this.comboBoxPermitJoinTCsignificance.TabIndex = 33;
             // 
             // textBoxPermitJoinInterval
             // 
-            this.textBoxPermitJoinInterval.Location = new System.Drawing.Point(257, 298);
-            this.textBoxPermitJoinInterval.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxPermitJoinInterval.Location = new System.Drawing.Point(206, 238);
             this.textBoxPermitJoinInterval.Name = "textBoxPermitJoinInterval";
-            this.textBoxPermitJoinInterval.Size = new System.Drawing.Size(132, 22);
+            this.textBoxPermitJoinInterval.Size = new System.Drawing.Size(106, 21);
             this.textBoxPermitJoinInterval.TabIndex = 32;
             this.textBoxPermitJoinInterval.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxPermitJoinInterval_MouseClick);
             this.textBoxPermitJoinInterval.Leave += new System.EventHandler(this.textBoxPermitJoinInterval_Leave);
@@ -1499,10 +1478,9 @@
             // 
             // textBoxPermitJoinAddr
             // 
-            this.textBoxPermitJoinAddr.Location = new System.Drawing.Point(116, 298);
-            this.textBoxPermitJoinAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxPermitJoinAddr.Location = new System.Drawing.Point(93, 238);
             this.textBoxPermitJoinAddr.Name = "textBoxPermitJoinAddr";
-            this.textBoxPermitJoinAddr.Size = new System.Drawing.Size(132, 22);
+            this.textBoxPermitJoinAddr.Size = new System.Drawing.Size(106, 21);
             this.textBoxPermitJoinAddr.TabIndex = 31;
             this.textBoxPermitJoinAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxPermitJoinAddr_MouseClick);
             this.textBoxPermitJoinAddr.Leave += new System.EventHandler(this.textBoxPermitJoinAddr_Leave);
@@ -1511,10 +1489,9 @@
             // 
             // buttonPermitJoin
             // 
-            this.buttonPermitJoin.Location = new System.Drawing.Point(8, 298);
-            this.buttonPermitJoin.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonPermitJoin.Location = new System.Drawing.Point(6, 238);
             this.buttonPermitJoin.Name = "buttonPermitJoin";
-            this.buttonPermitJoin.Size = new System.Drawing.Size(100, 28);
+            this.buttonPermitJoin.Size = new System.Drawing.Size(80, 22);
             this.buttonPermitJoin.TabIndex = 30;
             this.buttonPermitJoin.Text = "Permit Join";
             this.buttonPermitJoin.UseVisualStyleBackColor = true;
@@ -1524,38 +1501,34 @@
             // 
             this.comboBoxSetKeyType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxSetKeyType.FormattingEnabled = true;
-            this.comboBoxSetKeyType.Location = new System.Drawing.Point(471, 116);
-            this.comboBoxSetKeyType.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxSetKeyType.Location = new System.Drawing.Point(377, 93);
             this.comboBoxSetKeyType.Name = "comboBoxSetKeyType";
-            this.comboBoxSetKeyType.Size = new System.Drawing.Size(160, 24);
+            this.comboBoxSetKeyType.Size = new System.Drawing.Size(129, 20);
             this.comboBoxSetKeyType.TabIndex = 14;
             // 
             // comboBoxSetKeyState
             // 
             this.comboBoxSetKeyState.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxSetKeyState.FormattingEnabled = true;
-            this.comboBoxSetKeyState.Location = new System.Drawing.Point(119, 117);
-            this.comboBoxSetKeyState.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxSetKeyState.Location = new System.Drawing.Point(95, 94);
             this.comboBoxSetKeyState.Name = "comboBoxSetKeyState";
-            this.comboBoxSetKeyState.Size = new System.Drawing.Size(265, 24);
+            this.comboBoxSetKeyState.Size = new System.Drawing.Size(213, 20);
             this.comboBoxSetKeyState.TabIndex = 12;
             // 
             // comboBoxSetType
             // 
             this.comboBoxSetType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxSetType.FormattingEnabled = true;
-            this.comboBoxSetType.Location = new System.Drawing.Point(119, 155);
-            this.comboBoxSetType.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxSetType.Location = new System.Drawing.Point(95, 124);
             this.comboBoxSetType.Name = "comboBoxSetType";
-            this.comboBoxSetType.Size = new System.Drawing.Size(265, 24);
+            this.comboBoxSetType.Size = new System.Drawing.Size(213, 20);
             this.comboBoxSetType.TabIndex = 17;
             // 
             // buttonStartNWK
             // 
-            this.buttonStartNWK.Location = new System.Drawing.Point(332, 7);
-            this.buttonStartNWK.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonStartNWK.Location = new System.Drawing.Point(266, 6);
             this.buttonStartNWK.Name = "buttonStartNWK";
-            this.buttonStartNWK.Size = new System.Drawing.Size(100, 28);
+            this.buttonStartNWK.Size = new System.Drawing.Size(80, 22);
             this.buttonStartNWK.TabIndex = 4;
             this.buttonStartNWK.Text = "Start NWK";
             this.buttonStartNWK.UseVisualStyleBackColor = true;
@@ -1563,10 +1536,9 @@
             // 
             // buttonBind
             // 
-            this.buttonBind.Location = new System.Drawing.Point(8, 405);
-            this.buttonBind.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonBind.Location = new System.Drawing.Point(6, 324);
             this.buttonBind.Name = "buttonBind";
-            this.buttonBind.Size = new System.Drawing.Size(100, 28);
+            this.buttonBind.Size = new System.Drawing.Size(80, 22);
             this.buttonBind.TabIndex = 42;
             this.buttonBind.Text = "Bind";
             this.buttonBind.UseVisualStyleBackColor = true;
@@ -1574,10 +1546,9 @@
             // 
             // buttonErasePD
             // 
-            this.buttonErasePD.Location = new System.Drawing.Point(8, 7);
-            this.buttonErasePD.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonErasePD.Location = new System.Drawing.Point(6, 6);
             this.buttonErasePD.Name = "buttonErasePD";
-            this.buttonErasePD.Size = new System.Drawing.Size(100, 28);
+            this.buttonErasePD.Size = new System.Drawing.Size(80, 22);
             this.buttonErasePD.TabIndex = 1;
             this.buttonErasePD.Text = "Erase PD";
             this.buttonErasePD.UseVisualStyleBackColor = true;
@@ -1585,10 +1556,9 @@
             // 
             // buttonReset
             // 
-            this.buttonReset.Location = new System.Drawing.Point(116, 7);
-            this.buttonReset.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonReset.Location = new System.Drawing.Point(93, 6);
             this.buttonReset.Name = "buttonReset";
-            this.buttonReset.Size = new System.Drawing.Size(100, 28);
+            this.buttonReset.Size = new System.Drawing.Size(80, 22);
             this.buttonReset.TabIndex = 2;
             this.buttonReset.Text = "Reset";
             this.buttonReset.UseVisualStyleBackColor = true;
@@ -1596,20 +1566,18 @@
             // 
             // textBoxSetSecurityKeySeqNbr
             // 
-            this.textBoxSetSecurityKeySeqNbr.Location = new System.Drawing.Point(393, 118);
-            this.textBoxSetSecurityKeySeqNbr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxSetSecurityKeySeqNbr.Location = new System.Drawing.Point(314, 94);
             this.textBoxSetSecurityKeySeqNbr.Name = "textBoxSetSecurityKeySeqNbr";
-            this.textBoxSetSecurityKeySeqNbr.Size = new System.Drawing.Size(68, 22);
+            this.textBoxSetSecurityKeySeqNbr.Size = new System.Drawing.Size(55, 21);
             this.textBoxSetSecurityKeySeqNbr.TabIndex = 13;
             this.textBoxSetSecurityKeySeqNbr.Click += new System.EventHandler(this.textBoxSetSecurityKeySeqNbr_Click);
             this.textBoxSetSecurityKeySeqNbr.Leave += new System.EventHandler(this.textBoxSetSecurityKeySeqNbr_Leave);
             // 
             // buttonSetDeviceType
             // 
-            this.buttonSetDeviceType.Location = new System.Drawing.Point(8, 153);
-            this.buttonSetDeviceType.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonSetDeviceType.Location = new System.Drawing.Point(6, 122);
             this.buttonSetDeviceType.Name = "buttonSetDeviceType";
-            this.buttonSetDeviceType.Size = new System.Drawing.Size(100, 28);
+            this.buttonSetDeviceType.Size = new System.Drawing.Size(80, 22);
             this.buttonSetDeviceType.TabIndex = 16;
             this.buttonSetDeviceType.Text = "Set Type";
             this.buttonSetDeviceType.UseVisualStyleBackColor = true;
@@ -1617,10 +1585,9 @@
             // 
             // buttonSetSecurity
             // 
-            this.buttonSetSecurity.Location = new System.Drawing.Point(8, 116);
-            this.buttonSetSecurity.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonSetSecurity.Location = new System.Drawing.Point(6, 93);
             this.buttonSetSecurity.Name = "buttonSetSecurity";
-            this.buttonSetSecurity.Size = new System.Drawing.Size(100, 28);
+            this.buttonSetSecurity.Size = new System.Drawing.Size(80, 22);
             this.buttonSetSecurity.TabIndex = 11;
             this.buttonSetSecurity.Text = "Set Security";
             this.buttonSetSecurity.UseVisualStyleBackColor = true;
@@ -1628,10 +1595,9 @@
             // 
             // textBoxSetEPID
             // 
-            this.textBoxSetEPID.Location = new System.Drawing.Point(119, 46);
-            this.textBoxSetEPID.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxSetEPID.Location = new System.Drawing.Point(95, 37);
             this.textBoxSetEPID.Name = "textBoxSetEPID";
-            this.textBoxSetEPID.Size = new System.Drawing.Size(265, 22);
+            this.textBoxSetEPID.Size = new System.Drawing.Size(213, 21);
             this.textBoxSetEPID.TabIndex = 8;
             this.textBoxSetEPID.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxSetEPID_MouseClick);
             this.textBoxSetEPID.Leave += new System.EventHandler(this.textBoxSetEPID_Leave);
@@ -1640,10 +1606,9 @@
             // 
             // textBoxSetCMSK
             // 
-            this.textBoxSetCMSK.Location = new System.Drawing.Point(119, 81);
-            this.textBoxSetCMSK.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxSetCMSK.Location = new System.Drawing.Point(95, 65);
             this.textBoxSetCMSK.Name = "textBoxSetCMSK";
-            this.textBoxSetCMSK.Size = new System.Drawing.Size(265, 22);
+            this.textBoxSetCMSK.Size = new System.Drawing.Size(213, 21);
             this.textBoxSetCMSK.TabIndex = 10;
             this.textBoxSetCMSK.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxSetCMSK_MouseClick);
             this.textBoxSetCMSK.Leave += new System.EventHandler(this.textBoxSetCMSK_Leave);
@@ -1652,10 +1617,9 @@
             // 
             // buttonSetCMSK
             // 
-            this.buttonSetCMSK.Location = new System.Drawing.Point(8, 79);
-            this.buttonSetCMSK.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonSetCMSK.Location = new System.Drawing.Point(6, 63);
             this.buttonSetCMSK.Name = "buttonSetCMSK";
-            this.buttonSetCMSK.Size = new System.Drawing.Size(100, 28);
+            this.buttonSetCMSK.Size = new System.Drawing.Size(80, 22);
             this.buttonSetCMSK.TabIndex = 9;
             this.buttonSetCMSK.Text = "Set CMSK";
             this.buttonSetCMSK.UseVisualStyleBackColor = true;
@@ -1663,10 +1627,9 @@
             // 
             // buttonSetEPID
             // 
-            this.buttonSetEPID.Location = new System.Drawing.Point(8, 43);
-            this.buttonSetEPID.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonSetEPID.Location = new System.Drawing.Point(6, 34);
             this.buttonSetEPID.Name = "buttonSetEPID";
-            this.buttonSetEPID.Size = new System.Drawing.Size(100, 28);
+            this.buttonSetEPID.Size = new System.Drawing.Size(80, 22);
             this.buttonSetEPID.TabIndex = 7;
             this.buttonSetEPID.Text = "Set EPID";
             this.buttonSetEPID.UseVisualStyleBackColor = true;
@@ -1674,10 +1637,9 @@
             // 
             // buttonGetVersion
             // 
-            this.buttonGetVersion.Location = new System.Drawing.Point(224, 7);
-            this.buttonGetVersion.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonGetVersion.Location = new System.Drawing.Point(179, 6);
             this.buttonGetVersion.Name = "buttonGetVersion";
-            this.buttonGetVersion.Size = new System.Drawing.Size(100, 28);
+            this.buttonGetVersion.Size = new System.Drawing.Size(80, 22);
             this.buttonGetVersion.TabIndex = 3;
             this.buttonGetVersion.Text = "Get Version";
             this.buttonGetVersion.UseVisualStyleBackColor = true;
@@ -1691,18 +1653,20 @@
             this.tabPageDevice.Controls.Add(this.textBoxExtAddr);
             this.tabPageDevice.Controls.Add(this.label16);
             this.tabPageDevice.Controls.Add(this.comboBoxAddressList);
-            this.tabPageDevice.Location = new System.Drawing.Point(4, 25);
+            this.tabPageDevice.Location = new System.Drawing.Point(4, 22);
+            this.tabPageDevice.Margin = new System.Windows.Forms.Padding(2);
             this.tabPageDevice.Name = "tabPageDevice";
-            this.tabPageDevice.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageDevice.Size = new System.Drawing.Size(1691, 524);
+            this.tabPageDevice.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPageDevice.Size = new System.Drawing.Size(1351, 416);
             this.tabPageDevice.TabIndex = 18;
             this.tabPageDevice.Text = "Discover Devices";
             // 
             // buttonCopyAddr
             // 
-            this.buttonCopyAddr.Location = new System.Drawing.Point(265, 107);
+            this.buttonCopyAddr.Location = new System.Drawing.Point(212, 86);
+            this.buttonCopyAddr.Margin = new System.Windows.Forms.Padding(2);
             this.buttonCopyAddr.Name = "buttonCopyAddr";
-            this.buttonCopyAddr.Size = new System.Drawing.Size(121, 32);
+            this.buttonCopyAddr.Size = new System.Drawing.Size(97, 26);
             this.buttonCopyAddr.TabIndex = 3;
             this.buttonCopyAddr.Text = "Copy";
             this.buttonCopyAddr.UseVisualStyleBackColor = true;
@@ -1710,9 +1674,10 @@
             // 
             // buttonDiscoverDevices
             // 
-            this.buttonDiscoverDevices.Location = new System.Drawing.Point(34, 37);
+            this.buttonDiscoverDevices.Location = new System.Drawing.Point(27, 30);
+            this.buttonDiscoverDevices.Margin = new System.Windows.Forms.Padding(2);
             this.buttonDiscoverDevices.Name = "buttonDiscoverDevices";
-            this.buttonDiscoverDevices.Size = new System.Drawing.Size(225, 33);
+            this.buttonDiscoverDevices.Size = new System.Drawing.Size(180, 26);
             this.buttonDiscoverDevices.TabIndex = 0;
             this.buttonDiscoverDevices.Text = "Discover devices";
             this.buttonDiscoverDevices.UseVisualStyleBackColor = true;
@@ -1720,28 +1685,31 @@
             // 
             // textBoxExtAddr
             // 
-            this.textBoxExtAddr.Location = new System.Drawing.Point(34, 117);
+            this.textBoxExtAddr.Location = new System.Drawing.Point(27, 94);
+            this.textBoxExtAddr.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxExtAddr.Name = "textBoxExtAddr";
             this.textBoxExtAddr.ReadOnly = true;
-            this.textBoxExtAddr.Size = new System.Drawing.Size(225, 22);
+            this.textBoxExtAddr.Size = new System.Drawing.Size(181, 21);
             this.textBoxExtAddr.TabIndex = 2;
             this.textBoxExtAddr.Text = " ";
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(31, 97);
+            this.label16.Location = new System.Drawing.Point(25, 78);
+            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(123, 17);
+            this.label16.Size = new System.Drawing.Size(101, 12);
             this.label16.TabIndex = 6;
             this.label16.Text = "Extended Address";
             // 
             // comboBoxAddressList
             // 
             this.comboBoxAddressList.FormattingEnabled = true;
-            this.comboBoxAddressList.Location = new System.Drawing.Point(265, 42);
+            this.comboBoxAddressList.Location = new System.Drawing.Point(212, 34);
+            this.comboBoxAddressList.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxAddressList.Name = "comboBoxAddressList";
-            this.comboBoxAddressList.Size = new System.Drawing.Size(121, 24);
+            this.comboBoxAddressList.Size = new System.Drawing.Size(98, 20);
             this.comboBoxAddressList.TabIndex = 1;
             this.comboBoxAddressList.SelectedIndexChanged += new System.EventHandler(this.comboBoxAddressList_SelectedIndexChanged);
             // 
@@ -1842,21 +1810,19 @@
             this.tabPage12.Controls.Add(this.textBoxReadAttribSrcEP);
             this.tabPage12.Controls.Add(this.textBoxReadAttribTargetAddr);
             this.tabPage12.Controls.Add(this.buttonReadAttrib);
-            this.tabPage12.Location = new System.Drawing.Point(4, 25);
-            this.tabPage12.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPage12.Location = new System.Drawing.Point(4, 22);
             this.tabPage12.Name = "tabPage12";
-            this.tabPage12.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage12.Size = new System.Drawing.Size(1691, 524);
+            this.tabPage12.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage12.Size = new System.Drawing.Size(1351, 416);
             this.tabPage12.TabIndex = 12;
             this.tabPage12.Text = "General";
             this.tabPage12.Click += new System.EventHandler(this.tabPage12_Click);
             // 
             // textBoxOOBDataKey
             // 
-            this.textBoxOOBDataKey.Location = new System.Drawing.Point(337, 437);
-            this.textBoxOOBDataKey.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxOOBDataKey.Location = new System.Drawing.Point(270, 350);
             this.textBoxOOBDataKey.Name = "textBoxOOBDataKey";
-            this.textBoxOOBDataKey.Size = new System.Drawing.Size(331, 22);
+            this.textBoxOOBDataKey.Size = new System.Drawing.Size(266, 21);
             this.textBoxOOBDataKey.TabIndex = 96;
             this.textBoxOOBDataKey.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxOOBDataKey_MouseClick);
             this.textBoxOOBDataKey.Leave += new System.EventHandler(this.textBoxOOBDataKey_Leave);
@@ -1865,10 +1831,9 @@
             // 
             // textBoxOOBDataAddr
             // 
-            this.textBoxOOBDataAddr.Location = new System.Drawing.Point(198, 437);
-            this.textBoxOOBDataAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxOOBDataAddr.Location = new System.Drawing.Point(158, 350);
             this.textBoxOOBDataAddr.Name = "textBoxOOBDataAddr";
-            this.textBoxOOBDataAddr.Size = new System.Drawing.Size(131, 22);
+            this.textBoxOOBDataAddr.Size = new System.Drawing.Size(106, 21);
             this.textBoxOOBDataAddr.TabIndex = 95;
             this.textBoxOOBDataAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxOOBDataAddr_MouseClick);
             this.textBoxOOBDataAddr.Leave += new System.EventHandler(this.textBoxOOBDataAddr_Leave);
@@ -1877,10 +1842,9 @@
             // 
             // buttonOOBCommissioningData
             // 
-            this.buttonOOBCommissioningData.Location = new System.Drawing.Point(8, 435);
-            this.buttonOOBCommissioningData.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonOOBCommissioningData.Location = new System.Drawing.Point(6, 348);
             this.buttonOOBCommissioningData.Name = "buttonOOBCommissioningData";
-            this.buttonOOBCommissioningData.Size = new System.Drawing.Size(182, 27);
+            this.buttonOOBCommissioningData.Size = new System.Drawing.Size(146, 22);
             this.buttonOOBCommissioningData.TabIndex = 91;
             this.buttonOOBCommissioningData.Text = "OOB Commissioning Data";
             this.buttonOOBCommissioningData.UseVisualStyleBackColor = true;
@@ -1888,10 +1852,9 @@
             // 
             // textBoxDiscoverAttributesStartAttrId
             // 
-            this.textBoxDiscoverAttributesStartAttrId.Location = new System.Drawing.Point(676, 263);
-            this.textBoxDiscoverAttributesStartAttrId.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxDiscoverAttributesStartAttrId.Location = new System.Drawing.Point(541, 210);
             this.textBoxDiscoverAttributesStartAttrId.Name = "textBoxDiscoverAttributesStartAttrId";
-            this.textBoxDiscoverAttributesStartAttrId.Size = new System.Drawing.Size(136, 22);
+            this.textBoxDiscoverAttributesStartAttrId.Size = new System.Drawing.Size(110, 21);
             this.textBoxDiscoverAttributesStartAttrId.TabIndex = 55;
             this.textBoxDiscoverAttributesStartAttrId.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxDiscoverAttributesStartAttrId_MouseClick);
             this.textBoxDiscoverAttributesStartAttrId.Leave += new System.EventHandler(this.textBoxDiscoverAttributesStartAttrId_Leave);
@@ -1900,10 +1863,9 @@
             // 
             // textBoxRawDataCommandsProfileID
             // 
-            this.textBoxRawDataCommandsProfileID.Location = new System.Drawing.Point(676, 400);
-            this.textBoxRawDataCommandsProfileID.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxRawDataCommandsProfileID.Location = new System.Drawing.Point(541, 320);
             this.textBoxRawDataCommandsProfileID.Name = "textBoxRawDataCommandsProfileID";
-            this.textBoxRawDataCommandsProfileID.Size = new System.Drawing.Size(137, 22);
+            this.textBoxRawDataCommandsProfileID.Size = new System.Drawing.Size(110, 21);
             this.textBoxRawDataCommandsProfileID.TabIndex = 86;
             this.textBoxRawDataCommandsProfileID.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxRawDataCommandsProfileID_MouseClick);
             this.textBoxRawDataCommandsProfileID.Leave += new System.EventHandler(this.textBoxRawDataCommandsProfileID_Leave);
@@ -1912,10 +1874,9 @@
             // 
             // textBoxRawDataCommandsSecurityMode
             // 
-            this.textBoxRawDataCommandsSecurityMode.Location = new System.Drawing.Point(1105, 400);
-            this.textBoxRawDataCommandsSecurityMode.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxRawDataCommandsSecurityMode.Location = new System.Drawing.Point(884, 320);
             this.textBoxRawDataCommandsSecurityMode.Name = "textBoxRawDataCommandsSecurityMode";
-            this.textBoxRawDataCommandsSecurityMode.Size = new System.Drawing.Size(259, 22);
+            this.textBoxRawDataCommandsSecurityMode.Size = new System.Drawing.Size(208, 21);
             this.textBoxRawDataCommandsSecurityMode.TabIndex = 89;
             this.textBoxRawDataCommandsSecurityMode.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxRawDataCommandsSecurityMode_MouseClick);
             this.textBoxRawDataCommandsSecurityMode.Leave += new System.EventHandler(this.textBoxRawDataCommandsSecurityMode_Leave);
@@ -1924,10 +1885,9 @@
             // 
             // textBoxRawDataCommandsRadius
             // 
-            this.textBoxRawDataCommandsRadius.Location = new System.Drawing.Point(964, 400);
-            this.textBoxRawDataCommandsRadius.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxRawDataCommandsRadius.Location = new System.Drawing.Point(771, 320);
             this.textBoxRawDataCommandsRadius.Name = "textBoxRawDataCommandsRadius";
-            this.textBoxRawDataCommandsRadius.Size = new System.Drawing.Size(132, 22);
+            this.textBoxRawDataCommandsRadius.Size = new System.Drawing.Size(106, 21);
             this.textBoxRawDataCommandsRadius.TabIndex = 88;
             this.textBoxRawDataCommandsRadius.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxRawDataCommandsRadius_MouseClick);
             this.textBoxRawDataCommandsRadius.Leave += new System.EventHandler(this.textBoxRawDataCommandsRadius_Leave);
@@ -1936,10 +1896,9 @@
             // 
             // textBoxRawDataCommandsData
             // 
-            this.textBoxRawDataCommandsData.Location = new System.Drawing.Point(1373, 400);
-            this.textBoxRawDataCommandsData.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxRawDataCommandsData.Location = new System.Drawing.Point(1098, 320);
             this.textBoxRawDataCommandsData.Name = "textBoxRawDataCommandsData";
-            this.textBoxRawDataCommandsData.Size = new System.Drawing.Size(309, 22);
+            this.textBoxRawDataCommandsData.Size = new System.Drawing.Size(248, 21);
             this.textBoxRawDataCommandsData.TabIndex = 90;
             this.textBoxRawDataCommandsData.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxRawDataCommandsData_MouseClick);
             this.textBoxRawDataCommandsData.Leave += new System.EventHandler(this.textBoxRawDataCommandsData_Leave);
@@ -1948,10 +1907,9 @@
             // 
             // textBoxRawDataCommandsClusterID
             // 
-            this.textBoxRawDataCommandsClusterID.Location = new System.Drawing.Point(823, 400);
-            this.textBoxRawDataCommandsClusterID.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxRawDataCommandsClusterID.Location = new System.Drawing.Point(658, 320);
             this.textBoxRawDataCommandsClusterID.Name = "textBoxRawDataCommandsClusterID";
-            this.textBoxRawDataCommandsClusterID.Size = new System.Drawing.Size(135, 22);
+            this.textBoxRawDataCommandsClusterID.Size = new System.Drawing.Size(109, 21);
             this.textBoxRawDataCommandsClusterID.TabIndex = 87;
             this.textBoxRawDataCommandsClusterID.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxRawDataCommandsClusterID_MouseClick);
             this.textBoxRawDataCommandsClusterID.Leave += new System.EventHandler(this.textBoxRawDataCommandsClusterID_Leave);
@@ -1960,10 +1918,9 @@
             // 
             // textBoxRawDataCommandsDstEP
             // 
-            this.textBoxRawDataCommandsDstEP.Location = new System.Drawing.Point(540, 400);
-            this.textBoxRawDataCommandsDstEP.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxRawDataCommandsDstEP.Location = new System.Drawing.Point(432, 320);
             this.textBoxRawDataCommandsDstEP.Name = "textBoxRawDataCommandsDstEP";
-            this.textBoxRawDataCommandsDstEP.Size = new System.Drawing.Size(128, 22);
+            this.textBoxRawDataCommandsDstEP.Size = new System.Drawing.Size(103, 21);
             this.textBoxRawDataCommandsDstEP.TabIndex = 85;
             this.textBoxRawDataCommandsDstEP.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxRawDataCommandsDstEP_MouseClick);
             this.textBoxRawDataCommandsDstEP.Leave += new System.EventHandler(this.textBoxRawDataCommandsDstEP_Leave);
@@ -1972,10 +1929,9 @@
             // 
             // textBoxRawDataCommandsSrcEP
             // 
-            this.textBoxRawDataCommandsSrcEP.Location = new System.Drawing.Point(399, 400);
-            this.textBoxRawDataCommandsSrcEP.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxRawDataCommandsSrcEP.Location = new System.Drawing.Point(319, 320);
             this.textBoxRawDataCommandsSrcEP.Name = "textBoxRawDataCommandsSrcEP";
-            this.textBoxRawDataCommandsSrcEP.Size = new System.Drawing.Size(132, 22);
+            this.textBoxRawDataCommandsSrcEP.Size = new System.Drawing.Size(106, 21);
             this.textBoxRawDataCommandsSrcEP.TabIndex = 84;
             this.textBoxRawDataCommandsSrcEP.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxRawDataCommandsSrcEP_MouseClick);
             this.textBoxRawDataCommandsSrcEP.Leave += new System.EventHandler(this.textBoxRawDataCommandsSrcEP_Leave);
@@ -1984,10 +1940,9 @@
             // 
             // textBoxRawDataCommandsTargetAddr
             // 
-            this.textBoxRawDataCommandsTargetAddr.Location = new System.Drawing.Point(260, 400);
-            this.textBoxRawDataCommandsTargetAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxRawDataCommandsTargetAddr.Location = new System.Drawing.Point(208, 320);
             this.textBoxRawDataCommandsTargetAddr.Name = "textBoxRawDataCommandsTargetAddr";
-            this.textBoxRawDataCommandsTargetAddr.Size = new System.Drawing.Size(131, 22);
+            this.textBoxRawDataCommandsTargetAddr.Size = new System.Drawing.Size(106, 21);
             this.textBoxRawDataCommandsTargetAddr.TabIndex = 83;
             this.textBoxRawDataCommandsTargetAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxRawDataCommandsTargetAddr_MouseClick);
             this.textBoxRawDataCommandsTargetAddr.Leave += new System.EventHandler(this.textBoxRawDataCommandsTargetAddr_Leave);
@@ -1998,18 +1953,16 @@
             // 
             this.comboBoxRawDataCommandsAddrMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxRawDataCommandsAddrMode.FormattingEnabled = true;
-            this.comboBoxRawDataCommandsAddrMode.Location = new System.Drawing.Point(135, 401);
-            this.comboBoxRawDataCommandsAddrMode.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxRawDataCommandsAddrMode.Location = new System.Drawing.Point(108, 321);
             this.comboBoxRawDataCommandsAddrMode.Name = "comboBoxRawDataCommandsAddrMode";
-            this.comboBoxRawDataCommandsAddrMode.Size = new System.Drawing.Size(116, 24);
+            this.comboBoxRawDataCommandsAddrMode.Size = new System.Drawing.Size(94, 20);
             this.comboBoxRawDataCommandsAddrMode.TabIndex = 82;
             // 
             // buttonRawDataSend
             // 
-            this.buttonRawDataSend.Location = new System.Drawing.Point(8, 400);
-            this.buttonRawDataSend.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonRawDataSend.Location = new System.Drawing.Point(6, 320);
             this.buttonRawDataSend.Name = "buttonRawDataSend";
-            this.buttonRawDataSend.Size = new System.Drawing.Size(119, 27);
+            this.buttonRawDataSend.Size = new System.Drawing.Size(95, 22);
             this.buttonRawDataSend.TabIndex = 81;
             this.buttonRawDataSend.Text = "Raw Data";
             this.buttonRawDataSend.UseVisualStyleBackColor = true;
@@ -2017,10 +1970,9 @@
             // 
             // textBoxMgmtNwkUpdateNwkManagerAddr
             // 
-            this.textBoxMgmtNwkUpdateNwkManagerAddr.Location = new System.Drawing.Point(823, 334);
-            this.textBoxMgmtNwkUpdateNwkManagerAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxMgmtNwkUpdateNwkManagerAddr.Location = new System.Drawing.Point(658, 267);
             this.textBoxMgmtNwkUpdateNwkManagerAddr.Name = "textBoxMgmtNwkUpdateNwkManagerAddr";
-            this.textBoxMgmtNwkUpdateNwkManagerAddr.Size = new System.Drawing.Size(175, 22);
+            this.textBoxMgmtNwkUpdateNwkManagerAddr.Size = new System.Drawing.Size(141, 21);
             this.textBoxMgmtNwkUpdateNwkManagerAddr.TabIndex = 68;
             this.textBoxMgmtNwkUpdateNwkManagerAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxMgmtNwkUpdateNwkManagerAddr_MouseClick);
             this.textBoxMgmtNwkUpdateNwkManagerAddr.Leave += new System.EventHandler(this.textBoxMgmtNwkUpdateNwkManagerAddr_Leave);
@@ -2031,10 +1983,9 @@
             // 
             this.comboBoxDiscoverCommandsRxGen.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxDiscoverCommandsRxGen.FormattingEnabled = true;
-            this.comboBoxDiscoverCommandsRxGen.Location = new System.Drawing.Point(1521, 367);
-            this.comboBoxDiscoverCommandsRxGen.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxDiscoverCommandsRxGen.Location = new System.Drawing.Point(1217, 294);
             this.comboBoxDiscoverCommandsRxGen.Name = "comboBoxDiscoverCommandsRxGen";
-            this.comboBoxDiscoverCommandsRxGen.Size = new System.Drawing.Size(119, 24);
+            this.comboBoxDiscoverCommandsRxGen.Size = new System.Drawing.Size(96, 20);
             this.comboBoxDiscoverCommandsRxGen.TabIndex = 80;
             this.comboBoxDiscoverCommandsRxGen.MouseLeave += new System.EventHandler(this.comboBoxDiscoverCommandsRxGen_MouseLeave);
             this.comboBoxDiscoverCommandsRxGen.MouseHover += new System.EventHandler(this.comboBoxDiscoverCommandsRxGen_MouseHover);
@@ -2043,20 +1994,18 @@
             // 
             this.comboBoxDiscoverAttributesExtended.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxDiscoverAttributesExtended.FormattingEnabled = true;
-            this.comboBoxDiscoverAttributesExtended.Location = new System.Drawing.Point(1104, 261);
-            this.comboBoxDiscoverAttributesExtended.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxDiscoverAttributesExtended.Location = new System.Drawing.Point(883, 209);
             this.comboBoxDiscoverAttributesExtended.Name = "comboBoxDiscoverAttributesExtended";
-            this.comboBoxDiscoverAttributesExtended.Size = new System.Drawing.Size(131, 24);
+            this.comboBoxDiscoverAttributesExtended.Size = new System.Drawing.Size(106, 20);
             this.comboBoxDiscoverAttributesExtended.TabIndex = 58;
             this.comboBoxDiscoverAttributesExtended.MouseLeave += new System.EventHandler(this.comboBoxDiscoverAttributesExtended_MouseLeave);
             this.comboBoxDiscoverAttributesExtended.MouseHover += new System.EventHandler(this.comboBoxDiscoverAttributesExtended_MouseHover);
             // 
             // textBoxDiscoverCommandsMaxCommands
             // 
-            this.textBoxDiscoverCommandsMaxCommands.Location = new System.Drawing.Point(1373, 368);
-            this.textBoxDiscoverCommandsMaxCommands.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxDiscoverCommandsMaxCommands.Location = new System.Drawing.Point(1098, 294);
             this.textBoxDiscoverCommandsMaxCommands.Name = "textBoxDiscoverCommandsMaxCommands";
-            this.textBoxDiscoverCommandsMaxCommands.Size = new System.Drawing.Size(139, 22);
+            this.textBoxDiscoverCommandsMaxCommands.Size = new System.Drawing.Size(112, 21);
             this.textBoxDiscoverCommandsMaxCommands.TabIndex = 79;
             this.textBoxDiscoverCommandsMaxCommands.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxDiscoverCommandsMaxCommands_MouseClick);
             this.textBoxDiscoverCommandsMaxCommands.Leave += new System.EventHandler(this.textBoxDiscoverCommandsMaxCommands_Leave);
@@ -2065,10 +2014,9 @@
             // 
             // textBoxDiscoverCommandsManuID
             // 
-            this.textBoxDiscoverCommandsManuID.Location = new System.Drawing.Point(1228, 368);
-            this.textBoxDiscoverCommandsManuID.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxDiscoverCommandsManuID.Location = new System.Drawing.Point(982, 294);
             this.textBoxDiscoverCommandsManuID.Name = "textBoxDiscoverCommandsManuID";
-            this.textBoxDiscoverCommandsManuID.Size = new System.Drawing.Size(139, 22);
+            this.textBoxDiscoverCommandsManuID.Size = new System.Drawing.Size(112, 21);
             this.textBoxDiscoverCommandsManuID.TabIndex = 78;
             this.textBoxDiscoverCommandsManuID.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxDiscoverCommandsManuID_MouseClick);
             this.textBoxDiscoverCommandsManuID.Leave += new System.EventHandler(this.textBoxDiscoverCommandsManuID_Leave);
@@ -2079,20 +2027,18 @@
             // 
             this.comboBoxDiscoverCommandsManuSpecific.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxDiscoverCommandsManuSpecific.FormattingEnabled = true;
-            this.comboBoxDiscoverCommandsManuSpecific.Location = new System.Drawing.Point(1105, 368);
-            this.comboBoxDiscoverCommandsManuSpecific.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxDiscoverCommandsManuSpecific.Location = new System.Drawing.Point(884, 294);
             this.comboBoxDiscoverCommandsManuSpecific.Name = "comboBoxDiscoverCommandsManuSpecific";
-            this.comboBoxDiscoverCommandsManuSpecific.Size = new System.Drawing.Size(113, 24);
+            this.comboBoxDiscoverCommandsManuSpecific.Size = new System.Drawing.Size(91, 20);
             this.comboBoxDiscoverCommandsManuSpecific.TabIndex = 77;
             this.comboBoxDiscoverCommandsManuSpecific.MouseLeave += new System.EventHandler(this.comboBoxDiscoverCommandsManuSpecific_MouseLeave);
             this.comboBoxDiscoverCommandsManuSpecific.MouseHover += new System.EventHandler(this.comboBoxDiscoverCommandsManuSpecific_MouseHover);
             // 
             // textBoxDiscoverCommandsCommandID
             // 
-            this.textBoxDiscoverCommandsCommandID.Location = new System.Drawing.Point(963, 368);
-            this.textBoxDiscoverCommandsCommandID.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxDiscoverCommandsCommandID.Location = new System.Drawing.Point(770, 294);
             this.textBoxDiscoverCommandsCommandID.Name = "textBoxDiscoverCommandsCommandID";
-            this.textBoxDiscoverCommandsCommandID.Size = new System.Drawing.Size(135, 22);
+            this.textBoxDiscoverCommandsCommandID.Size = new System.Drawing.Size(109, 21);
             this.textBoxDiscoverCommandsCommandID.TabIndex = 76;
             this.textBoxDiscoverCommandsCommandID.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxDiscoverCommandsCommandID_MouseClick);
             this.textBoxDiscoverCommandsCommandID.Leave += new System.EventHandler(this.textBoxDiscoverCommandsCommandID_Leave);
@@ -2103,20 +2049,18 @@
             // 
             this.comboBoxDiscoverCommandsDirection.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxDiscoverCommandsDirection.FormattingEnabled = true;
-            this.comboBoxDiscoverCommandsDirection.Location = new System.Drawing.Point(823, 368);
-            this.comboBoxDiscoverCommandsDirection.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxDiscoverCommandsDirection.Location = new System.Drawing.Point(658, 294);
             this.comboBoxDiscoverCommandsDirection.Name = "comboBoxDiscoverCommandsDirection";
-            this.comboBoxDiscoverCommandsDirection.Size = new System.Drawing.Size(132, 24);
+            this.comboBoxDiscoverCommandsDirection.Size = new System.Drawing.Size(106, 20);
             this.comboBoxDiscoverCommandsDirection.TabIndex = 75;
             this.comboBoxDiscoverCommandsDirection.MouseLeave += new System.EventHandler(this.comboBoxDiscoverCommandsDirection_MouseLeave);
             this.comboBoxDiscoverCommandsDirection.MouseHover += new System.EventHandler(this.comboBoxDiscoverCommandsDirection_MouseHover);
             // 
             // textBoxDiscoverCommandsClusterID
             // 
-            this.textBoxDiscoverCommandsClusterID.Location = new System.Drawing.Point(673, 368);
-            this.textBoxDiscoverCommandsClusterID.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxDiscoverCommandsClusterID.Location = new System.Drawing.Point(538, 294);
             this.textBoxDiscoverCommandsClusterID.Name = "textBoxDiscoverCommandsClusterID";
-            this.textBoxDiscoverCommandsClusterID.Size = new System.Drawing.Size(140, 22);
+            this.textBoxDiscoverCommandsClusterID.Size = new System.Drawing.Size(113, 21);
             this.textBoxDiscoverCommandsClusterID.TabIndex = 74;
             this.textBoxDiscoverCommandsClusterID.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxDiscoverCommandsClusterID_MouseClick);
             this.textBoxDiscoverCommandsClusterID.Leave += new System.EventHandler(this.textBoxDiscoverCommandsClusterID_Leave);
@@ -2125,10 +2069,9 @@
             // 
             // textBoxDiscoverCommandsDstEP
             // 
-            this.textBoxDiscoverCommandsDstEP.Location = new System.Drawing.Point(539, 368);
-            this.textBoxDiscoverCommandsDstEP.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxDiscoverCommandsDstEP.Location = new System.Drawing.Point(431, 294);
             this.textBoxDiscoverCommandsDstEP.Name = "textBoxDiscoverCommandsDstEP";
-            this.textBoxDiscoverCommandsDstEP.Size = new System.Drawing.Size(128, 22);
+            this.textBoxDiscoverCommandsDstEP.Size = new System.Drawing.Size(103, 21);
             this.textBoxDiscoverCommandsDstEP.TabIndex = 73;
             this.textBoxDiscoverCommandsDstEP.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxDiscoverCommandsDstEP_MouseClick);
             this.textBoxDiscoverCommandsDstEP.Leave += new System.EventHandler(this.textBoxDiscoverCommandsDstEP_Leave);
@@ -2137,10 +2080,9 @@
             // 
             // textBoxDiscoverCommandsSrcEP
             // 
-            this.textBoxDiscoverCommandsSrcEP.Location = new System.Drawing.Point(399, 368);
-            this.textBoxDiscoverCommandsSrcEP.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxDiscoverCommandsSrcEP.Location = new System.Drawing.Point(319, 294);
             this.textBoxDiscoverCommandsSrcEP.Name = "textBoxDiscoverCommandsSrcEP";
-            this.textBoxDiscoverCommandsSrcEP.Size = new System.Drawing.Size(132, 22);
+            this.textBoxDiscoverCommandsSrcEP.Size = new System.Drawing.Size(106, 21);
             this.textBoxDiscoverCommandsSrcEP.TabIndex = 72;
             this.textBoxDiscoverCommandsSrcEP.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxDiscoverCommandsSrcEP_MouseClick);
             this.textBoxDiscoverCommandsSrcEP.Leave += new System.EventHandler(this.textBoxDiscoverCommandsSrcEP_Leave);
@@ -2149,10 +2091,9 @@
             // 
             // textBoxDiscoverCommandsTargetAddr
             // 
-            this.textBoxDiscoverCommandsTargetAddr.Location = new System.Drawing.Point(257, 368);
-            this.textBoxDiscoverCommandsTargetAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxDiscoverCommandsTargetAddr.Location = new System.Drawing.Point(206, 294);
             this.textBoxDiscoverCommandsTargetAddr.Name = "textBoxDiscoverCommandsTargetAddr";
-            this.textBoxDiscoverCommandsTargetAddr.Size = new System.Drawing.Size(131, 22);
+            this.textBoxDiscoverCommandsTargetAddr.Size = new System.Drawing.Size(106, 21);
             this.textBoxDiscoverCommandsTargetAddr.TabIndex = 71;
             this.textBoxDiscoverCommandsTargetAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxDiscoverCommandsTargetAddr_MouseClick);
             this.textBoxDiscoverCommandsTargetAddr.Leave += new System.EventHandler(this.textBoxDiscoverCommandsTargetAddr_Leave);
@@ -2163,20 +2104,18 @@
             // 
             this.comboBoxDiscoverCommandsAddrMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxDiscoverCommandsAddrMode.FormattingEnabled = true;
-            this.comboBoxDiscoverCommandsAddrMode.Location = new System.Drawing.Point(135, 368);
-            this.comboBoxDiscoverCommandsAddrMode.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxDiscoverCommandsAddrMode.Location = new System.Drawing.Point(108, 294);
             this.comboBoxDiscoverCommandsAddrMode.Name = "comboBoxDiscoverCommandsAddrMode";
-            this.comboBoxDiscoverCommandsAddrMode.Size = new System.Drawing.Size(116, 24);
+            this.comboBoxDiscoverCommandsAddrMode.Size = new System.Drawing.Size(94, 20);
             this.comboBoxDiscoverCommandsAddrMode.TabIndex = 70;
             this.comboBoxDiscoverCommandsAddrMode.MouseLeave += new System.EventHandler(this.comboBoxDiscoverCommandsAddrMode_MouseLeave);
             this.comboBoxDiscoverCommandsAddrMode.MouseHover += new System.EventHandler(this.comboBoxDiscoverCommandsAddrMode_MouseHover);
             // 
             // buttonDiscoverCommands
             // 
-            this.buttonDiscoverCommands.Location = new System.Drawing.Point(8, 366);
-            this.buttonDiscoverCommands.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonDiscoverCommands.Location = new System.Drawing.Point(6, 293);
             this.buttonDiscoverCommands.Name = "buttonDiscoverCommands";
-            this.buttonDiscoverCommands.Size = new System.Drawing.Size(119, 27);
+            this.buttonDiscoverCommands.Size = new System.Drawing.Size(95, 22);
             this.buttonDiscoverCommands.TabIndex = 69;
             this.buttonDiscoverCommands.Text = "Disc Cmds";
             this.buttonDiscoverCommands.UseVisualStyleBackColor = true;
@@ -2184,10 +2123,9 @@
             // 
             // textBoxMgmtNwkUpdateScanCount
             // 
-            this.textBoxMgmtNwkUpdateScanCount.Location = new System.Drawing.Point(673, 334);
-            this.textBoxMgmtNwkUpdateScanCount.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxMgmtNwkUpdateScanCount.Location = new System.Drawing.Point(538, 267);
             this.textBoxMgmtNwkUpdateScanCount.Name = "textBoxMgmtNwkUpdateScanCount";
-            this.textBoxMgmtNwkUpdateScanCount.Size = new System.Drawing.Size(140, 22);
+            this.textBoxMgmtNwkUpdateScanCount.Size = new System.Drawing.Size(113, 21);
             this.textBoxMgmtNwkUpdateScanCount.TabIndex = 67;
             this.textBoxMgmtNwkUpdateScanCount.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxMgmtNwkUpdateScanCount_MouseClick);
             this.textBoxMgmtNwkUpdateScanCount.Leave += new System.EventHandler(this.textBoxMgmtNwkUpdateScanCount_Leave);
@@ -2196,10 +2134,9 @@
             // 
             // textBoxMgmtNwkUpdateScanDuration
             // 
-            this.textBoxMgmtNwkUpdateScanDuration.Location = new System.Drawing.Point(539, 334);
-            this.textBoxMgmtNwkUpdateScanDuration.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxMgmtNwkUpdateScanDuration.Location = new System.Drawing.Point(431, 267);
             this.textBoxMgmtNwkUpdateScanDuration.Name = "textBoxMgmtNwkUpdateScanDuration";
-            this.textBoxMgmtNwkUpdateScanDuration.Size = new System.Drawing.Size(128, 22);
+            this.textBoxMgmtNwkUpdateScanDuration.Size = new System.Drawing.Size(103, 21);
             this.textBoxMgmtNwkUpdateScanDuration.TabIndex = 66;
             this.textBoxMgmtNwkUpdateScanDuration.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxMgmtNwkUpdateScanDuration_MouseClick);
             this.textBoxMgmtNwkUpdateScanDuration.Leave += new System.EventHandler(this.textBoxMgmtNwkUpdateScanDuration_Leave);
@@ -2208,10 +2145,9 @@
             // 
             // textBoxMgmtNwkUpdateChannelMask
             // 
-            this.textBoxMgmtNwkUpdateChannelMask.Location = new System.Drawing.Point(399, 334);
-            this.textBoxMgmtNwkUpdateChannelMask.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxMgmtNwkUpdateChannelMask.Location = new System.Drawing.Point(319, 267);
             this.textBoxMgmtNwkUpdateChannelMask.Name = "textBoxMgmtNwkUpdateChannelMask";
-            this.textBoxMgmtNwkUpdateChannelMask.Size = new System.Drawing.Size(132, 22);
+            this.textBoxMgmtNwkUpdateChannelMask.Size = new System.Drawing.Size(106, 21);
             this.textBoxMgmtNwkUpdateChannelMask.TabIndex = 65;
             this.textBoxMgmtNwkUpdateChannelMask.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxMgmtNwkUpdateChannelMask_MouseClick);
             this.textBoxMgmtNwkUpdateChannelMask.Leave += new System.EventHandler(this.textBoxMgmtNwkUpdateChannelMask_Leave);
@@ -2220,10 +2156,9 @@
             // 
             // textBoxMgmtNwkUpdateTargetAddr
             // 
-            this.textBoxMgmtNwkUpdateTargetAddr.Location = new System.Drawing.Point(259, 334);
-            this.textBoxMgmtNwkUpdateTargetAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxMgmtNwkUpdateTargetAddr.Location = new System.Drawing.Point(207, 267);
             this.textBoxMgmtNwkUpdateTargetAddr.Name = "textBoxMgmtNwkUpdateTargetAddr";
-            this.textBoxMgmtNwkUpdateTargetAddr.Size = new System.Drawing.Size(131, 22);
+            this.textBoxMgmtNwkUpdateTargetAddr.Size = new System.Drawing.Size(106, 21);
             this.textBoxMgmtNwkUpdateTargetAddr.TabIndex = 64;
             this.textBoxMgmtNwkUpdateTargetAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxMgmtNwkUpdateTargetAddr_MouseClick);
             this.textBoxMgmtNwkUpdateTargetAddr.Leave += new System.EventHandler(this.textBoxMgmtNwkUpdateTargetAddr_Leave);
@@ -2234,20 +2169,18 @@
             // 
             this.comboBoxMgmtNwkUpdateAddrMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxMgmtNwkUpdateAddrMode.FormattingEnabled = true;
-            this.comboBoxMgmtNwkUpdateAddrMode.Location = new System.Drawing.Point(135, 334);
-            this.comboBoxMgmtNwkUpdateAddrMode.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxMgmtNwkUpdateAddrMode.Location = new System.Drawing.Point(108, 267);
             this.comboBoxMgmtNwkUpdateAddrMode.Name = "comboBoxMgmtNwkUpdateAddrMode";
-            this.comboBoxMgmtNwkUpdateAddrMode.Size = new System.Drawing.Size(116, 24);
+            this.comboBoxMgmtNwkUpdateAddrMode.Size = new System.Drawing.Size(94, 20);
             this.comboBoxMgmtNwkUpdateAddrMode.TabIndex = 63;
             this.comboBoxMgmtNwkUpdateAddrMode.MouseLeave += new System.EventHandler(this.comboBoxMgmtNwkUpdateAddrMode_MouseLeave);
             this.comboBoxMgmtNwkUpdateAddrMode.MouseHover += new System.EventHandler(this.comboBoxMgmtNwkUpdateAddrMode_MouseHover);
             // 
             // buttonMgmtNwkUpdate
             // 
-            this.buttonMgmtNwkUpdate.Location = new System.Drawing.Point(8, 331);
-            this.buttonMgmtNwkUpdate.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonMgmtNwkUpdate.Location = new System.Drawing.Point(6, 265);
             this.buttonMgmtNwkUpdate.Name = "buttonMgmtNwkUpdate";
-            this.buttonMgmtNwkUpdate.Size = new System.Drawing.Size(119, 27);
+            this.buttonMgmtNwkUpdate.Size = new System.Drawing.Size(95, 22);
             this.buttonMgmtNwkUpdate.TabIndex = 62;
             this.buttonMgmtNwkUpdate.Text = "NWK Update";
             this.buttonMgmtNwkUpdate.UseVisualStyleBackColor = true;
@@ -2257,20 +2190,18 @@
             // 
             this.comboBoxManyToOneRouteRequestCacheRoute.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxManyToOneRouteRequestCacheRoute.FormattingEnabled = true;
-            this.comboBoxManyToOneRouteRequestCacheRoute.Location = new System.Drawing.Point(135, 298);
-            this.comboBoxManyToOneRouteRequestCacheRoute.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxManyToOneRouteRequestCacheRoute.Location = new System.Drawing.Point(108, 238);
             this.comboBoxManyToOneRouteRequestCacheRoute.Name = "comboBoxManyToOneRouteRequestCacheRoute";
-            this.comboBoxManyToOneRouteRequestCacheRoute.Size = new System.Drawing.Size(113, 24);
+            this.comboBoxManyToOneRouteRequestCacheRoute.Size = new System.Drawing.Size(91, 20);
             this.comboBoxManyToOneRouteRequestCacheRoute.TabIndex = 60;
             this.comboBoxManyToOneRouteRequestCacheRoute.MouseLeave += new System.EventHandler(this.comboBoxManyToOneRouteRequestCacheRoute_MouseLeave);
             this.comboBoxManyToOneRouteRequestCacheRoute.MouseHover += new System.EventHandler(this.comboBoxManyToOneRouteRequestCacheRoute_MouseHover);
             // 
             // textBoxManyToOneRouteRequesRadius
             // 
-            this.textBoxManyToOneRouteRequesRadius.Location = new System.Drawing.Point(259, 298);
-            this.textBoxManyToOneRouteRequesRadius.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxManyToOneRouteRequesRadius.Location = new System.Drawing.Point(207, 238);
             this.textBoxManyToOneRouteRequesRadius.Name = "textBoxManyToOneRouteRequesRadius";
-            this.textBoxManyToOneRouteRequesRadius.Size = new System.Drawing.Size(131, 22);
+            this.textBoxManyToOneRouteRequesRadius.Size = new System.Drawing.Size(106, 21);
             this.textBoxManyToOneRouteRequesRadius.TabIndex = 61;
             this.textBoxManyToOneRouteRequesRadius.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxManyToOneRouteRequesRadius_MouseClick);
             this.textBoxManyToOneRouteRequesRadius.Leave += new System.EventHandler(this.textBoxManyToOneRouteRequesRadius_Leave);
@@ -2279,10 +2210,9 @@
             // 
             // buttonManyToOneRouteRequest
             // 
-            this.buttonManyToOneRouteRequest.Location = new System.Drawing.Point(8, 294);
-            this.buttonManyToOneRouteRequest.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonManyToOneRouteRequest.Location = new System.Drawing.Point(6, 235);
             this.buttonManyToOneRouteRequest.Name = "buttonManyToOneRouteRequest";
-            this.buttonManyToOneRouteRequest.Size = new System.Drawing.Size(119, 30);
+            this.buttonManyToOneRouteRequest.Size = new System.Drawing.Size(95, 24);
             this.buttonManyToOneRouteRequest.TabIndex = 59;
             this.buttonManyToOneRouteRequest.Text = "MTO Rt Req";
             this.buttonManyToOneRouteRequest.UseVisualStyleBackColor = true;
@@ -2292,10 +2222,9 @@
             // 
             this.comboBoxReadReportConfigDirection.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxReadReportConfigDirection.FormattingEnabled = true;
-            this.comboBoxReadReportConfigDirection.Location = new System.Drawing.Point(817, 190);
-            this.comboBoxReadReportConfigDirection.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxReadReportConfigDirection.Location = new System.Drawing.Point(654, 152);
             this.comboBoxReadReportConfigDirection.Name = "comboBoxReadReportConfigDirection";
-            this.comboBoxReadReportConfigDirection.Size = new System.Drawing.Size(136, 24);
+            this.comboBoxReadReportConfigDirection.Size = new System.Drawing.Size(110, 20);
             this.comboBoxReadReportConfigDirection.TabIndex = 41;
             this.comboBoxReadReportConfigDirection.MouseLeave += new System.EventHandler(this.comboBoxReadReportConfigDirection_MouseLeave);
             this.comboBoxReadReportConfigDirection.MouseHover += new System.EventHandler(this.comboBoxReadReportConfigDirection_MouseHover);
@@ -2304,20 +2233,18 @@
             // 
             this.comboBoxReadReportConfigDirIsRx.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxReadReportConfigDirIsRx.FormattingEnabled = true;
-            this.comboBoxReadReportConfigDirIsRx.Location = new System.Drawing.Point(1105, 190);
-            this.comboBoxReadReportConfigDirIsRx.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxReadReportConfigDirIsRx.Location = new System.Drawing.Point(884, 152);
             this.comboBoxReadReportConfigDirIsRx.Name = "comboBoxReadReportConfigDirIsRx";
-            this.comboBoxReadReportConfigDirIsRx.Size = new System.Drawing.Size(131, 24);
+            this.comboBoxReadReportConfigDirIsRx.Size = new System.Drawing.Size(106, 20);
             this.comboBoxReadReportConfigDirIsRx.TabIndex = 43;
             this.comboBoxReadReportConfigDirIsRx.MouseLeave += new System.EventHandler(this.comboBoxReadReportConfigDirIsRx_MouseLeave);
             this.comboBoxReadReportConfigDirIsRx.MouseHover += new System.EventHandler(this.comboBoxReadReportConfigDirIsRx_MouseHover);
             // 
             // textBoxReadReportConfigAttribID
             // 
-            this.textBoxReadReportConfigAttribID.Location = new System.Drawing.Point(963, 191);
-            this.textBoxReadReportConfigAttribID.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxReadReportConfigAttribID.Location = new System.Drawing.Point(770, 153);
             this.textBoxReadReportConfigAttribID.Name = "textBoxReadReportConfigAttribID";
-            this.textBoxReadReportConfigAttribID.Size = new System.Drawing.Size(133, 22);
+            this.textBoxReadReportConfigAttribID.Size = new System.Drawing.Size(107, 21);
             this.textBoxReadReportConfigAttribID.TabIndex = 42;
             this.textBoxReadReportConfigAttribID.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxReadReportConfigAttribID_MouseClick);
             this.textBoxReadReportConfigAttribID.Leave += new System.EventHandler(this.textBoxReadReportConfigAttribID_Leave);
@@ -2326,10 +2253,9 @@
             // 
             // textBoxReadReportConfigClusterID
             // 
-            this.textBoxReadReportConfigClusterID.Location = new System.Drawing.Point(681, 191);
-            this.textBoxReadReportConfigClusterID.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxReadReportConfigClusterID.Location = new System.Drawing.Point(545, 153);
             this.textBoxReadReportConfigClusterID.Name = "textBoxReadReportConfigClusterID";
-            this.textBoxReadReportConfigClusterID.Size = new System.Drawing.Size(131, 22);
+            this.textBoxReadReportConfigClusterID.Size = new System.Drawing.Size(106, 21);
             this.textBoxReadReportConfigClusterID.TabIndex = 40;
             this.textBoxReadReportConfigClusterID.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxReadReportConfigClusterID_MouseClick);
             this.textBoxReadReportConfigClusterID.Leave += new System.EventHandler(this.textBoxReadReportConfigClusterID_Leave);
@@ -2338,10 +2264,9 @@
             // 
             // textBoxReadReportConfigDstEP
             // 
-            this.textBoxReadReportConfigDstEP.Location = new System.Drawing.Point(540, 191);
-            this.textBoxReadReportConfigDstEP.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxReadReportConfigDstEP.Location = new System.Drawing.Point(432, 153);
             this.textBoxReadReportConfigDstEP.Name = "textBoxReadReportConfigDstEP";
-            this.textBoxReadReportConfigDstEP.Size = new System.Drawing.Size(132, 22);
+            this.textBoxReadReportConfigDstEP.Size = new System.Drawing.Size(106, 21);
             this.textBoxReadReportConfigDstEP.TabIndex = 39;
             this.textBoxReadReportConfigDstEP.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxReadReportConfigDstEP_MouseClick);
             this.textBoxReadReportConfigDstEP.Leave += new System.EventHandler(this.textBoxReadReportConfigDstEP_Leave);
@@ -2350,10 +2275,9 @@
             // 
             // textBoxReadReportConfigSrcEP
             // 
-            this.textBoxReadReportConfigSrcEP.Location = new System.Drawing.Point(397, 191);
-            this.textBoxReadReportConfigSrcEP.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxReadReportConfigSrcEP.Location = new System.Drawing.Point(318, 153);
             this.textBoxReadReportConfigSrcEP.Name = "textBoxReadReportConfigSrcEP";
-            this.textBoxReadReportConfigSrcEP.Size = new System.Drawing.Size(132, 22);
+            this.textBoxReadReportConfigSrcEP.Size = new System.Drawing.Size(106, 21);
             this.textBoxReadReportConfigSrcEP.TabIndex = 38;
             this.textBoxReadReportConfigSrcEP.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxReadReportConfigSrcEP_MouseClick);
             this.textBoxReadReportConfigSrcEP.Leave += new System.EventHandler(this.textBoxReadReportConfigSrcEP_Leave);
@@ -2362,10 +2286,9 @@
             // 
             // textBoxReadReportConfigTargetAddr
             // 
-            this.textBoxReadReportConfigTargetAddr.Location = new System.Drawing.Point(256, 191);
-            this.textBoxReadReportConfigTargetAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxReadReportConfigTargetAddr.Location = new System.Drawing.Point(205, 153);
             this.textBoxReadReportConfigTargetAddr.Name = "textBoxReadReportConfigTargetAddr";
-            this.textBoxReadReportConfigTargetAddr.Size = new System.Drawing.Size(132, 22);
+            this.textBoxReadReportConfigTargetAddr.Size = new System.Drawing.Size(106, 21);
             this.textBoxReadReportConfigTargetAddr.TabIndex = 37;
             this.textBoxReadReportConfigTargetAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxReadReportConfigTargetAddr_MouseClick);
             this.textBoxReadReportConfigTargetAddr.Leave += new System.EventHandler(this.textBoxReadReportConfigTargetAddr_Leave);
@@ -2376,20 +2299,18 @@
             // 
             this.comboBoxReadReportConfigAddrMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxReadReportConfigAddrMode.FormattingEnabled = true;
-            this.comboBoxReadReportConfigAddrMode.Location = new System.Drawing.Point(116, 191);
-            this.comboBoxReadReportConfigAddrMode.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxReadReportConfigAddrMode.Location = new System.Drawing.Point(93, 153);
             this.comboBoxReadReportConfigAddrMode.Name = "comboBoxReadReportConfigAddrMode";
-            this.comboBoxReadReportConfigAddrMode.Size = new System.Drawing.Size(132, 24);
+            this.comboBoxReadReportConfigAddrMode.Size = new System.Drawing.Size(106, 20);
             this.comboBoxReadReportConfigAddrMode.TabIndex = 36;
             this.comboBoxReadReportConfigAddrMode.MouseLeave += new System.EventHandler(this.comboBoxReadReportConfigAddrMode_MouseLeave);
             this.comboBoxReadReportConfigAddrMode.MouseHover += new System.EventHandler(this.comboBoxReadReportConfigAddrMode_MouseHover);
             // 
             // buttonReadReportConfig
             // 
-            this.buttonReadReportConfig.Location = new System.Drawing.Point(8, 187);
-            this.buttonReadReportConfig.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonReadReportConfig.Location = new System.Drawing.Point(6, 150);
             this.buttonReadReportConfig.Name = "buttonReadReportConfig";
-            this.buttonReadReportConfig.Size = new System.Drawing.Size(100, 30);
+            this.buttonReadReportConfig.Size = new System.Drawing.Size(80, 24);
             this.buttonReadReportConfig.TabIndex = 35;
             this.buttonReadReportConfig.Text = "Read Rprt";
             this.buttonReadReportConfig.UseVisualStyleBackColor = true;
@@ -2397,10 +2318,9 @@
             // 
             // textBoxWriteAttribManuID
             // 
-            this.textBoxWriteAttribManuID.Location = new System.Drawing.Point(1388, 46);
-            this.textBoxWriteAttribManuID.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxWriteAttribManuID.Location = new System.Drawing.Point(1110, 37);
             this.textBoxWriteAttribManuID.Name = "textBoxWriteAttribManuID";
-            this.textBoxWriteAttribManuID.Size = new System.Drawing.Size(132, 22);
+            this.textBoxWriteAttribManuID.Size = new System.Drawing.Size(106, 21);
             this.textBoxWriteAttribManuID.TabIndex = 20;
             this.textBoxWriteAttribManuID.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxWriteAttribManuID_MouseClick);
             this.textBoxWriteAttribManuID.Leave += new System.EventHandler(this.textBoxWriteAttribManuID_Leave);
@@ -2411,20 +2331,18 @@
             // 
             this.comboBoxWriteAttribManuSpecific.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxWriteAttribManuSpecific.FormattingEnabled = true;
-            this.comboBoxWriteAttribManuSpecific.Location = new System.Drawing.Point(1247, 46);
-            this.comboBoxWriteAttribManuSpecific.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxWriteAttribManuSpecific.Location = new System.Drawing.Point(998, 37);
             this.comboBoxWriteAttribManuSpecific.Name = "comboBoxWriteAttribManuSpecific";
-            this.comboBoxWriteAttribManuSpecific.Size = new System.Drawing.Size(132, 24);
+            this.comboBoxWriteAttribManuSpecific.Size = new System.Drawing.Size(106, 20);
             this.comboBoxWriteAttribManuSpecific.TabIndex = 19;
             this.comboBoxWriteAttribManuSpecific.MouseLeave += new System.EventHandler(this.comboBoxWriteAttribManuSpecific_MouseLeave);
             this.comboBoxWriteAttribManuSpecific.MouseHover += new System.EventHandler(this.comboBoxWriteAttribManuSpecific_MouseHover);
             // 
             // textBoxReadAttribManuID
             // 
-            this.textBoxReadAttribManuID.Location = new System.Drawing.Point(1247, 10);
-            this.textBoxReadAttribManuID.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxReadAttribManuID.Location = new System.Drawing.Point(998, 8);
             this.textBoxReadAttribManuID.Name = "textBoxReadAttribManuID";
-            this.textBoxReadAttribManuID.Size = new System.Drawing.Size(132, 22);
+            this.textBoxReadAttribManuID.Size = new System.Drawing.Size(106, 21);
             this.textBoxReadAttribManuID.TabIndex = 9;
             this.textBoxReadAttribManuID.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxReadAttribManuID_MouseClick);
             this.textBoxReadAttribManuID.Leave += new System.EventHandler(this.textBoxReadAttribManuID_Leave);
@@ -2435,20 +2353,18 @@
             // 
             this.comboBoxReadAttribManuSpecific.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxReadAttribManuSpecific.FormattingEnabled = true;
-            this.comboBoxReadAttribManuSpecific.Location = new System.Drawing.Point(1105, 10);
-            this.comboBoxReadAttribManuSpecific.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxReadAttribManuSpecific.Location = new System.Drawing.Point(884, 8);
             this.comboBoxReadAttribManuSpecific.Name = "comboBoxReadAttribManuSpecific";
-            this.comboBoxReadAttribManuSpecific.Size = new System.Drawing.Size(132, 24);
+            this.comboBoxReadAttribManuSpecific.Size = new System.Drawing.Size(106, 20);
             this.comboBoxReadAttribManuSpecific.TabIndex = 8;
             this.comboBoxReadAttribManuSpecific.MouseLeave += new System.EventHandler(this.comboBoxReadAttribManuSpecific_MouseLeave);
             this.comboBoxReadAttribManuSpecific.MouseHover += new System.EventHandler(this.comboBoxReadAttribManuSpecific_MouseHover);
             // 
             // textBoxWriteAttribDataType
             // 
-            this.textBoxWriteAttribDataType.Location = new System.Drawing.Point(964, 46);
-            this.textBoxWriteAttribDataType.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxWriteAttribDataType.Location = new System.Drawing.Point(771, 37);
             this.textBoxWriteAttribDataType.Name = "textBoxWriteAttribDataType";
-            this.textBoxWriteAttribDataType.Size = new System.Drawing.Size(133, 22);
+            this.textBoxWriteAttribDataType.Size = new System.Drawing.Size(107, 21);
             this.textBoxWriteAttribDataType.TabIndex = 17;
             this.textBoxWriteAttribDataType.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxWriteAttribDataType_MouseClick);
             this.textBoxWriteAttribDataType.Leave += new System.EventHandler(this.textBoxWriteAttribDataType_Leave);
@@ -2459,20 +2375,18 @@
             // 
             this.comboBoxConfigReportAddrMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxConfigReportAddrMode.FormattingEnabled = true;
-            this.comboBoxConfigReportAddrMode.Location = new System.Drawing.Point(116, 82);
-            this.comboBoxConfigReportAddrMode.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxConfigReportAddrMode.Location = new System.Drawing.Point(93, 66);
             this.comboBoxConfigReportAddrMode.Name = "comboBoxConfigReportAddrMode";
-            this.comboBoxConfigReportAddrMode.Size = new System.Drawing.Size(132, 24);
+            this.comboBoxConfigReportAddrMode.Size = new System.Drawing.Size(106, 20);
             this.comboBoxConfigReportAddrMode.TabIndex = 22;
             this.comboBoxConfigReportAddrMode.MouseLeave += new System.EventHandler(this.comboBoxConfigReportAddrMode_MouseLeave);
             this.comboBoxConfigReportAddrMode.MouseHover += new System.EventHandler(this.comboBoxConfigReportAddrMode_MouseHover);
             // 
             // textBoxWriteAttribData
             // 
-            this.textBoxWriteAttribData.Location = new System.Drawing.Point(1105, 46);
-            this.textBoxWriteAttribData.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxWriteAttribData.Location = new System.Drawing.Point(884, 37);
             this.textBoxWriteAttribData.Name = "textBoxWriteAttribData";
-            this.textBoxWriteAttribData.Size = new System.Drawing.Size(132, 22);
+            this.textBoxWriteAttribData.Size = new System.Drawing.Size(106, 21);
             this.textBoxWriteAttribData.TabIndex = 18;
             this.textBoxWriteAttribData.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxWriteAttribData_MouseClick);
             this.textBoxWriteAttribData.Leave += new System.EventHandler(this.textBoxWriteAttribData_Leave);
@@ -2481,10 +2395,9 @@
             // 
             // textBoxWriteAttribID
             // 
-            this.textBoxWriteAttribID.Location = new System.Drawing.Point(823, 46);
-            this.textBoxWriteAttribID.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxWriteAttribID.Location = new System.Drawing.Point(658, 37);
             this.textBoxWriteAttribID.Name = "textBoxWriteAttribID";
-            this.textBoxWriteAttribID.Size = new System.Drawing.Size(132, 22);
+            this.textBoxWriteAttribID.Size = new System.Drawing.Size(106, 21);
             this.textBoxWriteAttribID.TabIndex = 16;
             this.textBoxWriteAttribID.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxWriteAttribID_MouseClick);
             this.textBoxWriteAttribID.Leave += new System.EventHandler(this.textBoxWriteAttribID_Leave);
@@ -2495,20 +2408,18 @@
             // 
             this.comboBoxWriteAttribDirection.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxWriteAttribDirection.FormattingEnabled = true;
-            this.comboBoxWriteAttribDirection.Location = new System.Drawing.Point(681, 46);
-            this.comboBoxWriteAttribDirection.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxWriteAttribDirection.Location = new System.Drawing.Point(545, 37);
             this.comboBoxWriteAttribDirection.Name = "comboBoxWriteAttribDirection";
-            this.comboBoxWriteAttribDirection.Size = new System.Drawing.Size(132, 24);
+            this.comboBoxWriteAttribDirection.Size = new System.Drawing.Size(106, 20);
             this.comboBoxWriteAttribDirection.TabIndex = 15;
             this.comboBoxWriteAttribDirection.MouseLeave += new System.EventHandler(this.comboBoxWriteAttribDirection_MouseLeave);
             this.comboBoxWriteAttribDirection.MouseHover += new System.EventHandler(this.comboBoxWriteAttribDirection_MouseHover);
             // 
             // textBoxWriteAttribClusterID
             // 
-            this.textBoxWriteAttribClusterID.Location = new System.Drawing.Point(540, 46);
-            this.textBoxWriteAttribClusterID.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxWriteAttribClusterID.Location = new System.Drawing.Point(432, 37);
             this.textBoxWriteAttribClusterID.Name = "textBoxWriteAttribClusterID";
-            this.textBoxWriteAttribClusterID.Size = new System.Drawing.Size(132, 22);
+            this.textBoxWriteAttribClusterID.Size = new System.Drawing.Size(106, 21);
             this.textBoxWriteAttribClusterID.TabIndex = 14;
             this.textBoxWriteAttribClusterID.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxWriteAttribClusterID_MouseClick);
             this.textBoxWriteAttribClusterID.Leave += new System.EventHandler(this.textBoxWriteAttribClusterID_Leave);
@@ -2517,10 +2428,9 @@
             // 
             // textBoxWriteAttribDstEP
             // 
-            this.textBoxWriteAttribDstEP.Location = new System.Drawing.Point(399, 46);
-            this.textBoxWriteAttribDstEP.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxWriteAttribDstEP.Location = new System.Drawing.Point(319, 37);
             this.textBoxWriteAttribDstEP.Name = "textBoxWriteAttribDstEP";
-            this.textBoxWriteAttribDstEP.Size = new System.Drawing.Size(132, 22);
+            this.textBoxWriteAttribDstEP.Size = new System.Drawing.Size(106, 21);
             this.textBoxWriteAttribDstEP.TabIndex = 13;
             this.textBoxWriteAttribDstEP.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxWriteAttribDstEP_MouseClick);
             this.textBoxWriteAttribDstEP.Leave += new System.EventHandler(this.textBoxWriteAttribDstEP_Leave);
@@ -2529,10 +2439,9 @@
             // 
             // textBoxWriteAttribSrcEP
             // 
-            this.textBoxWriteAttribSrcEP.Location = new System.Drawing.Point(257, 46);
-            this.textBoxWriteAttribSrcEP.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxWriteAttribSrcEP.Location = new System.Drawing.Point(206, 37);
             this.textBoxWriteAttribSrcEP.Name = "textBoxWriteAttribSrcEP";
-            this.textBoxWriteAttribSrcEP.Size = new System.Drawing.Size(132, 22);
+            this.textBoxWriteAttribSrcEP.Size = new System.Drawing.Size(106, 21);
             this.textBoxWriteAttribSrcEP.TabIndex = 12;
             this.textBoxWriteAttribSrcEP.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxWriteAttribSrcEP_MouseClick);
             this.textBoxWriteAttribSrcEP.Leave += new System.EventHandler(this.textBoxWriteAttribSrcEP_Leave);
@@ -2541,10 +2450,9 @@
             // 
             // textBoxWriteAttribTargetAddr
             // 
-            this.textBoxWriteAttribTargetAddr.Location = new System.Drawing.Point(116, 46);
-            this.textBoxWriteAttribTargetAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxWriteAttribTargetAddr.Location = new System.Drawing.Point(93, 37);
             this.textBoxWriteAttribTargetAddr.Name = "textBoxWriteAttribTargetAddr";
-            this.textBoxWriteAttribTargetAddr.Size = new System.Drawing.Size(132, 22);
+            this.textBoxWriteAttribTargetAddr.Size = new System.Drawing.Size(106, 21);
             this.textBoxWriteAttribTargetAddr.TabIndex = 11;
             this.textBoxWriteAttribTargetAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxWriteAttribTargetAddr_MouseClick);
             this.textBoxWriteAttribTargetAddr.Leave += new System.EventHandler(this.textBoxWriteAttribTargetAddr_Leave);
@@ -2553,10 +2461,9 @@
             // 
             // textBoxConfigReportChange
             // 
-            this.textBoxConfigReportChange.Location = new System.Drawing.Point(1247, 146);
-            this.textBoxConfigReportChange.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxConfigReportChange.Location = new System.Drawing.Point(998, 117);
             this.textBoxConfigReportChange.Name = "textBoxConfigReportChange";
-            this.textBoxConfigReportChange.Size = new System.Drawing.Size(132, 22);
+            this.textBoxConfigReportChange.Size = new System.Drawing.Size(106, 21);
             this.textBoxConfigReportChange.TabIndex = 34;
             this.textBoxConfigReportChange.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxConfigReportChange_MouseClick);
             this.textBoxConfigReportChange.Leave += new System.EventHandler(this.textBoxConfigReportChange_Leave);
@@ -2565,10 +2472,9 @@
             // 
             // textBoxConfigReportTimeOut
             // 
-            this.textBoxConfigReportTimeOut.Location = new System.Drawing.Point(1107, 146);
-            this.textBoxConfigReportTimeOut.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxConfigReportTimeOut.Location = new System.Drawing.Point(886, 117);
             this.textBoxConfigReportTimeOut.Name = "textBoxConfigReportTimeOut";
-            this.textBoxConfigReportTimeOut.Size = new System.Drawing.Size(132, 22);
+            this.textBoxConfigReportTimeOut.Size = new System.Drawing.Size(106, 21);
             this.textBoxConfigReportTimeOut.TabIndex = 33;
             this.textBoxConfigReportTimeOut.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxConfigReportTimeOut_MouseClick);
             this.textBoxConfigReportTimeOut.Leave += new System.EventHandler(this.textBoxConfigReportTimeOut_Leave);
@@ -2577,10 +2483,9 @@
             // 
             // textBoxConfigReportMaxInterval
             // 
-            this.textBoxConfigReportMaxInterval.Location = new System.Drawing.Point(1247, 114);
-            this.textBoxConfigReportMaxInterval.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxConfigReportMaxInterval.Location = new System.Drawing.Point(998, 91);
             this.textBoxConfigReportMaxInterval.Name = "textBoxConfigReportMaxInterval";
-            this.textBoxConfigReportMaxInterval.Size = new System.Drawing.Size(132, 22);
+            this.textBoxConfigReportMaxInterval.Size = new System.Drawing.Size(106, 21);
             this.textBoxConfigReportMaxInterval.TabIndex = 32;
             this.textBoxConfigReportMaxInterval.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxConfigReportMaxInterval_MouseClick);
             this.textBoxConfigReportMaxInterval.Leave += new System.EventHandler(this.textBoxConfigReportMaxInterval_Leave);
@@ -2589,10 +2494,9 @@
             // 
             // textBoxDiscoverAttributesMaxIDs
             // 
-            this.textBoxDiscoverAttributesMaxIDs.Location = new System.Drawing.Point(959, 262);
-            this.textBoxDiscoverAttributesMaxIDs.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxDiscoverAttributesMaxIDs.Location = new System.Drawing.Point(767, 210);
             this.textBoxDiscoverAttributesMaxIDs.Name = "textBoxDiscoverAttributesMaxIDs";
-            this.textBoxDiscoverAttributesMaxIDs.Size = new System.Drawing.Size(137, 22);
+            this.textBoxDiscoverAttributesMaxIDs.Size = new System.Drawing.Size(110, 21);
             this.textBoxDiscoverAttributesMaxIDs.TabIndex = 57;
             this.textBoxDiscoverAttributesMaxIDs.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxDiscoverAttributesMaxIDs_MouseClick);
             this.textBoxDiscoverAttributesMaxIDs.Leave += new System.EventHandler(this.textBoxDiscoverAttributesMaxIDs_Leave);
@@ -2603,20 +2507,18 @@
             // 
             this.comboBoxDiscoverAttributesDirection.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxDiscoverAttributesDirection.FormattingEnabled = true;
-            this.comboBoxDiscoverAttributesDirection.Location = new System.Drawing.Point(817, 262);
-            this.comboBoxDiscoverAttributesDirection.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxDiscoverAttributesDirection.Location = new System.Drawing.Point(654, 210);
             this.comboBoxDiscoverAttributesDirection.Name = "comboBoxDiscoverAttributesDirection";
-            this.comboBoxDiscoverAttributesDirection.Size = new System.Drawing.Size(132, 24);
+            this.comboBoxDiscoverAttributesDirection.Size = new System.Drawing.Size(106, 20);
             this.comboBoxDiscoverAttributesDirection.TabIndex = 56;
             this.comboBoxDiscoverAttributesDirection.MouseLeave += new System.EventHandler(this.comboBoxDiscoverAttributesDirection_MouseLeave);
             this.comboBoxDiscoverAttributesDirection.MouseHover += new System.EventHandler(this.comboBoxDiscoverAttributesDirection_MouseHover);
             // 
             // textBoxDiscoverAttributesClusterID
             // 
-            this.textBoxDiscoverAttributesClusterID.Location = new System.Drawing.Point(539, 262);
-            this.textBoxDiscoverAttributesClusterID.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxDiscoverAttributesClusterID.Location = new System.Drawing.Point(431, 210);
             this.textBoxDiscoverAttributesClusterID.Name = "textBoxDiscoverAttributesClusterID";
-            this.textBoxDiscoverAttributesClusterID.Size = new System.Drawing.Size(127, 22);
+            this.textBoxDiscoverAttributesClusterID.Size = new System.Drawing.Size(102, 21);
             this.textBoxDiscoverAttributesClusterID.TabIndex = 54;
             this.textBoxDiscoverAttributesClusterID.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxDiscoverAttributesClusterID_MouseClick);
             this.textBoxDiscoverAttributesClusterID.Leave += new System.EventHandler(this.textBoxDiscoverAttributesClusterID_Leave);
@@ -2625,10 +2527,9 @@
             // 
             // textBoxDiscoverAttributesDstEp
             // 
-            this.textBoxDiscoverAttributesDstEp.Location = new System.Drawing.Point(399, 262);
-            this.textBoxDiscoverAttributesDstEp.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxDiscoverAttributesDstEp.Location = new System.Drawing.Point(319, 210);
             this.textBoxDiscoverAttributesDstEp.Name = "textBoxDiscoverAttributesDstEp";
-            this.textBoxDiscoverAttributesDstEp.Size = new System.Drawing.Size(132, 22);
+            this.textBoxDiscoverAttributesDstEp.Size = new System.Drawing.Size(106, 21);
             this.textBoxDiscoverAttributesDstEp.TabIndex = 53;
             this.textBoxDiscoverAttributesDstEp.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxDiscoverAttributesDstEp_MouseClick);
             this.textBoxDiscoverAttributesDstEp.Leave += new System.EventHandler(this.textBoxDiscoverAttributesDstEp_Leave);
@@ -2637,10 +2538,9 @@
             // 
             // textBoxDiscoverAttributesSrcEp
             // 
-            this.textBoxDiscoverAttributesSrcEp.Location = new System.Drawing.Point(257, 262);
-            this.textBoxDiscoverAttributesSrcEp.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxDiscoverAttributesSrcEp.Location = new System.Drawing.Point(206, 210);
             this.textBoxDiscoverAttributesSrcEp.Name = "textBoxDiscoverAttributesSrcEp";
-            this.textBoxDiscoverAttributesSrcEp.Size = new System.Drawing.Size(131, 22);
+            this.textBoxDiscoverAttributesSrcEp.Size = new System.Drawing.Size(106, 21);
             this.textBoxDiscoverAttributesSrcEp.TabIndex = 52;
             this.textBoxDiscoverAttributesSrcEp.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxDiscoverAttributesSrcEp_MouseClick);
             this.textBoxDiscoverAttributesSrcEp.Leave += new System.EventHandler(this.textBoxDiscoverAttributesSrcEp_Leave);
@@ -2649,10 +2549,9 @@
             // 
             // textBoxDiscoverAttributesAddr
             // 
-            this.textBoxDiscoverAttributesAddr.Location = new System.Drawing.Point(135, 262);
-            this.textBoxDiscoverAttributesAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxDiscoverAttributesAddr.Location = new System.Drawing.Point(108, 210);
             this.textBoxDiscoverAttributesAddr.Name = "textBoxDiscoverAttributesAddr";
-            this.textBoxDiscoverAttributesAddr.Size = new System.Drawing.Size(113, 22);
+            this.textBoxDiscoverAttributesAddr.Size = new System.Drawing.Size(91, 21);
             this.textBoxDiscoverAttributesAddr.TabIndex = 51;
             this.textBoxDiscoverAttributesAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxDiscoverAttributesAddr_MouseClick);
             this.textBoxDiscoverAttributesAddr.Leave += new System.EventHandler(this.textBoxDiscoverAttributesAddr_Leave);
@@ -2661,10 +2560,9 @@
             // 
             // buttonDiscoverAttributes
             // 
-            this.buttonDiscoverAttributes.Location = new System.Drawing.Point(8, 260);
-            this.buttonDiscoverAttributes.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonDiscoverAttributes.Location = new System.Drawing.Point(6, 208);
             this.buttonDiscoverAttributes.Name = "buttonDiscoverAttributes";
-            this.buttonDiscoverAttributes.Size = new System.Drawing.Size(119, 27);
+            this.buttonDiscoverAttributes.Size = new System.Drawing.Size(95, 22);
             this.buttonDiscoverAttributes.TabIndex = 50;
             this.buttonDiscoverAttributes.Text = "Disc Attribs";
             this.buttonDiscoverAttributes.UseVisualStyleBackColor = true;
@@ -2674,20 +2572,18 @@
             // 
             this.comboBoxReadAllAttribDirection.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxReadAllAttribDirection.FormattingEnabled = true;
-            this.comboBoxReadAllAttribDirection.Location = new System.Drawing.Point(676, 226);
-            this.comboBoxReadAllAttribDirection.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxReadAllAttribDirection.Location = new System.Drawing.Point(541, 181);
             this.comboBoxReadAllAttribDirection.Name = "comboBoxReadAllAttribDirection";
-            this.comboBoxReadAllAttribDirection.Size = new System.Drawing.Size(132, 24);
+            this.comboBoxReadAllAttribDirection.Size = new System.Drawing.Size(106, 20);
             this.comboBoxReadAllAttribDirection.TabIndex = 49;
             this.comboBoxReadAllAttribDirection.MouseLeave += new System.EventHandler(this.comboBoxReadAllAttribDirection_MouseLeave);
             this.comboBoxReadAllAttribDirection.MouseHover += new System.EventHandler(this.comboBoxReadAllAttribDirection_MouseHover);
             // 
             // textBoxReadAllAttribClusterID
             // 
-            this.textBoxReadAllAttribClusterID.Location = new System.Drawing.Point(539, 228);
-            this.textBoxReadAllAttribClusterID.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxReadAllAttribClusterID.Location = new System.Drawing.Point(431, 182);
             this.textBoxReadAllAttribClusterID.Name = "textBoxReadAllAttribClusterID";
-            this.textBoxReadAllAttribClusterID.Size = new System.Drawing.Size(128, 22);
+            this.textBoxReadAllAttribClusterID.Size = new System.Drawing.Size(103, 21);
             this.textBoxReadAllAttribClusterID.TabIndex = 48;
             this.textBoxReadAllAttribClusterID.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxReadAllAttribClusterID_MouseClick);
             this.textBoxReadAllAttribClusterID.Leave += new System.EventHandler(this.textBoxReadAllAttribClusterID_Leave);
@@ -2696,10 +2592,9 @@
             // 
             // textBoxReadAllAttribDstEP
             // 
-            this.textBoxReadAllAttribDstEP.Location = new System.Drawing.Point(399, 228);
-            this.textBoxReadAllAttribDstEP.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxReadAllAttribDstEP.Location = new System.Drawing.Point(319, 182);
             this.textBoxReadAllAttribDstEP.Name = "textBoxReadAllAttribDstEP";
-            this.textBoxReadAllAttribDstEP.Size = new System.Drawing.Size(131, 22);
+            this.textBoxReadAllAttribDstEP.Size = new System.Drawing.Size(106, 21);
             this.textBoxReadAllAttribDstEP.TabIndex = 47;
             this.textBoxReadAllAttribDstEP.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxReadAllAttribDstEP_MouseClick);
             this.textBoxReadAllAttribDstEP.Leave += new System.EventHandler(this.textBoxReadAllAttribDstEP_Leave);
@@ -2708,10 +2603,9 @@
             // 
             // textBoxReadAllAttribSrcEP
             // 
-            this.textBoxReadAllAttribSrcEP.Location = new System.Drawing.Point(257, 229);
-            this.textBoxReadAllAttribSrcEP.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxReadAllAttribSrcEP.Location = new System.Drawing.Point(206, 183);
             this.textBoxReadAllAttribSrcEP.Name = "textBoxReadAllAttribSrcEP";
-            this.textBoxReadAllAttribSrcEP.Size = new System.Drawing.Size(132, 22);
+            this.textBoxReadAllAttribSrcEP.Size = new System.Drawing.Size(106, 21);
             this.textBoxReadAllAttribSrcEP.TabIndex = 46;
             this.textBoxReadAllAttribSrcEP.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxReadAllAttribSrcEP_MouseClick);
             this.textBoxReadAllAttribSrcEP.Leave += new System.EventHandler(this.textBoxReadAllAttribSrcEP_Leave);
@@ -2720,10 +2614,9 @@
             // 
             // textBoxReadAllAttribAddr
             // 
-            this.textBoxReadAllAttribAddr.Location = new System.Drawing.Point(135, 229);
-            this.textBoxReadAllAttribAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxReadAllAttribAddr.Location = new System.Drawing.Point(108, 183);
             this.textBoxReadAllAttribAddr.Name = "textBoxReadAllAttribAddr";
-            this.textBoxReadAllAttribAddr.Size = new System.Drawing.Size(113, 22);
+            this.textBoxReadAllAttribAddr.Size = new System.Drawing.Size(91, 21);
             this.textBoxReadAllAttribAddr.TabIndex = 45;
             this.textBoxReadAllAttribAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxReadAllAttribAddr_MouseClick);
             this.textBoxReadAllAttribAddr.Leave += new System.EventHandler(this.textBoxReadAllAttribAddr_Leave);
@@ -2732,10 +2625,9 @@
             // 
             // buttonReadAllAttrib
             // 
-            this.buttonReadAllAttrib.Location = new System.Drawing.Point(8, 228);
-            this.buttonReadAllAttrib.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonReadAllAttrib.Location = new System.Drawing.Point(6, 182);
             this.buttonReadAllAttrib.Name = "buttonReadAllAttrib";
-            this.buttonReadAllAttrib.Size = new System.Drawing.Size(119, 25);
+            this.buttonReadAllAttrib.Size = new System.Drawing.Size(95, 20);
             this.buttonReadAllAttrib.TabIndex = 44;
             this.buttonReadAllAttrib.Text = "Read All Attrib";
             this.buttonReadAllAttrib.UseVisualStyleBackColor = true;
@@ -2745,10 +2637,9 @@
             // 
             this.comboBoxConfigReportAttribDirection.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxConfigReportAttribDirection.FormattingEnabled = true;
-            this.comboBoxConfigReportAttribDirection.Location = new System.Drawing.Point(964, 82);
-            this.comboBoxConfigReportAttribDirection.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxConfigReportAttribDirection.Location = new System.Drawing.Point(771, 66);
             this.comboBoxConfigReportAttribDirection.Name = "comboBoxConfigReportAttribDirection";
-            this.comboBoxConfigReportAttribDirection.Size = new System.Drawing.Size(133, 24);
+            this.comboBoxConfigReportAttribDirection.Size = new System.Drawing.Size(107, 20);
             this.comboBoxConfigReportAttribDirection.TabIndex = 28;
             this.comboBoxConfigReportAttribDirection.SelectedIndexChanged += new System.EventHandler(this.comboBoxConfigReportAttribDirection_SelectedIndexChanged);
             this.comboBoxConfigReportAttribDirection.MouseLeave += new System.EventHandler(this.comboBoxConfigReportAttribDirection_MouseLeave);
@@ -2756,10 +2647,9 @@
             // 
             // textBoxConfigReportAttribType
             // 
-            this.textBoxConfigReportAttribType.Location = new System.Drawing.Point(1107, 82);
-            this.textBoxConfigReportAttribType.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxConfigReportAttribType.Location = new System.Drawing.Point(886, 66);
             this.textBoxConfigReportAttribType.Name = "textBoxConfigReportAttribType";
-            this.textBoxConfigReportAttribType.Size = new System.Drawing.Size(131, 22);
+            this.textBoxConfigReportAttribType.Size = new System.Drawing.Size(106, 21);
             this.textBoxConfigReportAttribType.TabIndex = 29;
             this.textBoxConfigReportAttribType.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxConfigReportAttribType_MouseClick);
             this.textBoxConfigReportAttribType.Leave += new System.EventHandler(this.textBoxConfigReportAttribType_Leave);
@@ -2768,10 +2658,9 @@
             // 
             // textBoxConfigReportMinInterval
             // 
-            this.textBoxConfigReportMinInterval.Location = new System.Drawing.Point(1107, 114);
-            this.textBoxConfigReportMinInterval.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxConfigReportMinInterval.Location = new System.Drawing.Point(886, 91);
             this.textBoxConfigReportMinInterval.Name = "textBoxConfigReportMinInterval";
-            this.textBoxConfigReportMinInterval.Size = new System.Drawing.Size(132, 22);
+            this.textBoxConfigReportMinInterval.Size = new System.Drawing.Size(106, 21);
             this.textBoxConfigReportMinInterval.TabIndex = 31;
             this.textBoxConfigReportMinInterval.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxConfigReportMinInterval_MouseClick);
             this.textBoxConfigReportMinInterval.Leave += new System.EventHandler(this.textBoxConfigReportMinInterval_Leave);
@@ -2780,10 +2669,9 @@
             // 
             // textBoxConfigReportAttribID
             // 
-            this.textBoxConfigReportAttribID.Location = new System.Drawing.Point(1247, 82);
-            this.textBoxConfigReportAttribID.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxConfigReportAttribID.Location = new System.Drawing.Point(998, 66);
             this.textBoxConfigReportAttribID.Name = "textBoxConfigReportAttribID";
-            this.textBoxConfigReportAttribID.Size = new System.Drawing.Size(132, 22);
+            this.textBoxConfigReportAttribID.Size = new System.Drawing.Size(106, 21);
             this.textBoxConfigReportAttribID.TabIndex = 30;
             this.textBoxConfigReportAttribID.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxConfigReportAttribID_MouseClick);
             this.textBoxConfigReportAttribID.Leave += new System.EventHandler(this.textBoxConfigReportAttribID_Leave);
@@ -2794,20 +2682,18 @@
             // 
             this.comboBoxConfigReportDirection.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxConfigReportDirection.FormattingEnabled = true;
-            this.comboBoxConfigReportDirection.Location = new System.Drawing.Point(823, 82);
-            this.comboBoxConfigReportDirection.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxConfigReportDirection.Location = new System.Drawing.Point(658, 66);
             this.comboBoxConfigReportDirection.Name = "comboBoxConfigReportDirection";
-            this.comboBoxConfigReportDirection.Size = new System.Drawing.Size(132, 24);
+            this.comboBoxConfigReportDirection.Size = new System.Drawing.Size(106, 20);
             this.comboBoxConfigReportDirection.TabIndex = 27;
             this.comboBoxConfigReportDirection.MouseLeave += new System.EventHandler(this.comboBoxConfigReportDirection_MouseLeave);
             this.comboBoxConfigReportDirection.MouseHover += new System.EventHandler(this.comboBoxConfigReportDirection_MouseHover);
             // 
             // textBoxConfigReportClusterID
             // 
-            this.textBoxConfigReportClusterID.Location = new System.Drawing.Point(681, 82);
-            this.textBoxConfigReportClusterID.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxConfigReportClusterID.Location = new System.Drawing.Point(545, 66);
             this.textBoxConfigReportClusterID.Name = "textBoxConfigReportClusterID";
-            this.textBoxConfigReportClusterID.Size = new System.Drawing.Size(131, 22);
+            this.textBoxConfigReportClusterID.Size = new System.Drawing.Size(106, 21);
             this.textBoxConfigReportClusterID.TabIndex = 26;
             this.textBoxConfigReportClusterID.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxConfigReportClusterID_MouseClick);
             this.textBoxConfigReportClusterID.Leave += new System.EventHandler(this.textBoxConfigReportClusterID_Leave);
@@ -2816,10 +2702,9 @@
             // 
             // textBoxConfigReportDstEP
             // 
-            this.textBoxConfigReportDstEP.Location = new System.Drawing.Point(540, 82);
-            this.textBoxConfigReportDstEP.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxConfigReportDstEP.Location = new System.Drawing.Point(432, 66);
             this.textBoxConfigReportDstEP.Name = "textBoxConfigReportDstEP";
-            this.textBoxConfigReportDstEP.Size = new System.Drawing.Size(132, 22);
+            this.textBoxConfigReportDstEP.Size = new System.Drawing.Size(106, 21);
             this.textBoxConfigReportDstEP.TabIndex = 25;
             this.textBoxConfigReportDstEP.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxConfigReportDstEP_MouseClick);
             this.textBoxConfigReportDstEP.Leave += new System.EventHandler(this.textBoxConfigReportDstEP_Leave);
@@ -2828,10 +2713,9 @@
             // 
             // textBoxConfigReportSrcEP
             // 
-            this.textBoxConfigReportSrcEP.Location = new System.Drawing.Point(399, 82);
-            this.textBoxConfigReportSrcEP.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxConfigReportSrcEP.Location = new System.Drawing.Point(319, 66);
             this.textBoxConfigReportSrcEP.Name = "textBoxConfigReportSrcEP";
-            this.textBoxConfigReportSrcEP.Size = new System.Drawing.Size(131, 22);
+            this.textBoxConfigReportSrcEP.Size = new System.Drawing.Size(106, 21);
             this.textBoxConfigReportSrcEP.TabIndex = 24;
             this.textBoxConfigReportSrcEP.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxConfigReportSrcEP_MouseClick);
             this.textBoxConfigReportSrcEP.Leave += new System.EventHandler(this.textBoxConfigReportSrcEP_Leave);
@@ -2840,10 +2724,9 @@
             // 
             // textBoxConfigReportTargetAddr
             // 
-            this.textBoxConfigReportTargetAddr.Location = new System.Drawing.Point(257, 82);
-            this.textBoxConfigReportTargetAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxConfigReportTargetAddr.Location = new System.Drawing.Point(206, 66);
             this.textBoxConfigReportTargetAddr.Name = "textBoxConfigReportTargetAddr";
-            this.textBoxConfigReportTargetAddr.Size = new System.Drawing.Size(132, 22);
+            this.textBoxConfigReportTargetAddr.Size = new System.Drawing.Size(106, 21);
             this.textBoxConfigReportTargetAddr.TabIndex = 23;
             this.textBoxConfigReportTargetAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxConfigReportTargetAddr_MouseClick);
             this.textBoxConfigReportTargetAddr.Leave += new System.EventHandler(this.textBoxConfigReportTargetAddr_Leave);
@@ -2852,10 +2735,9 @@
             // 
             // buttonConfigReport
             // 
-            this.buttonConfigReport.Location = new System.Drawing.Point(8, 79);
-            this.buttonConfigReport.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonConfigReport.Location = new System.Drawing.Point(6, 63);
             this.buttonConfigReport.Name = "buttonConfigReport";
-            this.buttonConfigReport.Size = new System.Drawing.Size(100, 30);
+            this.buttonConfigReport.Size = new System.Drawing.Size(80, 24);
             this.buttonConfigReport.TabIndex = 21;
             this.buttonConfigReport.Text = "Config Rprt";
             this.buttonConfigReport.UseVisualStyleBackColor = true;
@@ -2863,10 +2745,9 @@
             // 
             // buttonWriteAttrib
             // 
-            this.buttonWriteAttrib.Location = new System.Drawing.Point(8, 43);
-            this.buttonWriteAttrib.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonWriteAttrib.Location = new System.Drawing.Point(6, 34);
             this.buttonWriteAttrib.Name = "buttonWriteAttrib";
-            this.buttonWriteAttrib.Size = new System.Drawing.Size(100, 28);
+            this.buttonWriteAttrib.Size = new System.Drawing.Size(80, 22);
             this.buttonWriteAttrib.TabIndex = 10;
             this.buttonWriteAttrib.Text = "Write Attrib";
             this.buttonWriteAttrib.UseVisualStyleBackColor = true;
@@ -2874,10 +2755,9 @@
             // 
             // textBoxReadAttribCount
             // 
-            this.textBoxReadAttribCount.Location = new System.Drawing.Point(823, 10);
-            this.textBoxReadAttribCount.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxReadAttribCount.Location = new System.Drawing.Point(658, 8);
             this.textBoxReadAttribCount.Name = "textBoxReadAttribCount";
-            this.textBoxReadAttribCount.Size = new System.Drawing.Size(132, 22);
+            this.textBoxReadAttribCount.Size = new System.Drawing.Size(106, 21);
             this.textBoxReadAttribCount.TabIndex = 6;
             this.textBoxReadAttribCount.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxReadAttribCount_MouseClick);
             this.textBoxReadAttribCount.Leave += new System.EventHandler(this.textBoxReadAttribCount_Leave);
@@ -2888,20 +2768,18 @@
             // 
             this.comboBoxReadAttribDirection.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxReadAttribDirection.FormattingEnabled = true;
-            this.comboBoxReadAttribDirection.Location = new System.Drawing.Point(681, 10);
-            this.comboBoxReadAttribDirection.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxReadAttribDirection.Location = new System.Drawing.Point(545, 8);
             this.comboBoxReadAttribDirection.Name = "comboBoxReadAttribDirection";
-            this.comboBoxReadAttribDirection.Size = new System.Drawing.Size(132, 24);
+            this.comboBoxReadAttribDirection.Size = new System.Drawing.Size(106, 20);
             this.comboBoxReadAttribDirection.TabIndex = 5;
             this.comboBoxReadAttribDirection.MouseLeave += new System.EventHandler(this.comboBoxReadAttribDirection_MouseLeave);
             this.comboBoxReadAttribDirection.MouseHover += new System.EventHandler(this.comboBoxReadAttribDirection_MouseHover);
             // 
             // textBoxReadAttribID1
             // 
-            this.textBoxReadAttribID1.Location = new System.Drawing.Point(964, 10);
-            this.textBoxReadAttribID1.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxReadAttribID1.Location = new System.Drawing.Point(771, 8);
             this.textBoxReadAttribID1.Name = "textBoxReadAttribID1";
-            this.textBoxReadAttribID1.Size = new System.Drawing.Size(132, 22);
+            this.textBoxReadAttribID1.Size = new System.Drawing.Size(106, 21);
             this.textBoxReadAttribID1.TabIndex = 7;
             this.textBoxReadAttribID1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxReadAttribID1_MouseClick);
             this.textBoxReadAttribID1.Leave += new System.EventHandler(this.textBoxReadAttribID1_Leave);
@@ -2910,10 +2788,9 @@
             // 
             // textBoxReadAttribClusterID
             // 
-            this.textBoxReadAttribClusterID.Location = new System.Drawing.Point(540, 10);
-            this.textBoxReadAttribClusterID.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxReadAttribClusterID.Location = new System.Drawing.Point(432, 8);
             this.textBoxReadAttribClusterID.Name = "textBoxReadAttribClusterID";
-            this.textBoxReadAttribClusterID.Size = new System.Drawing.Size(132, 22);
+            this.textBoxReadAttribClusterID.Size = new System.Drawing.Size(106, 21);
             this.textBoxReadAttribClusterID.TabIndex = 4;
             this.textBoxReadAttribClusterID.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxReadAttribClusterID_MouseClick);
             this.textBoxReadAttribClusterID.Leave += new System.EventHandler(this.textBoxReadAttribClusterID_Leave);
@@ -2922,10 +2799,9 @@
             // 
             // textBoxReadAttribDstEP
             // 
-            this.textBoxReadAttribDstEP.Location = new System.Drawing.Point(399, 10);
-            this.textBoxReadAttribDstEP.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxReadAttribDstEP.Location = new System.Drawing.Point(319, 8);
             this.textBoxReadAttribDstEP.Name = "textBoxReadAttribDstEP";
-            this.textBoxReadAttribDstEP.Size = new System.Drawing.Size(132, 22);
+            this.textBoxReadAttribDstEP.Size = new System.Drawing.Size(106, 21);
             this.textBoxReadAttribDstEP.TabIndex = 3;
             this.textBoxReadAttribDstEP.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxReadAttribDstEP_MouseClick);
             this.textBoxReadAttribDstEP.Leave += new System.EventHandler(this.textBoxReadAttribDstEP_Leave);
@@ -2934,10 +2810,9 @@
             // 
             // textBoxReadAttribSrcEP
             // 
-            this.textBoxReadAttribSrcEP.Location = new System.Drawing.Point(257, 10);
-            this.textBoxReadAttribSrcEP.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxReadAttribSrcEP.Location = new System.Drawing.Point(206, 8);
             this.textBoxReadAttribSrcEP.Name = "textBoxReadAttribSrcEP";
-            this.textBoxReadAttribSrcEP.Size = new System.Drawing.Size(132, 22);
+            this.textBoxReadAttribSrcEP.Size = new System.Drawing.Size(106, 21);
             this.textBoxReadAttribSrcEP.TabIndex = 2;
             this.textBoxReadAttribSrcEP.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxReadAttribSrcEP_MouseClick);
             this.textBoxReadAttribSrcEP.Leave += new System.EventHandler(this.textBoxReadAttribSrcEP_Leave);
@@ -2946,10 +2821,9 @@
             // 
             // textBoxReadAttribTargetAddr
             // 
-            this.textBoxReadAttribTargetAddr.Location = new System.Drawing.Point(116, 10);
-            this.textBoxReadAttribTargetAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxReadAttribTargetAddr.Location = new System.Drawing.Point(93, 8);
             this.textBoxReadAttribTargetAddr.Name = "textBoxReadAttribTargetAddr";
-            this.textBoxReadAttribTargetAddr.Size = new System.Drawing.Size(132, 22);
+            this.textBoxReadAttribTargetAddr.Size = new System.Drawing.Size(106, 21);
             this.textBoxReadAttribTargetAddr.TabIndex = 1;
             this.textBoxReadAttribTargetAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxReadAttribTargetAddr_MouseClick);
             this.textBoxReadAttribTargetAddr.Leave += new System.EventHandler(this.textBoxReadAttribTargetAddr_Leave);
@@ -2958,10 +2832,9 @@
             // 
             // buttonReadAttrib
             // 
-            this.buttonReadAttrib.Location = new System.Drawing.Point(8, 7);
-            this.buttonReadAttrib.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonReadAttrib.Location = new System.Drawing.Point(6, 6);
             this.buttonReadAttrib.Name = "buttonReadAttrib";
-            this.buttonReadAttrib.Size = new System.Drawing.Size(100, 28);
+            this.buttonReadAttrib.Size = new System.Drawing.Size(80, 22);
             this.buttonReadAttrib.TabIndex = 0;
             this.buttonReadAttrib.Text = "Read Attrib";
             this.buttonReadAttrib.UseVisualStyleBackColor = true;
@@ -2987,21 +2860,20 @@
             this.AHIControl.Controls.Add(this.textBoxIPNConfigDioRfActiveOutDioMask);
             this.AHIControl.Controls.Add(this.comboBoxIPNConfigEnable);
             this.AHIControl.Controls.Add(this.buttonInPacketNotification);
-            this.AHIControl.Location = new System.Drawing.Point(4, 25);
-            this.AHIControl.Margin = new System.Windows.Forms.Padding(4);
+            this.AHIControl.Location = new System.Drawing.Point(4, 22);
             this.AHIControl.Name = "AHIControl";
-            this.AHIControl.Padding = new System.Windows.Forms.Padding(4);
-            this.AHIControl.Size = new System.Drawing.Size(1691, 524);
+            this.AHIControl.Padding = new System.Windows.Forms.Padding(3);
+            this.AHIControl.Size = new System.Drawing.Size(1351, 416);
             this.AHIControl.TabIndex = 16;
             this.AHIControl.Text = "AHI Control";
             this.AHIControl.Click += new System.EventHandler(this.AHIControl_Click);
             // 
             // textBoxAHITxPower
             // 
-            this.textBoxAHITxPower.Location = new System.Drawing.Point(117, 117);
-            this.textBoxAHITxPower.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxAHITxPower.Location = new System.Drawing.Point(94, 94);
+            this.textBoxAHITxPower.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxAHITxPower.Name = "textBoxAHITxPower";
-            this.textBoxAHITxPower.Size = new System.Drawing.Size(132, 22);
+            this.textBoxAHITxPower.Size = new System.Drawing.Size(106, 21);
             this.textBoxAHITxPower.TabIndex = 17;
             this.textBoxAHITxPower.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxAHITxPower_MouseClick);
             this.textBoxAHITxPower.Leave += new System.EventHandler(this.textBoxAHITxPower_Leave);
@@ -3010,10 +2882,10 @@
             // 
             // buttonAHISetTxPower
             // 
-            this.buttonAHISetTxPower.Location = new System.Drawing.Point(9, 116);
-            this.buttonAHISetTxPower.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonAHISetTxPower.Location = new System.Drawing.Point(7, 93);
+            this.buttonAHISetTxPower.Margin = new System.Windows.Forms.Padding(2);
             this.buttonAHISetTxPower.Name = "buttonAHISetTxPower";
-            this.buttonAHISetTxPower.Size = new System.Drawing.Size(99, 27);
+            this.buttonAHISetTxPower.Size = new System.Drawing.Size(79, 22);
             this.buttonAHISetTxPower.TabIndex = 16;
             this.buttonAHISetTxPower.Text = "TX Power";
             this.buttonAHISetTxPower.UseVisualStyleBackColor = true;
@@ -3023,10 +2895,9 @@
             // 
             this.labelUnimplemented.AutoSize = true;
             this.labelUnimplemented.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelUnimplemented.Location = new System.Drawing.Point(647, 231);
-            this.labelUnimplemented.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelUnimplemented.Location = new System.Drawing.Point(518, 185);
             this.labelUnimplemented.Name = "labelUnimplemented";
-            this.labelUnimplemented.Size = new System.Drawing.Size(390, 58);
+            this.labelUnimplemented.Size = new System.Drawing.Size(311, 46);
             this.labelUnimplemented.TabIndex = 15;
             this.labelUnimplemented.Text = "Unimplemented";
             // 
@@ -3039,20 +2910,18 @@
             "TIMER 2",
             "TIMER 3",
             "TIMER 4"});
-            this.comboBoxIPNConfigTimerId.Location = new System.Drawing.Point(915, 85);
-            this.comboBoxIPNConfigTimerId.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxIPNConfigTimerId.Location = new System.Drawing.Point(732, 68);
             this.comboBoxIPNConfigTimerId.Name = "comboBoxIPNConfigTimerId";
-            this.comboBoxIPNConfigTimerId.Size = new System.Drawing.Size(105, 24);
+            this.comboBoxIPNConfigTimerId.Size = new System.Drawing.Size(85, 20);
             this.comboBoxIPNConfigTimerId.TabIndex = 13;
             this.comboBoxIPNConfigTimerId.MouseLeave += new System.EventHandler(this.comboBoxIPNConfigTimerId_MouseLeave);
             this.comboBoxIPNConfigTimerId.MouseHover += new System.EventHandler(this.comboBoxIPNConfigTimerId_MouseHover);
             // 
             // textBoxIPNConfigDioTxConfInDioMask
             // 
-            this.textBoxIPNConfigDioTxConfInDioMask.Location = new System.Drawing.Point(516, 85);
-            this.textBoxIPNConfigDioTxConfInDioMask.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxIPNConfigDioTxConfInDioMask.Location = new System.Drawing.Point(413, 68);
             this.textBoxIPNConfigDioTxConfInDioMask.Name = "textBoxIPNConfigDioTxConfInDioMask";
-            this.textBoxIPNConfigDioTxConfInDioMask.Size = new System.Drawing.Size(132, 22);
+            this.textBoxIPNConfigDioTxConfInDioMask.Size = new System.Drawing.Size(106, 21);
             this.textBoxIPNConfigDioTxConfInDioMask.TabIndex = 10;
             this.textBoxIPNConfigDioTxConfInDioMask.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxIPNConfigDioTxConfInDioMask_MouseClick);
             this.textBoxIPNConfigDioTxConfInDioMask.Leave += new System.EventHandler(this.textBoxIPNConfigDioTxConfInDioMask_Leave);
@@ -3061,10 +2930,9 @@
             // 
             // textBoxDioSetOutputOffPinMask
             // 
-            this.textBoxDioSetOutputOffPinMask.Location = new System.Drawing.Point(259, 48);
-            this.textBoxDioSetOutputOffPinMask.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxDioSetOutputOffPinMask.Location = new System.Drawing.Point(207, 38);
             this.textBoxDioSetOutputOffPinMask.Name = "textBoxDioSetOutputOffPinMask";
-            this.textBoxDioSetOutputOffPinMask.Size = new System.Drawing.Size(132, 22);
+            this.textBoxDioSetOutputOffPinMask.Size = new System.Drawing.Size(106, 21);
             this.textBoxDioSetOutputOffPinMask.TabIndex = 5;
             this.textBoxDioSetOutputOffPinMask.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxDioSetOutputOffPinMask_MouseClick);
             this.textBoxDioSetOutputOffPinMask.Leave += new System.EventHandler(this.textBoxDioSetOutputOffPinMask_Leave);
@@ -3073,10 +2941,9 @@
             // 
             // textBoxDioSetOutputOnPinMask
             // 
-            this.textBoxDioSetOutputOnPinMask.Location = new System.Drawing.Point(117, 48);
-            this.textBoxDioSetOutputOnPinMask.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxDioSetOutputOnPinMask.Location = new System.Drawing.Point(94, 38);
             this.textBoxDioSetOutputOnPinMask.Name = "textBoxDioSetOutputOnPinMask";
-            this.textBoxDioSetOutputOnPinMask.Size = new System.Drawing.Size(132, 22);
+            this.textBoxDioSetOutputOnPinMask.Size = new System.Drawing.Size(106, 21);
             this.textBoxDioSetOutputOnPinMask.TabIndex = 4;
             this.textBoxDioSetOutputOnPinMask.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxDioSetOutputOnPinMask_MouseClick);
             this.textBoxDioSetOutputOnPinMask.Leave += new System.EventHandler(this.textBoxDioSetOutputOnPinMask_Leave);
@@ -3085,10 +2952,9 @@
             // 
             // buttonDioSetOutput
             // 
-            this.buttonDioSetOutput.Location = new System.Drawing.Point(9, 46);
-            this.buttonDioSetOutput.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonDioSetOutput.Location = new System.Drawing.Point(7, 37);
             this.buttonDioSetOutput.Name = "buttonDioSetOutput";
-            this.buttonDioSetOutput.Size = new System.Drawing.Size(100, 28);
+            this.buttonDioSetOutput.Size = new System.Drawing.Size(80, 22);
             this.buttonDioSetOutput.TabIndex = 3;
             this.buttonDioSetOutput.Text = "DIO Set";
             this.buttonDioSetOutput.UseVisualStyleBackColor = true;
@@ -3096,10 +2962,9 @@
             // 
             // textBoxDioSetDirectionOutputPinMask
             // 
-            this.textBoxDioSetDirectionOutputPinMask.Location = new System.Drawing.Point(259, 12);
-            this.textBoxDioSetDirectionOutputPinMask.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxDioSetDirectionOutputPinMask.Location = new System.Drawing.Point(207, 10);
             this.textBoxDioSetDirectionOutputPinMask.Name = "textBoxDioSetDirectionOutputPinMask";
-            this.textBoxDioSetDirectionOutputPinMask.Size = new System.Drawing.Size(132, 22);
+            this.textBoxDioSetDirectionOutputPinMask.Size = new System.Drawing.Size(106, 21);
             this.textBoxDioSetDirectionOutputPinMask.TabIndex = 2;
             this.textBoxDioSetDirectionOutputPinMask.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxDioSetDirectionOutputPinMask_MouseClick);
             this.textBoxDioSetDirectionOutputPinMask.Leave += new System.EventHandler(this.textBoxDioSetDirectionOutputPinMask_Leave);
@@ -3108,10 +2973,9 @@
             // 
             // textBoxDioSetDirectionInputPinMask
             // 
-            this.textBoxDioSetDirectionInputPinMask.Location = new System.Drawing.Point(117, 12);
-            this.textBoxDioSetDirectionInputPinMask.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxDioSetDirectionInputPinMask.Location = new System.Drawing.Point(94, 10);
             this.textBoxDioSetDirectionInputPinMask.Name = "textBoxDioSetDirectionInputPinMask";
-            this.textBoxDioSetDirectionInputPinMask.Size = new System.Drawing.Size(132, 22);
+            this.textBoxDioSetDirectionInputPinMask.Size = new System.Drawing.Size(106, 21);
             this.textBoxDioSetDirectionInputPinMask.TabIndex = 1;
             this.textBoxDioSetDirectionInputPinMask.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxDioSetDirectionInputPinMask_MouseClick);
             this.textBoxDioSetDirectionInputPinMask.Leave += new System.EventHandler(this.textBoxDioSetDirectionInputPinMask_Leave);
@@ -3120,10 +2984,9 @@
             // 
             // buttonDioSetDirection
             // 
-            this.buttonDioSetDirection.Location = new System.Drawing.Point(9, 10);
-            this.buttonDioSetDirection.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonDioSetDirection.Location = new System.Drawing.Point(7, 8);
             this.buttonDioSetDirection.Name = "buttonDioSetDirection";
-            this.buttonDioSetDirection.Size = new System.Drawing.Size(100, 28);
+            this.buttonDioSetDirection.Size = new System.Drawing.Size(80, 22);
             this.buttonDioSetDirection.TabIndex = 0;
             this.buttonDioSetDirection.Text = "DIO Set Dir";
             this.buttonDioSetDirection.UseVisualStyleBackColor = true;
@@ -3131,10 +2994,9 @@
             // 
             // textBoxIPNConfigPollPeriod
             // 
-            this.textBoxIPNConfigPollPeriod.Location = new System.Drawing.Point(772, 85);
-            this.textBoxIPNConfigPollPeriod.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxIPNConfigPollPeriod.Location = new System.Drawing.Point(618, 68);
             this.textBoxIPNConfigPollPeriod.Name = "textBoxIPNConfigPollPeriod";
-            this.textBoxIPNConfigPollPeriod.Size = new System.Drawing.Size(132, 22);
+            this.textBoxIPNConfigPollPeriod.Size = new System.Drawing.Size(106, 21);
             this.textBoxIPNConfigPollPeriod.TabIndex = 12;
             this.textBoxIPNConfigPollPeriod.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxIPNConfigPollPeriod_MouseClick);
             this.textBoxIPNConfigPollPeriod.Leave += new System.EventHandler(this.textBoxIPNConfigPollPeriod_Leave);
@@ -3147,20 +3009,18 @@
             this.comboBoxIPNConfigRegisterCallback.Items.AddRange(new object[] {
             "DISABLED",
             "ENABLED"});
-            this.comboBoxIPNConfigRegisterCallback.Location = new System.Drawing.Point(657, 85);
-            this.comboBoxIPNConfigRegisterCallback.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxIPNConfigRegisterCallback.Location = new System.Drawing.Point(526, 68);
             this.comboBoxIPNConfigRegisterCallback.Name = "comboBoxIPNConfigRegisterCallback";
-            this.comboBoxIPNConfigRegisterCallback.Size = new System.Drawing.Size(105, 24);
+            this.comboBoxIPNConfigRegisterCallback.Size = new System.Drawing.Size(85, 20);
             this.comboBoxIPNConfigRegisterCallback.TabIndex = 11;
             this.comboBoxIPNConfigRegisterCallback.MouseLeave += new System.EventHandler(this.comboBoxIPNConfigRegisterCallback_MouseLeave);
             this.comboBoxIPNConfigRegisterCallback.MouseHover += new System.EventHandler(this.comboBoxIPNConfigRegisterCallback_MouseHover);
             // 
             // textBoxIPNConfigDioStatusOutDioMask
             // 
-            this.textBoxIPNConfigDioStatusOutDioMask.Location = new System.Drawing.Point(375, 85);
-            this.textBoxIPNConfigDioStatusOutDioMask.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxIPNConfigDioStatusOutDioMask.Location = new System.Drawing.Point(300, 68);
             this.textBoxIPNConfigDioStatusOutDioMask.Name = "textBoxIPNConfigDioStatusOutDioMask";
-            this.textBoxIPNConfigDioStatusOutDioMask.Size = new System.Drawing.Size(132, 22);
+            this.textBoxIPNConfigDioStatusOutDioMask.Size = new System.Drawing.Size(106, 21);
             this.textBoxIPNConfigDioStatusOutDioMask.TabIndex = 9;
             this.textBoxIPNConfigDioStatusOutDioMask.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxIPNConfigDioStatusOutDioMask_MouseClick);
             this.textBoxIPNConfigDioStatusOutDioMask.Leave += new System.EventHandler(this.textBoxIPNConfigDioStatusOutDioMask_Leave);
@@ -3169,10 +3029,9 @@
             // 
             // textBoxIPNConfigDioRfActiveOutDioMask
             // 
-            this.textBoxIPNConfigDioRfActiveOutDioMask.Location = new System.Drawing.Point(232, 85);
-            this.textBoxIPNConfigDioRfActiveOutDioMask.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxIPNConfigDioRfActiveOutDioMask.Location = new System.Drawing.Point(186, 68);
             this.textBoxIPNConfigDioRfActiveOutDioMask.Name = "textBoxIPNConfigDioRfActiveOutDioMask";
-            this.textBoxIPNConfigDioRfActiveOutDioMask.Size = new System.Drawing.Size(132, 22);
+            this.textBoxIPNConfigDioRfActiveOutDioMask.Size = new System.Drawing.Size(106, 21);
             this.textBoxIPNConfigDioRfActiveOutDioMask.TabIndex = 8;
             this.textBoxIPNConfigDioRfActiveOutDioMask.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxIPNConfigDioRfActiveOutDioMask_MouseClick);
             this.textBoxIPNConfigDioRfActiveOutDioMask.Leave += new System.EventHandler(this.textBoxIPNConfigDioRfActiveOutDioMask_Leave);
@@ -3185,20 +3044,18 @@
             this.comboBoxIPNConfigEnable.Items.AddRange(new object[] {
             "DISABLE",
             "ENABLE"});
-            this.comboBoxIPNConfigEnable.Location = new System.Drawing.Point(117, 84);
-            this.comboBoxIPNConfigEnable.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxIPNConfigEnable.Location = new System.Drawing.Point(94, 67);
             this.comboBoxIPNConfigEnable.Name = "comboBoxIPNConfigEnable";
-            this.comboBoxIPNConfigEnable.Size = new System.Drawing.Size(105, 24);
+            this.comboBoxIPNConfigEnable.Size = new System.Drawing.Size(85, 20);
             this.comboBoxIPNConfigEnable.TabIndex = 7;
             this.comboBoxIPNConfigEnable.MouseLeave += new System.EventHandler(this.comboBoxIPNConfigEnable_MouseLeave);
             this.comboBoxIPNConfigEnable.MouseHover += new System.EventHandler(this.comboBoxIPNConfigEnable_MouseHover);
             // 
             // buttonInPacketNotification
             // 
-            this.buttonInPacketNotification.Location = new System.Drawing.Point(9, 81);
-            this.buttonInPacketNotification.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonInPacketNotification.Location = new System.Drawing.Point(7, 65);
             this.buttonInPacketNotification.Name = "buttonInPacketNotification";
-            this.buttonInPacketNotification.Size = new System.Drawing.Size(100, 28);
+            this.buttonInPacketNotification.Size = new System.Drawing.Size(80, 22);
             this.buttonInPacketNotification.TabIndex = 6;
             this.buttonInPacketNotification.Text = "IPN Config";
             this.buttonInPacketNotification.UseVisualStyleBackColor = true;
@@ -3212,20 +3069,18 @@
             this.BasicClusterTab.Controls.Add(this.textBoxBasicResetTargetAddr);
             this.BasicClusterTab.Controls.Add(this.comboBoxBasicResetTargetAddrMode);
             this.BasicClusterTab.Controls.Add(this.buttonBasicReset);
-            this.BasicClusterTab.Location = new System.Drawing.Point(4, 25);
-            this.BasicClusterTab.Margin = new System.Windows.Forms.Padding(4);
+            this.BasicClusterTab.Location = new System.Drawing.Point(4, 22);
             this.BasicClusterTab.Name = "BasicClusterTab";
-            this.BasicClusterTab.Size = new System.Drawing.Size(1691, 524);
+            this.BasicClusterTab.Size = new System.Drawing.Size(1351, 416);
             this.BasicClusterTab.TabIndex = 15;
             this.BasicClusterTab.Text = "Basic Cluster";
             this.BasicClusterTab.Click += new System.EventHandler(this.BasicClusterTab_Click);
             // 
             // textBoxBasicResetDstEP
             // 
-            this.textBoxBasicResetDstEP.Location = new System.Drawing.Point(552, 7);
-            this.textBoxBasicResetDstEP.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxBasicResetDstEP.Location = new System.Drawing.Point(442, 6);
             this.textBoxBasicResetDstEP.Name = "textBoxBasicResetDstEP";
-            this.textBoxBasicResetDstEP.Size = new System.Drawing.Size(132, 22);
+            this.textBoxBasicResetDstEP.Size = new System.Drawing.Size(106, 21);
             this.textBoxBasicResetDstEP.TabIndex = 4;
             this.textBoxBasicResetDstEP.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxBasicResetDstEP_MouseClick);
             this.textBoxBasicResetDstEP.Leave += new System.EventHandler(this.textBoxBasicResetDstEP_Leave);
@@ -3234,10 +3089,9 @@
             // 
             // textBoxBasicResetSrcEP
             // 
-            this.textBoxBasicResetSrcEP.Location = new System.Drawing.Point(411, 7);
-            this.textBoxBasicResetSrcEP.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxBasicResetSrcEP.Location = new System.Drawing.Point(329, 6);
             this.textBoxBasicResetSrcEP.Name = "textBoxBasicResetSrcEP";
-            this.textBoxBasicResetSrcEP.Size = new System.Drawing.Size(132, 22);
+            this.textBoxBasicResetSrcEP.Size = new System.Drawing.Size(106, 21);
             this.textBoxBasicResetSrcEP.TabIndex = 3;
             this.textBoxBasicResetSrcEP.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxBasicResetSrcEP_MouseClick);
             this.textBoxBasicResetSrcEP.Leave += new System.EventHandler(this.textBoxBasicResetSrcEP_Leave);
@@ -3246,10 +3100,9 @@
             // 
             // textBoxBasicResetTargetAddr
             // 
-            this.textBoxBasicResetTargetAddr.Location = new System.Drawing.Point(269, 7);
-            this.textBoxBasicResetTargetAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxBasicResetTargetAddr.Location = new System.Drawing.Point(215, 6);
             this.textBoxBasicResetTargetAddr.Name = "textBoxBasicResetTargetAddr";
-            this.textBoxBasicResetTargetAddr.Size = new System.Drawing.Size(132, 22);
+            this.textBoxBasicResetTargetAddr.Size = new System.Drawing.Size(106, 21);
             this.textBoxBasicResetTargetAddr.TabIndex = 2;
             this.textBoxBasicResetTargetAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxBasicResetTargetAddr_MouseClick);
             this.textBoxBasicResetTargetAddr.TextChanged += new System.EventHandler(this.textBoxBasicResetTargetAddr_TextChanged);
@@ -3261,20 +3114,18 @@
             // 
             this.comboBoxBasicResetTargetAddrMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxBasicResetTargetAddrMode.FormattingEnabled = true;
-            this.comboBoxBasicResetTargetAddrMode.Location = new System.Drawing.Point(128, 7);
-            this.comboBoxBasicResetTargetAddrMode.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxBasicResetTargetAddrMode.Location = new System.Drawing.Point(102, 6);
             this.comboBoxBasicResetTargetAddrMode.Name = "comboBoxBasicResetTargetAddrMode";
-            this.comboBoxBasicResetTargetAddrMode.Size = new System.Drawing.Size(132, 24);
+            this.comboBoxBasicResetTargetAddrMode.Size = new System.Drawing.Size(106, 20);
             this.comboBoxBasicResetTargetAddrMode.TabIndex = 1;
             this.comboBoxBasicResetTargetAddrMode.MouseLeave += new System.EventHandler(this.comboBoxBasicResetTargetAddrMode_MouseLeave);
             this.comboBoxBasicResetTargetAddrMode.MouseHover += new System.EventHandler(this.comboBoxBasicResetTargetAddrMode_MouseHover);
             // 
             // buttonBasicReset
             // 
-            this.buttonBasicReset.Location = new System.Drawing.Point(4, 4);
-            this.buttonBasicReset.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonBasicReset.Location = new System.Drawing.Point(3, 3);
             this.buttonBasicReset.Name = "buttonBasicReset";
-            this.buttonBasicReset.Size = new System.Drawing.Size(116, 31);
+            this.buttonBasicReset.Size = new System.Drawing.Size(93, 25);
             this.buttonBasicReset.TabIndex = 0;
             this.buttonBasicReset.Text = "Reset To FD";
             this.buttonBasicReset.UseVisualStyleBackColor = true;
@@ -3316,20 +3167,18 @@
             this.tabPage3.Controls.Add(this.textBoxAddGroupSrcEp);
             this.tabPage3.Controls.Add(this.textBoxAddGroupAddr);
             this.tabPage3.Controls.Add(this.buttonAddGroup);
-            this.tabPage3.Location = new System.Drawing.Point(4, 25);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1691, 524);
+            this.tabPage3.Size = new System.Drawing.Size(1351, 416);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Group Cluster";
             this.tabPage3.Click += new System.EventHandler(this.tabPage3_Click);
             // 
             // textBoxGroupName
             // 
-            this.textBoxGroupName.Location = new System.Drawing.Point(981, 7);
-            this.textBoxGroupName.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxGroupName.Location = new System.Drawing.Point(785, 6);
             this.textBoxGroupName.Name = "textBoxGroupName";
-            this.textBoxGroupName.Size = new System.Drawing.Size(140, 22);
+            this.textBoxGroupName.Size = new System.Drawing.Size(113, 21);
             this.textBoxGroupName.TabIndex = 7;
             this.textBoxGroupName.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxGroupName_MouseClick);
             this.textBoxGroupName.Leave += new System.EventHandler(this.textBoxGroupName_Leave);
@@ -3338,10 +3187,9 @@
             // 
             // textBoxGroupNameMaxLength
             // 
-            this.textBoxGroupNameMaxLength.Location = new System.Drawing.Point(833, 7);
-            this.textBoxGroupNameMaxLength.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxGroupNameMaxLength.Location = new System.Drawing.Point(666, 6);
             this.textBoxGroupNameMaxLength.Name = "textBoxGroupNameMaxLength";
-            this.textBoxGroupNameMaxLength.Size = new System.Drawing.Size(140, 22);
+            this.textBoxGroupNameMaxLength.Size = new System.Drawing.Size(113, 21);
             this.textBoxGroupNameMaxLength.TabIndex = 6;
             this.textBoxGroupNameMaxLength.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxGroupNameMaxLength_MouseClick);
             this.textBoxGroupNameMaxLength.Leave += new System.EventHandler(this.textBoxGroupNameMaxLength_Leave);
@@ -3350,10 +3198,9 @@
             // 
             // textBoxGroupNameLength
             // 
-            this.textBoxGroupNameLength.Location = new System.Drawing.Point(685, 7);
-            this.textBoxGroupNameLength.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxGroupNameLength.Location = new System.Drawing.Point(548, 6);
             this.textBoxGroupNameLength.Name = "textBoxGroupNameLength";
-            this.textBoxGroupNameLength.Size = new System.Drawing.Size(140, 22);
+            this.textBoxGroupNameLength.Size = new System.Drawing.Size(113, 21);
             this.textBoxGroupNameLength.TabIndex = 5;
             this.textBoxGroupNameLength.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxGroupNameLength_MouseClick);
             this.textBoxGroupNameLength.Leave += new System.EventHandler(this.textBoxGroupNameLength_Leave);
@@ -3362,10 +3209,9 @@
             // 
             // buttonAddToList
             // 
-            this.buttonAddToList.Location = new System.Drawing.Point(687, 76);
-            this.buttonAddToList.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonAddToList.Location = new System.Drawing.Point(550, 61);
             this.buttonAddToList.Name = "buttonAddToList";
-            this.buttonAddToList.Size = new System.Drawing.Size(131, 28);
+            this.buttonAddToList.Size = new System.Drawing.Size(105, 22);
             this.buttonAddToList.TabIndex = 18;
             this.buttonAddToList.Text = "Add Group List";
             this.buttonAddToList.UseVisualStyleBackColor = true;
@@ -3373,10 +3219,9 @@
             // 
             // textBoxGroupAddIfIdentifyGroupID
             // 
-            this.textBoxGroupAddIfIdentifyGroupID.Location = new System.Drawing.Point(536, 186);
-            this.textBoxGroupAddIfIdentifyGroupID.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxGroupAddIfIdentifyGroupID.Location = new System.Drawing.Point(429, 149);
             this.textBoxGroupAddIfIdentifyGroupID.Name = "textBoxGroupAddIfIdentifyGroupID";
-            this.textBoxGroupAddIfIdentifyGroupID.Size = new System.Drawing.Size(140, 22);
+            this.textBoxGroupAddIfIdentifyGroupID.Size = new System.Drawing.Size(113, 21);
             this.textBoxGroupAddIfIdentifyGroupID.TabIndex = 32;
             this.textBoxGroupAddIfIdentifyGroupID.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxGroupAddIfIdentifyGroupID_MouseClick);
             this.textBoxGroupAddIfIdentifyGroupID.Leave += new System.EventHandler(this.textBoxGroupAddIfIdentifyGroupID_Leave);
@@ -3385,10 +3230,9 @@
             // 
             // textBoxGroupAddIfIdentifySrcEp
             // 
-            this.textBoxGroupAddIfIdentifySrcEp.Location = new System.Drawing.Point(255, 186);
-            this.textBoxGroupAddIfIdentifySrcEp.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxGroupAddIfIdentifySrcEp.Location = new System.Drawing.Point(204, 149);
             this.textBoxGroupAddIfIdentifySrcEp.Name = "textBoxGroupAddIfIdentifySrcEp";
-            this.textBoxGroupAddIfIdentifySrcEp.Size = new System.Drawing.Size(132, 22);
+            this.textBoxGroupAddIfIdentifySrcEp.Size = new System.Drawing.Size(106, 21);
             this.textBoxGroupAddIfIdentifySrcEp.TabIndex = 30;
             this.textBoxGroupAddIfIdentifySrcEp.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxGroupAddIfIdentifySrcEp_MouseClick);
             this.textBoxGroupAddIfIdentifySrcEp.Leave += new System.EventHandler(this.textBoxGroupAddIfIdentifySrcEp_Leave);
@@ -3397,10 +3241,9 @@
             // 
             // textBoxGroupAddIfIdentifyDstEp
             // 
-            this.textBoxGroupAddIfIdentifyDstEp.Location = new System.Drawing.Point(396, 186);
-            this.textBoxGroupAddIfIdentifyDstEp.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxGroupAddIfIdentifyDstEp.Location = new System.Drawing.Point(317, 149);
             this.textBoxGroupAddIfIdentifyDstEp.Name = "textBoxGroupAddIfIdentifyDstEp";
-            this.textBoxGroupAddIfIdentifyDstEp.Size = new System.Drawing.Size(132, 22);
+            this.textBoxGroupAddIfIdentifyDstEp.Size = new System.Drawing.Size(106, 21);
             this.textBoxGroupAddIfIdentifyDstEp.TabIndex = 31;
             this.textBoxGroupAddIfIdentifyDstEp.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxGroupAddIfIdentifyDstEp_MouseClick);
             this.textBoxGroupAddIfIdentifyDstEp.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
@@ -3410,10 +3253,9 @@
             // 
             // textBoxGroupAddIfIndentifyingTargetAddr
             // 
-            this.textBoxGroupAddIfIndentifyingTargetAddr.Location = new System.Drawing.Point(113, 186);
-            this.textBoxGroupAddIfIndentifyingTargetAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxGroupAddIfIndentifyingTargetAddr.Location = new System.Drawing.Point(90, 149);
             this.textBoxGroupAddIfIndentifyingTargetAddr.Name = "textBoxGroupAddIfIndentifyingTargetAddr";
-            this.textBoxGroupAddIfIndentifyingTargetAddr.Size = new System.Drawing.Size(132, 22);
+            this.textBoxGroupAddIfIndentifyingTargetAddr.Size = new System.Drawing.Size(106, 21);
             this.textBoxGroupAddIfIndentifyingTargetAddr.TabIndex = 29;
             this.textBoxGroupAddIfIndentifyingTargetAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxGroupAddIfIndentifyingTargetAddr_MouseClick);
             this.textBoxGroupAddIfIndentifyingTargetAddr.Leave += new System.EventHandler(this.textBoxGroupAddIfIndentifyingTargetAddr_Leave);
@@ -3422,10 +3264,9 @@
             // 
             // buttonGroupAddIfIdentifying
             // 
-            this.buttonGroupAddIfIdentifying.Location = new System.Drawing.Point(5, 183);
-            this.buttonGroupAddIfIdentifying.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonGroupAddIfIdentifying.Location = new System.Drawing.Point(4, 146);
             this.buttonGroupAddIfIdentifying.Name = "buttonGroupAddIfIdentifying";
-            this.buttonGroupAddIfIdentifying.Size = new System.Drawing.Size(100, 28);
+            this.buttonGroupAddIfIdentifying.Size = new System.Drawing.Size(80, 22);
             this.buttonGroupAddIfIdentifying.TabIndex = 28;
             this.buttonGroupAddIfIdentifying.Text = "Add If Ident";
             this.buttonGroupAddIfIdentifying.UseVisualStyleBackColor = true;
@@ -3433,10 +3274,9 @@
             // 
             // textBoxRemoveAllGroupDstEp
             // 
-            this.textBoxRemoveAllGroupDstEp.Location = new System.Drawing.Point(396, 150);
-            this.textBoxRemoveAllGroupDstEp.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxRemoveAllGroupDstEp.Location = new System.Drawing.Point(317, 120);
             this.textBoxRemoveAllGroupDstEp.Name = "textBoxRemoveAllGroupDstEp";
-            this.textBoxRemoveAllGroupDstEp.Size = new System.Drawing.Size(131, 22);
+            this.textBoxRemoveAllGroupDstEp.Size = new System.Drawing.Size(106, 21);
             this.textBoxRemoveAllGroupDstEp.TabIndex = 27;
             this.textBoxRemoveAllGroupDstEp.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxRemoveAllGroupDstEp_MouseClick);
             this.textBoxRemoveAllGroupDstEp.Leave += new System.EventHandler(this.textBoxRemoveAllGroupDstEp_Leave);
@@ -3445,10 +3285,9 @@
             // 
             // textBoxRemoveAllGroupSrcEp
             // 
-            this.textBoxRemoveAllGroupSrcEp.Location = new System.Drawing.Point(255, 151);
-            this.textBoxRemoveAllGroupSrcEp.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxRemoveAllGroupSrcEp.Location = new System.Drawing.Point(204, 121);
             this.textBoxRemoveAllGroupSrcEp.Name = "textBoxRemoveAllGroupSrcEp";
-            this.textBoxRemoveAllGroupSrcEp.Size = new System.Drawing.Size(132, 22);
+            this.textBoxRemoveAllGroupSrcEp.Size = new System.Drawing.Size(106, 21);
             this.textBoxRemoveAllGroupSrcEp.TabIndex = 26;
             this.textBoxRemoveAllGroupSrcEp.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxRemoveAllGroupSrcEp_MouseClick);
             this.textBoxRemoveAllGroupSrcEp.Leave += new System.EventHandler(this.textBoxRemoveAllGroupSrcEp_Leave);
@@ -3457,10 +3296,9 @@
             // 
             // textBoxRemoveAllGroupTargetAddr
             // 
-            this.textBoxRemoveAllGroupTargetAddr.Location = new System.Drawing.Point(113, 150);
-            this.textBoxRemoveAllGroupTargetAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxRemoveAllGroupTargetAddr.Location = new System.Drawing.Point(90, 120);
             this.textBoxRemoveAllGroupTargetAddr.Name = "textBoxRemoveAllGroupTargetAddr";
-            this.textBoxRemoveAllGroupTargetAddr.Size = new System.Drawing.Size(132, 22);
+            this.textBoxRemoveAllGroupTargetAddr.Size = new System.Drawing.Size(106, 21);
             this.textBoxRemoveAllGroupTargetAddr.TabIndex = 25;
             this.textBoxRemoveAllGroupTargetAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxRemoveAllGroupTargetAddr_MouseClick);
             this.textBoxRemoveAllGroupTargetAddr.Leave += new System.EventHandler(this.textBoxRemoveAllGroupTargetAddr_Leave);
@@ -3469,10 +3307,9 @@
             // 
             // buttonGroupRemoveAll
             // 
-            this.buttonGroupRemoveAll.Location = new System.Drawing.Point(5, 148);
-            this.buttonGroupRemoveAll.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonGroupRemoveAll.Location = new System.Drawing.Point(4, 118);
             this.buttonGroupRemoveAll.Name = "buttonGroupRemoveAll";
-            this.buttonGroupRemoveAll.Size = new System.Drawing.Size(100, 28);
+            this.buttonGroupRemoveAll.Size = new System.Drawing.Size(80, 22);
             this.buttonGroupRemoveAll.TabIndex = 24;
             this.buttonGroupRemoveAll.Text = "Remove All";
             this.buttonGroupRemoveAll.UseVisualStyleBackColor = true;
@@ -3480,10 +3317,9 @@
             // 
             // textBoxRemoveGroupGroupAddr
             // 
-            this.textBoxRemoveGroupGroupAddr.Location = new System.Drawing.Point(536, 114);
-            this.textBoxRemoveGroupGroupAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxRemoveGroupGroupAddr.Location = new System.Drawing.Point(429, 91);
             this.textBoxRemoveGroupGroupAddr.Name = "textBoxRemoveGroupGroupAddr";
-            this.textBoxRemoveGroupGroupAddr.Size = new System.Drawing.Size(141, 22);
+            this.textBoxRemoveGroupGroupAddr.Size = new System.Drawing.Size(114, 21);
             this.textBoxRemoveGroupGroupAddr.TabIndex = 23;
             this.textBoxRemoveGroupGroupAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxRemoveGroupGroupAddr_MouseClick);
             this.textBoxRemoveGroupGroupAddr.Leave += new System.EventHandler(this.textBoxRemoveGroupGroupAddr_Leave);
@@ -3492,10 +3328,9 @@
             // 
             // textBoxRemoveGroupDstEp
             // 
-            this.textBoxRemoveGroupDstEp.Location = new System.Drawing.Point(396, 114);
-            this.textBoxRemoveGroupDstEp.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxRemoveGroupDstEp.Location = new System.Drawing.Point(317, 91);
             this.textBoxRemoveGroupDstEp.Name = "textBoxRemoveGroupDstEp";
-            this.textBoxRemoveGroupDstEp.Size = new System.Drawing.Size(131, 22);
+            this.textBoxRemoveGroupDstEp.Size = new System.Drawing.Size(106, 21);
             this.textBoxRemoveGroupDstEp.TabIndex = 22;
             this.textBoxRemoveGroupDstEp.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxRemoveGroupDstEp_MouseClick);
             this.textBoxRemoveGroupDstEp.Leave += new System.EventHandler(this.textBoxRemoveGroupDstEp_Leave);
@@ -3504,10 +3339,9 @@
             // 
             // textBoxRemoveGroupSrcEp
             // 
-            this.textBoxRemoveGroupSrcEp.Location = new System.Drawing.Point(255, 114);
-            this.textBoxRemoveGroupSrcEp.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxRemoveGroupSrcEp.Location = new System.Drawing.Point(204, 91);
             this.textBoxRemoveGroupSrcEp.Name = "textBoxRemoveGroupSrcEp";
-            this.textBoxRemoveGroupSrcEp.Size = new System.Drawing.Size(132, 22);
+            this.textBoxRemoveGroupSrcEp.Size = new System.Drawing.Size(106, 21);
             this.textBoxRemoveGroupSrcEp.TabIndex = 21;
             this.textBoxRemoveGroupSrcEp.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxRemoveGroupSrcEp_MouseClick);
             this.textBoxRemoveGroupSrcEp.Leave += new System.EventHandler(this.textBoxRemoveGroupSrcEp_Leave);
@@ -3516,10 +3350,9 @@
             // 
             // textBoxRemoveGroupTargetAddr
             // 
-            this.textBoxRemoveGroupTargetAddr.Location = new System.Drawing.Point(113, 114);
-            this.textBoxRemoveGroupTargetAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxRemoveGroupTargetAddr.Location = new System.Drawing.Point(90, 91);
             this.textBoxRemoveGroupTargetAddr.Name = "textBoxRemoveGroupTargetAddr";
-            this.textBoxRemoveGroupTargetAddr.Size = new System.Drawing.Size(132, 22);
+            this.textBoxRemoveGroupTargetAddr.Size = new System.Drawing.Size(106, 21);
             this.textBoxRemoveGroupTargetAddr.TabIndex = 20;
             this.textBoxRemoveGroupTargetAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxRemoveGroupTargetAddr_MouseClick);
             this.textBoxRemoveGroupTargetAddr.Leave += new System.EventHandler(this.textBoxRemoveGroupTargetAddr_Leave);
@@ -3528,10 +3361,9 @@
             // 
             // buttonRemoveGroup
             // 
-            this.buttonRemoveGroup.Location = new System.Drawing.Point(5, 112);
-            this.buttonRemoveGroup.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonRemoveGroup.Location = new System.Drawing.Point(4, 90);
             this.buttonRemoveGroup.Name = "buttonRemoveGroup";
-            this.buttonRemoveGroup.Size = new System.Drawing.Size(100, 28);
+            this.buttonRemoveGroup.Size = new System.Drawing.Size(80, 22);
             this.buttonRemoveGroup.TabIndex = 19;
             this.buttonRemoveGroup.Text = "Remove Grp";
             this.buttonRemoveGroup.UseVisualStyleBackColor = true;
@@ -3539,10 +3371,9 @@
             // 
             // textBoxGetGroupCount
             // 
-            this.textBoxGetGroupCount.Location = new System.Drawing.Point(537, 79);
-            this.textBoxGetGroupCount.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxGetGroupCount.Location = new System.Drawing.Point(430, 63);
             this.textBoxGetGroupCount.Name = "textBoxGetGroupCount";
-            this.textBoxGetGroupCount.Size = new System.Drawing.Size(140, 22);
+            this.textBoxGetGroupCount.Size = new System.Drawing.Size(113, 21);
             this.textBoxGetGroupCount.TabIndex = 17;
             this.textBoxGetGroupCount.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxGetGroupCount_MouseClick);
             this.textBoxGetGroupCount.Leave += new System.EventHandler(this.textBoxGetGroupCount_Leave);
@@ -3551,10 +3382,9 @@
             // 
             // textBoxGetGroupDstEp
             // 
-            this.textBoxGetGroupDstEp.Location = new System.Drawing.Point(396, 79);
-            this.textBoxGetGroupDstEp.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxGetGroupDstEp.Location = new System.Drawing.Point(317, 63);
             this.textBoxGetGroupDstEp.Name = "textBoxGetGroupDstEp";
-            this.textBoxGetGroupDstEp.Size = new System.Drawing.Size(132, 22);
+            this.textBoxGetGroupDstEp.Size = new System.Drawing.Size(106, 21);
             this.textBoxGetGroupDstEp.TabIndex = 16;
             this.textBoxGetGroupDstEp.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxGetGroupDstEp_MouseClick);
             this.textBoxGetGroupDstEp.Leave += new System.EventHandler(this.textBoxGetGroupDstEp_Leave);
@@ -3563,10 +3393,9 @@
             // 
             // textBoxGetGroupSrcEp
             // 
-            this.textBoxGetGroupSrcEp.Location = new System.Drawing.Point(255, 79);
-            this.textBoxGetGroupSrcEp.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxGetGroupSrcEp.Location = new System.Drawing.Point(204, 63);
             this.textBoxGetGroupSrcEp.Name = "textBoxGetGroupSrcEp";
-            this.textBoxGetGroupSrcEp.Size = new System.Drawing.Size(132, 22);
+            this.textBoxGetGroupSrcEp.Size = new System.Drawing.Size(106, 21);
             this.textBoxGetGroupSrcEp.TabIndex = 15;
             this.textBoxGetGroupSrcEp.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxGetGroupSrcEp_MouseClick);
             this.textBoxGetGroupSrcEp.Leave += new System.EventHandler(this.textBoxGetGroupSrcEp_Leave);
@@ -3575,10 +3404,9 @@
             // 
             // textBoxGetGroupTargetAddr
             // 
-            this.textBoxGetGroupTargetAddr.Location = new System.Drawing.Point(113, 79);
-            this.textBoxGetGroupTargetAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxGetGroupTargetAddr.Location = new System.Drawing.Point(90, 63);
             this.textBoxGetGroupTargetAddr.Name = "textBoxGetGroupTargetAddr";
-            this.textBoxGetGroupTargetAddr.Size = new System.Drawing.Size(132, 22);
+            this.textBoxGetGroupTargetAddr.Size = new System.Drawing.Size(106, 21);
             this.textBoxGetGroupTargetAddr.TabIndex = 14;
             this.textBoxGetGroupTargetAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxGetGroupTargetAddr_MouseClick);
             this.textBoxGetGroupTargetAddr.Leave += new System.EventHandler(this.textBoxGetGroupTargetAddr_Leave);
@@ -3587,10 +3415,9 @@
             // 
             // buttonGetGroup
             // 
-            this.buttonGetGroup.Location = new System.Drawing.Point(5, 76);
-            this.buttonGetGroup.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonGetGroup.Location = new System.Drawing.Point(4, 61);
             this.buttonGetGroup.Name = "buttonGetGroup";
-            this.buttonGetGroup.Size = new System.Drawing.Size(100, 28);
+            this.buttonGetGroup.Size = new System.Drawing.Size(80, 22);
             this.buttonGetGroup.TabIndex = 13;
             this.buttonGetGroup.Text = "Get Group";
             this.buttonGetGroup.UseVisualStyleBackColor = true;
@@ -3598,10 +3425,9 @@
             // 
             // textBoxViewGroupGroupAddr
             // 
-            this.textBoxViewGroupGroupAddr.Location = new System.Drawing.Point(537, 43);
-            this.textBoxViewGroupGroupAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxViewGroupGroupAddr.Location = new System.Drawing.Point(430, 34);
             this.textBoxViewGroupGroupAddr.Name = "textBoxViewGroupGroupAddr";
-            this.textBoxViewGroupGroupAddr.Size = new System.Drawing.Size(140, 22);
+            this.textBoxViewGroupGroupAddr.Size = new System.Drawing.Size(113, 21);
             this.textBoxViewGroupGroupAddr.TabIndex = 12;
             this.textBoxViewGroupGroupAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxViewGroupGroupAddr_MouseClick);
             this.textBoxViewGroupGroupAddr.Leave += new System.EventHandler(this.textBoxViewGroupGroupAddr_Leave);
@@ -3610,10 +3436,9 @@
             // 
             // textBoxViewGroupDstEp
             // 
-            this.textBoxViewGroupDstEp.Location = new System.Drawing.Point(396, 43);
-            this.textBoxViewGroupDstEp.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxViewGroupDstEp.Location = new System.Drawing.Point(317, 34);
             this.textBoxViewGroupDstEp.Name = "textBoxViewGroupDstEp";
-            this.textBoxViewGroupDstEp.Size = new System.Drawing.Size(132, 22);
+            this.textBoxViewGroupDstEp.Size = new System.Drawing.Size(106, 21);
             this.textBoxViewGroupDstEp.TabIndex = 11;
             this.textBoxViewGroupDstEp.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxViewGroupDstEp_MouseClick);
             this.textBoxViewGroupDstEp.Leave += new System.EventHandler(this.textBoxViewGroupDstEp_Leave);
@@ -3622,10 +3447,9 @@
             // 
             // textBoxViewGroupSrcEp
             // 
-            this.textBoxViewGroupSrcEp.Location = new System.Drawing.Point(255, 43);
-            this.textBoxViewGroupSrcEp.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxViewGroupSrcEp.Location = new System.Drawing.Point(204, 34);
             this.textBoxViewGroupSrcEp.Name = "textBoxViewGroupSrcEp";
-            this.textBoxViewGroupSrcEp.Size = new System.Drawing.Size(132, 22);
+            this.textBoxViewGroupSrcEp.Size = new System.Drawing.Size(106, 21);
             this.textBoxViewGroupSrcEp.TabIndex = 10;
             this.textBoxViewGroupSrcEp.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxViewGroupSrcEp_MouseClick);
             this.textBoxViewGroupSrcEp.Leave += new System.EventHandler(this.textBoxViewGroupSrcEp_Leave);
@@ -3634,10 +3458,9 @@
             // 
             // textBoxViewGroupAddr
             // 
-            this.textBoxViewGroupAddr.Location = new System.Drawing.Point(113, 43);
-            this.textBoxViewGroupAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxViewGroupAddr.Location = new System.Drawing.Point(90, 34);
             this.textBoxViewGroupAddr.Name = "textBoxViewGroupAddr";
-            this.textBoxViewGroupAddr.Size = new System.Drawing.Size(132, 22);
+            this.textBoxViewGroupAddr.Size = new System.Drawing.Size(106, 21);
             this.textBoxViewGroupAddr.TabIndex = 9;
             this.textBoxViewGroupAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxViewGroupAddr_MouseClick);
             this.textBoxViewGroupAddr.Leave += new System.EventHandler(this.textBoxViewGroupAddr_Leave);
@@ -3646,10 +3469,9 @@
             // 
             // buttonViewGroup
             // 
-            this.buttonViewGroup.Location = new System.Drawing.Point(5, 41);
-            this.buttonViewGroup.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonViewGroup.Location = new System.Drawing.Point(4, 33);
             this.buttonViewGroup.Name = "buttonViewGroup";
-            this.buttonViewGroup.Size = new System.Drawing.Size(100, 28);
+            this.buttonViewGroup.Size = new System.Drawing.Size(80, 22);
             this.buttonViewGroup.TabIndex = 8;
             this.buttonViewGroup.Text = "View Group";
             this.buttonViewGroup.UseVisualStyleBackColor = true;
@@ -3657,10 +3479,9 @@
             // 
             // textBoxAddGroupGroupAddr
             // 
-            this.textBoxAddGroupGroupAddr.Location = new System.Drawing.Point(537, 7);
-            this.textBoxAddGroupGroupAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxAddGroupGroupAddr.Location = new System.Drawing.Point(430, 6);
             this.textBoxAddGroupGroupAddr.Name = "textBoxAddGroupGroupAddr";
-            this.textBoxAddGroupGroupAddr.Size = new System.Drawing.Size(140, 22);
+            this.textBoxAddGroupGroupAddr.Size = new System.Drawing.Size(113, 21);
             this.textBoxAddGroupGroupAddr.TabIndex = 4;
             this.textBoxAddGroupGroupAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxAddGroupGroupAddr_MouseClick);
             this.textBoxAddGroupGroupAddr.Leave += new System.EventHandler(this.textBoxAddGroupGroupAddr_Leave);
@@ -3669,10 +3490,9 @@
             // 
             // textBoxAddGroupDstEp
             // 
-            this.textBoxAddGroupDstEp.Location = new System.Drawing.Point(396, 7);
-            this.textBoxAddGroupDstEp.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxAddGroupDstEp.Location = new System.Drawing.Point(317, 6);
             this.textBoxAddGroupDstEp.Name = "textBoxAddGroupDstEp";
-            this.textBoxAddGroupDstEp.Size = new System.Drawing.Size(132, 22);
+            this.textBoxAddGroupDstEp.Size = new System.Drawing.Size(106, 21);
             this.textBoxAddGroupDstEp.TabIndex = 3;
             this.textBoxAddGroupDstEp.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxAddGroupDstEp_MouseClick);
             this.textBoxAddGroupDstEp.Leave += new System.EventHandler(this.textBoxAddGroupDstEp_Leave);
@@ -3681,10 +3501,9 @@
             // 
             // textBoxAddGroupSrcEp
             // 
-            this.textBoxAddGroupSrcEp.Location = new System.Drawing.Point(255, 7);
-            this.textBoxAddGroupSrcEp.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxAddGroupSrcEp.Location = new System.Drawing.Point(204, 6);
             this.textBoxAddGroupSrcEp.Name = "textBoxAddGroupSrcEp";
-            this.textBoxAddGroupSrcEp.Size = new System.Drawing.Size(132, 22);
+            this.textBoxAddGroupSrcEp.Size = new System.Drawing.Size(106, 21);
             this.textBoxAddGroupSrcEp.TabIndex = 2;
             this.textBoxAddGroupSrcEp.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxAddGroupSrcEp_MouseClick);
             this.textBoxAddGroupSrcEp.Leave += new System.EventHandler(this.textBoxAddGroupSrcEp_Leave);
@@ -3693,10 +3512,9 @@
             // 
             // textBoxAddGroupAddr
             // 
-            this.textBoxAddGroupAddr.Location = new System.Drawing.Point(113, 7);
-            this.textBoxAddGroupAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxAddGroupAddr.Location = new System.Drawing.Point(90, 6);
             this.textBoxAddGroupAddr.Name = "textBoxAddGroupAddr";
-            this.textBoxAddGroupAddr.Size = new System.Drawing.Size(132, 22);
+            this.textBoxAddGroupAddr.Size = new System.Drawing.Size(106, 21);
             this.textBoxAddGroupAddr.TabIndex = 1;
             this.textBoxAddGroupAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxAddGroupAddr_MouseClick);
             this.textBoxAddGroupAddr.Leave += new System.EventHandler(this.textBoxAddGroupAddr_Leave);
@@ -3705,10 +3523,9 @@
             // 
             // buttonAddGroup
             // 
-            this.buttonAddGroup.Location = new System.Drawing.Point(5, 5);
-            this.buttonAddGroup.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonAddGroup.Location = new System.Drawing.Point(4, 4);
             this.buttonAddGroup.Name = "buttonAddGroup";
-            this.buttonAddGroup.Size = new System.Drawing.Size(100, 28);
+            this.buttonAddGroup.Size = new System.Drawing.Size(80, 22);
             this.buttonAddGroup.TabIndex = 0;
             this.buttonAddGroup.Text = "Add Group";
             this.buttonAddGroup.UseVisualStyleBackColor = true;
@@ -3726,20 +3543,18 @@
             this.tabPage5.Controls.Add(this.textBoxSendIdAddr);
             this.tabPage5.Controls.Add(this.buttonIdQuery);
             this.tabPage5.Controls.Add(this.buttonIdSend);
-            this.tabPage5.Location = new System.Drawing.Point(4, 25);
-            this.tabPage5.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(1691, 524);
+            this.tabPage5.Size = new System.Drawing.Size(1351, 416);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Identify Cluster";
             this.tabPage5.Click += new System.EventHandler(this.tabPage5_Click);
             // 
             // textBoxIdQueryDstEp
             // 
-            this.textBoxIdQueryDstEp.Location = new System.Drawing.Point(396, 44);
-            this.textBoxIdQueryDstEp.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxIdQueryDstEp.Location = new System.Drawing.Point(317, 35);
             this.textBoxIdQueryDstEp.Name = "textBoxIdQueryDstEp";
-            this.textBoxIdQueryDstEp.Size = new System.Drawing.Size(132, 22);
+            this.textBoxIdQueryDstEp.Size = new System.Drawing.Size(106, 21);
             this.textBoxIdQueryDstEp.TabIndex = 8;
             this.textBoxIdQueryDstEp.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxIdQueryDstEp_MouseClick);
             this.textBoxIdQueryDstEp.Leave += new System.EventHandler(this.textBoxIdQueryDstEp_Leave);
@@ -3748,10 +3563,9 @@
             // 
             // textBoxIdQuerySrcEp
             // 
-            this.textBoxIdQuerySrcEp.Location = new System.Drawing.Point(255, 44);
-            this.textBoxIdQuerySrcEp.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxIdQuerySrcEp.Location = new System.Drawing.Point(204, 35);
             this.textBoxIdQuerySrcEp.Name = "textBoxIdQuerySrcEp";
-            this.textBoxIdQuerySrcEp.Size = new System.Drawing.Size(132, 22);
+            this.textBoxIdQuerySrcEp.Size = new System.Drawing.Size(106, 21);
             this.textBoxIdQuerySrcEp.TabIndex = 7;
             this.textBoxIdQuerySrcEp.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxIdQuerySrcEp_MouseClick);
             this.textBoxIdQuerySrcEp.Leave += new System.EventHandler(this.textBoxIdQuerySrcEp_Leave);
@@ -3760,10 +3574,9 @@
             // 
             // textBoxIdQueryAddr
             // 
-            this.textBoxIdQueryAddr.Location = new System.Drawing.Point(113, 44);
-            this.textBoxIdQueryAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxIdQueryAddr.Location = new System.Drawing.Point(90, 35);
             this.textBoxIdQueryAddr.Name = "textBoxIdQueryAddr";
-            this.textBoxIdQueryAddr.Size = new System.Drawing.Size(132, 22);
+            this.textBoxIdQueryAddr.Size = new System.Drawing.Size(106, 21);
             this.textBoxIdQueryAddr.TabIndex = 6;
             this.textBoxIdQueryAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxIdQueryAddr_MouseClick);
             this.textBoxIdQueryAddr.Leave += new System.EventHandler(this.textBoxIdQueryAddr_Leave);
@@ -3772,10 +3585,9 @@
             // 
             // textBoxIdSendTime
             // 
-            this.textBoxIdSendTime.Location = new System.Drawing.Point(537, 7);
-            this.textBoxIdSendTime.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxIdSendTime.Location = new System.Drawing.Point(430, 6);
             this.textBoxIdSendTime.Name = "textBoxIdSendTime";
-            this.textBoxIdSendTime.Size = new System.Drawing.Size(132, 22);
+            this.textBoxIdSendTime.Size = new System.Drawing.Size(106, 21);
             this.textBoxIdSendTime.TabIndex = 4;
             this.textBoxIdSendTime.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxIdSendTime_MouseClick);
             this.textBoxIdSendTime.Leave += new System.EventHandler(this.textBoxIdSendTime_Leave);
@@ -3784,10 +3596,9 @@
             // 
             // textBoxIdSendDstEp
             // 
-            this.textBoxIdSendDstEp.Location = new System.Drawing.Point(396, 7);
-            this.textBoxIdSendDstEp.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxIdSendDstEp.Location = new System.Drawing.Point(317, 6);
             this.textBoxIdSendDstEp.Name = "textBoxIdSendDstEp";
-            this.textBoxIdSendDstEp.Size = new System.Drawing.Size(132, 22);
+            this.textBoxIdSendDstEp.Size = new System.Drawing.Size(106, 21);
             this.textBoxIdSendDstEp.TabIndex = 3;
             this.textBoxIdSendDstEp.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxIdSendDstEp_MouseClick);
             this.textBoxIdSendDstEp.Leave += new System.EventHandler(this.textBoxIdSendDstEp_Leave);
@@ -3796,10 +3607,9 @@
             // 
             // textBoxSendIdSrcEp
             // 
-            this.textBoxSendIdSrcEp.Location = new System.Drawing.Point(255, 7);
-            this.textBoxSendIdSrcEp.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxSendIdSrcEp.Location = new System.Drawing.Point(204, 6);
             this.textBoxSendIdSrcEp.Name = "textBoxSendIdSrcEp";
-            this.textBoxSendIdSrcEp.Size = new System.Drawing.Size(132, 22);
+            this.textBoxSendIdSrcEp.Size = new System.Drawing.Size(106, 21);
             this.textBoxSendIdSrcEp.TabIndex = 2;
             this.textBoxSendIdSrcEp.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxSendIdSrcEp_MouseClick);
             this.textBoxSendIdSrcEp.Leave += new System.EventHandler(this.textBoxSendIdSrcEp_Leave);
@@ -3808,10 +3618,9 @@
             // 
             // textBoxSendIdAddr
             // 
-            this.textBoxSendIdAddr.Location = new System.Drawing.Point(113, 7);
-            this.textBoxSendIdAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxSendIdAddr.Location = new System.Drawing.Point(90, 6);
             this.textBoxSendIdAddr.Name = "textBoxSendIdAddr";
-            this.textBoxSendIdAddr.Size = new System.Drawing.Size(132, 22);
+            this.textBoxSendIdAddr.Size = new System.Drawing.Size(106, 21);
             this.textBoxSendIdAddr.TabIndex = 1;
             this.textBoxSendIdAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxSendIdAddr_MouseClick);
             this.textBoxSendIdAddr.Leave += new System.EventHandler(this.textBoxSendIdAddr_Leave);
@@ -3820,10 +3629,9 @@
             // 
             // buttonIdQuery
             // 
-            this.buttonIdQuery.Location = new System.Drawing.Point(5, 42);
-            this.buttonIdQuery.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonIdQuery.Location = new System.Drawing.Point(4, 34);
             this.buttonIdQuery.Name = "buttonIdQuery";
-            this.buttonIdQuery.Size = new System.Drawing.Size(100, 28);
+            this.buttonIdQuery.Size = new System.Drawing.Size(80, 22);
             this.buttonIdQuery.TabIndex = 5;
             this.buttonIdQuery.Text = "ID Query";
             this.buttonIdQuery.UseVisualStyleBackColor = true;
@@ -3831,10 +3639,9 @@
             // 
             // buttonIdSend
             // 
-            this.buttonIdSend.Location = new System.Drawing.Point(5, 5);
-            this.buttonIdSend.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonIdSend.Location = new System.Drawing.Point(4, 4);
             this.buttonIdSend.Name = "buttonIdSend";
-            this.buttonIdSend.Size = new System.Drawing.Size(100, 28);
+            this.buttonIdSend.Size = new System.Drawing.Size(80, 22);
             this.buttonIdSend.TabIndex = 0;
             this.buttonIdSend.Text = "ID Send";
             this.buttonIdSend.UseVisualStyleBackColor = true;
@@ -3851,10 +3658,9 @@
             this.tabPage6.Controls.Add(this.textBoxMoveToLevelSrcEndPoint);
             this.tabPage6.Controls.Add(this.textBoxMoveToLevelAddr);
             this.tabPage6.Controls.Add(this.buttonMoveToLevel);
-            this.tabPage6.Location = new System.Drawing.Point(4, 25);
-            this.tabPage6.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(1691, 524);
+            this.tabPage6.Size = new System.Drawing.Size(1351, 416);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Level Cluster";
             this.tabPage6.Click += new System.EventHandler(this.tabPage6_Click);
@@ -3863,10 +3669,9 @@
             // 
             this.comboBoxMoveToLevelOnOff.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxMoveToLevelOnOff.FormattingEnabled = true;
-            this.comboBoxMoveToLevelOnOff.Location = new System.Drawing.Point(691, 9);
-            this.comboBoxMoveToLevelOnOff.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxMoveToLevelOnOff.Location = new System.Drawing.Point(553, 7);
             this.comboBoxMoveToLevelOnOff.Name = "comboBoxMoveToLevelOnOff";
-            this.comboBoxMoveToLevelOnOff.Size = new System.Drawing.Size(132, 24);
+            this.comboBoxMoveToLevelOnOff.Size = new System.Drawing.Size(106, 20);
             this.comboBoxMoveToLevelOnOff.TabIndex = 5;
             this.comboBoxMoveToLevelOnOff.MouseLeave += new System.EventHandler(this.comboBoxMoveToLevelOnOff_MouseLeave);
             this.comboBoxMoveToLevelOnOff.MouseHover += new System.EventHandler(this.comboBoxMoveToLevelOnOff_MouseHover);
@@ -3875,20 +3680,18 @@
             // 
             this.comboBoxMoveToLevelAddrMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxMoveToLevelAddrMode.FormattingEnabled = true;
-            this.comboBoxMoveToLevelAddrMode.Location = new System.Drawing.Point(125, 9);
-            this.comboBoxMoveToLevelAddrMode.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxMoveToLevelAddrMode.Location = new System.Drawing.Point(100, 7);
             this.comboBoxMoveToLevelAddrMode.Name = "comboBoxMoveToLevelAddrMode";
-            this.comboBoxMoveToLevelAddrMode.Size = new System.Drawing.Size(132, 24);
+            this.comboBoxMoveToLevelAddrMode.Size = new System.Drawing.Size(106, 20);
             this.comboBoxMoveToLevelAddrMode.TabIndex = 1;
             this.comboBoxMoveToLevelAddrMode.MouseLeave += new System.EventHandler(this.comboBoxMoveToLevelAddrMode_MouseLeave);
             this.comboBoxMoveToLevelAddrMode.MouseHover += new System.EventHandler(this.comboBoxMoveToLevelAddrMode_MouseHover);
             // 
             // textBoxMoveToLevelTransTime
             // 
-            this.textBoxMoveToLevelTransTime.Location = new System.Drawing.Point(973, 9);
-            this.textBoxMoveToLevelTransTime.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxMoveToLevelTransTime.Location = new System.Drawing.Point(778, 7);
             this.textBoxMoveToLevelTransTime.Name = "textBoxMoveToLevelTransTime";
-            this.textBoxMoveToLevelTransTime.Size = new System.Drawing.Size(132, 22);
+            this.textBoxMoveToLevelTransTime.Size = new System.Drawing.Size(106, 21);
             this.textBoxMoveToLevelTransTime.TabIndex = 7;
             this.textBoxMoveToLevelTransTime.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxMoveToLevelTransTime_MouseClick);
             this.textBoxMoveToLevelTransTime.Leave += new System.EventHandler(this.textBoxMoveToLevelTransTime_Leave);
@@ -3897,10 +3700,9 @@
             // 
             // textBoxMoveToLevelLevel
             // 
-            this.textBoxMoveToLevelLevel.Location = new System.Drawing.Point(832, 9);
-            this.textBoxMoveToLevelLevel.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxMoveToLevelLevel.Location = new System.Drawing.Point(666, 7);
             this.textBoxMoveToLevelLevel.Name = "textBoxMoveToLevelLevel";
-            this.textBoxMoveToLevelLevel.Size = new System.Drawing.Size(132, 22);
+            this.textBoxMoveToLevelLevel.Size = new System.Drawing.Size(106, 21);
             this.textBoxMoveToLevelLevel.TabIndex = 6;
             this.textBoxMoveToLevelLevel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxMoveToLevelLevel_MouseClick);
             this.textBoxMoveToLevelLevel.Leave += new System.EventHandler(this.textBoxMoveToLevelLevel_Leave);
@@ -3909,10 +3711,9 @@
             // 
             // textBoxMoveToLevelDstEndPoint
             // 
-            this.textBoxMoveToLevelDstEndPoint.Location = new System.Drawing.Point(549, 9);
-            this.textBoxMoveToLevelDstEndPoint.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxMoveToLevelDstEndPoint.Location = new System.Drawing.Point(439, 7);
             this.textBoxMoveToLevelDstEndPoint.Name = "textBoxMoveToLevelDstEndPoint";
-            this.textBoxMoveToLevelDstEndPoint.Size = new System.Drawing.Size(132, 22);
+            this.textBoxMoveToLevelDstEndPoint.Size = new System.Drawing.Size(106, 21);
             this.textBoxMoveToLevelDstEndPoint.TabIndex = 4;
             this.textBoxMoveToLevelDstEndPoint.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxMoveToLevelDstEndPoint_MouseClick);
             this.textBoxMoveToLevelDstEndPoint.Leave += new System.EventHandler(this.textBoxMoveToLevelDstEndPoint_Leave);
@@ -3921,10 +3722,9 @@
             // 
             // textBoxMoveToLevelSrcEndPoint
             // 
-            this.textBoxMoveToLevelSrcEndPoint.Location = new System.Drawing.Point(408, 9);
-            this.textBoxMoveToLevelSrcEndPoint.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxMoveToLevelSrcEndPoint.Location = new System.Drawing.Point(326, 7);
             this.textBoxMoveToLevelSrcEndPoint.Name = "textBoxMoveToLevelSrcEndPoint";
-            this.textBoxMoveToLevelSrcEndPoint.Size = new System.Drawing.Size(132, 22);
+            this.textBoxMoveToLevelSrcEndPoint.Size = new System.Drawing.Size(106, 21);
             this.textBoxMoveToLevelSrcEndPoint.TabIndex = 3;
             this.textBoxMoveToLevelSrcEndPoint.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxMoveToLevelSrcEndPoint_MouseClick);
             this.textBoxMoveToLevelSrcEndPoint.Leave += new System.EventHandler(this.textBoxMoveToLevelSrcEndPoint_Leave);
@@ -3933,10 +3733,9 @@
             // 
             // textBoxMoveToLevelAddr
             // 
-            this.textBoxMoveToLevelAddr.Location = new System.Drawing.Point(267, 9);
-            this.textBoxMoveToLevelAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxMoveToLevelAddr.Location = new System.Drawing.Point(214, 7);
             this.textBoxMoveToLevelAddr.Name = "textBoxMoveToLevelAddr";
-            this.textBoxMoveToLevelAddr.Size = new System.Drawing.Size(132, 22);
+            this.textBoxMoveToLevelAddr.Size = new System.Drawing.Size(106, 21);
             this.textBoxMoveToLevelAddr.TabIndex = 2;
             this.textBoxMoveToLevelAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxMoveToLevelAddr_MouseClick);
             this.textBoxMoveToLevelAddr.Leave += new System.EventHandler(this.textBoxMoveToLevelAddr_Leave);
@@ -3945,10 +3744,9 @@
             // 
             // buttonMoveToLevel
             // 
-            this.buttonMoveToLevel.Location = new System.Drawing.Point(4, 6);
-            this.buttonMoveToLevel.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonMoveToLevel.Location = new System.Drawing.Point(3, 5);
             this.buttonMoveToLevel.Name = "buttonMoveToLevel";
-            this.buttonMoveToLevel.Size = new System.Drawing.Size(113, 28);
+            this.buttonMoveToLevel.Size = new System.Drawing.Size(90, 22);
             this.buttonMoveToLevel.TabIndex = 0;
             this.buttonMoveToLevel.Text = "MoveToLevel";
             this.buttonMoveToLevel.UseVisualStyleBackColor = true;
@@ -3963,10 +3761,9 @@
             this.tabPage4.Controls.Add(this.textBoxOnOffSrcEndPoint);
             this.tabPage4.Controls.Add(this.textBoxOnOffAddr);
             this.tabPage4.Controls.Add(this.buttonOnOff);
-            this.tabPage4.Location = new System.Drawing.Point(4, 25);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(1691, 524);
+            this.tabPage4.Size = new System.Drawing.Size(1351, 416);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "On/Off Cluster";
             this.tabPage4.Click += new System.EventHandler(this.tabPage4_Click);
@@ -3975,10 +3772,9 @@
             // 
             this.comboBoxOnOffAddrMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxOnOffAddrMode.FormattingEnabled = true;
-            this.comboBoxOnOffAddrMode.Location = new System.Drawing.Point(113, 6);
-            this.comboBoxOnOffAddrMode.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxOnOffAddrMode.Location = new System.Drawing.Point(90, 5);
             this.comboBoxOnOffAddrMode.Name = "comboBoxOnOffAddrMode";
-            this.comboBoxOnOffAddrMode.Size = new System.Drawing.Size(132, 24);
+            this.comboBoxOnOffAddrMode.Size = new System.Drawing.Size(106, 20);
             this.comboBoxOnOffAddrMode.TabIndex = 1;
             this.comboBoxOnOffAddrMode.MouseLeave += new System.EventHandler(this.comboBoxOnOffAddrMode_MouseLeave);
             this.comboBoxOnOffAddrMode.MouseHover += new System.EventHandler(this.comboBoxOnOffAddrMode_MouseHover);
@@ -3987,20 +3783,18 @@
             // 
             this.comboBoxOnOffCommand.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxOnOffCommand.FormattingEnabled = true;
-            this.comboBoxOnOffCommand.Location = new System.Drawing.Point(679, 6);
-            this.comboBoxOnOffCommand.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxOnOffCommand.Location = new System.Drawing.Point(543, 5);
             this.comboBoxOnOffCommand.Name = "comboBoxOnOffCommand";
-            this.comboBoxOnOffCommand.Size = new System.Drawing.Size(160, 24);
+            this.comboBoxOnOffCommand.Size = new System.Drawing.Size(129, 20);
             this.comboBoxOnOffCommand.TabIndex = 5;
             this.comboBoxOnOffCommand.MouseLeave += new System.EventHandler(this.comboBoxOnOffCommand_MouseLeave);
             this.comboBoxOnOffCommand.MouseHover += new System.EventHandler(this.comboBoxOnOffCommand_MouseHover);
             // 
             // textBoxOnOffDstEndPoint
             // 
-            this.textBoxOnOffDstEndPoint.Location = new System.Drawing.Point(537, 6);
-            this.textBoxOnOffDstEndPoint.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxOnOffDstEndPoint.Location = new System.Drawing.Point(430, 5);
             this.textBoxOnOffDstEndPoint.Name = "textBoxOnOffDstEndPoint";
-            this.textBoxOnOffDstEndPoint.Size = new System.Drawing.Size(132, 22);
+            this.textBoxOnOffDstEndPoint.Size = new System.Drawing.Size(106, 21);
             this.textBoxOnOffDstEndPoint.TabIndex = 4;
             this.textBoxOnOffDstEndPoint.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxOnOffDstEndPoint_MouseClick);
             this.textBoxOnOffDstEndPoint.Leave += new System.EventHandler(this.textBoxOnOffDstEndPoint_Leave);
@@ -4009,10 +3803,9 @@
             // 
             // textBoxOnOffSrcEndPoint
             // 
-            this.textBoxOnOffSrcEndPoint.Location = new System.Drawing.Point(396, 7);
-            this.textBoxOnOffSrcEndPoint.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxOnOffSrcEndPoint.Location = new System.Drawing.Point(317, 6);
             this.textBoxOnOffSrcEndPoint.Name = "textBoxOnOffSrcEndPoint";
-            this.textBoxOnOffSrcEndPoint.Size = new System.Drawing.Size(132, 22);
+            this.textBoxOnOffSrcEndPoint.Size = new System.Drawing.Size(106, 21);
             this.textBoxOnOffSrcEndPoint.TabIndex = 3;
             this.textBoxOnOffSrcEndPoint.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxOnOffSrcEndPoint_MouseClick);
             this.textBoxOnOffSrcEndPoint.Leave += new System.EventHandler(this.textBoxOnOffSrcEndPoint_Leave);
@@ -4021,10 +3814,9 @@
             // 
             // textBoxOnOffAddr
             // 
-            this.textBoxOnOffAddr.Location = new System.Drawing.Point(255, 7);
-            this.textBoxOnOffAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxOnOffAddr.Location = new System.Drawing.Point(204, 6);
             this.textBoxOnOffAddr.Name = "textBoxOnOffAddr";
-            this.textBoxOnOffAddr.Size = new System.Drawing.Size(132, 22);
+            this.textBoxOnOffAddr.Size = new System.Drawing.Size(106, 21);
             this.textBoxOnOffAddr.TabIndex = 2;
             this.textBoxOnOffAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxOnOffAddr_MouseClick);
             this.textBoxOnOffAddr.Leave += new System.EventHandler(this.textBoxOnOffAddr_Leave);
@@ -4033,10 +3825,9 @@
             // 
             // buttonOnOff
             // 
-            this.buttonOnOff.Location = new System.Drawing.Point(5, 5);
-            this.buttonOnOff.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonOnOff.Location = new System.Drawing.Point(4, 4);
             this.buttonOnOff.Name = "buttonOnOff";
-            this.buttonOnOff.Size = new System.Drawing.Size(100, 28);
+            this.buttonOnOff.Size = new System.Drawing.Size(80, 22);
             this.buttonOnOff.TabIndex = 0;
             this.buttonOnOff.Text = "OnOff";
             this.buttonOnOff.UseVisualStyleBackColor = true;
@@ -4098,20 +3889,18 @@
             this.tabPage7.Controls.Add(this.textBoxViewSceneSrcEndPoint);
             this.tabPage7.Controls.Add(this.textBoxViewSceneAddr);
             this.tabPage7.Controls.Add(this.buttonViewScene);
-            this.tabPage7.Location = new System.Drawing.Point(4, 25);
-            this.tabPage7.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(1691, 524);
+            this.tabPage7.Size = new System.Drawing.Size(1351, 416);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "Scenes Cluster";
             this.tabPage7.Click += new System.EventHandler(this.tabPage7_Click);
             // 
             // textBoxAddSceneData
             // 
-            this.textBoxAddSceneData.Location = new System.Drawing.Point(253, 71);
-            this.textBoxAddSceneData.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxAddSceneData.Location = new System.Drawing.Point(202, 57);
             this.textBoxAddSceneData.Name = "textBoxAddSceneData";
-            this.textBoxAddSceneData.Size = new System.Drawing.Size(274, 22);
+            this.textBoxAddSceneData.Size = new System.Drawing.Size(220, 21);
             this.textBoxAddSceneData.TabIndex = 19;
             this.textBoxAddSceneData.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxAddSceneData_MouseClick);
             this.textBoxAddSceneData.Leave += new System.EventHandler(this.textBoxAddSceneData_Leave);
@@ -4120,10 +3909,9 @@
             // 
             // textBoxAddSceneExtLen
             // 
-            this.textBoxAddSceneExtLen.Location = new System.Drawing.Point(1524, 42);
-            this.textBoxAddSceneExtLen.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxAddSceneExtLen.Location = new System.Drawing.Point(1219, 34);
             this.textBoxAddSceneExtLen.Name = "textBoxAddSceneExtLen";
-            this.textBoxAddSceneExtLen.Size = new System.Drawing.Size(132, 22);
+            this.textBoxAddSceneExtLen.Size = new System.Drawing.Size(106, 21);
             this.textBoxAddSceneExtLen.TabIndex = 18;
             this.textBoxAddSceneExtLen.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxAddSceneExtLen_MouseClick);
             this.textBoxAddSceneExtLen.Leave += new System.EventHandler(this.textBoxAddSceneExtLen_Leave);
@@ -4132,10 +3920,9 @@
             // 
             // textBoxRemoveSceneSceneID
             // 
-            this.textBoxRemoveSceneSceneID.Location = new System.Drawing.Point(819, 251);
-            this.textBoxRemoveSceneSceneID.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxRemoveSceneSceneID.Location = new System.Drawing.Point(655, 201);
             this.textBoxRemoveSceneSceneID.Name = "textBoxRemoveSceneSceneID";
-            this.textBoxRemoveSceneSceneID.Size = new System.Drawing.Size(132, 22);
+            this.textBoxRemoveSceneSceneID.Size = new System.Drawing.Size(106, 21);
             this.textBoxRemoveSceneSceneID.TabIndex = 52;
             this.textBoxRemoveSceneSceneID.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxRemoveSceneSceneID_MouseClick);
             this.textBoxRemoveSceneSceneID.Leave += new System.EventHandler(this.textBoxRemoveSceneSceneID_Leave);
@@ -4144,10 +3931,9 @@
             // 
             // textBoxRemoveSceneGroupID
             // 
-            this.textBoxRemoveSceneGroupID.Location = new System.Drawing.Point(677, 252);
-            this.textBoxRemoveSceneGroupID.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxRemoveSceneGroupID.Location = new System.Drawing.Point(542, 202);
             this.textBoxRemoveSceneGroupID.Name = "textBoxRemoveSceneGroupID";
-            this.textBoxRemoveSceneGroupID.Size = new System.Drawing.Size(132, 22);
+            this.textBoxRemoveSceneGroupID.Size = new System.Drawing.Size(106, 21);
             this.textBoxRemoveSceneGroupID.TabIndex = 51;
             this.textBoxRemoveSceneGroupID.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxRemoveSceneGroupID_MouseClick);
             this.textBoxRemoveSceneGroupID.Leave += new System.EventHandler(this.textBoxRemoveSceneGroupID_Leave);
@@ -4156,10 +3942,9 @@
             // 
             // textBoxRemoveSceneDstEndPoint
             // 
-            this.textBoxRemoveSceneDstEndPoint.Location = new System.Drawing.Point(536, 251);
-            this.textBoxRemoveSceneDstEndPoint.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxRemoveSceneDstEndPoint.Location = new System.Drawing.Point(429, 201);
             this.textBoxRemoveSceneDstEndPoint.Name = "textBoxRemoveSceneDstEndPoint";
-            this.textBoxRemoveSceneDstEndPoint.Size = new System.Drawing.Size(132, 22);
+            this.textBoxRemoveSceneDstEndPoint.Size = new System.Drawing.Size(106, 21);
             this.textBoxRemoveSceneDstEndPoint.TabIndex = 50;
             this.textBoxRemoveSceneDstEndPoint.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxRemoveSceneDstEndPoint_MouseClick);
             this.textBoxRemoveSceneDstEndPoint.Leave += new System.EventHandler(this.textBoxRemoveSceneDstEndPoint_Leave);
@@ -4168,10 +3953,9 @@
             // 
             // textBoxRemoveSceneSrcEndPoint
             // 
-            this.textBoxRemoveSceneSrcEndPoint.Location = new System.Drawing.Point(395, 251);
-            this.textBoxRemoveSceneSrcEndPoint.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxRemoveSceneSrcEndPoint.Location = new System.Drawing.Point(316, 201);
             this.textBoxRemoveSceneSrcEndPoint.Name = "textBoxRemoveSceneSrcEndPoint";
-            this.textBoxRemoveSceneSrcEndPoint.Size = new System.Drawing.Size(132, 22);
+            this.textBoxRemoveSceneSrcEndPoint.Size = new System.Drawing.Size(106, 21);
             this.textBoxRemoveSceneSrcEndPoint.TabIndex = 49;
             this.textBoxRemoveSceneSrcEndPoint.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxRemoveSceneSrcEndPoint_MouseClick);
             this.textBoxRemoveSceneSrcEndPoint.Leave += new System.EventHandler(this.textBoxRemoveSceneSrcEndPoint_Leave);
@@ -4180,10 +3964,9 @@
             // 
             // textBoxRemoveSceneAddr
             // 
-            this.textBoxRemoveSceneAddr.Location = new System.Drawing.Point(253, 251);
-            this.textBoxRemoveSceneAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxRemoveSceneAddr.Location = new System.Drawing.Point(202, 201);
             this.textBoxRemoveSceneAddr.Name = "textBoxRemoveSceneAddr";
-            this.textBoxRemoveSceneAddr.Size = new System.Drawing.Size(132, 22);
+            this.textBoxRemoveSceneAddr.Size = new System.Drawing.Size(106, 21);
             this.textBoxRemoveSceneAddr.TabIndex = 48;
             this.textBoxRemoveSceneAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxRemoveSceneAddr_MouseClick);
             this.textBoxRemoveSceneAddr.Leave += new System.EventHandler(this.textBoxRemoveSceneAddr_Leave);
@@ -4194,20 +3977,18 @@
             // 
             this.comboBoxRemoveSceneAddrMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxRemoveSceneAddrMode.FormattingEnabled = true;
-            this.comboBoxRemoveSceneAddrMode.Location = new System.Drawing.Point(112, 251);
-            this.comboBoxRemoveSceneAddrMode.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxRemoveSceneAddrMode.Location = new System.Drawing.Point(90, 201);
             this.comboBoxRemoveSceneAddrMode.Name = "comboBoxRemoveSceneAddrMode";
-            this.comboBoxRemoveSceneAddrMode.Size = new System.Drawing.Size(132, 24);
+            this.comboBoxRemoveSceneAddrMode.Size = new System.Drawing.Size(106, 20);
             this.comboBoxRemoveSceneAddrMode.TabIndex = 47;
             this.comboBoxRemoveSceneAddrMode.MouseLeave += new System.EventHandler(this.comboBoxRemoveSceneAddrMode_MouseLeave);
             this.comboBoxRemoveSceneAddrMode.MouseHover += new System.EventHandler(this.comboBoxRemoveSceneAddrMode_MouseHover);
             // 
             // buttonRemoveScene
             // 
-            this.buttonRemoveScene.Location = new System.Drawing.Point(4, 247);
-            this.buttonRemoveScene.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonRemoveScene.Location = new System.Drawing.Point(3, 198);
             this.buttonRemoveScene.Name = "buttonRemoveScene";
-            this.buttonRemoveScene.Size = new System.Drawing.Size(100, 31);
+            this.buttonRemoveScene.Size = new System.Drawing.Size(80, 25);
             this.buttonRemoveScene.TabIndex = 46;
             this.buttonRemoveScene.Text = "Remove";
             this.buttonRemoveScene.UseVisualStyleBackColor = true;
@@ -4215,10 +3996,9 @@
             // 
             // textBoxRemoveAllScenesGroupID
             // 
-            this.textBoxRemoveAllScenesGroupID.Location = new System.Drawing.Point(677, 213);
-            this.textBoxRemoveAllScenesGroupID.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxRemoveAllScenesGroupID.Location = new System.Drawing.Point(542, 170);
             this.textBoxRemoveAllScenesGroupID.Name = "textBoxRemoveAllScenesGroupID";
-            this.textBoxRemoveAllScenesGroupID.Size = new System.Drawing.Size(132, 22);
+            this.textBoxRemoveAllScenesGroupID.Size = new System.Drawing.Size(106, 21);
             this.textBoxRemoveAllScenesGroupID.TabIndex = 45;
             this.textBoxRemoveAllScenesGroupID.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxRemoveAllScenesGroupID_MouseClick);
             this.textBoxRemoveAllScenesGroupID.Leave += new System.EventHandler(this.textBoxRemoveAllScenesGroupID_Leave);
@@ -4227,10 +4007,9 @@
             // 
             // textBoxRemoveAllScenesDstEndPoint
             // 
-            this.textBoxRemoveAllScenesDstEndPoint.Location = new System.Drawing.Point(536, 213);
-            this.textBoxRemoveAllScenesDstEndPoint.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxRemoveAllScenesDstEndPoint.Location = new System.Drawing.Point(429, 170);
             this.textBoxRemoveAllScenesDstEndPoint.Name = "textBoxRemoveAllScenesDstEndPoint";
-            this.textBoxRemoveAllScenesDstEndPoint.Size = new System.Drawing.Size(132, 22);
+            this.textBoxRemoveAllScenesDstEndPoint.Size = new System.Drawing.Size(106, 21);
             this.textBoxRemoveAllScenesDstEndPoint.TabIndex = 44;
             this.textBoxRemoveAllScenesDstEndPoint.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxRemoveAllScenesDstEndPoint_MouseClick);
             this.textBoxRemoveAllScenesDstEndPoint.Leave += new System.EventHandler(this.textBoxRemoveAllScenesDstEndPoint_Leave);
@@ -4239,10 +4018,9 @@
             // 
             // textBoxRemoveAllScenesSrcEndPoint
             // 
-            this.textBoxRemoveAllScenesSrcEndPoint.Location = new System.Drawing.Point(395, 213);
-            this.textBoxRemoveAllScenesSrcEndPoint.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxRemoveAllScenesSrcEndPoint.Location = new System.Drawing.Point(316, 170);
             this.textBoxRemoveAllScenesSrcEndPoint.Name = "textBoxRemoveAllScenesSrcEndPoint";
-            this.textBoxRemoveAllScenesSrcEndPoint.Size = new System.Drawing.Size(132, 22);
+            this.textBoxRemoveAllScenesSrcEndPoint.Size = new System.Drawing.Size(106, 21);
             this.textBoxRemoveAllScenesSrcEndPoint.TabIndex = 43;
             this.textBoxRemoveAllScenesSrcEndPoint.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxRemoveAllScenesSrcEndPoint_MouseClick);
             this.textBoxRemoveAllScenesSrcEndPoint.Leave += new System.EventHandler(this.textBoxRemoveAllScenesSrcEndPoint_Leave);
@@ -4251,10 +4029,9 @@
             // 
             // textBoxRemoveAllScenesAddr
             // 
-            this.textBoxRemoveAllScenesAddr.Location = new System.Drawing.Point(253, 213);
-            this.textBoxRemoveAllScenesAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxRemoveAllScenesAddr.Location = new System.Drawing.Point(202, 170);
             this.textBoxRemoveAllScenesAddr.Name = "textBoxRemoveAllScenesAddr";
-            this.textBoxRemoveAllScenesAddr.Size = new System.Drawing.Size(132, 22);
+            this.textBoxRemoveAllScenesAddr.Size = new System.Drawing.Size(106, 21);
             this.textBoxRemoveAllScenesAddr.TabIndex = 42;
             this.textBoxRemoveAllScenesAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxRemoveAllScenesAddr_MouseClick);
             this.textBoxRemoveAllScenesAddr.Leave += new System.EventHandler(this.textBoxRemoveAllScenesAddr_Leave);
@@ -4265,20 +4042,18 @@
             // 
             this.comboBoxRemoveAllScenesAddrMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxRemoveAllScenesAddrMode.FormattingEnabled = true;
-            this.comboBoxRemoveAllScenesAddrMode.Location = new System.Drawing.Point(112, 213);
-            this.comboBoxRemoveAllScenesAddrMode.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxRemoveAllScenesAddrMode.Location = new System.Drawing.Point(90, 170);
             this.comboBoxRemoveAllScenesAddrMode.Name = "comboBoxRemoveAllScenesAddrMode";
-            this.comboBoxRemoveAllScenesAddrMode.Size = new System.Drawing.Size(132, 24);
+            this.comboBoxRemoveAllScenesAddrMode.Size = new System.Drawing.Size(106, 20);
             this.comboBoxRemoveAllScenesAddrMode.TabIndex = 41;
             this.comboBoxRemoveAllScenesAddrMode.MouseLeave += new System.EventHandler(this.comboBoxRemoveAllScenesAddrMode_MouseLeave);
             this.comboBoxRemoveAllScenesAddrMode.MouseHover += new System.EventHandler(this.comboBoxRemoveAllScenesAddrMode_MouseHover);
             // 
             // buttonRemoveAllScenes
             // 
-            this.buttonRemoveAllScenes.Location = new System.Drawing.Point(4, 209);
-            this.buttonRemoveAllScenes.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonRemoveAllScenes.Location = new System.Drawing.Point(3, 167);
             this.buttonRemoveAllScenes.Name = "buttonRemoveAllScenes";
-            this.buttonRemoveAllScenes.Size = new System.Drawing.Size(100, 31);
+            this.buttonRemoveAllScenes.Size = new System.Drawing.Size(80, 25);
             this.buttonRemoveAllScenes.TabIndex = 40;
             this.buttonRemoveAllScenes.Text = "Remove All";
             this.buttonRemoveAllScenes.UseVisualStyleBackColor = true;
@@ -4286,10 +4061,9 @@
             // 
             // textBoxGetSceneMembershipGroupID
             // 
-            this.textBoxGetSceneMembershipGroupID.Location = new System.Drawing.Point(677, 176);
-            this.textBoxGetSceneMembershipGroupID.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxGetSceneMembershipGroupID.Location = new System.Drawing.Point(542, 141);
             this.textBoxGetSceneMembershipGroupID.Name = "textBoxGetSceneMembershipGroupID";
-            this.textBoxGetSceneMembershipGroupID.Size = new System.Drawing.Size(132, 22);
+            this.textBoxGetSceneMembershipGroupID.Size = new System.Drawing.Size(106, 21);
             this.textBoxGetSceneMembershipGroupID.TabIndex = 39;
             this.textBoxGetSceneMembershipGroupID.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxGetSceneMembershipGroupID_MouseClick);
             this.textBoxGetSceneMembershipGroupID.Leave += new System.EventHandler(this.textBoxGetSceneMembershipGroupID_Leave);
@@ -4298,10 +4072,9 @@
             // 
             // textBoxGetSceneMembershipDstEndPoint
             // 
-            this.textBoxGetSceneMembershipDstEndPoint.Location = new System.Drawing.Point(536, 176);
-            this.textBoxGetSceneMembershipDstEndPoint.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxGetSceneMembershipDstEndPoint.Location = new System.Drawing.Point(429, 141);
             this.textBoxGetSceneMembershipDstEndPoint.Name = "textBoxGetSceneMembershipDstEndPoint";
-            this.textBoxGetSceneMembershipDstEndPoint.Size = new System.Drawing.Size(132, 22);
+            this.textBoxGetSceneMembershipDstEndPoint.Size = new System.Drawing.Size(106, 21);
             this.textBoxGetSceneMembershipDstEndPoint.TabIndex = 38;
             this.textBoxGetSceneMembershipDstEndPoint.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxGetSceneMembershipDstEndPoint_MouseClick);
             this.textBoxGetSceneMembershipDstEndPoint.Leave += new System.EventHandler(this.textBoxGetSceneMembershipDstEndPoint_Leave);
@@ -4310,10 +4083,9 @@
             // 
             // textBoxGetSceneMembershipSrcEndPoint
             // 
-            this.textBoxGetSceneMembershipSrcEndPoint.Location = new System.Drawing.Point(395, 176);
-            this.textBoxGetSceneMembershipSrcEndPoint.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxGetSceneMembershipSrcEndPoint.Location = new System.Drawing.Point(316, 141);
             this.textBoxGetSceneMembershipSrcEndPoint.Name = "textBoxGetSceneMembershipSrcEndPoint";
-            this.textBoxGetSceneMembershipSrcEndPoint.Size = new System.Drawing.Size(132, 22);
+            this.textBoxGetSceneMembershipSrcEndPoint.Size = new System.Drawing.Size(106, 21);
             this.textBoxGetSceneMembershipSrcEndPoint.TabIndex = 37;
             this.textBoxGetSceneMembershipSrcEndPoint.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxGetSceneMembershipSrcEndPoint_MouseClick);
             this.textBoxGetSceneMembershipSrcEndPoint.Leave += new System.EventHandler(this.textBoxGetSceneMembershipSrcEndPoint_Leave);
@@ -4322,10 +4094,9 @@
             // 
             // textBoxGetSceneMembershipAddr
             // 
-            this.textBoxGetSceneMembershipAddr.Location = new System.Drawing.Point(253, 176);
-            this.textBoxGetSceneMembershipAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxGetSceneMembershipAddr.Location = new System.Drawing.Point(202, 141);
             this.textBoxGetSceneMembershipAddr.Name = "textBoxGetSceneMembershipAddr";
-            this.textBoxGetSceneMembershipAddr.Size = new System.Drawing.Size(132, 22);
+            this.textBoxGetSceneMembershipAddr.Size = new System.Drawing.Size(106, 21);
             this.textBoxGetSceneMembershipAddr.TabIndex = 36;
             this.textBoxGetSceneMembershipAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxGetSceneMembershipAddr_MouseClick);
             this.textBoxGetSceneMembershipAddr.Leave += new System.EventHandler(this.textBoxGetSceneMembershipAddr_Leave);
@@ -4336,20 +4107,18 @@
             // 
             this.comboBoxGetSceneMembershipAddrMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxGetSceneMembershipAddrMode.FormattingEnabled = true;
-            this.comboBoxGetSceneMembershipAddrMode.Location = new System.Drawing.Point(112, 176);
-            this.comboBoxGetSceneMembershipAddrMode.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxGetSceneMembershipAddrMode.Location = new System.Drawing.Point(90, 141);
             this.comboBoxGetSceneMembershipAddrMode.Name = "comboBoxGetSceneMembershipAddrMode";
-            this.comboBoxGetSceneMembershipAddrMode.Size = new System.Drawing.Size(132, 24);
+            this.comboBoxGetSceneMembershipAddrMode.Size = new System.Drawing.Size(106, 20);
             this.comboBoxGetSceneMembershipAddrMode.TabIndex = 35;
             this.comboBoxGetSceneMembershipAddrMode.MouseLeave += new System.EventHandler(this.comboBoxGetSceneMembershipAddrMode_MouseLeave);
             this.comboBoxGetSceneMembershipAddrMode.MouseHover += new System.EventHandler(this.comboBoxGetSceneMembershipAddrMode_MouseHover);
             // 
             // buttonGetSceneMembership
             // 
-            this.buttonGetSceneMembership.Location = new System.Drawing.Point(4, 174);
-            this.buttonGetSceneMembership.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonGetSceneMembership.Location = new System.Drawing.Point(3, 139);
             this.buttonGetSceneMembership.Name = "buttonGetSceneMembership";
-            this.buttonGetSceneMembership.Size = new System.Drawing.Size(100, 28);
+            this.buttonGetSceneMembership.Size = new System.Drawing.Size(80, 22);
             this.buttonGetSceneMembership.TabIndex = 34;
             this.buttonGetSceneMembership.Text = "Get Memb";
             this.buttonGetSceneMembership.UseVisualStyleBackColor = true;
@@ -4357,10 +4126,9 @@
             // 
             // textBoxRecallSceneSceneId
             // 
-            this.textBoxRecallSceneSceneId.Location = new System.Drawing.Point(819, 140);
-            this.textBoxRecallSceneSceneId.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxRecallSceneSceneId.Location = new System.Drawing.Point(655, 112);
             this.textBoxRecallSceneSceneId.Name = "textBoxRecallSceneSceneId";
-            this.textBoxRecallSceneSceneId.Size = new System.Drawing.Size(132, 22);
+            this.textBoxRecallSceneSceneId.Size = new System.Drawing.Size(106, 21);
             this.textBoxRecallSceneSceneId.TabIndex = 33;
             this.textBoxRecallSceneSceneId.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxRecallSceneSceneId_MouseClick);
             this.textBoxRecallSceneSceneId.Leave += new System.EventHandler(this.textBoxRecallSceneSceneId_Leave);
@@ -4369,10 +4137,9 @@
             // 
             // textBoxRecallSceneGroupId
             // 
-            this.textBoxRecallSceneGroupId.Location = new System.Drawing.Point(677, 142);
-            this.textBoxRecallSceneGroupId.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxRecallSceneGroupId.Location = new System.Drawing.Point(542, 114);
             this.textBoxRecallSceneGroupId.Name = "textBoxRecallSceneGroupId";
-            this.textBoxRecallSceneGroupId.Size = new System.Drawing.Size(132, 22);
+            this.textBoxRecallSceneGroupId.Size = new System.Drawing.Size(106, 21);
             this.textBoxRecallSceneGroupId.TabIndex = 32;
             this.textBoxRecallSceneGroupId.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxRecallSceneGroupId_MouseClick);
             this.textBoxRecallSceneGroupId.Leave += new System.EventHandler(this.textBoxRecallSceneGroupId_Leave);
@@ -4381,10 +4148,9 @@
             // 
             // textBoxRecallSceneDstEndPoint
             // 
-            this.textBoxRecallSceneDstEndPoint.Location = new System.Drawing.Point(536, 140);
-            this.textBoxRecallSceneDstEndPoint.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxRecallSceneDstEndPoint.Location = new System.Drawing.Point(429, 112);
             this.textBoxRecallSceneDstEndPoint.Name = "textBoxRecallSceneDstEndPoint";
-            this.textBoxRecallSceneDstEndPoint.Size = new System.Drawing.Size(132, 22);
+            this.textBoxRecallSceneDstEndPoint.Size = new System.Drawing.Size(106, 21);
             this.textBoxRecallSceneDstEndPoint.TabIndex = 31;
             this.textBoxRecallSceneDstEndPoint.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxRecallSceneDstEndPoint_MouseClick);
             this.textBoxRecallSceneDstEndPoint.Leave += new System.EventHandler(this.textBoxRecallSceneDstEndPoint_Leave);
@@ -4393,10 +4159,9 @@
             // 
             // textBoxRecallSceneSrcEndPoint
             // 
-            this.textBoxRecallSceneSrcEndPoint.Location = new System.Drawing.Point(395, 140);
-            this.textBoxRecallSceneSrcEndPoint.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxRecallSceneSrcEndPoint.Location = new System.Drawing.Point(316, 112);
             this.textBoxRecallSceneSrcEndPoint.Name = "textBoxRecallSceneSrcEndPoint";
-            this.textBoxRecallSceneSrcEndPoint.Size = new System.Drawing.Size(132, 22);
+            this.textBoxRecallSceneSrcEndPoint.Size = new System.Drawing.Size(106, 21);
             this.textBoxRecallSceneSrcEndPoint.TabIndex = 30;
             this.textBoxRecallSceneSrcEndPoint.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxRecallSceneSrcEndPoint_MouseClick);
             this.textBoxRecallSceneSrcEndPoint.Leave += new System.EventHandler(this.textBoxRecallSceneSrcEndPoint_Leave);
@@ -4405,10 +4170,9 @@
             // 
             // textBoxRecallSceneAddr
             // 
-            this.textBoxRecallSceneAddr.Location = new System.Drawing.Point(253, 140);
-            this.textBoxRecallSceneAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxRecallSceneAddr.Location = new System.Drawing.Point(202, 112);
             this.textBoxRecallSceneAddr.Name = "textBoxRecallSceneAddr";
-            this.textBoxRecallSceneAddr.Size = new System.Drawing.Size(132, 22);
+            this.textBoxRecallSceneAddr.Size = new System.Drawing.Size(106, 21);
             this.textBoxRecallSceneAddr.TabIndex = 29;
             this.textBoxRecallSceneAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxRecallSceneAddr_MouseClick);
             this.textBoxRecallSceneAddr.Leave += new System.EventHandler(this.textBoxRecallSceneAddr_Leave);
@@ -4419,20 +4183,18 @@
             // 
             this.comboBoxRecallSceneAddrMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxRecallSceneAddrMode.FormattingEnabled = true;
-            this.comboBoxRecallSceneAddrMode.Location = new System.Drawing.Point(112, 140);
-            this.comboBoxRecallSceneAddrMode.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxRecallSceneAddrMode.Location = new System.Drawing.Point(90, 112);
             this.comboBoxRecallSceneAddrMode.Name = "comboBoxRecallSceneAddrMode";
-            this.comboBoxRecallSceneAddrMode.Size = new System.Drawing.Size(132, 24);
+            this.comboBoxRecallSceneAddrMode.Size = new System.Drawing.Size(106, 20);
             this.comboBoxRecallSceneAddrMode.TabIndex = 28;
             this.comboBoxRecallSceneAddrMode.MouseLeave += new System.EventHandler(this.comboBoxRecallSceneAddrMode_MouseLeave);
             this.comboBoxRecallSceneAddrMode.MouseHover += new System.EventHandler(this.comboBoxRecallSceneAddrMode_MouseHover);
             // 
             // buttonRecallScene
             // 
-            this.buttonRecallScene.Location = new System.Drawing.Point(4, 138);
-            this.buttonRecallScene.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonRecallScene.Location = new System.Drawing.Point(3, 110);
             this.buttonRecallScene.Name = "buttonRecallScene";
-            this.buttonRecallScene.Size = new System.Drawing.Size(100, 28);
+            this.buttonRecallScene.Size = new System.Drawing.Size(80, 22);
             this.buttonRecallScene.TabIndex = 27;
             this.buttonRecallScene.Text = "Recall Scn";
             this.buttonRecallScene.UseVisualStyleBackColor = true;
@@ -4440,10 +4202,9 @@
             // 
             // textBoxStoreSceneSceneId
             // 
-            this.textBoxStoreSceneSceneId.Location = new System.Drawing.Point(819, 105);
-            this.textBoxStoreSceneSceneId.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxStoreSceneSceneId.Location = new System.Drawing.Point(655, 84);
             this.textBoxStoreSceneSceneId.Name = "textBoxStoreSceneSceneId";
-            this.textBoxStoreSceneSceneId.Size = new System.Drawing.Size(132, 22);
+            this.textBoxStoreSceneSceneId.Size = new System.Drawing.Size(106, 21);
             this.textBoxStoreSceneSceneId.TabIndex = 26;
             this.textBoxStoreSceneSceneId.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxStoreSceneSceneId_MouseClick);
             this.textBoxStoreSceneSceneId.Leave += new System.EventHandler(this.textBoxStoreSceneSceneId_Leave);
@@ -4452,10 +4213,9 @@
             // 
             // textBoxStoreSceneGroupId
             // 
-            this.textBoxStoreSceneGroupId.Location = new System.Drawing.Point(677, 105);
-            this.textBoxStoreSceneGroupId.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxStoreSceneGroupId.Location = new System.Drawing.Point(542, 84);
             this.textBoxStoreSceneGroupId.Name = "textBoxStoreSceneGroupId";
-            this.textBoxStoreSceneGroupId.Size = new System.Drawing.Size(132, 22);
+            this.textBoxStoreSceneGroupId.Size = new System.Drawing.Size(106, 21);
             this.textBoxStoreSceneGroupId.TabIndex = 25;
             this.textBoxStoreSceneGroupId.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxStoreSceneGroupId_MouseClick);
             this.textBoxStoreSceneGroupId.Leave += new System.EventHandler(this.textBoxStoreSceneGroupId_Leave);
@@ -4464,10 +4224,9 @@
             // 
             // textBoxStoreSceneDstEndPoint
             // 
-            this.textBoxStoreSceneDstEndPoint.Location = new System.Drawing.Point(536, 105);
-            this.textBoxStoreSceneDstEndPoint.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxStoreSceneDstEndPoint.Location = new System.Drawing.Point(429, 84);
             this.textBoxStoreSceneDstEndPoint.Name = "textBoxStoreSceneDstEndPoint";
-            this.textBoxStoreSceneDstEndPoint.Size = new System.Drawing.Size(132, 22);
+            this.textBoxStoreSceneDstEndPoint.Size = new System.Drawing.Size(106, 21);
             this.textBoxStoreSceneDstEndPoint.TabIndex = 24;
             this.textBoxStoreSceneDstEndPoint.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxStoreSceneDstEndPoint_MouseClick);
             this.textBoxStoreSceneDstEndPoint.Leave += new System.EventHandler(this.textBoxStoreSceneDstEndPoint_Leave);
@@ -4476,10 +4235,9 @@
             // 
             // textBoxStoreSceneSrcEndPoint
             // 
-            this.textBoxStoreSceneSrcEndPoint.Location = new System.Drawing.Point(395, 105);
-            this.textBoxStoreSceneSrcEndPoint.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxStoreSceneSrcEndPoint.Location = new System.Drawing.Point(316, 84);
             this.textBoxStoreSceneSrcEndPoint.Name = "textBoxStoreSceneSrcEndPoint";
-            this.textBoxStoreSceneSrcEndPoint.Size = new System.Drawing.Size(132, 22);
+            this.textBoxStoreSceneSrcEndPoint.Size = new System.Drawing.Size(106, 21);
             this.textBoxStoreSceneSrcEndPoint.TabIndex = 23;
             this.textBoxStoreSceneSrcEndPoint.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxStoreSceneSrcEndPoint_MouseClick);
             this.textBoxStoreSceneSrcEndPoint.Leave += new System.EventHandler(this.textBoxStoreSceneSrcEndPoint_Leave);
@@ -4488,10 +4246,9 @@
             // 
             // textBoxStoreSceneAddr
             // 
-            this.textBoxStoreSceneAddr.Location = new System.Drawing.Point(253, 105);
-            this.textBoxStoreSceneAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxStoreSceneAddr.Location = new System.Drawing.Point(202, 84);
             this.textBoxStoreSceneAddr.Name = "textBoxStoreSceneAddr";
-            this.textBoxStoreSceneAddr.Size = new System.Drawing.Size(132, 22);
+            this.textBoxStoreSceneAddr.Size = new System.Drawing.Size(106, 21);
             this.textBoxStoreSceneAddr.TabIndex = 22;
             this.textBoxStoreSceneAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxStoreSceneAddr_MouseClick);
             this.textBoxStoreSceneAddr.Leave += new System.EventHandler(this.textBoxStoreSceneAddr_Leave);
@@ -4502,20 +4259,18 @@
             // 
             this.comboBoxStoreSceneAddrMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxStoreSceneAddrMode.FormattingEnabled = true;
-            this.comboBoxStoreSceneAddrMode.Location = new System.Drawing.Point(112, 105);
-            this.comboBoxStoreSceneAddrMode.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxStoreSceneAddrMode.Location = new System.Drawing.Point(90, 84);
             this.comboBoxStoreSceneAddrMode.Name = "comboBoxStoreSceneAddrMode";
-            this.comboBoxStoreSceneAddrMode.Size = new System.Drawing.Size(132, 24);
+            this.comboBoxStoreSceneAddrMode.Size = new System.Drawing.Size(106, 20);
             this.comboBoxStoreSceneAddrMode.TabIndex = 21;
             this.comboBoxStoreSceneAddrMode.MouseLeave += new System.EventHandler(this.comboBoxStoreSceneAddrMode_MouseLeave);
             this.comboBoxStoreSceneAddrMode.MouseHover += new System.EventHandler(this.comboBoxStoreSceneAddrMode_MouseHover);
             // 
             // buttonStoreScene
             // 
-            this.buttonStoreScene.Location = new System.Drawing.Point(4, 102);
-            this.buttonStoreScene.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonStoreScene.Location = new System.Drawing.Point(3, 82);
             this.buttonStoreScene.Name = "buttonStoreScene";
-            this.buttonStoreScene.Size = new System.Drawing.Size(100, 28);
+            this.buttonStoreScene.Size = new System.Drawing.Size(80, 22);
             this.buttonStoreScene.TabIndex = 20;
             this.buttonStoreScene.Text = "Store Scene";
             this.buttonStoreScene.UseVisualStyleBackColor = true;
@@ -4523,10 +4278,9 @@
             // 
             // textBoxAddSceneMaxNameLen
             // 
-            this.textBoxAddSceneMaxNameLen.Location = new System.Drawing.Point(1384, 42);
-            this.textBoxAddSceneMaxNameLen.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxAddSceneMaxNameLen.Location = new System.Drawing.Point(1107, 34);
             this.textBoxAddSceneMaxNameLen.Name = "textBoxAddSceneMaxNameLen";
-            this.textBoxAddSceneMaxNameLen.Size = new System.Drawing.Size(132, 22);
+            this.textBoxAddSceneMaxNameLen.Size = new System.Drawing.Size(106, 21);
             this.textBoxAddSceneMaxNameLen.TabIndex = 17;
             this.textBoxAddSceneMaxNameLen.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxAddSceneMaxNameLen_MouseClick);
             this.textBoxAddSceneMaxNameLen.Leave += new System.EventHandler(this.textBoxAddSceneMaxNameLen_Leave);
@@ -4535,10 +4289,9 @@
             // 
             // textBoxAddSceneNameLen
             // 
-            this.textBoxAddSceneNameLen.Location = new System.Drawing.Point(1243, 42);
-            this.textBoxAddSceneNameLen.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxAddSceneNameLen.Location = new System.Drawing.Point(994, 34);
             this.textBoxAddSceneNameLen.Name = "textBoxAddSceneNameLen";
-            this.textBoxAddSceneNameLen.Size = new System.Drawing.Size(132, 22);
+            this.textBoxAddSceneNameLen.Size = new System.Drawing.Size(106, 21);
             this.textBoxAddSceneNameLen.TabIndex = 16;
             this.textBoxAddSceneNameLen.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxAddSceneNameLen_MouseClick);
             this.textBoxAddSceneNameLen.Leave += new System.EventHandler(this.textBoxAddSceneNameLen_Leave);
@@ -4547,10 +4300,9 @@
             // 
             // textBoxAddSceneName
             // 
-            this.textBoxAddSceneName.Location = new System.Drawing.Point(1101, 42);
-            this.textBoxAddSceneName.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxAddSceneName.Location = new System.Drawing.Point(881, 34);
             this.textBoxAddSceneName.Name = "textBoxAddSceneName";
-            this.textBoxAddSceneName.Size = new System.Drawing.Size(132, 22);
+            this.textBoxAddSceneName.Size = new System.Drawing.Size(106, 21);
             this.textBoxAddSceneName.TabIndex = 15;
             this.textBoxAddSceneName.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxAddSceneName_MouseClick);
             this.textBoxAddSceneName.Leave += new System.EventHandler(this.textBoxAddSceneName_Leave);
@@ -4559,10 +4311,9 @@
             // 
             // textBoxAddSceneTransTime
             // 
-            this.textBoxAddSceneTransTime.Location = new System.Drawing.Point(960, 42);
-            this.textBoxAddSceneTransTime.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxAddSceneTransTime.Location = new System.Drawing.Point(768, 34);
             this.textBoxAddSceneTransTime.Name = "textBoxAddSceneTransTime";
-            this.textBoxAddSceneTransTime.Size = new System.Drawing.Size(132, 22);
+            this.textBoxAddSceneTransTime.Size = new System.Drawing.Size(106, 21);
             this.textBoxAddSceneTransTime.TabIndex = 14;
             this.textBoxAddSceneTransTime.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxAddSceneTransTime_MouseClick);
             this.textBoxAddSceneTransTime.Leave += new System.EventHandler(this.textBoxAddSceneTransTime_Leave);
@@ -4571,10 +4322,9 @@
             // 
             // textBoxAddSceneSceneId
             // 
-            this.textBoxAddSceneSceneId.Location = new System.Drawing.Point(819, 42);
-            this.textBoxAddSceneSceneId.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxAddSceneSceneId.Location = new System.Drawing.Point(655, 34);
             this.textBoxAddSceneSceneId.Name = "textBoxAddSceneSceneId";
-            this.textBoxAddSceneSceneId.Size = new System.Drawing.Size(132, 22);
+            this.textBoxAddSceneSceneId.Size = new System.Drawing.Size(106, 21);
             this.textBoxAddSceneSceneId.TabIndex = 13;
             this.textBoxAddSceneSceneId.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxAddSceneSceneId_MouseClick);
             this.textBoxAddSceneSceneId.Leave += new System.EventHandler(this.textBoxAddSceneSceneId_Leave);
@@ -4583,10 +4333,9 @@
             // 
             // textBoxAddSceneGroupId
             // 
-            this.textBoxAddSceneGroupId.Location = new System.Drawing.Point(677, 42);
-            this.textBoxAddSceneGroupId.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxAddSceneGroupId.Location = new System.Drawing.Point(542, 34);
             this.textBoxAddSceneGroupId.Name = "textBoxAddSceneGroupId";
-            this.textBoxAddSceneGroupId.Size = new System.Drawing.Size(132, 22);
+            this.textBoxAddSceneGroupId.Size = new System.Drawing.Size(106, 21);
             this.textBoxAddSceneGroupId.TabIndex = 12;
             this.textBoxAddSceneGroupId.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxAddSceneGroupId_MouseClick);
             this.textBoxAddSceneGroupId.Leave += new System.EventHandler(this.textBoxAddSceneGroupId_Leave);
@@ -4595,10 +4344,9 @@
             // 
             // textBoxAddSceneDstEndPoint
             // 
-            this.textBoxAddSceneDstEndPoint.Location = new System.Drawing.Point(536, 42);
-            this.textBoxAddSceneDstEndPoint.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxAddSceneDstEndPoint.Location = new System.Drawing.Point(429, 34);
             this.textBoxAddSceneDstEndPoint.Name = "textBoxAddSceneDstEndPoint";
-            this.textBoxAddSceneDstEndPoint.Size = new System.Drawing.Size(132, 22);
+            this.textBoxAddSceneDstEndPoint.Size = new System.Drawing.Size(106, 21);
             this.textBoxAddSceneDstEndPoint.TabIndex = 11;
             this.textBoxAddSceneDstEndPoint.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxAddSceneDstEndPoint_MouseClick);
             this.textBoxAddSceneDstEndPoint.Leave += new System.EventHandler(this.textBoxAddSceneDstEndPoint_Leave);
@@ -4607,10 +4355,9 @@
             // 
             // textBoxAddSceneSrcEndPoint
             // 
-            this.textBoxAddSceneSrcEndPoint.Location = new System.Drawing.Point(395, 42);
-            this.textBoxAddSceneSrcEndPoint.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxAddSceneSrcEndPoint.Location = new System.Drawing.Point(316, 34);
             this.textBoxAddSceneSrcEndPoint.Name = "textBoxAddSceneSrcEndPoint";
-            this.textBoxAddSceneSrcEndPoint.Size = new System.Drawing.Size(132, 22);
+            this.textBoxAddSceneSrcEndPoint.Size = new System.Drawing.Size(106, 21);
             this.textBoxAddSceneSrcEndPoint.TabIndex = 10;
             this.textBoxAddSceneSrcEndPoint.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxAddSceneSrcEndPoint_MouseClick);
             this.textBoxAddSceneSrcEndPoint.Leave += new System.EventHandler(this.textBoxAddSceneSrcEndPoint_Leave);
@@ -4619,10 +4366,9 @@
             // 
             // textBoxAddSceneAddr
             // 
-            this.textBoxAddSceneAddr.Location = new System.Drawing.Point(253, 42);
-            this.textBoxAddSceneAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxAddSceneAddr.Location = new System.Drawing.Point(202, 34);
             this.textBoxAddSceneAddr.Name = "textBoxAddSceneAddr";
-            this.textBoxAddSceneAddr.Size = new System.Drawing.Size(132, 22);
+            this.textBoxAddSceneAddr.Size = new System.Drawing.Size(106, 21);
             this.textBoxAddSceneAddr.TabIndex = 9;
             this.textBoxAddSceneAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxAddSceneAddr_MouseClick);
             this.textBoxAddSceneAddr.Leave += new System.EventHandler(this.textBoxAddSceneAddr_Leave);
@@ -4633,20 +4379,18 @@
             // 
             this.comboBoxAddSceneAddrMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxAddSceneAddrMode.FormattingEnabled = true;
-            this.comboBoxAddSceneAddrMode.Location = new System.Drawing.Point(112, 42);
-            this.comboBoxAddSceneAddrMode.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxAddSceneAddrMode.Location = new System.Drawing.Point(90, 34);
             this.comboBoxAddSceneAddrMode.Name = "comboBoxAddSceneAddrMode";
-            this.comboBoxAddSceneAddrMode.Size = new System.Drawing.Size(132, 24);
+            this.comboBoxAddSceneAddrMode.Size = new System.Drawing.Size(106, 20);
             this.comboBoxAddSceneAddrMode.TabIndex = 8;
             this.comboBoxAddSceneAddrMode.MouseLeave += new System.EventHandler(this.comboBoxAddSceneAddrMode_MouseLeave);
             this.comboBoxAddSceneAddrMode.MouseHover += new System.EventHandler(this.comboBoxAddSceneAddrMode_MouseHover);
             // 
             // buttonAddScene
             // 
-            this.buttonAddScene.Location = new System.Drawing.Point(4, 39);
-            this.buttonAddScene.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonAddScene.Location = new System.Drawing.Point(3, 31);
             this.buttonAddScene.Name = "buttonAddScene";
-            this.buttonAddScene.Size = new System.Drawing.Size(100, 28);
+            this.buttonAddScene.Size = new System.Drawing.Size(80, 22);
             this.buttonAddScene.TabIndex = 7;
             this.buttonAddScene.Text = "Add Scene";
             this.buttonAddScene.UseVisualStyleBackColor = true;
@@ -4656,20 +4400,18 @@
             // 
             this.comboBoxViewSceneAddrMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxViewSceneAddrMode.FormattingEnabled = true;
-            this.comboBoxViewSceneAddrMode.Location = new System.Drawing.Point(112, 6);
-            this.comboBoxViewSceneAddrMode.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxViewSceneAddrMode.Location = new System.Drawing.Point(90, 5);
             this.comboBoxViewSceneAddrMode.Name = "comboBoxViewSceneAddrMode";
-            this.comboBoxViewSceneAddrMode.Size = new System.Drawing.Size(132, 24);
+            this.comboBoxViewSceneAddrMode.Size = new System.Drawing.Size(106, 20);
             this.comboBoxViewSceneAddrMode.TabIndex = 1;
             this.comboBoxViewSceneAddrMode.MouseLeave += new System.EventHandler(this.comboBoxViewSceneAddrMode_MouseLeave);
             this.comboBoxViewSceneAddrMode.MouseHover += new System.EventHandler(this.comboBoxViewSceneAddrMode_MouseHover);
             // 
             // textBoxViewSceneSceneId
             // 
-            this.textBoxViewSceneSceneId.Location = new System.Drawing.Point(819, 6);
-            this.textBoxViewSceneSceneId.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxViewSceneSceneId.Location = new System.Drawing.Point(655, 5);
             this.textBoxViewSceneSceneId.Name = "textBoxViewSceneSceneId";
-            this.textBoxViewSceneSceneId.Size = new System.Drawing.Size(132, 22);
+            this.textBoxViewSceneSceneId.Size = new System.Drawing.Size(106, 21);
             this.textBoxViewSceneSceneId.TabIndex = 6;
             this.textBoxViewSceneSceneId.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxViewSceneSceneId_MouseClick);
             this.textBoxViewSceneSceneId.Leave += new System.EventHandler(this.textBoxViewSceneSceneId_Leave);
@@ -4678,10 +4420,9 @@
             // 
             // textBoxViewSceneGroupId
             // 
-            this.textBoxViewSceneGroupId.Location = new System.Drawing.Point(677, 6);
-            this.textBoxViewSceneGroupId.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxViewSceneGroupId.Location = new System.Drawing.Point(542, 5);
             this.textBoxViewSceneGroupId.Name = "textBoxViewSceneGroupId";
-            this.textBoxViewSceneGroupId.Size = new System.Drawing.Size(132, 22);
+            this.textBoxViewSceneGroupId.Size = new System.Drawing.Size(106, 21);
             this.textBoxViewSceneGroupId.TabIndex = 5;
             this.textBoxViewSceneGroupId.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxViewSceneGroupId_MouseClick);
             this.textBoxViewSceneGroupId.Leave += new System.EventHandler(this.textBoxViewSceneGroupId_Leave);
@@ -4690,10 +4431,9 @@
             // 
             // textBoxViewSceneDstEndPoint
             // 
-            this.textBoxViewSceneDstEndPoint.Location = new System.Drawing.Point(536, 6);
-            this.textBoxViewSceneDstEndPoint.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxViewSceneDstEndPoint.Location = new System.Drawing.Point(429, 5);
             this.textBoxViewSceneDstEndPoint.Name = "textBoxViewSceneDstEndPoint";
-            this.textBoxViewSceneDstEndPoint.Size = new System.Drawing.Size(132, 22);
+            this.textBoxViewSceneDstEndPoint.Size = new System.Drawing.Size(106, 21);
             this.textBoxViewSceneDstEndPoint.TabIndex = 4;
             this.textBoxViewSceneDstEndPoint.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxViewSceneDstEndPoint_MouseClick);
             this.textBoxViewSceneDstEndPoint.Leave += new System.EventHandler(this.textBoxViewSceneDstEndPoint_Leave);
@@ -4702,10 +4442,9 @@
             // 
             // textBoxViewSceneSrcEndPoint
             // 
-            this.textBoxViewSceneSrcEndPoint.Location = new System.Drawing.Point(395, 7);
-            this.textBoxViewSceneSrcEndPoint.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxViewSceneSrcEndPoint.Location = new System.Drawing.Point(316, 6);
             this.textBoxViewSceneSrcEndPoint.Name = "textBoxViewSceneSrcEndPoint";
-            this.textBoxViewSceneSrcEndPoint.Size = new System.Drawing.Size(132, 22);
+            this.textBoxViewSceneSrcEndPoint.Size = new System.Drawing.Size(106, 21);
             this.textBoxViewSceneSrcEndPoint.TabIndex = 3;
             this.textBoxViewSceneSrcEndPoint.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxViewSceneSrcEndPoint_MouseClick);
             this.textBoxViewSceneSrcEndPoint.Leave += new System.EventHandler(this.textBoxViewSceneSrcEndPoint_Leave);
@@ -4714,10 +4453,9 @@
             // 
             // textBoxViewSceneAddr
             // 
-            this.textBoxViewSceneAddr.Location = new System.Drawing.Point(253, 6);
-            this.textBoxViewSceneAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxViewSceneAddr.Location = new System.Drawing.Point(202, 5);
             this.textBoxViewSceneAddr.Name = "textBoxViewSceneAddr";
-            this.textBoxViewSceneAddr.Size = new System.Drawing.Size(132, 22);
+            this.textBoxViewSceneAddr.Size = new System.Drawing.Size(106, 21);
             this.textBoxViewSceneAddr.TabIndex = 2;
             this.textBoxViewSceneAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxViewSceneAddr_MouseClick);
             this.textBoxViewSceneAddr.Leave += new System.EventHandler(this.textBoxViewSceneAddr_Leave);
@@ -4726,10 +4464,9 @@
             // 
             // buttonViewScene
             // 
-            this.buttonViewScene.Location = new System.Drawing.Point(4, 4);
-            this.buttonViewScene.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonViewScene.Location = new System.Drawing.Point(3, 3);
             this.buttonViewScene.Name = "buttonViewScene";
-            this.buttonViewScene.Size = new System.Drawing.Size(100, 28);
+            this.buttonViewScene.Size = new System.Drawing.Size(80, 22);
             this.buttonViewScene.TabIndex = 0;
             this.buttonViewScene.Text = "View Scene";
             this.buttonViewScene.UseVisualStyleBackColor = true;
@@ -4764,20 +4501,18 @@
             this.tabPage8.Controls.Add(this.textBoxMoveToHueSrcEp);
             this.tabPage8.Controls.Add(this.buttonMoveToHue);
             this.tabPage8.Controls.Add(this.textBoxMoveToHueAddr);
-            this.tabPage8.Location = new System.Drawing.Point(4, 25);
-            this.tabPage8.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPage8.Location = new System.Drawing.Point(4, 22);
             this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Size = new System.Drawing.Size(1691, 524);
+            this.tabPage8.Size = new System.Drawing.Size(1351, 416);
             this.tabPage8.TabIndex = 7;
             this.tabPage8.Text = "Color Cluster";
             this.tabPage8.Click += new System.EventHandler(this.tabPage8_Click);
             // 
             // textBoxMoveToSatTime
             // 
-            this.textBoxMoveToSatTime.Location = new System.Drawing.Point(693, 79);
-            this.textBoxMoveToSatTime.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxMoveToSatTime.Location = new System.Drawing.Point(554, 63);
             this.textBoxMoveToSatTime.Name = "textBoxMoveToSatTime";
-            this.textBoxMoveToSatTime.Size = new System.Drawing.Size(132, 22);
+            this.textBoxMoveToSatTime.Size = new System.Drawing.Size(106, 21);
             this.textBoxMoveToSatTime.TabIndex = 19;
             this.textBoxMoveToSatTime.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxMoveToSatTime_MouseClick);
             this.textBoxMoveToSatTime.Leave += new System.EventHandler(this.textBoxMoveToSatTime_Leave);
@@ -4786,10 +4521,9 @@
             // 
             // textBoxMoveToSatSat
             // 
-            this.textBoxMoveToSatSat.Location = new System.Drawing.Point(552, 79);
-            this.textBoxMoveToSatSat.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxMoveToSatSat.Location = new System.Drawing.Point(442, 63);
             this.textBoxMoveToSatSat.Name = "textBoxMoveToSatSat";
-            this.textBoxMoveToSatSat.Size = new System.Drawing.Size(132, 22);
+            this.textBoxMoveToSatSat.Size = new System.Drawing.Size(106, 21);
             this.textBoxMoveToSatSat.TabIndex = 18;
             this.textBoxMoveToSatSat.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxMoveToSatSat_MouseClick);
             this.textBoxMoveToSatSat.Leave += new System.EventHandler(this.textBoxMoveToSatSat_Leave);
@@ -4798,10 +4532,9 @@
             // 
             // textBoxMoveToSatDstEp
             // 
-            this.textBoxMoveToSatDstEp.Location = new System.Drawing.Point(411, 79);
-            this.textBoxMoveToSatDstEp.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxMoveToSatDstEp.Location = new System.Drawing.Point(329, 63);
             this.textBoxMoveToSatDstEp.Name = "textBoxMoveToSatDstEp";
-            this.textBoxMoveToSatDstEp.Size = new System.Drawing.Size(132, 22);
+            this.textBoxMoveToSatDstEp.Size = new System.Drawing.Size(106, 21);
             this.textBoxMoveToSatDstEp.TabIndex = 17;
             this.textBoxMoveToSatDstEp.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxMoveToSatDstEp_MouseClick);
             this.textBoxMoveToSatDstEp.Leave += new System.EventHandler(this.textBoxMoveToSatDstEp_Leave);
@@ -4810,10 +4543,9 @@
             // 
             // textBoxMoveToSatSrcEp
             // 
-            this.textBoxMoveToSatSrcEp.Location = new System.Drawing.Point(269, 79);
-            this.textBoxMoveToSatSrcEp.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxMoveToSatSrcEp.Location = new System.Drawing.Point(215, 63);
             this.textBoxMoveToSatSrcEp.Name = "textBoxMoveToSatSrcEp";
-            this.textBoxMoveToSatSrcEp.Size = new System.Drawing.Size(132, 22);
+            this.textBoxMoveToSatSrcEp.Size = new System.Drawing.Size(106, 21);
             this.textBoxMoveToSatSrcEp.TabIndex = 16;
             this.textBoxMoveToSatSrcEp.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxMoveToSatSrcEp_MouseClick);
             this.textBoxMoveToSatSrcEp.Leave += new System.EventHandler(this.textBoxMoveToSatSrcEp_Leave);
@@ -4822,10 +4554,9 @@
             // 
             // buttonMoveToSat
             // 
-            this.buttonMoveToSat.Location = new System.Drawing.Point(5, 78);
-            this.buttonMoveToSat.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonMoveToSat.Location = new System.Drawing.Point(4, 62);
             this.buttonMoveToSat.Name = "buttonMoveToSat";
-            this.buttonMoveToSat.Size = new System.Drawing.Size(113, 28);
+            this.buttonMoveToSat.Size = new System.Drawing.Size(90, 22);
             this.buttonMoveToSat.TabIndex = 14;
             this.buttonMoveToSat.Text = "MoveToSat";
             this.buttonMoveToSat.UseVisualStyleBackColor = true;
@@ -4833,10 +4564,9 @@
             // 
             // textBoxMoveToSatAddr
             // 
-            this.textBoxMoveToSatAddr.Location = new System.Drawing.Point(128, 79);
-            this.textBoxMoveToSatAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxMoveToSatAddr.Location = new System.Drawing.Point(102, 63);
             this.textBoxMoveToSatAddr.Name = "textBoxMoveToSatAddr";
-            this.textBoxMoveToSatAddr.Size = new System.Drawing.Size(132, 22);
+            this.textBoxMoveToSatAddr.Size = new System.Drawing.Size(106, 21);
             this.textBoxMoveToSatAddr.TabIndex = 15;
             this.textBoxMoveToSatAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxMoveToSatAddr_MouseClick);
             this.textBoxMoveToSatAddr.Leave += new System.EventHandler(this.textBoxMoveToSatAddr_Leave);
@@ -4845,10 +4575,9 @@
             // 
             // textBoxMoveToColorTempRate
             // 
-            this.textBoxMoveToColorTempRate.Location = new System.Drawing.Point(693, 116);
-            this.textBoxMoveToColorTempRate.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxMoveToColorTempRate.Location = new System.Drawing.Point(554, 93);
             this.textBoxMoveToColorTempRate.Name = "textBoxMoveToColorTempRate";
-            this.textBoxMoveToColorTempRate.Size = new System.Drawing.Size(132, 22);
+            this.textBoxMoveToColorTempRate.Size = new System.Drawing.Size(106, 21);
             this.textBoxMoveToColorTempRate.TabIndex = 25;
             this.textBoxMoveToColorTempRate.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxMoveToColorTempRate_MouseClick);
             this.textBoxMoveToColorTempRate.Leave += new System.EventHandler(this.textBoxMoveToColorTempRate_Leave);
@@ -4857,10 +4586,9 @@
             // 
             // textBoxMoveToColorTempTemp
             // 
-            this.textBoxMoveToColorTempTemp.Location = new System.Drawing.Point(552, 116);
-            this.textBoxMoveToColorTempTemp.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxMoveToColorTempTemp.Location = new System.Drawing.Point(442, 93);
             this.textBoxMoveToColorTempTemp.Name = "textBoxMoveToColorTempTemp";
-            this.textBoxMoveToColorTempTemp.Size = new System.Drawing.Size(132, 22);
+            this.textBoxMoveToColorTempTemp.Size = new System.Drawing.Size(106, 21);
             this.textBoxMoveToColorTempTemp.TabIndex = 24;
             this.textBoxMoveToColorTempTemp.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxMoveToColorTempTemp_MouseClick);
             this.textBoxMoveToColorTempTemp.Leave += new System.EventHandler(this.textBoxMoveToColorTempTemp_Leave);
@@ -4869,10 +4597,9 @@
             // 
             // textBoxMoveToColorTempDstEp
             // 
-            this.textBoxMoveToColorTempDstEp.Location = new System.Drawing.Point(411, 116);
-            this.textBoxMoveToColorTempDstEp.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxMoveToColorTempDstEp.Location = new System.Drawing.Point(329, 93);
             this.textBoxMoveToColorTempDstEp.Name = "textBoxMoveToColorTempDstEp";
-            this.textBoxMoveToColorTempDstEp.Size = new System.Drawing.Size(132, 22);
+            this.textBoxMoveToColorTempDstEp.Size = new System.Drawing.Size(106, 21);
             this.textBoxMoveToColorTempDstEp.TabIndex = 23;
             this.textBoxMoveToColorTempDstEp.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxMoveToColorTempDstEp_MouseClick);
             this.textBoxMoveToColorTempDstEp.Leave += new System.EventHandler(this.textBoxMoveToColorTempDstEp_Leave);
@@ -4881,10 +4608,9 @@
             // 
             // textBoxMoveToColorTempSrcEp
             // 
-            this.textBoxMoveToColorTempSrcEp.Location = new System.Drawing.Point(269, 116);
-            this.textBoxMoveToColorTempSrcEp.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxMoveToColorTempSrcEp.Location = new System.Drawing.Point(215, 93);
             this.textBoxMoveToColorTempSrcEp.Name = "textBoxMoveToColorTempSrcEp";
-            this.textBoxMoveToColorTempSrcEp.Size = new System.Drawing.Size(132, 22);
+            this.textBoxMoveToColorTempSrcEp.Size = new System.Drawing.Size(106, 21);
             this.textBoxMoveToColorTempSrcEp.TabIndex = 22;
             this.textBoxMoveToColorTempSrcEp.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxMoveToColorTempSrcEp_MouseClick);
             this.textBoxMoveToColorTempSrcEp.Leave += new System.EventHandler(this.textBoxMoveToColorTempSrcEp_Leave);
@@ -4893,10 +4619,9 @@
             // 
             // textBoxMoveToColorTempAddr
             // 
-            this.textBoxMoveToColorTempAddr.Location = new System.Drawing.Point(128, 116);
-            this.textBoxMoveToColorTempAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxMoveToColorTempAddr.Location = new System.Drawing.Point(102, 93);
             this.textBoxMoveToColorTempAddr.Name = "textBoxMoveToColorTempAddr";
-            this.textBoxMoveToColorTempAddr.Size = new System.Drawing.Size(132, 22);
+            this.textBoxMoveToColorTempAddr.Size = new System.Drawing.Size(106, 21);
             this.textBoxMoveToColorTempAddr.TabIndex = 21;
             this.textBoxMoveToColorTempAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxMoveToColorTempAddr_MouseClick);
             this.textBoxMoveToColorTempAddr.Leave += new System.EventHandler(this.textBoxMoveToColorTempAddr_Leave);
@@ -4905,10 +4630,9 @@
             // 
             // buttonMoveToColorTemp
             // 
-            this.buttonMoveToColorTemp.Location = new System.Drawing.Point(5, 113);
-            this.buttonMoveToColorTemp.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonMoveToColorTemp.Location = new System.Drawing.Point(4, 90);
             this.buttonMoveToColorTemp.Name = "buttonMoveToColorTemp";
-            this.buttonMoveToColorTemp.Size = new System.Drawing.Size(113, 28);
+            this.buttonMoveToColorTemp.Size = new System.Drawing.Size(90, 22);
             this.buttonMoveToColorTemp.TabIndex = 20;
             this.buttonMoveToColorTemp.Text = "MoveToTemp";
             this.buttonMoveToColorTemp.UseVisualStyleBackColor = true;
@@ -4916,10 +4640,9 @@
             // 
             // textBoxMoveToColorTime
             // 
-            this.textBoxMoveToColorTime.Location = new System.Drawing.Point(835, 43);
-            this.textBoxMoveToColorTime.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxMoveToColorTime.Location = new System.Drawing.Point(668, 34);
             this.textBoxMoveToColorTime.Name = "textBoxMoveToColorTime";
-            this.textBoxMoveToColorTime.Size = new System.Drawing.Size(132, 22);
+            this.textBoxMoveToColorTime.Size = new System.Drawing.Size(106, 21);
             this.textBoxMoveToColorTime.TabIndex = 13;
             this.textBoxMoveToColorTime.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxMoveToColorTime_MouseClick);
             this.textBoxMoveToColorTime.Leave += new System.EventHandler(this.textBoxMoveToColorTime_Leave);
@@ -4928,10 +4651,9 @@
             // 
             // textBoxMoveToColorY
             // 
-            this.textBoxMoveToColorY.Location = new System.Drawing.Point(693, 43);
-            this.textBoxMoveToColorY.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxMoveToColorY.Location = new System.Drawing.Point(554, 34);
             this.textBoxMoveToColorY.Name = "textBoxMoveToColorY";
-            this.textBoxMoveToColorY.Size = new System.Drawing.Size(132, 22);
+            this.textBoxMoveToColorY.Size = new System.Drawing.Size(106, 21);
             this.textBoxMoveToColorY.TabIndex = 12;
             this.textBoxMoveToColorY.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxMoveToColorY_MouseClick);
             this.textBoxMoveToColorY.Leave += new System.EventHandler(this.textBoxMoveToColorY_Leave);
@@ -4940,10 +4662,9 @@
             // 
             // textBoxMoveToColorX
             // 
-            this.textBoxMoveToColorX.Location = new System.Drawing.Point(552, 44);
-            this.textBoxMoveToColorX.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxMoveToColorX.Location = new System.Drawing.Point(442, 35);
             this.textBoxMoveToColorX.Name = "textBoxMoveToColorX";
-            this.textBoxMoveToColorX.Size = new System.Drawing.Size(132, 22);
+            this.textBoxMoveToColorX.Size = new System.Drawing.Size(106, 21);
             this.textBoxMoveToColorX.TabIndex = 11;
             this.textBoxMoveToColorX.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxMoveToColorX_MouseClick);
             this.textBoxMoveToColorX.Leave += new System.EventHandler(this.textBoxMoveToColorX_Leave);
@@ -4952,10 +4673,9 @@
             // 
             // textBoxMoveToColorDstEp
             // 
-            this.textBoxMoveToColorDstEp.Location = new System.Drawing.Point(411, 43);
-            this.textBoxMoveToColorDstEp.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxMoveToColorDstEp.Location = new System.Drawing.Point(329, 34);
             this.textBoxMoveToColorDstEp.Name = "textBoxMoveToColorDstEp";
-            this.textBoxMoveToColorDstEp.Size = new System.Drawing.Size(132, 22);
+            this.textBoxMoveToColorDstEp.Size = new System.Drawing.Size(106, 21);
             this.textBoxMoveToColorDstEp.TabIndex = 10;
             this.textBoxMoveToColorDstEp.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxMoveToColorDstEp_MouseClick);
             this.textBoxMoveToColorDstEp.Leave += new System.EventHandler(this.textBoxMoveToColorDstEp_Leave);
@@ -4964,10 +4684,9 @@
             // 
             // textBoxMoveToColorSrcEp
             // 
-            this.textBoxMoveToColorSrcEp.Location = new System.Drawing.Point(269, 43);
-            this.textBoxMoveToColorSrcEp.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxMoveToColorSrcEp.Location = new System.Drawing.Point(215, 34);
             this.textBoxMoveToColorSrcEp.Name = "textBoxMoveToColorSrcEp";
-            this.textBoxMoveToColorSrcEp.Size = new System.Drawing.Size(132, 22);
+            this.textBoxMoveToColorSrcEp.Size = new System.Drawing.Size(106, 21);
             this.textBoxMoveToColorSrcEp.TabIndex = 9;
             this.textBoxMoveToColorSrcEp.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxMoveToColorSrcEp_MouseClick);
             this.textBoxMoveToColorSrcEp.Leave += new System.EventHandler(this.textBoxMoveToColorSrcEp_Leave);
@@ -4976,10 +4695,9 @@
             // 
             // textBoxMoveToColorAddr
             // 
-            this.textBoxMoveToColorAddr.Location = new System.Drawing.Point(128, 44);
-            this.textBoxMoveToColorAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxMoveToColorAddr.Location = new System.Drawing.Point(102, 35);
             this.textBoxMoveToColorAddr.Name = "textBoxMoveToColorAddr";
-            this.textBoxMoveToColorAddr.Size = new System.Drawing.Size(132, 22);
+            this.textBoxMoveToColorAddr.Size = new System.Drawing.Size(106, 21);
             this.textBoxMoveToColorAddr.TabIndex = 8;
             this.textBoxMoveToColorAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxMoveToColorAddr_MouseClick);
             this.textBoxMoveToColorAddr.Leave += new System.EventHandler(this.textBoxMoveToColorAddr_Leave);
@@ -4988,10 +4706,9 @@
             // 
             // buttonMoveToColor
             // 
-            this.buttonMoveToColor.Location = new System.Drawing.Point(5, 41);
-            this.buttonMoveToColor.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonMoveToColor.Location = new System.Drawing.Point(4, 33);
             this.buttonMoveToColor.Name = "buttonMoveToColor";
-            this.buttonMoveToColor.Size = new System.Drawing.Size(113, 28);
+            this.buttonMoveToColor.Size = new System.Drawing.Size(90, 22);
             this.buttonMoveToColor.TabIndex = 7;
             this.buttonMoveToColor.Text = "MoveToColor";
             this.buttonMoveToColor.UseVisualStyleBackColor = true;
@@ -4999,10 +4716,9 @@
             // 
             // textBoxMoveToHueTime
             // 
-            this.textBoxMoveToHueTime.Location = new System.Drawing.Point(835, 7);
-            this.textBoxMoveToHueTime.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxMoveToHueTime.Location = new System.Drawing.Point(668, 6);
             this.textBoxMoveToHueTime.Name = "textBoxMoveToHueTime";
-            this.textBoxMoveToHueTime.Size = new System.Drawing.Size(132, 22);
+            this.textBoxMoveToHueTime.Size = new System.Drawing.Size(106, 21);
             this.textBoxMoveToHueTime.TabIndex = 6;
             this.textBoxMoveToHueTime.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxMoveToHueTime_MouseClick);
             this.textBoxMoveToHueTime.Leave += new System.EventHandler(this.textBoxMoveToHueTime_Leave);
@@ -5011,10 +4727,9 @@
             // 
             // textBoxMoveToHueDir
             // 
-            this.textBoxMoveToHueDir.Location = new System.Drawing.Point(693, 7);
-            this.textBoxMoveToHueDir.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxMoveToHueDir.Location = new System.Drawing.Point(554, 6);
             this.textBoxMoveToHueDir.Name = "textBoxMoveToHueDir";
-            this.textBoxMoveToHueDir.Size = new System.Drawing.Size(132, 22);
+            this.textBoxMoveToHueDir.Size = new System.Drawing.Size(106, 21);
             this.textBoxMoveToHueDir.TabIndex = 5;
             this.textBoxMoveToHueDir.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxMoveToHueDir_MouseClick);
             this.textBoxMoveToHueDir.Leave += new System.EventHandler(this.textBoxMoveToHueDir_Leave);
@@ -5023,10 +4738,9 @@
             // 
             // textBoxMoveToHueHue
             // 
-            this.textBoxMoveToHueHue.Location = new System.Drawing.Point(552, 7);
-            this.textBoxMoveToHueHue.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxMoveToHueHue.Location = new System.Drawing.Point(442, 6);
             this.textBoxMoveToHueHue.Name = "textBoxMoveToHueHue";
-            this.textBoxMoveToHueHue.Size = new System.Drawing.Size(132, 22);
+            this.textBoxMoveToHueHue.Size = new System.Drawing.Size(106, 21);
             this.textBoxMoveToHueHue.TabIndex = 4;
             this.textBoxMoveToHueHue.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxMoveToHueHue_MouseClick);
             this.textBoxMoveToHueHue.Leave += new System.EventHandler(this.textBoxMoveToHueHue_Leave);
@@ -5035,10 +4749,9 @@
             // 
             // textBoxMoveToHueDstEp
             // 
-            this.textBoxMoveToHueDstEp.Location = new System.Drawing.Point(411, 7);
-            this.textBoxMoveToHueDstEp.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxMoveToHueDstEp.Location = new System.Drawing.Point(329, 6);
             this.textBoxMoveToHueDstEp.Name = "textBoxMoveToHueDstEp";
-            this.textBoxMoveToHueDstEp.Size = new System.Drawing.Size(132, 22);
+            this.textBoxMoveToHueDstEp.Size = new System.Drawing.Size(106, 21);
             this.textBoxMoveToHueDstEp.TabIndex = 3;
             this.textBoxMoveToHueDstEp.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxMoveToHueDstEp_MouseClick);
             this.textBoxMoveToHueDstEp.Leave += new System.EventHandler(this.textBoxMoveToHueDstEp_Leave);
@@ -5047,10 +4760,9 @@
             // 
             // textBoxMoveToHueSrcEp
             // 
-            this.textBoxMoveToHueSrcEp.Location = new System.Drawing.Point(269, 7);
-            this.textBoxMoveToHueSrcEp.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxMoveToHueSrcEp.Location = new System.Drawing.Point(215, 6);
             this.textBoxMoveToHueSrcEp.Name = "textBoxMoveToHueSrcEp";
-            this.textBoxMoveToHueSrcEp.Size = new System.Drawing.Size(132, 22);
+            this.textBoxMoveToHueSrcEp.Size = new System.Drawing.Size(106, 21);
             this.textBoxMoveToHueSrcEp.TabIndex = 2;
             this.textBoxMoveToHueSrcEp.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxMoveToHueSrcEp_MouseClick);
             this.textBoxMoveToHueSrcEp.Leave += new System.EventHandler(this.textBoxMoveToHueSrcEp_Leave);
@@ -5059,10 +4771,9 @@
             // 
             // buttonMoveToHue
             // 
-            this.buttonMoveToHue.Location = new System.Drawing.Point(5, 5);
-            this.buttonMoveToHue.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonMoveToHue.Location = new System.Drawing.Point(4, 4);
             this.buttonMoveToHue.Name = "buttonMoveToHue";
-            this.buttonMoveToHue.Size = new System.Drawing.Size(113, 28);
+            this.buttonMoveToHue.Size = new System.Drawing.Size(90, 22);
             this.buttonMoveToHue.TabIndex = 0;
             this.buttonMoveToHue.Text = "MoveToHue";
             this.buttonMoveToHue.UseVisualStyleBackColor = true;
@@ -5070,10 +4781,9 @@
             // 
             // textBoxMoveToHueAddr
             // 
-            this.textBoxMoveToHueAddr.Location = new System.Drawing.Point(128, 7);
-            this.textBoxMoveToHueAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxMoveToHueAddr.Location = new System.Drawing.Point(102, 6);
             this.textBoxMoveToHueAddr.Name = "textBoxMoveToHueAddr";
-            this.textBoxMoveToHueAddr.Size = new System.Drawing.Size(132, 22);
+            this.textBoxMoveToHueAddr.Size = new System.Drawing.Size(106, 21);
             this.textBoxMoveToHueAddr.TabIndex = 1;
             this.textBoxMoveToHueAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxMoveToHueAddr_MouseClick);
             this.textBoxMoveToHueAddr.Leave += new System.EventHandler(this.textBoxMoveToHueAddr_Leave);
@@ -5083,37 +4793,393 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPage1.Controls.Add(this.buttonEditUser);
+            this.tabPage1.Controls.Add(this.textBoxUserEnable);
+            this.tabPage1.Controls.Add(this.textBoxHoldPassword);
+            this.tabPage1.Controls.Add(this.textBoxIcCardErrorNum);
+            this.tabPage1.Controls.Add(this.textBoxFingerErrorNum);
+            this.tabPage1.Controls.Add(this.textBoxDigitErrorNum);
+            this.tabPage1.Controls.Add(this.textBoxUpload);
+            this.tabPage1.Controls.Add(this.buttonSetSetting);
+            this.tabPage1.Controls.Add(this.textBoxETEndMinute);
+            this.tabPage1.Controls.Add(this.textBoxETEndHour);
+            this.tabPage1.Controls.Add(this.textBoxETEndDay);
+            this.tabPage1.Controls.Add(this.textBoxETEndMonth);
+            this.tabPage1.Controls.Add(this.textBoxETEndYear);
+            this.tabPage1.Controls.Add(this.textBoxETMinute);
+            this.tabPage1.Controls.Add(this.textBoxETHour);
+            this.tabPage1.Controls.Add(this.textBoxETDay);
+            this.tabPage1.Controls.Add(this.textBoxETMonth);
+            this.tabPage1.Controls.Add(this.textBoxETYear);
+            this.tabPage1.Controls.Add(this.textBoxETUserId);
+            this.tabPage1.Controls.Add(this.textBoxDPPassword);
+            this.tabPage1.Controls.Add(this.buttonSetUserEffectiveTime);
+            this.tabPage1.Controls.Add(this.buttonEditDigitPassword);
+            this.tabPage1.Controls.Add(this.buttonOutLearn);
+            this.tabPage1.Controls.Add(this.buttonEnterLearn);
+            this.tabPage1.Controls.Add(this.textBoxDPPasswordEnable);
+            this.tabPage1.Controls.Add(this.textBoxDPPasswordType);
+            this.tabPage1.Controls.Add(this.textBoxDPPasswordId);
+            this.tabPage1.Controls.Add(this.buttonDeleteDigitPassword);
+            this.tabPage1.Controls.Add(this.buttonAddDigitPassword);
+            this.tabPage1.Controls.Add(this.textBoxDPUserId);
+            this.tabPage1.Controls.Add(this.textBoxUserType);
+            this.tabPage1.Controls.Add(this.buttonDeleteUser);
+            this.tabPage1.Controls.Add(this.textBoxUserId);
+            this.tabPage1.Controls.Add(this.buttonNewUser);
+            this.tabPage1.Controls.Add(this.textBoxTempPassword);
+            this.tabPage1.Controls.Add(this.buttonInvalidPassword);
+            this.tabPage1.Controls.Add(this.textBoxTempPasswordDstEp);
+            this.tabPage1.Controls.Add(this.textBoxTempPasswordSrcEp);
+            this.tabPage1.Controls.Add(this.textBoxTempPasswordAddr);
+            this.tabPage1.Controls.Add(this.buttonSetTempPassword);
             this.tabPage1.Controls.Add(this.comboBoxLockUnlock);
             this.tabPage1.Controls.Add(this.textBoxLockUnlockDstEp);
             this.tabPage1.Controls.Add(this.textBoxLockUnlockSrcEp);
             this.tabPage1.Controls.Add(this.textBoxLockUnlockAddr);
             this.tabPage1.Controls.Add(this.buttonLockUnlock);
-            this.tabPage1.Location = new System.Drawing.Point(4, 25);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(1691, 524);
+            this.tabPage1.Size = new System.Drawing.Size(1351, 416);
             this.tabPage1.TabIndex = 8;
             this.tabPage1.Text = "Door Lock Cluster";
             this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // buttonEditUser
+            // 
+            this.buttonEditUser.Location = new System.Drawing.Point(244, 88);
+            this.buttonEditUser.Name = "buttonEditUser";
+            this.buttonEditUser.Size = new System.Drawing.Size(114, 23);
+            this.buttonEditUser.TabIndex = 44;
+            this.buttonEditUser.Text = "EditUser";
+            this.buttonEditUser.UseVisualStyleBackColor = true;
+            // 
+            // textBoxUserEnable
+            // 
+            this.textBoxUserEnable.Location = new System.Drawing.Point(588, 90);
+            this.textBoxUserEnable.Name = "textBoxUserEnable";
+            this.textBoxUserEnable.Size = new System.Drawing.Size(106, 21);
+            this.textBoxUserEnable.TabIndex = 43;
+            this.textBoxUserEnable.Text = "1";
+            // 
+            // textBoxHoldPassword
+            // 
+            this.textBoxHoldPassword.Location = new System.Drawing.Point(614, 279);
+            this.textBoxHoldPassword.Name = "textBoxHoldPassword";
+            this.textBoxHoldPassword.Size = new System.Drawing.Size(106, 21);
+            this.textBoxHoldPassword.TabIndex = 42;
+            // 
+            // textBoxIcCardErrorNum
+            // 
+            this.textBoxIcCardErrorNum.Location = new System.Drawing.Point(502, 279);
+            this.textBoxIcCardErrorNum.Name = "textBoxIcCardErrorNum";
+            this.textBoxIcCardErrorNum.Size = new System.Drawing.Size(106, 21);
+            this.textBoxIcCardErrorNum.TabIndex = 41;
+            // 
+            // textBoxFingerErrorNum
+            // 
+            this.textBoxFingerErrorNum.Location = new System.Drawing.Point(390, 279);
+            this.textBoxFingerErrorNum.Name = "textBoxFingerErrorNum";
+            this.textBoxFingerErrorNum.Size = new System.Drawing.Size(106, 21);
+            this.textBoxFingerErrorNum.TabIndex = 40;
+            // 
+            // textBoxDigitErrorNum
+            // 
+            this.textBoxDigitErrorNum.Location = new System.Drawing.Point(279, 279);
+            this.textBoxDigitErrorNum.Name = "textBoxDigitErrorNum";
+            this.textBoxDigitErrorNum.Size = new System.Drawing.Size(106, 21);
+            this.textBoxDigitErrorNum.TabIndex = 39;
+            // 
+            // textBoxUpload
+            // 
+            this.textBoxUpload.Location = new System.Drawing.Point(167, 279);
+            this.textBoxUpload.Name = "textBoxUpload";
+            this.textBoxUpload.Size = new System.Drawing.Size(106, 21);
+            this.textBoxUpload.TabIndex = 38;
+            // 
+            // buttonSetSetting
+            // 
+            this.buttonSetSetting.Location = new System.Drawing.Point(4, 277);
+            this.buttonSetSetting.Name = "buttonSetSetting";
+            this.buttonSetSetting.Size = new System.Drawing.Size(157, 23);
+            this.buttonSetSetting.TabIndex = 37;
+            this.buttonSetSetting.Text = "SetSetting";
+            this.buttonSetSetting.UseVisualStyleBackColor = true;
+            // 
+            // textBoxETEndMinute
+            // 
+            this.textBoxETEndMinute.Location = new System.Drawing.Point(726, 237);
+            this.textBoxETEndMinute.Name = "textBoxETEndMinute";
+            this.textBoxETEndMinute.Size = new System.Drawing.Size(106, 21);
+            this.textBoxETEndMinute.TabIndex = 36;
+            // 
+            // textBoxETEndHour
+            // 
+            this.textBoxETEndHour.Location = new System.Drawing.Point(614, 237);
+            this.textBoxETEndHour.Name = "textBoxETEndHour";
+            this.textBoxETEndHour.Size = new System.Drawing.Size(106, 21);
+            this.textBoxETEndHour.TabIndex = 35;
+            // 
+            // textBoxETEndDay
+            // 
+            this.textBoxETEndDay.Location = new System.Drawing.Point(502, 237);
+            this.textBoxETEndDay.Name = "textBoxETEndDay";
+            this.textBoxETEndDay.Size = new System.Drawing.Size(106, 21);
+            this.textBoxETEndDay.TabIndex = 34;
+            // 
+            // textBoxETEndMonth
+            // 
+            this.textBoxETEndMonth.Location = new System.Drawing.Point(390, 237);
+            this.textBoxETEndMonth.Name = "textBoxETEndMonth";
+            this.textBoxETEndMonth.Size = new System.Drawing.Size(106, 21);
+            this.textBoxETEndMonth.TabIndex = 33;
+            // 
+            // textBoxETEndYear
+            // 
+            this.textBoxETEndYear.Location = new System.Drawing.Point(279, 237);
+            this.textBoxETEndYear.Name = "textBoxETEndYear";
+            this.textBoxETEndYear.Size = new System.Drawing.Size(106, 21);
+            this.textBoxETEndYear.TabIndex = 32;
+            // 
+            // textBoxETMinute
+            // 
+            this.textBoxETMinute.Location = new System.Drawing.Point(727, 210);
+            this.textBoxETMinute.Name = "textBoxETMinute";
+            this.textBoxETMinute.Size = new System.Drawing.Size(106, 21);
+            this.textBoxETMinute.TabIndex = 31;
+            // 
+            // textBoxETHour
+            // 
+            this.textBoxETHour.Location = new System.Drawing.Point(614, 210);
+            this.textBoxETHour.Name = "textBoxETHour";
+            this.textBoxETHour.Size = new System.Drawing.Size(106, 21);
+            this.textBoxETHour.TabIndex = 30;
+            // 
+            // textBoxETDay
+            // 
+            this.textBoxETDay.Location = new System.Drawing.Point(502, 210);
+            this.textBoxETDay.Name = "textBoxETDay";
+            this.textBoxETDay.Size = new System.Drawing.Size(106, 21);
+            this.textBoxETDay.TabIndex = 29;
+            // 
+            // textBoxETMonth
+            // 
+            this.textBoxETMonth.Location = new System.Drawing.Point(390, 210);
+            this.textBoxETMonth.Name = "textBoxETMonth";
+            this.textBoxETMonth.Size = new System.Drawing.Size(106, 21);
+            this.textBoxETMonth.TabIndex = 28;
+            // 
+            // textBoxETYear
+            // 
+            this.textBoxETYear.Location = new System.Drawing.Point(279, 210);
+            this.textBoxETYear.Name = "textBoxETYear";
+            this.textBoxETYear.Size = new System.Drawing.Size(106, 21);
+            this.textBoxETYear.TabIndex = 27;
+            // 
+            // textBoxETUserId
+            // 
+            this.textBoxETUserId.Location = new System.Drawing.Point(167, 210);
+            this.textBoxETUserId.Name = "textBoxETUserId";
+            this.textBoxETUserId.Size = new System.Drawing.Size(106, 21);
+            this.textBoxETUserId.TabIndex = 26;
+            // 
+            // textBoxDPPassword
+            // 
+            this.textBoxDPPassword.Location = new System.Drawing.Point(860, 131);
+            this.textBoxDPPassword.Name = "textBoxDPPassword";
+            this.textBoxDPPassword.Size = new System.Drawing.Size(106, 21);
+            this.textBoxDPPassword.TabIndex = 25;
+            this.textBoxDPPassword.Text = "11223344";
+            this.textBoxDPPassword.TextChanged += new System.EventHandler(this.textBoxDPPassword_TextChanged);
+            // 
+            // buttonSetUserEffectiveTime
+            // 
+            this.buttonSetUserEffectiveTime.Location = new System.Drawing.Point(4, 208);
+            this.buttonSetUserEffectiveTime.Name = "buttonSetUserEffectiveTime";
+            this.buttonSetUserEffectiveTime.Size = new System.Drawing.Size(157, 23);
+            this.buttonSetUserEffectiveTime.TabIndex = 24;
+            this.buttonSetUserEffectiveTime.Text = "SetUserEffectiveTime";
+            this.buttonSetUserEffectiveTime.UseVisualStyleBackColor = true;
+            // 
+            // buttonEditDigitPassword
+            // 
+            this.buttonEditDigitPassword.Location = new System.Drawing.Point(277, 129);
+            this.buttonEditDigitPassword.Name = "buttonEditDigitPassword";
+            this.buttonEditDigitPassword.Size = new System.Drawing.Size(130, 23);
+            this.buttonEditDigitPassword.TabIndex = 23;
+            this.buttonEditDigitPassword.Text = "EditDigitPassword";
+            this.buttonEditDigitPassword.UseVisualStyleBackColor = true;
+            // 
+            // buttonOutLearn
+            // 
+            this.buttonOutLearn.Location = new System.Drawing.Point(124, 170);
+            this.buttonOutLearn.Name = "buttonOutLearn";
+            this.buttonOutLearn.Size = new System.Drawing.Size(114, 23);
+            this.buttonOutLearn.TabIndex = 22;
+            this.buttonOutLearn.Text = "OutLearn";
+            this.buttonOutLearn.UseVisualStyleBackColor = true;
+            // 
+            // buttonEnterLearn
+            // 
+            this.buttonEnterLearn.Location = new System.Drawing.Point(4, 169);
+            this.buttonEnterLearn.Name = "buttonEnterLearn";
+            this.buttonEnterLearn.Size = new System.Drawing.Size(114, 23);
+            this.buttonEnterLearn.TabIndex = 21;
+            this.buttonEnterLearn.Text = "EnterLearn";
+            this.buttonEnterLearn.UseVisualStyleBackColor = true;
+            // 
+            // textBoxDPPasswordEnable
+            // 
+            this.textBoxDPPasswordEnable.Location = new System.Drawing.Point(748, 131);
+            this.textBoxDPPasswordEnable.Name = "textBoxDPPasswordEnable";
+            this.textBoxDPPasswordEnable.Size = new System.Drawing.Size(106, 21);
+            this.textBoxDPPasswordEnable.TabIndex = 20;
+            this.textBoxDPPasswordEnable.Text = "1";
+            // 
+            // textBoxDPPasswordType
+            // 
+            this.textBoxDPPasswordType.Location = new System.Drawing.Point(636, 131);
+            this.textBoxDPPasswordType.Name = "textBoxDPPasswordType";
+            this.textBoxDPPasswordType.Size = new System.Drawing.Size(106, 21);
+            this.textBoxDPPasswordType.TabIndex = 19;
+            this.textBoxDPPasswordType.Text = "1";
+            // 
+            // textBoxDPPasswordId
+            // 
+            this.textBoxDPPasswordId.Location = new System.Drawing.Point(525, 131);
+            this.textBoxDPPasswordId.Name = "textBoxDPPasswordId";
+            this.textBoxDPPasswordId.Size = new System.Drawing.Size(106, 21);
+            this.textBoxDPPasswordId.TabIndex = 18;
+            this.textBoxDPPasswordId.Text = "1";
+            // 
+            // buttonDeleteDigitPassword
+            // 
+            this.buttonDeleteDigitPassword.Location = new System.Drawing.Point(124, 129);
+            this.buttonDeleteDigitPassword.Name = "buttonDeleteDigitPassword";
+            this.buttonDeleteDigitPassword.Size = new System.Drawing.Size(146, 23);
+            this.buttonDeleteDigitPassword.TabIndex = 17;
+            this.buttonDeleteDigitPassword.Text = "DeleteDigitPassword";
+            this.buttonDeleteDigitPassword.UseVisualStyleBackColor = true;
+            this.buttonDeleteDigitPassword.Click += new System.EventHandler(this.buttonDeleteDigitPassword_Click);
+            // 
+            // buttonAddDigitPassword
+            // 
+            this.buttonAddDigitPassword.Location = new System.Drawing.Point(4, 128);
+            this.buttonAddDigitPassword.Name = "buttonAddDigitPassword";
+            this.buttonAddDigitPassword.Size = new System.Drawing.Size(114, 23);
+            this.buttonAddDigitPassword.TabIndex = 16;
+            this.buttonAddDigitPassword.Text = "AddDigitPassword";
+            this.buttonAddDigitPassword.UseVisualStyleBackColor = true;
+            this.buttonAddDigitPassword.Click += new System.EventHandler(this.buttonAddDigitPassword_Click);
+            // 
+            // textBoxDPUserId
+            // 
+            this.textBoxDPUserId.Location = new System.Drawing.Point(413, 131);
+            this.textBoxDPUserId.Name = "textBoxDPUserId";
+            this.textBoxDPUserId.Size = new System.Drawing.Size(106, 21);
+            this.textBoxDPUserId.TabIndex = 15;
+            this.textBoxDPUserId.Text = "1";
+            // 
+            // textBoxUserType
+            // 
+            this.textBoxUserType.Location = new System.Drawing.Point(476, 90);
+            this.textBoxUserType.Name = "textBoxUserType";
+            this.textBoxUserType.Size = new System.Drawing.Size(106, 21);
+            this.textBoxUserType.TabIndex = 14;
+            this.textBoxUserType.Text = "1";
+            // 
+            // buttonDeleteUser
+            // 
+            this.buttonDeleteUser.Location = new System.Drawing.Point(124, 89);
+            this.buttonDeleteUser.Name = "buttonDeleteUser";
+            this.buttonDeleteUser.Size = new System.Drawing.Size(114, 23);
+            this.buttonDeleteUser.TabIndex = 13;
+            this.buttonDeleteUser.Text = "DeleteUser";
+            this.buttonDeleteUser.UseVisualStyleBackColor = true;
+            this.buttonDeleteUser.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // textBoxUserId
+            // 
+            this.textBoxUserId.Location = new System.Drawing.Point(364, 90);
+            this.textBoxUserId.Name = "textBoxUserId";
+            this.textBoxUserId.Size = new System.Drawing.Size(106, 21);
+            this.textBoxUserId.TabIndex = 12;
+            this.textBoxUserId.Text = "1";
+            // 
+            // buttonNewUser
+            // 
+            this.buttonNewUser.Location = new System.Drawing.Point(4, 88);
+            this.buttonNewUser.Name = "buttonNewUser";
+            this.buttonNewUser.Size = new System.Drawing.Size(114, 23);
+            this.buttonNewUser.TabIndex = 11;
+            this.buttonNewUser.Text = "NewUser";
+            this.buttonNewUser.UseVisualStyleBackColor = true;
+            this.buttonNewUser.Click += new System.EventHandler(this.buttonNewUser_Click);
+            // 
+            // textBoxTempPassword
+            // 
+            this.textBoxTempPassword.Location = new System.Drawing.Point(463, 49);
+            this.textBoxTempPassword.Name = "textBoxTempPassword";
+            this.textBoxTempPassword.Size = new System.Drawing.Size(106, 21);
+            this.textBoxTempPassword.TabIndex = 10;
+            // 
+            // buttonInvalidPassword
+            // 
+            this.buttonInvalidPassword.Location = new System.Drawing.Point(575, 48);
+            this.buttonInvalidPassword.Name = "buttonInvalidPassword";
+            this.buttonInvalidPassword.Size = new System.Drawing.Size(144, 23);
+            this.buttonInvalidPassword.TabIndex = 9;
+            this.buttonInvalidPassword.Text = "InvalidTempPassword";
+            this.buttonInvalidPassword.UseVisualStyleBackColor = true;
+            this.buttonInvalidPassword.Click += new System.EventHandler(this.buttonInvalidPassword_Click);
+            // 
+            // textBoxTempPasswordDstEp
+            // 
+            this.textBoxTempPasswordDstEp.Location = new System.Drawing.Point(351, 49);
+            this.textBoxTempPasswordDstEp.Name = "textBoxTempPasswordDstEp";
+            this.textBoxTempPasswordDstEp.Size = new System.Drawing.Size(106, 21);
+            this.textBoxTempPasswordDstEp.TabIndex = 8;
+            // 
+            // textBoxTempPasswordSrcEp
+            // 
+            this.textBoxTempPasswordSrcEp.Location = new System.Drawing.Point(238, 49);
+            this.textBoxTempPasswordSrcEp.Name = "textBoxTempPasswordSrcEp";
+            this.textBoxTempPasswordSrcEp.Size = new System.Drawing.Size(106, 21);
+            this.textBoxTempPasswordSrcEp.TabIndex = 7;
+            // 
+            // textBoxTempPasswordAddr
+            // 
+            this.textBoxTempPasswordAddr.Location = new System.Drawing.Point(124, 49);
+            this.textBoxTempPasswordAddr.Name = "textBoxTempPasswordAddr";
+            this.textBoxTempPasswordAddr.Size = new System.Drawing.Size(106, 21);
+            this.textBoxTempPasswordAddr.TabIndex = 6;
+            // 
+            // buttonSetTempPassword
+            // 
+            this.buttonSetTempPassword.Location = new System.Drawing.Point(4, 47);
+            this.buttonSetTempPassword.Name = "buttonSetTempPassword";
+            this.buttonSetTempPassword.Size = new System.Drawing.Size(114, 23);
+            this.buttonSetTempPassword.TabIndex = 5;
+            this.buttonSetTempPassword.Text = "SetTempPassword";
+            this.buttonSetTempPassword.UseVisualStyleBackColor = true;
+            this.buttonSetTempPassword.Click += new System.EventHandler(this.button1_Click);
             // 
             // comboBoxLockUnlock
             // 
             this.comboBoxLockUnlock.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxLockUnlock.FormattingEnabled = true;
-            this.comboBoxLockUnlock.Location = new System.Drawing.Point(537, 7);
-            this.comboBoxLockUnlock.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxLockUnlock.Location = new System.Drawing.Point(430, 6);
             this.comboBoxLockUnlock.Name = "comboBoxLockUnlock";
-            this.comboBoxLockUnlock.Size = new System.Drawing.Size(160, 24);
+            this.comboBoxLockUnlock.Size = new System.Drawing.Size(129, 20);
             this.comboBoxLockUnlock.TabIndex = 4;
             this.comboBoxLockUnlock.MouseLeave += new System.EventHandler(this.comboBoxLockUnlock_MouseLeave);
             this.comboBoxLockUnlock.MouseHover += new System.EventHandler(this.comboBoxLockUnlock_MouseHover);
             // 
             // textBoxLockUnlockDstEp
             // 
-            this.textBoxLockUnlockDstEp.Location = new System.Drawing.Point(396, 7);
-            this.textBoxLockUnlockDstEp.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxLockUnlockDstEp.Location = new System.Drawing.Point(317, 6);
             this.textBoxLockUnlockDstEp.Name = "textBoxLockUnlockDstEp";
-            this.textBoxLockUnlockDstEp.Size = new System.Drawing.Size(132, 22);
+            this.textBoxLockUnlockDstEp.Size = new System.Drawing.Size(106, 21);
             this.textBoxLockUnlockDstEp.TabIndex = 3;
             this.textBoxLockUnlockDstEp.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxLockUnlockDstEp_MouseClick);
             this.textBoxLockUnlockDstEp.Leave += new System.EventHandler(this.textBoxLockUnlockDstEp_Leave);
@@ -5122,10 +5188,9 @@
             // 
             // textBoxLockUnlockSrcEp
             // 
-            this.textBoxLockUnlockSrcEp.Location = new System.Drawing.Point(255, 7);
-            this.textBoxLockUnlockSrcEp.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxLockUnlockSrcEp.Location = new System.Drawing.Point(204, 6);
             this.textBoxLockUnlockSrcEp.Name = "textBoxLockUnlockSrcEp";
-            this.textBoxLockUnlockSrcEp.Size = new System.Drawing.Size(132, 22);
+            this.textBoxLockUnlockSrcEp.Size = new System.Drawing.Size(106, 21);
             this.textBoxLockUnlockSrcEp.TabIndex = 2;
             this.textBoxLockUnlockSrcEp.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxLockUnlockSrcEp_MouseClick);
             this.textBoxLockUnlockSrcEp.Leave += new System.EventHandler(this.textBoxLockUnlockSrcEp_Leave);
@@ -5134,10 +5199,9 @@
             // 
             // textBoxLockUnlockAddr
             // 
-            this.textBoxLockUnlockAddr.Location = new System.Drawing.Point(113, 7);
-            this.textBoxLockUnlockAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxLockUnlockAddr.Location = new System.Drawing.Point(90, 6);
             this.textBoxLockUnlockAddr.Name = "textBoxLockUnlockAddr";
-            this.textBoxLockUnlockAddr.Size = new System.Drawing.Size(132, 22);
+            this.textBoxLockUnlockAddr.Size = new System.Drawing.Size(106, 21);
             this.textBoxLockUnlockAddr.TabIndex = 1;
             this.textBoxLockUnlockAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxLockUnlockAddr_MouseClick);
             this.textBoxLockUnlockAddr.Leave += new System.EventHandler(this.textBoxLockUnlockAddr_Leave);
@@ -5146,10 +5210,9 @@
             // 
             // buttonLockUnlock
             // 
-            this.buttonLockUnlock.Location = new System.Drawing.Point(5, 5);
-            this.buttonLockUnlock.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonLockUnlock.Location = new System.Drawing.Point(4, 4);
             this.buttonLockUnlock.Name = "buttonLockUnlock";
-            this.buttonLockUnlock.Size = new System.Drawing.Size(100, 28);
+            this.buttonLockUnlock.Size = new System.Drawing.Size(80, 22);
             this.buttonLockUnlock.TabIndex = 0;
             this.buttonLockUnlock.Text = "LockUnlock";
             this.buttonLockUnlock.UseVisualStyleBackColor = true;
@@ -5165,11 +5228,10 @@
             this.tabPage13.Controls.Add(this.textBoxEnrollRspAddr);
             this.tabPage13.Controls.Add(this.comboBoxEnrollRspAddrMode);
             this.tabPage13.Controls.Add(this.buttonEnrollResponse);
-            this.tabPage13.Location = new System.Drawing.Point(4, 25);
-            this.tabPage13.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPage13.Location = new System.Drawing.Point(4, 22);
             this.tabPage13.Name = "tabPage13";
-            this.tabPage13.Padding = new System.Windows.Forms.Padding(4);
-            this.tabPage13.Size = new System.Drawing.Size(1691, 524);
+            this.tabPage13.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage13.Size = new System.Drawing.Size(1351, 416);
             this.tabPage13.TabIndex = 13;
             this.tabPage13.Text = "IAS Cluster";
             this.tabPage13.Click += new System.EventHandler(this.tabPage13_Click);
@@ -5178,20 +5240,18 @@
             // 
             this.comboBoxEnrollRspCode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxEnrollRspCode.FormattingEnabled = true;
-            this.comboBoxEnrollRspCode.Location = new System.Drawing.Point(681, 11);
-            this.comboBoxEnrollRspCode.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxEnrollRspCode.Location = new System.Drawing.Point(545, 9);
             this.comboBoxEnrollRspCode.Name = "comboBoxEnrollRspCode";
-            this.comboBoxEnrollRspCode.Size = new System.Drawing.Size(172, 24);
+            this.comboBoxEnrollRspCode.Size = new System.Drawing.Size(138, 20);
             this.comboBoxEnrollRspCode.TabIndex = 5;
             this.comboBoxEnrollRspCode.MouseLeave += new System.EventHandler(this.comboBoxEnrollRspCode_MouseLeave);
             this.comboBoxEnrollRspCode.MouseHover += new System.EventHandler(this.comboBoxEnrollRspCode_MouseHover);
             // 
             // textBoxEnrollRspZone
             // 
-            this.textBoxEnrollRspZone.Location = new System.Drawing.Point(863, 10);
-            this.textBoxEnrollRspZone.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxEnrollRspZone.Location = new System.Drawing.Point(690, 8);
             this.textBoxEnrollRspZone.Name = "textBoxEnrollRspZone";
-            this.textBoxEnrollRspZone.Size = new System.Drawing.Size(132, 22);
+            this.textBoxEnrollRspZone.Size = new System.Drawing.Size(106, 21);
             this.textBoxEnrollRspZone.TabIndex = 6;
             this.textBoxEnrollRspZone.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxEnrollRspZone_MouseClick);
             this.textBoxEnrollRspZone.Leave += new System.EventHandler(this.textBoxEnrollRspZone_Leave);
@@ -5200,10 +5260,9 @@
             // 
             // textBoxEnrollRspDstEp
             // 
-            this.textBoxEnrollRspDstEp.Location = new System.Drawing.Point(540, 11);
-            this.textBoxEnrollRspDstEp.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxEnrollRspDstEp.Location = new System.Drawing.Point(432, 9);
             this.textBoxEnrollRspDstEp.Name = "textBoxEnrollRspDstEp";
-            this.textBoxEnrollRspDstEp.Size = new System.Drawing.Size(132, 22);
+            this.textBoxEnrollRspDstEp.Size = new System.Drawing.Size(106, 21);
             this.textBoxEnrollRspDstEp.TabIndex = 4;
             this.textBoxEnrollRspDstEp.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxEnrollRspDstEp_MouseClick);
             this.textBoxEnrollRspDstEp.Leave += new System.EventHandler(this.textBoxEnrollRspDstEp_Leave);
@@ -5212,10 +5271,9 @@
             // 
             // textBoxEnrollRspSrcEp
             // 
-            this.textBoxEnrollRspSrcEp.Location = new System.Drawing.Point(399, 11);
-            this.textBoxEnrollRspSrcEp.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxEnrollRspSrcEp.Location = new System.Drawing.Point(319, 9);
             this.textBoxEnrollRspSrcEp.Name = "textBoxEnrollRspSrcEp";
-            this.textBoxEnrollRspSrcEp.Size = new System.Drawing.Size(132, 22);
+            this.textBoxEnrollRspSrcEp.Size = new System.Drawing.Size(106, 21);
             this.textBoxEnrollRspSrcEp.TabIndex = 3;
             this.textBoxEnrollRspSrcEp.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxEnrollRspSrcEp_MouseClick);
             this.textBoxEnrollRspSrcEp.Leave += new System.EventHandler(this.textBoxEnrollRspSrcEp_Leave);
@@ -5224,10 +5282,9 @@
             // 
             // textBoxEnrollRspAddr
             // 
-            this.textBoxEnrollRspAddr.Location = new System.Drawing.Point(257, 11);
-            this.textBoxEnrollRspAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxEnrollRspAddr.Location = new System.Drawing.Point(206, 9);
             this.textBoxEnrollRspAddr.Name = "textBoxEnrollRspAddr";
-            this.textBoxEnrollRspAddr.Size = new System.Drawing.Size(132, 22);
+            this.textBoxEnrollRspAddr.Size = new System.Drawing.Size(106, 21);
             this.textBoxEnrollRspAddr.TabIndex = 2;
             this.textBoxEnrollRspAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxEnrollRspAddr_MouseClick);
             this.textBoxEnrollRspAddr.Leave += new System.EventHandler(this.textBoxEnrollRspAddr_Leave);
@@ -5238,20 +5295,18 @@
             // 
             this.comboBoxEnrollRspAddrMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxEnrollRspAddrMode.FormattingEnabled = true;
-            this.comboBoxEnrollRspAddrMode.Location = new System.Drawing.Point(116, 10);
-            this.comboBoxEnrollRspAddrMode.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxEnrollRspAddrMode.Location = new System.Drawing.Point(93, 8);
             this.comboBoxEnrollRspAddrMode.Name = "comboBoxEnrollRspAddrMode";
-            this.comboBoxEnrollRspAddrMode.Size = new System.Drawing.Size(132, 24);
+            this.comboBoxEnrollRspAddrMode.Size = new System.Drawing.Size(106, 20);
             this.comboBoxEnrollRspAddrMode.TabIndex = 1;
             this.comboBoxEnrollRspAddrMode.MouseLeave += new System.EventHandler(this.comboBoxEnrollRspAddrMode_MouseLeave);
             this.comboBoxEnrollRspAddrMode.MouseHover += new System.EventHandler(this.comboBoxEnrollRspAddrMode_MouseHover);
             // 
             // buttonEnrollResponse
             // 
-            this.buttonEnrollResponse.Location = new System.Drawing.Point(8, 7);
-            this.buttonEnrollResponse.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonEnrollResponse.Location = new System.Drawing.Point(6, 6);
             this.buttonEnrollResponse.Name = "buttonEnrollResponse";
-            this.buttonEnrollResponse.Size = new System.Drawing.Size(100, 28);
+            this.buttonEnrollResponse.Size = new System.Drawing.Size(80, 22);
             this.buttonEnrollResponse.TabIndex = 0;
             this.buttonEnrollResponse.Text = "Enroll Rsp";
             this.buttonEnrollResponse.UseVisualStyleBackColor = true;
@@ -5262,20 +5317,18 @@
             this.tabPage9.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tabPage9.Controls.Add(this.buttonZllTouchlinkFactoryReset);
             this.tabPage9.Controls.Add(this.buttonZllTouchlinkInitiate);
-            this.tabPage9.Location = new System.Drawing.Point(4, 25);
-            this.tabPage9.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPage9.Location = new System.Drawing.Point(4, 22);
             this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Size = new System.Drawing.Size(1691, 524);
+            this.tabPage9.Size = new System.Drawing.Size(1351, 416);
             this.tabPage9.TabIndex = 9;
             this.tabPage9.Text = "ZLL Touchlink";
             this.tabPage9.Click += new System.EventHandler(this.tabPage9_Click);
             // 
             // buttonZllTouchlinkFactoryReset
             // 
-            this.buttonZllTouchlinkFactoryReset.Location = new System.Drawing.Point(5, 42);
-            this.buttonZllTouchlinkFactoryReset.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonZllTouchlinkFactoryReset.Location = new System.Drawing.Point(4, 34);
             this.buttonZllTouchlinkFactoryReset.Name = "buttonZllTouchlinkFactoryReset";
-            this.buttonZllTouchlinkFactoryReset.Size = new System.Drawing.Size(100, 28);
+            this.buttonZllTouchlinkFactoryReset.Size = new System.Drawing.Size(80, 22);
             this.buttonZllTouchlinkFactoryReset.TabIndex = 1;
             this.buttonZllTouchlinkFactoryReset.Text = "Reset";
             this.buttonZllTouchlinkFactoryReset.UseVisualStyleBackColor = true;
@@ -5283,10 +5336,9 @@
             // 
             // buttonZllTouchlinkInitiate
             // 
-            this.buttonZllTouchlinkInitiate.Location = new System.Drawing.Point(5, 5);
-            this.buttonZllTouchlinkInitiate.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonZllTouchlinkInitiate.Location = new System.Drawing.Point(4, 4);
             this.buttonZllTouchlinkInitiate.Name = "buttonZllTouchlinkInitiate";
-            this.buttonZllTouchlinkInitiate.Size = new System.Drawing.Size(100, 28);
+            this.buttonZllTouchlinkInitiate.Size = new System.Drawing.Size(80, 22);
             this.buttonZllTouchlinkInitiate.TabIndex = 0;
             this.buttonZllTouchlinkInitiate.Text = "Initiate";
             this.buttonZllTouchlinkInitiate.UseVisualStyleBackColor = true;
@@ -5301,10 +5353,9 @@
             this.tabPage10.Controls.Add(this.textBoxZllOnOffEffectsSrcEp);
             this.tabPage10.Controls.Add(this.textBoxZllOnOffEffectsAddr);
             this.tabPage10.Controls.Add(this.buttonZllOnOffEffects);
-            this.tabPage10.Location = new System.Drawing.Point(4, 25);
-            this.tabPage10.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPage10.Location = new System.Drawing.Point(4, 22);
             this.tabPage10.Name = "tabPage10";
-            this.tabPage10.Size = new System.Drawing.Size(1691, 524);
+            this.tabPage10.Size = new System.Drawing.Size(1351, 416);
             this.tabPage10.TabIndex = 10;
             this.tabPage10.Text = "ZLL On/Off Cluster";
             this.tabPage10.Click += new System.EventHandler(this.tabPage10_Click);
@@ -5313,20 +5364,18 @@
             // 
             this.comboBoxZllOnOffEffectID.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxZllOnOffEffectID.FormattingEnabled = true;
-            this.comboBoxZllOnOffEffectID.Location = new System.Drawing.Point(551, 7);
-            this.comboBoxZllOnOffEffectID.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxZllOnOffEffectID.Location = new System.Drawing.Point(441, 6);
             this.comboBoxZllOnOffEffectID.Name = "comboBoxZllOnOffEffectID";
-            this.comboBoxZllOnOffEffectID.Size = new System.Drawing.Size(160, 24);
+            this.comboBoxZllOnOffEffectID.Size = new System.Drawing.Size(129, 20);
             this.comboBoxZllOnOffEffectID.TabIndex = 4;
             this.comboBoxZllOnOffEffectID.MouseLeave += new System.EventHandler(this.comboBoxZllOnOffEffectID_MouseLeave);
             this.comboBoxZllOnOffEffectID.MouseHover += new System.EventHandler(this.comboBoxZllOnOffEffectID_MouseHover);
             // 
             // textBoxZllOnOffEffectsGradient
             // 
-            this.textBoxZllOnOffEffectsGradient.Location = new System.Drawing.Point(720, 7);
-            this.textBoxZllOnOffEffectsGradient.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxZllOnOffEffectsGradient.Location = new System.Drawing.Point(576, 6);
             this.textBoxZllOnOffEffectsGradient.Name = "textBoxZllOnOffEffectsGradient";
-            this.textBoxZllOnOffEffectsGradient.Size = new System.Drawing.Size(132, 22);
+            this.textBoxZllOnOffEffectsGradient.Size = new System.Drawing.Size(106, 21);
             this.textBoxZllOnOffEffectsGradient.TabIndex = 5;
             this.textBoxZllOnOffEffectsGradient.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxZllOnOffEffectsGradient_MouseClick);
             this.textBoxZllOnOffEffectsGradient.Leave += new System.EventHandler(this.textBoxZllOnOffEffectsGradient_Leave);
@@ -5335,10 +5384,9 @@
             // 
             // textBoxZllOnOffEffectsDstEp
             // 
-            this.textBoxZllOnOffEffectsDstEp.Location = new System.Drawing.Point(409, 7);
-            this.textBoxZllOnOffEffectsDstEp.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxZllOnOffEffectsDstEp.Location = new System.Drawing.Point(327, 6);
             this.textBoxZllOnOffEffectsDstEp.Name = "textBoxZllOnOffEffectsDstEp";
-            this.textBoxZllOnOffEffectsDstEp.Size = new System.Drawing.Size(132, 22);
+            this.textBoxZllOnOffEffectsDstEp.Size = new System.Drawing.Size(106, 21);
             this.textBoxZllOnOffEffectsDstEp.TabIndex = 3;
             this.textBoxZllOnOffEffectsDstEp.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxZllOnOffEffectsDstEp_MouseClick);
             this.textBoxZllOnOffEffectsDstEp.Leave += new System.EventHandler(this.textBoxZllOnOffEffectsDstEp_Leave);
@@ -5346,10 +5394,9 @@
             // 
             // textBoxZllOnOffEffectsSrcEp
             // 
-            this.textBoxZllOnOffEffectsSrcEp.Location = new System.Drawing.Point(268, 7);
-            this.textBoxZllOnOffEffectsSrcEp.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxZllOnOffEffectsSrcEp.Location = new System.Drawing.Point(214, 6);
             this.textBoxZllOnOffEffectsSrcEp.Name = "textBoxZllOnOffEffectsSrcEp";
-            this.textBoxZllOnOffEffectsSrcEp.Size = new System.Drawing.Size(132, 22);
+            this.textBoxZllOnOffEffectsSrcEp.Size = new System.Drawing.Size(106, 21);
             this.textBoxZllOnOffEffectsSrcEp.TabIndex = 2;
             this.textBoxZllOnOffEffectsSrcEp.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxZllOnOffEffectsSrcEp_MouseClick);
             this.textBoxZllOnOffEffectsSrcEp.Leave += new System.EventHandler(this.textBoxZllOnOffEffectsSrcEp_Leave);
@@ -5358,10 +5405,9 @@
             // 
             // textBoxZllOnOffEffectsAddr
             // 
-            this.textBoxZllOnOffEffectsAddr.Location = new System.Drawing.Point(127, 7);
-            this.textBoxZllOnOffEffectsAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxZllOnOffEffectsAddr.Location = new System.Drawing.Point(102, 6);
             this.textBoxZllOnOffEffectsAddr.Name = "textBoxZllOnOffEffectsAddr";
-            this.textBoxZllOnOffEffectsAddr.Size = new System.Drawing.Size(132, 22);
+            this.textBoxZllOnOffEffectsAddr.Size = new System.Drawing.Size(106, 21);
             this.textBoxZllOnOffEffectsAddr.TabIndex = 1;
             this.textBoxZllOnOffEffectsAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxZllOnOffEffectsAddr_MouseClick);
             this.textBoxZllOnOffEffectsAddr.Leave += new System.EventHandler(this.textBoxZllOnOffEffectsAddr_Leave);
@@ -5370,10 +5416,9 @@
             // 
             // buttonZllOnOffEffects
             // 
-            this.buttonZllOnOffEffects.Location = new System.Drawing.Point(5, 5);
-            this.buttonZllOnOffEffects.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonZllOnOffEffects.Location = new System.Drawing.Point(4, 4);
             this.buttonZllOnOffEffects.Name = "buttonZllOnOffEffects";
-            this.buttonZllOnOffEffects.Size = new System.Drawing.Size(113, 28);
+            this.buttonZllOnOffEffects.Size = new System.Drawing.Size(90, 22);
             this.buttonZllOnOffEffects.TabIndex = 0;
             this.buttonZllOnOffEffects.Text = "On/Off Effects";
             this.buttonZllOnOffEffects.UseVisualStyleBackColor = true;
@@ -5393,20 +5438,18 @@
             this.tabPage11.Controls.Add(this.button6);
             this.tabPage11.Controls.Add(this.button5);
             this.tabPage11.Controls.Add(this.buttonZllMoveToHue);
-            this.tabPage11.Location = new System.Drawing.Point(4, 25);
-            this.tabPage11.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPage11.Location = new System.Drawing.Point(4, 22);
             this.tabPage11.Name = "tabPage11";
-            this.tabPage11.Size = new System.Drawing.Size(1691, 524);
+            this.tabPage11.Size = new System.Drawing.Size(1351, 416);
             this.tabPage11.TabIndex = 11;
             this.tabPage11.Text = "ZLL Color Cluster";
             this.tabPage11.Click += new System.EventHandler(this.tabPage11_Click);
             // 
             // textBoxZllMoveToHueHue
             // 
-            this.textBoxZllMoveToHueHue.Location = new System.Drawing.Point(551, 7);
-            this.textBoxZllMoveToHueHue.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxZllMoveToHueHue.Location = new System.Drawing.Point(441, 6);
             this.textBoxZllMoveToHueHue.Name = "textBoxZllMoveToHueHue";
-            this.textBoxZllMoveToHueHue.Size = new System.Drawing.Size(132, 22);
+            this.textBoxZllMoveToHueHue.Size = new System.Drawing.Size(106, 21);
             this.textBoxZllMoveToHueHue.TabIndex = 4;
             this.textBoxZllMoveToHueHue.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxZllMoveToHueHue_MouseClick);
             this.textBoxZllMoveToHueHue.Leave += new System.EventHandler(this.textBoxZllMoveToHueHue_Leave);
@@ -5415,10 +5458,9 @@
             // 
             // textBoxZllMoveToHueTransTime
             // 
-            this.textBoxZllMoveToHueTransTime.Location = new System.Drawing.Point(833, 7);
-            this.textBoxZllMoveToHueTransTime.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxZllMoveToHueTransTime.Location = new System.Drawing.Point(666, 6);
             this.textBoxZllMoveToHueTransTime.Name = "textBoxZllMoveToHueTransTime";
-            this.textBoxZllMoveToHueTransTime.Size = new System.Drawing.Size(132, 22);
+            this.textBoxZllMoveToHueTransTime.Size = new System.Drawing.Size(106, 21);
             this.textBoxZllMoveToHueTransTime.TabIndex = 6;
             this.textBoxZllMoveToHueTransTime.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxZllMoveToHueTransTime_MouseClick);
             this.textBoxZllMoveToHueTransTime.Leave += new System.EventHandler(this.textBoxZllMoveToHueTransTime_Leave);
@@ -5427,10 +5469,9 @@
             // 
             // textBoxZllMoveToHueDirection
             // 
-            this.textBoxZllMoveToHueDirection.Location = new System.Drawing.Point(692, 7);
-            this.textBoxZllMoveToHueDirection.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxZllMoveToHueDirection.Location = new System.Drawing.Point(554, 6);
             this.textBoxZllMoveToHueDirection.Name = "textBoxZllMoveToHueDirection";
-            this.textBoxZllMoveToHueDirection.Size = new System.Drawing.Size(132, 22);
+            this.textBoxZllMoveToHueDirection.Size = new System.Drawing.Size(106, 21);
             this.textBoxZllMoveToHueDirection.TabIndex = 5;
             this.textBoxZllMoveToHueDirection.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxZllMoveToHueDirection_MouseClick);
             this.textBoxZllMoveToHueDirection.Leave += new System.EventHandler(this.textBoxZllMoveToHueDirection_Leave);
@@ -5439,10 +5480,9 @@
             // 
             // textBoxZllMoveToHueDstEp
             // 
-            this.textBoxZllMoveToHueDstEp.Location = new System.Drawing.Point(409, 7);
-            this.textBoxZllMoveToHueDstEp.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxZllMoveToHueDstEp.Location = new System.Drawing.Point(327, 6);
             this.textBoxZllMoveToHueDstEp.Name = "textBoxZllMoveToHueDstEp";
-            this.textBoxZllMoveToHueDstEp.Size = new System.Drawing.Size(132, 22);
+            this.textBoxZllMoveToHueDstEp.Size = new System.Drawing.Size(106, 21);
             this.textBoxZllMoveToHueDstEp.TabIndex = 3;
             this.textBoxZllMoveToHueDstEp.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxZllMoveToHueDstEp_MouseClick);
             this.textBoxZllMoveToHueDstEp.Leave += new System.EventHandler(this.textBoxZllMoveToHueDstEp_Leave);
@@ -5451,10 +5491,9 @@
             // 
             // textBoxZllMoveToHueSrcEp
             // 
-            this.textBoxZllMoveToHueSrcEp.Location = new System.Drawing.Point(268, 7);
-            this.textBoxZllMoveToHueSrcEp.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxZllMoveToHueSrcEp.Location = new System.Drawing.Point(214, 6);
             this.textBoxZllMoveToHueSrcEp.Name = "textBoxZllMoveToHueSrcEp";
-            this.textBoxZllMoveToHueSrcEp.Size = new System.Drawing.Size(132, 22);
+            this.textBoxZllMoveToHueSrcEp.Size = new System.Drawing.Size(106, 21);
             this.textBoxZllMoveToHueSrcEp.TabIndex = 2;
             this.textBoxZllMoveToHueSrcEp.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxZllMoveToHueSrcEp_MouseClick);
             this.textBoxZllMoveToHueSrcEp.Leave += new System.EventHandler(this.textBoxZllMoveToHueSrcEp_Leave);
@@ -5463,10 +5502,9 @@
             // 
             // textBoxZllMoveToHueAddr
             // 
-            this.textBoxZllMoveToHueAddr.Location = new System.Drawing.Point(127, 7);
-            this.textBoxZllMoveToHueAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxZllMoveToHueAddr.Location = new System.Drawing.Point(102, 6);
             this.textBoxZllMoveToHueAddr.Name = "textBoxZllMoveToHueAddr";
-            this.textBoxZllMoveToHueAddr.Size = new System.Drawing.Size(132, 22);
+            this.textBoxZllMoveToHueAddr.Size = new System.Drawing.Size(106, 21);
             this.textBoxZllMoveToHueAddr.TabIndex = 1;
             this.textBoxZllMoveToHueAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxZllMoveToHueAddr_MouseClick);
             this.textBoxZllMoveToHueAddr.Leave += new System.EventHandler(this.textBoxZllMoveToHueAddr_Leave);
@@ -5475,10 +5513,9 @@
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(5, 153);
-            this.button8.Margin = new System.Windows.Forms.Padding(4);
+            this.button8.Location = new System.Drawing.Point(4, 122);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(113, 28);
+            this.button8.Size = new System.Drawing.Size(90, 22);
             this.button8.TabIndex = 0;
             this.button8.Text = "Color Loop";
             this.button8.UseVisualStyleBackColor = true;
@@ -5486,10 +5523,9 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(5, 116);
-            this.button7.Margin = new System.Windows.Forms.Padding(4);
+            this.button7.Location = new System.Drawing.Point(4, 93);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(113, 28);
+            this.button7.Size = new System.Drawing.Size(90, 22);
             this.button7.TabIndex = 0;
             this.button7.Text = "Hue and Sat";
             this.button7.UseVisualStyleBackColor = true;
@@ -5497,10 +5533,9 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(5, 79);
-            this.button6.Margin = new System.Windows.Forms.Padding(4);
+            this.button6.Location = new System.Drawing.Point(4, 63);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(113, 28);
+            this.button6.Size = new System.Drawing.Size(90, 22);
             this.button6.TabIndex = 0;
             this.button6.Text = "Step Hue";
             this.button6.UseVisualStyleBackColor = true;
@@ -5508,10 +5543,9 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(5, 42);
-            this.button5.Margin = new System.Windows.Forms.Padding(4);
+            this.button5.Location = new System.Drawing.Point(4, 34);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(113, 28);
+            this.button5.Size = new System.Drawing.Size(90, 22);
             this.button5.TabIndex = 0;
             this.button5.Text = "Move Hue";
             this.button5.UseVisualStyleBackColor = true;
@@ -5519,10 +5553,9 @@
             // 
             // buttonZllMoveToHue
             // 
-            this.buttonZllMoveToHue.Location = new System.Drawing.Point(5, 5);
-            this.buttonZllMoveToHue.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonZllMoveToHue.Location = new System.Drawing.Point(4, 4);
             this.buttonZllMoveToHue.Name = "buttonZllMoveToHue";
-            this.buttonZllMoveToHue.Size = new System.Drawing.Size(113, 28);
+            this.buttonZllMoveToHue.Size = new System.Drawing.Size(90, 22);
             this.buttonZllMoveToHue.TabIndex = 0;
             this.buttonZllMoveToHue.Text = "Move to Hue";
             this.buttonZllMoveToHue.UseVisualStyleBackColor = true;
@@ -5574,134 +5607,120 @@
             this.tabPage14.Controls.Add(this.label1);
             this.tabPage14.Controls.Add(this.textBoxOtaFileManuCode);
             this.tabPage14.Controls.Add(this.buttonOTALoadNewImage);
-            this.tabPage14.Location = new System.Drawing.Point(4, 25);
-            this.tabPage14.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPage14.Location = new System.Drawing.Point(4, 22);
             this.tabPage14.Name = "tabPage14";
-            this.tabPage14.Size = new System.Drawing.Size(1691, 524);
+            this.tabPage14.Size = new System.Drawing.Size(1351, 416);
             this.tabPage14.TabIndex = 14;
             this.tabPage14.Text = "OTA Cluster";
             this.tabPage14.Click += new System.EventHandler(this.tabPage14_Click);
             // 
             // textBoxOtaFileStackVer
             // 
-            this.textBoxOtaFileStackVer.Location = new System.Drawing.Point(195, 41);
-            this.textBoxOtaFileStackVer.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxOtaFileStackVer.Location = new System.Drawing.Point(156, 33);
             this.textBoxOtaFileStackVer.Name = "textBoxOtaFileStackVer";
             this.textBoxOtaFileStackVer.ReadOnly = true;
-            this.textBoxOtaFileStackVer.Size = new System.Drawing.Size(113, 22);
+            this.textBoxOtaFileStackVer.Size = new System.Drawing.Size(91, 21);
             this.textBoxOtaFileStackVer.TabIndex = 8;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(117, 44);
-            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label15.Location = new System.Drawing.Point(94, 35);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(69, 17);
+            this.label15.Size = new System.Drawing.Size(59, 12);
             this.label15.TabIndex = 0;
             this.label15.Text = "Stack Ver";
             // 
             // textBoxOtaFileHeaderVer
             // 
-            this.textBoxOtaFileHeaderVer.Location = new System.Drawing.Point(363, 9);
-            this.textBoxOtaFileHeaderVer.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxOtaFileHeaderVer.Location = new System.Drawing.Point(290, 7);
             this.textBoxOtaFileHeaderVer.Name = "textBoxOtaFileHeaderVer";
             this.textBoxOtaFileHeaderVer.ReadOnly = true;
-            this.textBoxOtaFileHeaderVer.Size = new System.Drawing.Size(92, 22);
+            this.textBoxOtaFileHeaderVer.Size = new System.Drawing.Size(74, 21);
             this.textBoxOtaFileHeaderVer.TabIndex = 2;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(273, 12);
-            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label14.Location = new System.Drawing.Point(218, 10);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(81, 17);
+            this.label14.Size = new System.Drawing.Size(65, 12);
             this.label14.TabIndex = 0;
             this.label14.Text = "Header Ver";
             // 
             // textBoxOtaFileHeaderLen
             // 
-            this.textBoxOtaFileHeaderLen.Location = new System.Drawing.Point(553, 9);
-            this.textBoxOtaFileHeaderLen.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxOtaFileHeaderLen.Location = new System.Drawing.Point(442, 7);
             this.textBoxOtaFileHeaderLen.Name = "textBoxOtaFileHeaderLen";
             this.textBoxOtaFileHeaderLen.ReadOnly = true;
-            this.textBoxOtaFileHeaderLen.Size = new System.Drawing.Size(92, 22);
+            this.textBoxOtaFileHeaderLen.Size = new System.Drawing.Size(74, 21);
             this.textBoxOtaFileHeaderLen.TabIndex = 3;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(461, 12);
-            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Location = new System.Drawing.Point(369, 10);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(83, 17);
+            this.label13.Size = new System.Drawing.Size(65, 12);
             this.label13.TabIndex = 0;
             this.label13.Text = "Header Len";
             // 
             // textBoxOtaFileHeaderFCTL
             // 
-            this.textBoxOtaFileHeaderFCTL.Location = new System.Drawing.Point(755, 9);
-            this.textBoxOtaFileHeaderFCTL.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxOtaFileHeaderFCTL.Location = new System.Drawing.Point(604, 7);
             this.textBoxOtaFileHeaderFCTL.Name = "textBoxOtaFileHeaderFCTL";
             this.textBoxOtaFileHeaderFCTL.ReadOnly = true;
-            this.textBoxOtaFileHeaderFCTL.Size = new System.Drawing.Size(92, 22);
+            this.textBoxOtaFileHeaderFCTL.Size = new System.Drawing.Size(74, 21);
             this.textBoxOtaFileHeaderFCTL.TabIndex = 4;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(653, 12);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Location = new System.Drawing.Point(522, 10);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(93, 17);
+            this.label12.Size = new System.Drawing.Size(71, 12);
             this.label12.TabIndex = 0;
             this.label12.Text = "Header FCTL";
             // 
             // textBoxOtaFileID
             // 
-            this.textBoxOtaFileID.Location = new System.Drawing.Point(173, 9);
-            this.textBoxOtaFileID.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxOtaFileID.Location = new System.Drawing.Point(138, 7);
             this.textBoxOtaFileID.Name = "textBoxOtaFileID";
             this.textBoxOtaFileID.ReadOnly = true;
-            this.textBoxOtaFileID.Size = new System.Drawing.Size(92, 22);
+            this.textBoxOtaFileID.Size = new System.Drawing.Size(74, 21);
             this.textBoxOtaFileID.TabIndex = 1;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(117, 12);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Location = new System.Drawing.Point(94, 10);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(47, 17);
+            this.label11.Size = new System.Drawing.Size(47, 12);
             this.label11.TabIndex = 0;
             this.label11.Text = "File ID";
             // 
             // textBoxOtaFileHeaderStr
             // 
-            this.textBoxOtaFileHeaderStr.Location = new System.Drawing.Point(547, 41);
-            this.textBoxOtaFileHeaderStr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxOtaFileHeaderStr.Location = new System.Drawing.Point(438, 33);
             this.textBoxOtaFileHeaderStr.Name = "textBoxOtaFileHeaderStr";
             this.textBoxOtaFileHeaderStr.ReadOnly = true;
-            this.textBoxOtaFileHeaderStr.Size = new System.Drawing.Size(276, 22);
+            this.textBoxOtaFileHeaderStr.Size = new System.Drawing.Size(222, 21);
             this.textBoxOtaFileHeaderStr.TabIndex = 10;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(461, 44);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Location = new System.Drawing.Point(369, 35);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(77, 17);
+            this.label10.Size = new System.Drawing.Size(65, 12);
             this.label10.TabIndex = 0;
             this.label10.Text = "Header Str";
             // 
             // textBoxOTASetWaitForDataParamsRequestBlockDelay
             // 
-            this.textBoxOTASetWaitForDataParamsRequestBlockDelay.Location = new System.Drawing.Point(724, 110);
-            this.textBoxOTASetWaitForDataParamsRequestBlockDelay.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxOTASetWaitForDataParamsRequestBlockDelay.Location = new System.Drawing.Point(579, 88);
             this.textBoxOTASetWaitForDataParamsRequestBlockDelay.Name = "textBoxOTASetWaitForDataParamsRequestBlockDelay";
-            this.textBoxOTASetWaitForDataParamsRequestBlockDelay.Size = new System.Drawing.Size(152, 22);
+            this.textBoxOTASetWaitForDataParamsRequestBlockDelay.Size = new System.Drawing.Size(122, 21);
             this.textBoxOTASetWaitForDataParamsRequestBlockDelay.TabIndex = 26;
             this.textBoxOTASetWaitForDataParamsRequestBlockDelay.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxOTASetWaitForDataParamsRequestBlockDelay_MouseClick);
             this.textBoxOTASetWaitForDataParamsRequestBlockDelay.Leave += new System.EventHandler(this.textBoxOTASetWaitForDataParamsRequestBlockDelay_Leave);
@@ -5710,10 +5729,9 @@
             // 
             // textBoxOTASetWaitForDataParamsRequestTime
             // 
-            this.textBoxOTASetWaitForDataParamsRequestTime.Location = new System.Drawing.Point(563, 110);
-            this.textBoxOTASetWaitForDataParamsRequestTime.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxOTASetWaitForDataParamsRequestTime.Location = new System.Drawing.Point(450, 88);
             this.textBoxOTASetWaitForDataParamsRequestTime.Name = "textBoxOTASetWaitForDataParamsRequestTime";
-            this.textBoxOTASetWaitForDataParamsRequestTime.Size = new System.Drawing.Size(152, 22);
+            this.textBoxOTASetWaitForDataParamsRequestTime.Size = new System.Drawing.Size(122, 21);
             this.textBoxOTASetWaitForDataParamsRequestTime.TabIndex = 25;
             this.textBoxOTASetWaitForDataParamsRequestTime.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxOTASetWaitForDataParamsRequestTime_MouseClick);
             this.textBoxOTASetWaitForDataParamsRequestTime.Leave += new System.EventHandler(this.textBoxOTASetWaitForDataParamsRequestTime_Leave);
@@ -5722,10 +5740,9 @@
             // 
             // textBoxOTASetWaitForDataParamsCurrentTime
             // 
-            this.textBoxOTASetWaitForDataParamsCurrentTime.Location = new System.Drawing.Point(401, 110);
-            this.textBoxOTASetWaitForDataParamsCurrentTime.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxOTASetWaitForDataParamsCurrentTime.Location = new System.Drawing.Point(321, 88);
             this.textBoxOTASetWaitForDataParamsCurrentTime.Name = "textBoxOTASetWaitForDataParamsCurrentTime";
-            this.textBoxOTASetWaitForDataParamsCurrentTime.Size = new System.Drawing.Size(152, 22);
+            this.textBoxOTASetWaitForDataParamsCurrentTime.Size = new System.Drawing.Size(122, 21);
             this.textBoxOTASetWaitForDataParamsCurrentTime.TabIndex = 24;
             this.textBoxOTASetWaitForDataParamsCurrentTime.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxOTASetWaitForDataParamsCurrentTime_MouseClick);
             this.textBoxOTASetWaitForDataParamsCurrentTime.Leave += new System.EventHandler(this.textBoxOTASetWaitForDataParamsCurrentTime_Leave);
@@ -5734,10 +5751,9 @@
             // 
             // textBoxOTASetWaitForDataParamsSrcEP
             // 
-            this.textBoxOTASetWaitForDataParamsSrcEP.Location = new System.Drawing.Point(261, 110);
-            this.textBoxOTASetWaitForDataParamsSrcEP.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxOTASetWaitForDataParamsSrcEP.Location = new System.Drawing.Point(209, 88);
             this.textBoxOTASetWaitForDataParamsSrcEP.Name = "textBoxOTASetWaitForDataParamsSrcEP";
-            this.textBoxOTASetWaitForDataParamsSrcEP.Size = new System.Drawing.Size(132, 22);
+            this.textBoxOTASetWaitForDataParamsSrcEP.Size = new System.Drawing.Size(106, 21);
             this.textBoxOTASetWaitForDataParamsSrcEP.TabIndex = 23;
             this.textBoxOTASetWaitForDataParamsSrcEP.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxOTASetWaitForDataParamsSrcEP_MouseClick);
             this.textBoxOTASetWaitForDataParamsSrcEP.Leave += new System.EventHandler(this.textBoxOTASetWaitForDataParamsSrcEP_Leave);
@@ -5746,10 +5762,9 @@
             // 
             // textBoxOTASetWaitForDataParamsTargetAddr
             // 
-            this.textBoxOTASetWaitForDataParamsTargetAddr.Location = new System.Drawing.Point(121, 110);
-            this.textBoxOTASetWaitForDataParamsTargetAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxOTASetWaitForDataParamsTargetAddr.Location = new System.Drawing.Point(97, 88);
             this.textBoxOTASetWaitForDataParamsTargetAddr.Name = "textBoxOTASetWaitForDataParamsTargetAddr";
-            this.textBoxOTASetWaitForDataParamsTargetAddr.Size = new System.Drawing.Size(132, 22);
+            this.textBoxOTASetWaitForDataParamsTargetAddr.Size = new System.Drawing.Size(106, 21);
             this.textBoxOTASetWaitForDataParamsTargetAddr.TabIndex = 22;
             this.textBoxOTASetWaitForDataParamsTargetAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxOTASetWaitForDataParamsTargetAddr_MouseClick);
             this.textBoxOTASetWaitForDataParamsTargetAddr.Leave += new System.EventHandler(this.textBoxOTASetWaitForDataParamsTargetAddr_Leave);
@@ -5758,10 +5773,9 @@
             // 
             // buttonOTASetWaitForDataParams
             // 
-            this.buttonOTASetWaitForDataParams.Location = new System.Drawing.Point(5, 105);
-            this.buttonOTASetWaitForDataParams.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonOTASetWaitForDataParams.Location = new System.Drawing.Point(4, 84);
             this.buttonOTASetWaitForDataParams.Name = "buttonOTASetWaitForDataParams";
-            this.buttonOTASetWaitForDataParams.Size = new System.Drawing.Size(108, 32);
+            this.buttonOTASetWaitForDataParams.Size = new System.Drawing.Size(86, 26);
             this.buttonOTASetWaitForDataParams.TabIndex = 21;
             this.buttonOTASetWaitForDataParams.Text = "WaitParams";
             this.buttonOTASetWaitForDataParams.UseVisualStyleBackColor = true;
@@ -5769,68 +5783,61 @@
             // 
             // textBoxOtaFileOffset
             // 
-            this.textBoxOtaFileOffset.Location = new System.Drawing.Point(949, 145);
-            this.textBoxOtaFileOffset.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxOtaFileOffset.Location = new System.Drawing.Point(759, 116);
             this.textBoxOtaFileOffset.Name = "textBoxOtaFileOffset";
             this.textBoxOtaFileOffset.ReadOnly = true;
-            this.textBoxOtaFileOffset.Size = new System.Drawing.Size(128, 22);
+            this.textBoxOtaFileOffset.Size = new System.Drawing.Size(103, 21);
             this.textBoxOtaFileOffset.TabIndex = 28;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(869, 149);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Location = new System.Drawing.Point(695, 119);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(72, 17);
+            this.label9.Size = new System.Drawing.Size(71, 12);
             this.label9.TabIndex = 0;
             this.label9.Text = "File Offset";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(261, 149);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Location = new System.Drawing.Point(209, 119);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(65, 17);
+            this.label8.Size = new System.Drawing.Size(53, 12);
             this.label8.TabIndex = 0;
             this.label8.Text = "Progress";
             // 
             // textBoxOtaDownloadStatus
             // 
-            this.textBoxOtaDownloadStatus.Location = new System.Drawing.Point(121, 145);
-            this.textBoxOtaDownloadStatus.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxOtaDownloadStatus.Location = new System.Drawing.Point(97, 116);
             this.textBoxOtaDownloadStatus.Name = "textBoxOtaDownloadStatus";
             this.textBoxOtaDownloadStatus.ReadOnly = true;
-            this.textBoxOtaDownloadStatus.Size = new System.Drawing.Size(132, 22);
+            this.textBoxOtaDownloadStatus.Size = new System.Drawing.Size(106, 21);
             this.textBoxOtaDownloadStatus.TabIndex = 27;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(5, 149);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(4, 119);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(114, 17);
+            this.label7.Size = new System.Drawing.Size(95, 12);
             this.label7.TabIndex = 0;
             this.label7.Text = "Download Status";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // progressBarOtaDownloadProgress
             // 
-            this.progressBarOtaDownloadProgress.Location = new System.Drawing.Point(333, 142);
-            this.progressBarOtaDownloadProgress.Margin = new System.Windows.Forms.Padding(4);
+            this.progressBarOtaDownloadProgress.Location = new System.Drawing.Point(266, 114);
             this.progressBarOtaDownloadProgress.Maximum = 1000;
             this.progressBarOtaDownloadProgress.Name = "progressBarOtaDownloadProgress";
-            this.progressBarOtaDownloadProgress.Size = new System.Drawing.Size(527, 27);
+            this.progressBarOtaDownloadProgress.Size = new System.Drawing.Size(422, 22);
             this.progressBarOtaDownloadProgress.TabIndex = 0;
             // 
             // textBoxOTAImageNotifyJitter
             // 
-            this.textBoxOTAImageNotifyJitter.Location = new System.Drawing.Point(1325, 70);
-            this.textBoxOTAImageNotifyJitter.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxOTAImageNotifyJitter.Location = new System.Drawing.Point(1060, 56);
             this.textBoxOTAImageNotifyJitter.Name = "textBoxOTAImageNotifyJitter";
-            this.textBoxOTAImageNotifyJitter.Size = new System.Drawing.Size(145, 22);
+            this.textBoxOTAImageNotifyJitter.Size = new System.Drawing.Size(117, 21);
             this.textBoxOTAImageNotifyJitter.TabIndex = 20;
             this.textBoxOTAImageNotifyJitter.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxOTAImageNotifyJitter_MouseClick);
             this.textBoxOTAImageNotifyJitter.Leave += new System.EventHandler(this.textBoxOTAImageNotifyJitter_Leave);
@@ -5839,10 +5846,9 @@
             // 
             // textBoxOTAImageNotifyManuID
             // 
-            this.textBoxOTAImageNotifyManuID.Location = new System.Drawing.Point(1179, 70);
-            this.textBoxOTAImageNotifyManuID.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxOTAImageNotifyManuID.Location = new System.Drawing.Point(943, 56);
             this.textBoxOTAImageNotifyManuID.Name = "textBoxOTAImageNotifyManuID";
-            this.textBoxOTAImageNotifyManuID.Size = new System.Drawing.Size(139, 22);
+            this.textBoxOTAImageNotifyManuID.Size = new System.Drawing.Size(112, 21);
             this.textBoxOTAImageNotifyManuID.TabIndex = 19;
             this.textBoxOTAImageNotifyManuID.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxOTAImageNotifyManuID_MouseClick);
             this.textBoxOTAImageNotifyManuID.Leave += new System.EventHandler(this.textBoxOTAImageNotifyManuID_Leave);
@@ -5851,10 +5857,9 @@
             // 
             // textBoxOTAImageNotifyImageType
             // 
-            this.textBoxOTAImageNotifyImageType.Location = new System.Drawing.Point(1011, 70);
-            this.textBoxOTAImageNotifyImageType.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxOTAImageNotifyImageType.Location = new System.Drawing.Point(809, 56);
             this.textBoxOTAImageNotifyImageType.Name = "textBoxOTAImageNotifyImageType";
-            this.textBoxOTAImageNotifyImageType.Size = new System.Drawing.Size(159, 22);
+            this.textBoxOTAImageNotifyImageType.Size = new System.Drawing.Size(128, 21);
             this.textBoxOTAImageNotifyImageType.TabIndex = 18;
             this.textBoxOTAImageNotifyImageType.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxOTAImageNotifyImageType_MouseClick);
             this.textBoxOTAImageNotifyImageType.Leave += new System.EventHandler(this.textBoxOTAImageNotifyImageType_Leave);
@@ -5863,10 +5868,9 @@
             // 
             // textBoxOTAImageNotifyFileVersion
             // 
-            this.textBoxOTAImageNotifyFileVersion.Location = new System.Drawing.Point(869, 70);
-            this.textBoxOTAImageNotifyFileVersion.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxOTAImageNotifyFileVersion.Location = new System.Drawing.Point(695, 56);
             this.textBoxOTAImageNotifyFileVersion.Name = "textBoxOTAImageNotifyFileVersion";
-            this.textBoxOTAImageNotifyFileVersion.Size = new System.Drawing.Size(132, 22);
+            this.textBoxOTAImageNotifyFileVersion.Size = new System.Drawing.Size(106, 21);
             this.textBoxOTAImageNotifyFileVersion.TabIndex = 17;
             this.textBoxOTAImageNotifyFileVersion.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxOTAImageNotifyFileVersion_MouseClick);
             this.textBoxOTAImageNotifyFileVersion.Leave += new System.EventHandler(this.textBoxOTAImageNotifyFileVersion_Leave);
@@ -5877,20 +5881,18 @@
             // 
             this.comboBoxOTAImageNotifyType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxOTAImageNotifyType.FormattingEnabled = true;
-            this.comboBoxOTAImageNotifyType.Location = new System.Drawing.Point(688, 70);
-            this.comboBoxOTAImageNotifyType.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxOTAImageNotifyType.Location = new System.Drawing.Point(550, 56);
             this.comboBoxOTAImageNotifyType.Name = "comboBoxOTAImageNotifyType";
-            this.comboBoxOTAImageNotifyType.Size = new System.Drawing.Size(172, 24);
+            this.comboBoxOTAImageNotifyType.Size = new System.Drawing.Size(138, 20);
             this.comboBoxOTAImageNotifyType.TabIndex = 16;
             this.comboBoxOTAImageNotifyType.MouseLeave += new System.EventHandler(this.comboBoxOTAImageNotifyType_MouseLeave);
             this.comboBoxOTAImageNotifyType.MouseHover += new System.EventHandler(this.comboBoxOTAImageNotifyType_MouseHover);
             // 
             // textBoxOTAImageNotifyDstEP
             // 
-            this.textBoxOTAImageNotifyDstEP.Location = new System.Drawing.Point(547, 71);
-            this.textBoxOTAImageNotifyDstEP.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxOTAImageNotifyDstEP.Location = new System.Drawing.Point(438, 57);
             this.textBoxOTAImageNotifyDstEP.Name = "textBoxOTAImageNotifyDstEP";
-            this.textBoxOTAImageNotifyDstEP.Size = new System.Drawing.Size(132, 22);
+            this.textBoxOTAImageNotifyDstEP.Size = new System.Drawing.Size(106, 21);
             this.textBoxOTAImageNotifyDstEP.TabIndex = 15;
             this.textBoxOTAImageNotifyDstEP.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxOTAImageNotifyDstEP_MouseClick);
             this.textBoxOTAImageNotifyDstEP.Leave += new System.EventHandler(this.textBoxOTAImageNotifyDstEP_Leave);
@@ -5899,10 +5901,9 @@
             // 
             // textBoxOTAImageNotifySrcEP
             // 
-            this.textBoxOTAImageNotifySrcEP.Location = new System.Drawing.Point(404, 71);
-            this.textBoxOTAImageNotifySrcEP.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxOTAImageNotifySrcEP.Location = new System.Drawing.Point(323, 57);
             this.textBoxOTAImageNotifySrcEP.Name = "textBoxOTAImageNotifySrcEP";
-            this.textBoxOTAImageNotifySrcEP.Size = new System.Drawing.Size(132, 22);
+            this.textBoxOTAImageNotifySrcEP.Size = new System.Drawing.Size(106, 21);
             this.textBoxOTAImageNotifySrcEP.TabIndex = 14;
             this.textBoxOTAImageNotifySrcEP.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxOTAImageNotifySrcEP_MouseClick);
             this.textBoxOTAImageNotifySrcEP.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
@@ -5912,10 +5913,9 @@
             // 
             // textBoxOTAImageNotifyTargetAddr
             // 
-            this.textBoxOTAImageNotifyTargetAddr.Location = new System.Drawing.Point(261, 71);
-            this.textBoxOTAImageNotifyTargetAddr.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxOTAImageNotifyTargetAddr.Location = new System.Drawing.Point(209, 57);
             this.textBoxOTAImageNotifyTargetAddr.Name = "textBoxOTAImageNotifyTargetAddr";
-            this.textBoxOTAImageNotifyTargetAddr.Size = new System.Drawing.Size(132, 22);
+            this.textBoxOTAImageNotifyTargetAddr.Size = new System.Drawing.Size(106, 21);
             this.textBoxOTAImageNotifyTargetAddr.TabIndex = 13;
             this.textBoxOTAImageNotifyTargetAddr.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxOTAImageNotifyTargetAddr_MouseClick);
             this.textBoxOTAImageNotifyTargetAddr.Leave += new System.EventHandler(this.textBoxOTAImageNotifyTargetAddr_Leave);
@@ -5926,20 +5926,18 @@
             // 
             this.comboBoxOTAImageNotifyAddrMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxOTAImageNotifyAddrMode.FormattingEnabled = true;
-            this.comboBoxOTAImageNotifyAddrMode.Location = new System.Drawing.Point(121, 71);
-            this.comboBoxOTAImageNotifyAddrMode.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxOTAImageNotifyAddrMode.Location = new System.Drawing.Point(97, 57);
             this.comboBoxOTAImageNotifyAddrMode.Name = "comboBoxOTAImageNotifyAddrMode";
-            this.comboBoxOTAImageNotifyAddrMode.Size = new System.Drawing.Size(132, 24);
+            this.comboBoxOTAImageNotifyAddrMode.Size = new System.Drawing.Size(106, 20);
             this.comboBoxOTAImageNotifyAddrMode.TabIndex = 12;
             this.comboBoxOTAImageNotifyAddrMode.MouseLeave += new System.EventHandler(this.comboBoxOTAImageNotifyAddrMode_MouseLeave);
             this.comboBoxOTAImageNotifyAddrMode.MouseHover += new System.EventHandler(this.comboBoxOTAImageNotifyAddrMode_MouseHover);
             // 
             // buttonOTAImageNotify
             // 
-            this.buttonOTAImageNotify.Location = new System.Drawing.Point(5, 66);
-            this.buttonOTAImageNotify.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonOTAImageNotify.Location = new System.Drawing.Point(4, 53);
             this.buttonOTAImageNotify.Name = "buttonOTAImageNotify";
-            this.buttonOTAImageNotify.Size = new System.Drawing.Size(108, 32);
+            this.buttonOTAImageNotify.Size = new System.Drawing.Size(86, 26);
             this.buttonOTAImageNotify.TabIndex = 11;
             this.buttonOTAImageNotify.Text = "Image Notify";
             this.buttonOTAImageNotify.UseVisualStyleBackColor = true;
@@ -5947,86 +5945,77 @@
             // 
             // textBoxOtaFileSize
             // 
-            this.textBoxOtaFileSize.Location = new System.Drawing.Point(363, 41);
-            this.textBoxOtaFileSize.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxOtaFileSize.Location = new System.Drawing.Point(290, 33);
             this.textBoxOtaFileSize.Name = "textBoxOtaFileSize";
             this.textBoxOtaFileSize.ReadOnly = true;
-            this.textBoxOtaFileSize.Size = new System.Drawing.Size(92, 22);
+            this.textBoxOtaFileSize.Size = new System.Drawing.Size(74, 21);
             this.textBoxOtaFileSize.TabIndex = 9;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(319, 44);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(255, 35);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 17);
+            this.label6.Size = new System.Drawing.Size(29, 12);
             this.label6.TabIndex = 0;
             this.label6.Text = "Size";
             // 
             // textBoxOtaFileVersion
             // 
-            this.textBoxOtaFileVersion.Location = new System.Drawing.Point(1268, 9);
-            this.textBoxOtaFileVersion.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxOtaFileVersion.Location = new System.Drawing.Point(1014, 7);
             this.textBoxOtaFileVersion.Name = "textBoxOtaFileVersion";
             this.textBoxOtaFileVersion.ReadOnly = true;
-            this.textBoxOtaFileVersion.Size = new System.Drawing.Size(92, 22);
+            this.textBoxOtaFileVersion.Size = new System.Drawing.Size(74, 21);
             this.textBoxOtaFileVersion.TabIndex = 7;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(1179, 12);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(943, 10);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(82, 17);
+            this.label5.Size = new System.Drawing.Size(77, 12);
             this.label5.TabIndex = 0;
             this.label5.Text = "File Version";
             // 
             // textBoxOtaFileImageType
             // 
-            this.textBoxOtaFileImageType.Location = new System.Drawing.Point(1105, 9);
-            this.textBoxOtaFileImageType.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxOtaFileImageType.Location = new System.Drawing.Point(884, 7);
             this.textBoxOtaFileImageType.Name = "textBoxOtaFileImageType";
             this.textBoxOtaFileImageType.ReadOnly = true;
-            this.textBoxOtaFileImageType.Size = new System.Drawing.Size(65, 22);
+            this.textBoxOtaFileImageType.Size = new System.Drawing.Size(53, 21);
             this.textBoxOtaFileImageType.TabIndex = 6;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(1015, 12);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(812, 10);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 17);
+            this.label2.Size = new System.Drawing.Size(65, 12);
             this.label2.TabIndex = 0;
             this.label2.Text = "Image Type";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(853, 12);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(682, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 17);
+            this.label1.Size = new System.Drawing.Size(59, 12);
             this.label1.TabIndex = 0;
             this.label1.Text = "Manu Code";
             // 
             // textBoxOtaFileManuCode
             // 
-            this.textBoxOtaFileManuCode.Location = new System.Drawing.Point(941, 9);
-            this.textBoxOtaFileManuCode.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxOtaFileManuCode.Location = new System.Drawing.Point(753, 7);
             this.textBoxOtaFileManuCode.Name = "textBoxOtaFileManuCode";
             this.textBoxOtaFileManuCode.ReadOnly = true;
-            this.textBoxOtaFileManuCode.Size = new System.Drawing.Size(65, 22);
+            this.textBoxOtaFileManuCode.Size = new System.Drawing.Size(53, 21);
             this.textBoxOtaFileManuCode.TabIndex = 5;
             // 
             // buttonOTALoadNewImage
             // 
-            this.buttonOTALoadNewImage.Location = new System.Drawing.Point(4, 4);
-            this.buttonOTALoadNewImage.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonOTALoadNewImage.Location = new System.Drawing.Point(3, 3);
             this.buttonOTALoadNewImage.Name = "buttonOTALoadNewImage";
-            this.buttonOTALoadNewImage.Size = new System.Drawing.Size(108, 32);
+            this.buttonOTALoadNewImage.Size = new System.Drawing.Size(86, 26);
             this.buttonOTALoadNewImage.TabIndex = 0;
             this.buttonOTALoadNewImage.Text = "Load Image";
             this.buttonOTALoadNewImage.UseVisualStyleBackColor = true;
@@ -6038,10 +6027,9 @@
             this.tabPagePollControl.Controls.Add(this.comboBoxFastPollEnable);
             this.tabPagePollControl.Controls.Add(this.textBoxFastPollExpiryTime);
             this.tabPagePollControl.Controls.Add(this.buttonSetCheckinRspData);
-            this.tabPagePollControl.Location = new System.Drawing.Point(4, 25);
-            this.tabPagePollControl.Margin = new System.Windows.Forms.Padding(4);
+            this.tabPagePollControl.Location = new System.Drawing.Point(4, 22);
             this.tabPagePollControl.Name = "tabPagePollControl";
-            this.tabPagePollControl.Size = new System.Drawing.Size(1691, 524);
+            this.tabPagePollControl.Size = new System.Drawing.Size(1351, 416);
             this.tabPagePollControl.TabIndex = 17;
             this.tabPagePollControl.Text = "Poll Control";
             this.tabPagePollControl.Click += new System.EventHandler(this.tabPagePollControl_Click);
@@ -6053,20 +6041,18 @@
             this.comboBoxFastPollEnable.Items.AddRange(new object[] {
             "DISABLED",
             "ENABLED"});
-            this.comboBoxFastPollEnable.Location = new System.Drawing.Point(127, 7);
-            this.comboBoxFastPollEnable.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBoxFastPollEnable.Location = new System.Drawing.Point(102, 6);
             this.comboBoxFastPollEnable.Name = "comboBoxFastPollEnable";
-            this.comboBoxFastPollEnable.Size = new System.Drawing.Size(132, 24);
+            this.comboBoxFastPollEnable.Size = new System.Drawing.Size(106, 20);
             this.comboBoxFastPollEnable.TabIndex = 1;
             this.comboBoxFastPollEnable.MouseLeave += new System.EventHandler(this.comboBoxFastPollEnable_MouseLeave);
             this.comboBoxFastPollEnable.MouseHover += new System.EventHandler(this.comboBoxFastPollEnable_MouseHover);
             // 
             // textBoxFastPollExpiryTime
             // 
-            this.textBoxFastPollExpiryTime.Location = new System.Drawing.Point(268, 9);
-            this.textBoxFastPollExpiryTime.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxFastPollExpiryTime.Location = new System.Drawing.Point(214, 7);
             this.textBoxFastPollExpiryTime.Name = "textBoxFastPollExpiryTime";
-            this.textBoxFastPollExpiryTime.Size = new System.Drawing.Size(192, 22);
+            this.textBoxFastPollExpiryTime.Size = new System.Drawing.Size(154, 21);
             this.textBoxFastPollExpiryTime.TabIndex = 2;
             this.textBoxFastPollExpiryTime.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBoxFastPollExpiryTime_MouseClick);
             this.textBoxFastPollExpiryTime.Leave += new System.EventHandler(this.textBoxFastPollExpiryTime_Leave);
@@ -6075,21 +6061,114 @@
             // 
             // buttonSetCheckinRspData
             // 
-            this.buttonSetCheckinRspData.Location = new System.Drawing.Point(4, 4);
-            this.buttonSetCheckinRspData.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonSetCheckinRspData.Location = new System.Drawing.Point(3, 3);
             this.buttonSetCheckinRspData.Name = "buttonSetCheckinRspData";
-            this.buttonSetCheckinRspData.Size = new System.Drawing.Size(115, 32);
+            this.buttonSetCheckinRspData.Size = new System.Drawing.Size(92, 26);
             this.buttonSetCheckinRspData.TabIndex = 0;
             this.buttonSetCheckinRspData.Text = "Check-In Rsp";
             this.buttonSetCheckinRspData.UseVisualStyleBackColor = true;
             this.buttonSetCheckinRspData.Click += new System.EventHandler(this.buttonSetCheckinRspData_Click);
             // 
+            // tabPage15
+            // 
+            this.tabPage15.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPage15.Controls.Add(this.textBoxInfraredDstEp);
+            this.tabPage15.Controls.Add(this.textBoxInfraredSrcEp);
+            this.tabPage15.Controls.Add(this.textBoxInfraredAddr);
+            this.tabPage15.Controls.Add(this.textBoxInfraredActivationCode);
+            this.tabPage15.Controls.Add(this.buttonSendActivationCode);
+            this.tabPage15.Controls.Add(this.buttonGetScret);
+            this.tabPage15.Controls.Add(this.buttonGetInfraredData);
+            this.tabPage15.Controls.Add(this.textBoxInfraredData);
+            this.tabPage15.Controls.Add(this.buttonSendInfrared);
+            this.tabPage15.Location = new System.Drawing.Point(4, 22);
+            this.tabPage15.Name = "tabPage15";
+            this.tabPage15.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage15.Size = new System.Drawing.Size(1351, 416);
+            this.tabPage15.TabIndex = 19;
+            this.tabPage15.Text = "Infrared";
+            // 
+            // textBoxInfraredDstEp
+            // 
+            this.textBoxInfraredDstEp.Location = new System.Drawing.Point(375, 33);
+            this.textBoxInfraredDstEp.Name = "textBoxInfraredDstEp";
+            this.textBoxInfraredDstEp.Size = new System.Drawing.Size(106, 21);
+            this.textBoxInfraredDstEp.TabIndex = 10;
+            this.textBoxInfraredDstEp.Text = "1";
+            // 
+            // textBoxInfraredSrcEp
+            // 
+            this.textBoxInfraredSrcEp.Location = new System.Drawing.Point(262, 34);
+            this.textBoxInfraredSrcEp.Name = "textBoxInfraredSrcEp";
+            this.textBoxInfraredSrcEp.Size = new System.Drawing.Size(106, 21);
+            this.textBoxInfraredSrcEp.TabIndex = 9;
+            this.textBoxInfraredSrcEp.Text = "1";
+            // 
+            // textBoxInfraredAddr
+            // 
+            this.textBoxInfraredAddr.Location = new System.Drawing.Point(149, 34);
+            this.textBoxInfraredAddr.Name = "textBoxInfraredAddr";
+            this.textBoxInfraredAddr.Size = new System.Drawing.Size(106, 21);
+            this.textBoxInfraredAddr.TabIndex = 8;
+            // 
+            // textBoxInfraredActivationCode
+            // 
+            this.textBoxInfraredActivationCode.Location = new System.Drawing.Point(149, 186);
+            this.textBoxInfraredActivationCode.Name = "textBoxInfraredActivationCode";
+            this.textBoxInfraredActivationCode.Size = new System.Drawing.Size(801, 21);
+            this.textBoxInfraredActivationCode.TabIndex = 7;
+            // 
+            // buttonSendActivationCode
+            // 
+            this.buttonSendActivationCode.Location = new System.Drawing.Point(6, 186);
+            this.buttonSendActivationCode.Name = "buttonSendActivationCode";
+            this.buttonSendActivationCode.Size = new System.Drawing.Size(137, 23);
+            this.buttonSendActivationCode.TabIndex = 6;
+            this.buttonSendActivationCode.Text = "SendActivationCode";
+            this.buttonSendActivationCode.UseVisualStyleBackColor = true;
+            this.buttonSendActivationCode.Click += new System.EventHandler(this.buttonSendActivationCode_Click);
+            // 
+            // buttonGetScret
+            // 
+            this.buttonGetScret.Location = new System.Drawing.Point(6, 146);
+            this.buttonGetScret.Name = "buttonGetScret";
+            this.buttonGetScret.Size = new System.Drawing.Size(137, 23);
+            this.buttonGetScret.TabIndex = 5;
+            this.buttonGetScret.Text = "GetSecret";
+            this.buttonGetScret.UseVisualStyleBackColor = true;
+            this.buttonGetScret.Click += new System.EventHandler(this.buttonGetScret_Click);
+            // 
+            // buttonGetInfraredData
+            // 
+            this.buttonGetInfraredData.Location = new System.Drawing.Point(6, 108);
+            this.buttonGetInfraredData.Name = "buttonGetInfraredData";
+            this.buttonGetInfraredData.Size = new System.Drawing.Size(137, 23);
+            this.buttonGetInfraredData.TabIndex = 4;
+            this.buttonGetInfraredData.Text = "GetInfraredData";
+            this.buttonGetInfraredData.UseVisualStyleBackColor = true;
+            // 
+            // textBoxInfraredData
+            // 
+            this.textBoxInfraredData.Location = new System.Drawing.Point(149, 72);
+            this.textBoxInfraredData.Name = "textBoxInfraredData";
+            this.textBoxInfraredData.Size = new System.Drawing.Size(801, 21);
+            this.textBoxInfraredData.TabIndex = 3;
+            // 
+            // buttonSendInfrared
+            // 
+            this.buttonSendInfrared.Location = new System.Drawing.Point(6, 70);
+            this.buttonSendInfrared.Name = "buttonSendInfrared";
+            this.buttonSendInfrared.Size = new System.Drawing.Size(137, 23);
+            this.buttonSendInfrared.TabIndex = 0;
+            this.buttonSendInfrared.Text = "SendInfrared";
+            this.buttonSendInfrared.UseVisualStyleBackColor = true;
+            this.buttonSendInfrared.Click += new System.EventHandler(this.buttonSendInfrared_Click);
+            // 
             // buttonMessageViewClear
             // 
-            this.buttonMessageViewClear.Location = new System.Drawing.Point(1615, 593);
-            this.buttonMessageViewClear.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonMessageViewClear.Location = new System.Drawing.Point(1292, 474);
             this.buttonMessageViewClear.Name = "buttonMessageViewClear";
-            this.buttonMessageViewClear.Size = new System.Drawing.Size(100, 28);
+            this.buttonMessageViewClear.Size = new System.Drawing.Size(80, 22);
             this.buttonMessageViewClear.TabIndex = 92;
             this.buttonMessageViewClear.Text = "Clear";
             this.buttonMessageViewClear.UseVisualStyleBackColor = true;
@@ -6097,10 +6176,9 @@
             // 
             // buttonClearRaw
             // 
-            this.buttonClearRaw.Location = new System.Drawing.Point(936, 593);
-            this.buttonClearRaw.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonClearRaw.Location = new System.Drawing.Point(749, 474);
             this.buttonClearRaw.Name = "buttonClearRaw";
-            this.buttonClearRaw.Size = new System.Drawing.Size(100, 28);
+            this.buttonClearRaw.Size = new System.Drawing.Size(80, 22);
             this.buttonClearRaw.TabIndex = 91;
             this.buttonClearRaw.Text = "Clear";
             this.buttonClearRaw.UseVisualStyleBackColor = true;
@@ -6109,19 +6187,17 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(1039, 599);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(831, 479);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(161, 17);
+            this.label4.Size = new System.Drawing.Size(131, 12);
             this.label4.TabIndex = 18;
             this.label4.Text = "Received Message View";
             // 
             // richTextBoxMessageView
             // 
-            this.richTextBoxMessageView.Location = new System.Drawing.Point(1043, 628);
-            this.richTextBoxMessageView.Margin = new System.Windows.Forms.Padding(4);
+            this.richTextBoxMessageView.Location = new System.Drawing.Point(834, 502);
             this.richTextBoxMessageView.Name = "richTextBoxMessageView";
-            this.richTextBoxMessageView.Size = new System.Drawing.Size(671, 297);
+            this.richTextBoxMessageView.Size = new System.Drawing.Size(538, 238);
             this.richTextBoxMessageView.TabIndex = 17;
             this.richTextBoxMessageView.Text = "";
             this.richTextBoxMessageView.TextChanged += new System.EventHandler(this.richTextBoxMessageView_TextChanged);
@@ -6129,19 +6205,17 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 599);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(10, 479);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 17);
+            this.label3.Size = new System.Drawing.Size(53, 12);
             this.label3.TabIndex = 16;
             this.label3.Text = "Raw Data";
             // 
             // richTextBoxCommandResponse
             // 
-            this.richTextBoxCommandResponse.Location = new System.Drawing.Point(16, 628);
-            this.richTextBoxCommandResponse.Margin = new System.Windows.Forms.Padding(4);
+            this.richTextBoxCommandResponse.Location = new System.Drawing.Point(13, 502);
             this.richTextBoxCommandResponse.Name = "richTextBoxCommandResponse";
-            this.richTextBoxCommandResponse.Size = new System.Drawing.Size(1019, 297);
+            this.richTextBoxCommandResponse.Size = new System.Drawing.Size(816, 238);
             this.richTextBoxCommandResponse.TabIndex = 4;
             this.richTextBoxCommandResponse.Text = "";
             this.richTextBoxCommandResponse.TextChanged += new System.EventHandler(this.richTextBoxCommandResponse_TextChanged);
@@ -6154,10 +6228,10 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(1731, 956);
-            this.Controls.Add(this.tabControl1);
+            this.ClientSize = new System.Drawing.Size(1385, 765);
+            this.Controls.Add(this.tabControlInfrared);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.buttonClearRaw);
@@ -6168,7 +6242,6 @@
             this.Controls.Add(this.label4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "ZigBee Gateway User Interface";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -6177,7 +6250,7 @@
             this.menuStrip1.PerformLayout();
             this.statusStrip.ResumeLayout(false);
             this.statusStrip.PerformLayout();
-            this.tabControl1.ResumeLayout(false);
+            this.tabControlInfrared.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.tabPageDevice.ResumeLayout(false);
@@ -6213,6 +6286,8 @@
             this.tabPage14.PerformLayout();
             this.tabPagePollControl.ResumeLayout(false);
             this.tabPagePollControl.PerformLayout();
+            this.tabPage15.ResumeLayout(false);
+            this.tabPage15.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -6227,7 +6302,7 @@
         private System.Windows.Forms.StatusStrip statusStrip;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusPort;
         private System.Windows.Forms.ToolStripStatusLabel toolStripPortSettings;
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabControl tabControlInfrared;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Button buttonSetEPID;
         private System.Windows.Forms.Button buttonGetVersion;
@@ -6677,6 +6752,56 @@
         private System.Windows.Forms.TextBox textBoxOOBDataAddr;
         private System.Windows.Forms.Button buttonOOBCommissioningData;
         private System.Windows.Forms.Button buttonDiscoveryOnly;
+        private System.Windows.Forms.Button buttonSetTempPassword;
+        private System.Windows.Forms.Button buttonInvalidPassword;
+        private System.Windows.Forms.TextBox textBoxTempPasswordDstEp;
+        private System.Windows.Forms.TextBox textBoxTempPasswordSrcEp;
+        private System.Windows.Forms.TextBox textBoxTempPasswordAddr;
+        private System.Windows.Forms.TextBox textBoxTempPassword;
+        private System.Windows.Forms.TextBox textBoxUserId;
+        private System.Windows.Forms.Button buttonNewUser;
+        private System.Windows.Forms.Button buttonDeleteUser;
+        private System.Windows.Forms.TextBox textBoxHoldPassword;
+        private System.Windows.Forms.TextBox textBoxIcCardErrorNum;
+        private System.Windows.Forms.TextBox textBoxFingerErrorNum;
+        private System.Windows.Forms.TextBox textBoxDigitErrorNum;
+        private System.Windows.Forms.TextBox textBoxUpload;
+        private System.Windows.Forms.Button buttonSetSetting;
+        private System.Windows.Forms.TextBox textBoxETEndMinute;
+        private System.Windows.Forms.TextBox textBoxETEndHour;
+        private System.Windows.Forms.TextBox textBoxETEndDay;
+        private System.Windows.Forms.TextBox textBoxETEndMonth;
+        private System.Windows.Forms.TextBox textBoxETEndYear;
+        private System.Windows.Forms.TextBox textBoxETMinute;
+        private System.Windows.Forms.TextBox textBoxETHour;
+        private System.Windows.Forms.TextBox textBoxETDay;
+        private System.Windows.Forms.TextBox textBoxETMonth;
+        private System.Windows.Forms.TextBox textBoxETYear;
+        private System.Windows.Forms.TextBox textBoxETUserId;
+        private System.Windows.Forms.TextBox textBoxDPPassword;
+        private System.Windows.Forms.Button buttonSetUserEffectiveTime;
+        private System.Windows.Forms.Button buttonEditDigitPassword;
+        private System.Windows.Forms.Button buttonOutLearn;
+        private System.Windows.Forms.Button buttonEnterLearn;
+        private System.Windows.Forms.TextBox textBoxDPPasswordEnable;
+        private System.Windows.Forms.TextBox textBoxDPPasswordType;
+        private System.Windows.Forms.TextBox textBoxDPPasswordId;
+        private System.Windows.Forms.Button buttonDeleteDigitPassword;
+        private System.Windows.Forms.Button buttonAddDigitPassword;
+        private System.Windows.Forms.TextBox textBoxDPUserId;
+        private System.Windows.Forms.TextBox textBoxUserType;
+        private System.Windows.Forms.Button buttonEditUser;
+        private System.Windows.Forms.TextBox textBoxUserEnable;
+        private System.Windows.Forms.TabPage tabPage15;
+        private System.Windows.Forms.TextBox textBoxInfraredActivationCode;
+        private System.Windows.Forms.Button buttonSendActivationCode;
+        private System.Windows.Forms.Button buttonGetScret;
+        private System.Windows.Forms.Button buttonGetInfraredData;
+        private System.Windows.Forms.TextBox textBoxInfraredData;
+        private System.Windows.Forms.Button buttonSendInfrared;
+        private System.Windows.Forms.TextBox textBoxInfraredDstEp;
+        private System.Windows.Forms.TextBox textBoxInfraredSrcEp;
+        private System.Windows.Forms.TextBox textBoxInfraredAddr;
     }
 }
 

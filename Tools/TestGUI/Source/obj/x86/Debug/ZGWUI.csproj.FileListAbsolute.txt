@@ -1,0 +1,10 @@
+D:\NXP\bstudio_nxp\workspace\JN-AN-1216-Zigbee-3-0-IoT-ControlBridge\Tools\TestGUI\Source\bin\Debug\ZGWUI.exe
+D:\NXP\bstudio_nxp\workspace\JN-AN-1216-Zigbee-3-0-IoT-ControlBridge\Tools\TestGUI\Source\bin\Debug\ZGWUI.pdb
+D:\NXP\bstudio_nxp\workspace\JN-AN-1216-Zigbee-3-0-IoT-ControlBridge\Tools\TestGUI\Source\obj\x86\Debug\ZGWUI.csprojResolveAssemblyReference.cache
+D:\NXP\bstudio_nxp\workspace\JN-AN-1216-Zigbee-3-0-IoT-ControlBridge\Tools\TestGUI\Source\obj\x86\Debug\ListManagement.ListManager.resources
+D:\NXP\bstudio_nxp\workspace\JN-AN-1216-Zigbee-3-0-IoT-ControlBridge\Tools\TestGUI\Source\obj\x86\Debug\ZGWUI.Form1.resources
+D:\NXP\bstudio_nxp\workspace\JN-AN-1216-Zigbee-3-0-IoT-ControlBridge\Tools\TestGUI\Source\obj\x86\Debug\PortSet.PortSettings.resources
+D:\NXP\bstudio_nxp\workspace\JN-AN-1216-Zigbee-3-0-IoT-ControlBridge\Tools\TestGUI\Source\obj\x86\Debug\ZGWUI.Properties.Resources.resources
+D:\NXP\bstudio_nxp\workspace\JN-AN-1216-Zigbee-3-0-IoT-ControlBridge\Tools\TestGUI\Source\obj\x86\Debug\ZGWUI.csproj.GenerateResource.Cache
+D:\NXP\bstudio_nxp\workspace\JN-AN-1216-Zigbee-3-0-IoT-ControlBridge\Tools\TestGUI\Source\obj\x86\Debug\ZGWUI.exe
+D:\NXP\bstudio_nxp\workspace\JN-AN-1216-Zigbee-3-0-IoT-ControlBridge\Tools\TestGUI\Source\obj\x86\Debug\ZGWUI.pdb
